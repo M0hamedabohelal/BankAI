@@ -72,7 +72,6 @@
     currentIndex: 0,
     userAnswers: {}, // questionId -> selectedKey ('a','b','c','d','True','False')
     bookmarks: new Set(),
-    mode: 'study', // 'study' | 'exam'
     langMode: 'both', // 'both' | 'en' | 'ar'
     theme: 'light', // 'light' | 'dark' | 'sepia'
     fontSize: 'md', // 'sm' | 'md' | 'lg' | 'xl'
@@ -80,16 +79,7 @@
     activeType: 'all', // 'all' | 'mcq' | 'tf'
     specialFilter: null, // null | 'bookmarks' | 'mistakes'
     searchQuery: '',
-    soundEnabled: true,
-    exam: {
-      running: false,
-      submitted: false,
-      totalSeconds: 1800,
-      remainingSeconds: 1800,
-      timerId: null,
-      startTime: 0,
-      durationMinutes: 30
-    }
+    soundEnabled: true
   };
 
   // --- LocalStorage Persistence ---
@@ -101,7 +91,6 @@
       const data = {
         userAnswers: state.userAnswers,
         bookmarks: Array.from(state.bookmarks),
-        mode: state.mode,
         langMode: state.langMode,
         theme: state.theme,
         fontSize: state.fontSize,
@@ -132,7 +121,6 @@
       const data = JSON.parse(raw);
       if (data.userAnswers) state.userAnswers = data.userAnswers;
       if (data.bookmarks) state.bookmarks = new Set(data.bookmarks);
-      if (data.mode) state.mode = data.mode;
       if (data.langMode) state.langMode = data.langMode;
       if (data.theme) state.theme = data.theme;
       if (data.fontSize) state.fontSize = data.fontSize;
@@ -198,8 +186,6 @@
   const DOM = {
     html: document.documentElement,
     // Header
-    btnStudy: document.getElementById('btn-mode-study'),
-    btnExam: document.getElementById('btn-mode-exam'),
     langBoth: document.getElementById('lang-both'),
     langEn: document.getElementById('lang-en'),
     langAr: document.getElementById('lang-ar'),
@@ -224,23 +210,17 @@
     countMistakes: document.getElementById('count-mistakes'),
     searchInput: document.getElementById('search-input'),
     searchClear: document.getElementById('search-clear'),
-    examPanel: document.getElementById('exam-panel'),
-    examQCount: document.getElementById('exam-q-count'),
-    examTimerSelect: document.getElementById('exam-timer-select'),
-    examShuffleToggle: document.getElementById('exam-shuffle-toggle'),
-    btnStartExam: document.getElementById('btn-start-exam'),
     questionsGrid: document.getElementById('questions-grid'),
     gridVisibleCount: document.getElementById('grid-visible-count'),
     statAnswered: document.getElementById('stat-answered'),
     statCorrect: document.getElementById('stat-correct'),
     statPercentage: document.getElementById('stat-percentage'),
+    btnResetBankSidebar: document.getElementById('btn-reset-bank-sidebar'),
     btnResetAll: document.getElementById('btn-reset-all'),
 
     // Content
     badgeBank: document.getElementById('badge-bank'),
     badgeType: document.getElementById('badge-type'),
-    examTimerBox: document.getElementById('exam-timer-box'),
-    timerDisplay: document.getElementById('timer-display'),
     currentQIndex: document.getElementById('current-q-index'),
     totalQCount: document.getElementById('total-q-count'),
     btnFlag: document.getElementById('btn-flag'),
@@ -264,21 +244,7 @@
     // Footer actions
     btnPrev: document.getElementById('btn-prev'),
     btnNext: document.getElementById('btn-next'),
-    btnShowHint: document.getElementById('btn-show-hint'),
-    btnSubmitExam: document.getElementById('btn-submit-exam'),
-
-    // Modal
-    modalExamResults: document.getElementById('modal-exam-results'),
-    btnCloseModal: document.getElementById('btn-close-modal'),
-    modalScorePercent: document.getElementById('modal-score-percent'),
-    modalScoreGrade: document.getElementById('modal-score-grade'),
-    modalScoreRatio: document.getElementById('modal-score-ratio'),
-    modalCorrectCount: document.getElementById('modal-correct-count'),
-    modalWrongCount: document.getElementById('modal-wrong-count'),
-    modalTimeSpent: document.getElementById('modal-time-spent'),
-    btnReviewMistakes: document.getElementById('btn-review-mistakes'),
-    btnReviewAll: document.getElementById('btn-review-all'),
-    btnRetakeExam: document.getElementById('btn-retake-exam')
+    btnResetBank: document.getElementById('btn-reset-bank')
   };
 
   // --- Rendering ---
@@ -325,7 +291,6 @@
 
     // Render Options
     DOM.optionsContainer.innerHTML = '';
-    const isExamActive = state.mode === 'exam' && !state.exam.submitted;
 
     q.options.forEach((opt) => {
       const optEl = document.createElement('div');
@@ -339,8 +304,8 @@
         optEl.classList.add('selected');
       }
 
-      // In Study Mode (or in Exam after submission): Reveal correct/wrong styling immediately
-      if (!isExamActive && isAnswered) {
+      // Reveal correct/wrong styling immediately when answered
+      if (isAnswered) {
         optEl.classList.add('disabled');
         if (isCorrectAnswer) {
           optEl.classList.add('correct');
@@ -384,8 +349,7 @@
     });
 
     // Render Explanation Box
-    const shouldShowExp = (!isExamActive && isAnswered);
-    if (shouldShowExp) {
+    if (isAnswered) {
       DOM.explanationBox.style.display = 'block';
       const isCorrect = userSelected === q.answer;
 
@@ -414,15 +378,6 @@
     DOM.btnPrev.disabled = state.currentIndex === 0;
     DOM.btnNext.disabled = state.currentIndex === list.length - 1;
 
-    // Exam submit button visibility in footer
-    if (state.mode === 'exam' && !state.exam.submitted) {
-      DOM.btnSubmitExam.style.display = 'inline-flex';
-      DOM.btnShowHint.style.display = 'none';
-    } else {
-      DOM.btnSubmitExam.style.display = 'none';
-      DOM.btnShowHint.style.display = 'inline-flex';
-    }
-
     // Update active state in grid
     updateActiveGridButton();
   }
@@ -443,13 +398,6 @@
   }
 
   function handleOptionSelect(question, selectedKey) {
-    const isExamActive = state.mode === 'exam' && !state.exam.submitted;
-
-    // In study mode, prevent changing after answering unless they want to retry
-    if (!isExamActive && state.userAnswers[question.id]) {
-      // User can change answer in study mode to retry if they made a mistake
-    }
-
     state.userAnswers[question.id] = selectedKey;
     saveToStorage();
 
@@ -483,15 +431,12 @@
 
       const isAnswered = q.id in state.userAnswers;
       const userAns = state.userAnswers[q.id];
-      const isExamActive = state.mode === 'exam' && !state.exam.submitted;
 
       if (isAnswered) {
-        btn.classList.add('answered');
-        if (!isExamActive) {
-          if (userAns !== q.answer) {
-            btn.classList.remove('answered');
-            btn.classList.add('wrong');
-          }
+        if (userAns === q.answer) {
+          btn.classList.add('answered');
+        } else {
+          btn.classList.add('wrong');
         }
       }
 
@@ -582,153 +527,44 @@
     renderCurrentQuestion();
   }
 
-  // --- Exam Timer & Execution ---
-  function startExamTimer(durationMinutes) {
-    clearInterval(state.exam.timerId);
-    if (durationMinutes <= 0) {
-      DOM.examTimerBox.style.display = 'none';
-      return;
+  // --- Reset Current Bank Logic ---
+  function resetCurrentBank() {
+    const list = state.filteredQuestions;
+    if (!list || list.length === 0) return;
+
+    let bankTitle = DOM.badgeBank ? DOM.badgeBank.textContent : 'هذا البنك';
+    if (state.activeBank === 'all') {
+      bankTitle = 'جميع الأسئلة';
     }
 
-    state.exam.totalSeconds = durationMinutes * 60;
-    state.exam.remainingSeconds = durationMinutes * 60;
-    DOM.examTimerBox.style.display = 'flex';
-    updateTimerDisplay();
+    const answeredCount = list.filter(q => q.id in state.userAnswers).length;
+    let confirmMsg = `هل تريد إعادة حل (${bankTitle}) من البداية؟`;
+    if (answeredCount > 0) {
+      confirmMsg = `هل تريد إعادة حل (${bankTitle})؟ سيتم مسح ${answeredCount} إجابة مسجلة والبدء من السؤال الأول.`;
+    }
 
-    state.exam.timerId = setInterval(() => {
-      state.exam.remainingSeconds--;
-      updateTimerDisplay();
-      if (state.exam.remainingSeconds <= 0) {
-        clearInterval(state.exam.timerId);
-        alert('⏰ انتهى وقت الاختبار! سيتم تسليم الإجابات تلقائياً.');
-        submitExam();
-      }
-    }, 1000);
-  }
-
-  function updateTimerDisplay() {
-    const m = Math.floor(state.exam.remainingSeconds / 60);
-    const s = state.exam.remainingSeconds % 60;
-    DOM.timerDisplay.textContent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  }
-
-  function submitExam() {
-    clearInterval(state.exam.timerId);
-    state.exam.submitted = true;
-    state.exam.running = false;
-
-    // Compute score on current filtered set
-    const questions = state.filteredQuestions;
-    let correct = 0;
-    let answered = 0;
-
-    questions.forEach(q => {
-      if (q.id in state.userAnswers) {
-        answered++;
-        if (state.userAnswers[q.id] === q.answer) {
-          correct++;
-        }
-      }
-    });
-
-    const total = questions.length;
-    const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const wrong = total - correct;
-
-    // Grade assignment
-    let grade = 'ممتاز 🌟';
-    if (pct < 50) grade = 'يحتاج لمزيد من المذاكرة 📚';
-    else if (pct < 65) grade = 'مقبول 👍';
-    else if (pct < 75) grade = 'جيد 👏';
-    else if (pct < 85) grade = 'جيد جداً 🎖️';
-
-    DOM.modalScorePercent.textContent = `${pct}%`;
-    DOM.modalScoreGrade.textContent = grade;
-    DOM.modalScoreRatio.textContent = `${correct} / ${total}`;
-    DOM.modalCorrectCount.textContent = correct.toString();
-    DOM.modalWrongCount.textContent = wrong.toString();
-
-    // Time spent
-    const spentSec = state.exam.totalSeconds - state.exam.remainingSeconds;
-    const spentMin = Math.ceil(spentSec / 60);
-    DOM.modalTimeSpent.textContent = `${spentMin} دقيقة`;
-
-    DOM.modalExamResults.style.display = 'flex';
-    renderCurrentQuestion();
-    renderGrid();
+    if (confirm(confirmMsg)) {
+      playSound('click');
+      list.forEach(q => {
+        delete state.userAnswers[q.id];
+      });
+      state.currentIndex = 0;
+      saveToStorage();
+      updateStats();
+      renderGrid();
+      renderCurrentQuestion();
+    }
   }
 
   // --- Setup Event Listeners ---
   function setupEvents() {
-    // Mode toggles
-    DOM.btnStudy.addEventListener('click', () => {
-      playSound('click');
-      state.mode = 'study';
-      DOM.btnStudy.classList.add('active');
-      DOM.btnExam.classList.remove('active');
-      DOM.examPanel.style.display = 'none';
-      DOM.examTimerBox.style.display = 'none';
-      state.exam.running = false;
-      saveToStorage();
-      renderCurrentQuestion();
-      renderGrid();
-    });
-
-    DOM.btnExam.addEventListener('click', () => {
-      playSound('click');
-      state.mode = 'exam';
-      DOM.btnExam.classList.add('active');
-      DOM.btnStudy.classList.remove('active');
-      DOM.examPanel.style.display = 'flex';
-      saveToStorage();
-      renderCurrentQuestion();
-      renderGrid();
-    });
-
-    // Start Exam Button
-    DOM.btnStartExam.addEventListener('click', () => {
-      playSound('click');
-      const qCountVal = DOM.examQCount.value;
-      const timerVal = parseInt(DOM.examTimerSelect.value, 10);
-      const shouldShuffle = DOM.examShuffleToggle.checked;
-
-      // Filter questions according to selected count
-      let set = [...state.allQuestions];
-      if (state.activeBank !== 'all') {
-        const bId = parseInt(state.activeBank, 10);
-        set = set.filter(q => q.bank_id === bId);
-      }
-      if (state.activeType !== 'all') {
-        set = set.filter(q => q.type === state.activeType);
-      }
-
-      if (shouldShuffle) {
-        set.sort(() => Math.random() - 0.5);
-      }
-
-      if (qCountVal !== 'all') {
-        const count = parseInt(qCountVal, 10);
-        set = set.slice(0, count);
-      }
-
-      state.filteredQuestions = set;
-      state.currentIndex = 0;
-      state.exam.running = true;
-      state.exam.submitted = false;
-
-      // Clear answers for this exam session
-      set.forEach(q => {
-        delete state.userAnswers[q.id];
-      });
-
-      startExamTimer(timerVal);
-      renderGrid();
-      renderCurrentQuestion();
-
-      if (window.innerWidth <= 1024) {
-        DOM.sidebar.classList.remove('open');
-      }
-    });
+    // Reset Bank Buttons
+    if (DOM.btnResetBank) {
+      DOM.btnResetBank.addEventListener('click', resetCurrentBank);
+    }
+    if (DOM.btnResetBankSidebar) {
+      DOM.btnResetBankSidebar.addEventListener('click', resetCurrentBank);
+    }
 
     // Language buttons
     DOM.langBoth.addEventListener('click', () => setLanguageMode('both'));
@@ -889,35 +725,6 @@
       }
     });
 
-    // Show Hint / Reveal in study mode
-    DOM.btnShowHint.addEventListener('click', () => {
-      const q = state.filteredQuestions[state.currentIndex];
-      if (!q) return;
-      playSound('click');
-      // If unanswered, answer with correct to reveal explanation
-      if (!state.userAnswers[q.id]) {
-        state.userAnswers[q.id] = q.answer;
-        saveToStorage();
-        updateStats();
-        renderGrid();
-        renderCurrentQuestion();
-      } else {
-        DOM.explanationBox.style.display = DOM.explanationBox.style.display === 'none' ? 'block' : 'none';
-      }
-    });
-
-    // Submit Exam
-    DOM.btnSubmitExam.addEventListener('click', () => {
-      const unanswered = state.filteredQuestions.filter(q => !(q.id in state.userAnswers)).length;
-      let msg = 'هل أنت متأكد من إنهاء وتسليم الاختبار؟';
-      if (unanswered > 0) {
-        msg = `لديك ${unanswered} سؤال لم تتم الإجابة عليه بعد. هل أنت متأكد من تسليم الاختبار الآن؟`;
-      }
-      if (confirm(msg)) {
-        submitExam();
-      }
-    });
-
     // Explanation tabs
     DOM.tabExpAr.addEventListener('click', () => {
       DOM.tabExpAr.classList.add('active');
@@ -933,39 +740,15 @@
       DOM.expContentAr.style.display = 'none';
     });
 
-    // Modal Results Actions
-    DOM.btnCloseModal.addEventListener('click', () => {
-      DOM.modalExamResults.style.display = 'none';
-    });
-
-    DOM.btnReviewAll.addEventListener('click', () => {
-      DOM.modalExamResults.style.display = 'none';
-      state.currentIndex = 0;
-      renderCurrentQuestion();
-    });
-
-    DOM.btnReviewMistakes.addEventListener('click', () => {
-      DOM.modalExamResults.style.display = 'none';
-      state.specialFilter = 'mistakes';
-      DOM.filterMistakes.classList.add('active');
-      state.currentIndex = 0;
-      applyFilters();
-    });
-
-    DOM.btnRetakeExam.addEventListener('click', () => {
-      DOM.modalExamResults.style.display = 'none';
-      DOM.btnStartExam.click();
-    });
-
-    // Reset Progress
+    // Reset Progress (All Questions)
     DOM.btnResetAll.addEventListener('click', () => {
-      if (confirm('هل أنت متأكد من رغبتك في مسح جميع الإجابات المسجلة وبدء الكويز من البداية؟')) {
+      if (confirm('هل أنت متأكد من رغبتك في مسح جميع الإجابات المسجلة لجميع الأسئلة والبدء من جديد؟')) {
         state.userAnswers = {};
         state.bookmarks.clear();
         saveToStorage();
         updateStats();
         applyFilters();
-        alert('تمت إعادة ضبط التقدم بنجاح.');
+        playSound('click');
       }
     });
 
@@ -1003,13 +786,11 @@
           renderCurrentQuestion();
         }
       } else if (e.key === 's' || e.key === 'S' || e.key === 'س' || e.key === 'm' || e.key === 'M' || e.key === 'ة') {
-        // 'S' for Save / حفظ, 'M' for Mark / تمييز (تجنب التعارض تماماً مع خيار B)
+        // 'S' for Save / حفظ
         DOM.btnFlag.click();
-      } else if (e.key === 'h' || e.key === 'H' || e.key === 'ا') {
-        // 'H' for Hint / إظهار التفسير في وضع المذاكرة
-        if (state.mode === 'study') {
-          DOM.btnShowHint.click();
-        }
+      } else if (e.key === 'r' || e.key === 'R' || e.key === 'ق') {
+        // 'R' for Reset Bank / إعادة حل البنك
+        resetCurrentBank();
       } else if (q) {
         if (q.type === 'mcq') {
           const map = {
