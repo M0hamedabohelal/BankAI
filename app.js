@@ -976,21 +976,40 @@
         return;
       }
 
+      // Ctrl+B or Alt+B for bookmark
+      if ((e.ctrlKey || e.altKey) && (e.key === 'b' || e.key === 'B')) {
+        e.preventDefault();
+        DOM.btnFlag.click();
+        return;
+      }
+
+      // Ignore other modified combinations (e.g. Ctrl+C, Ctrl+R, etc.)
+      if (e.ctrlKey || e.altKey || e.metaKey) {
+        return;
+      }
+
       const q = state.filteredQuestions[state.currentIndex];
 
       if (e.key === 'ArrowRight') {
-        // In RTL, ArrowRight can be interpreted as Next
+        // Next Question
         if (state.currentIndex < state.filteredQuestions.length - 1) {
           state.currentIndex++;
           renderCurrentQuestion();
         }
       } else if (e.key === 'ArrowLeft') {
+        // Previous Question
         if (state.currentIndex > 0) {
           state.currentIndex--;
           renderCurrentQuestion();
         }
-      } else if (e.key === 'b' || e.key === 'B' || e.key === 'لا') {
+      } else if (e.key === 's' || e.key === 'S' || e.key === 'س' || e.key === 'm' || e.key === 'M' || e.key === 'ة') {
+        // 'S' for Save / حفظ, 'M' for Mark / تمييز (تجنب التعارض تماماً مع خيار B)
         DOM.btnFlag.click();
+      } else if (e.key === 'h' || e.key === 'H' || e.key === 'ا') {
+        // 'H' for Hint / إظهار التفسير في وضع المذاكرة
+        if (state.mode === 'study') {
+          DOM.btnShowHint.click();
+        }
       } else if (q) {
         if (q.type === 'mcq') {
           const map = {
