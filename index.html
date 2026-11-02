@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark" data-font-size="md">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بنك أسئلة الذكاء الاصطناعي والتعلم العميق | 160 سؤال تفاعلي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>كويز بنك الأسئلة الشامل (CS433)</h1>
+          <span class="brand-subtitle">160 سؤال محلول في الذكاء الاصطناعي والتعلم العميق</span>
+        </div>
+      </div>
+
+      <!-- Controls & Eye-care tools -->
+      <div class="header-actions">
+        <!-- Mode Switcher -->
+        <div class="mode-toggle-group">
+          <button id="btn-mode-study" class="mode-pill active" title="وضع المذاكرة: ظهور الإجابة والشرح الفوري">
+            <span class="icon">📖</span>
+            <span class="text">مذاكرة وتعلّم</span>
+          </button>
+          <button id="btn-mode-exam" class="mode-pill" title="وضع الاختبار: بدون إجابات فورية مع تصحيح نهائي">
+            <span class="icon">⏱️</span>
+            <span class="text">اختبار فعلي</span>
+          </button>
+        </div>
+
+        <!-- Language toggle -->
+        <div class="lang-switch" title="لغة عرض الأسئلة">
+          <button id="lang-both" class="lang-btn active">ثنائي اللغة</button>
+          <button id="lang-en" class="lang-btn">English</button>
+          <button id="lang-ar" class="lang-btn">عربي</button>
+        </div>
+
+        <!-- Font size scaler -->
+        <div class="font-scaler" title="حجم الخط المريح للعين">
+          <button id="btn-font-dec" class="tool-btn" aria-label="تصغير الخط">A-</button>
+          <button id="btn-font-inc" class="tool-btn" aria-label="تكبير الخط">A+</button>
+        </div>
+
+        <!-- Theme Selector -->
+        <div class="theme-menu-wrap">
+          <button id="btn-theme-toggle" class="tool-btn theme-btn" title="تغيير نظام الألوان المريح للعين">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-name">ليلي هادئ</span>
+          </button>
+          <div class="theme-dropdown" id="theme-dropdown">
+            <button data-set-theme="dark" class="theme-option active">
+              <span class="color-swatch swatch-dark"></span>
+              <span>ليلي هادئ (مريح للعين)</span>
+            </button>
+            <button data-set-theme="sepia" class="theme-option">
+              <span class="color-swatch swatch-sepia"></span>
+              <span>ورقي دافئ (كتاب إلكتروني)</span>
+            </button>
+            <button data-set-theme="light" class="theme-option">
+              <span class="color-swatch swatch-light"></span>
+              <span>نهاري ناعم (فاتح بدون وهج)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sound toggle -->
+        <button id="btn-sound-toggle" class="tool-btn icon-only" title="كتم / تشغيل الأصوات الهادئة">
+          <span id="sound-icon">🔊</span>
+        </button>
+
+        <!-- Navigator toggle button for mobile -->
+        <button id="btn-open-grid" class="tool-btn icon-only grid-btn" title="جدول الأسئلة">
+          <span>📑</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-layout">
+    <!-- Sidebar: Filters & Question Bank Navigator -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <h2>تصفية الأسئلة</h2>
+          <button id="btn-close-grid" class="close-sidebar-btn" aria-label="إغلاق القائمة">✕</button>
+        </div>
+
+        <!-- Bank / Subject selection -->
+        <div class="filter-section">
+          <label class="filter-label">بنك الأسئلة والموضوع:</label>
+          <div class="bank-list">
+            <button class="bank-chip active" data-bank="all">
+              <span class="chip-title">جميع البنوك (160 سؤال)</span>
+              <span class="chip-count">160</span>
+            </button>
+            <button class="bank-chip" data-bank="1">
+              <span class="chip-title">بنك 1: أساسيات التعلم العميق (DL I)</span>
+              <span class="chip-count">40</span>
+            </button>
+            <button class="bank-chip" data-bank="2">
+              <span class="chip-title">بنك 2: نظرة شاملة في الذكاء الاصطناعي</span>
+              <span class="chip-count">40</span>
+            </button>
+            <button class="bank-chip" data-bank="3">
+              <span class="chip-title">بنك 3: الأسبوع 1 - ماهية الذكاء الاصطناعي</span>
+              <span class="chip-count">40</span>
+            </button>
+            <button class="bank-chip" data-bank="4">
+              <span class="chip-title">بنك 4: الأسبوع 5 - بنى وشبكات CNN</span>
+              <span class="chip-count">40</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Question Type filter -->
+        <div class="filter-section">
+          <label class="filter-label">نوع الأسئلة:</label>
+          <div class="type-pills">
+            <button class="type-pill active" data-type="all">الكل (160)</button>
+            <button class="type-pill" data-type="mcq">اختيار من متعدد (120)</button>
+            <button class="type-pill" data-type="tf">صح أم خطأ (40)</button>
+          </div>
+        </div>
+
+        <!-- Special Filters -->
+        <div class="filter-section">
+          <label class="filter-label">قوائم خاصة:</label>
+          <div class="special-pills">
+            <button class="special-pill" id="filter-bookmarks" data-filter="bookmarks">
+              <span>⭐ المحفوظة</span>
+              <span class="badge" id="count-bookmarks">0</span>
+            </button>
+            <button class="special-pill" id="filter-mistakes" data-filter="mistakes">
+              <span>❌ بنك الأخطاء</span>
+              <span class="badge" id="count-mistakes">0</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-wrap">
+          <input type="text" id="search-input" placeholder="بحث بكلمة (مثال: ReLU, Turing, CNN)..." autocomplete="off">
+          <span class="search-icon">🔍</span>
+          <button id="search-clear" class="search-clear-btn" style="display: none;">✕</button>
+        </div>
+
+        <!-- Exam Controls (Visible in Exam Mode) -->
+        <div class="exam-panel" id="exam-panel" style="display: none;">
+          <div class="exam-header">
+            <h3>إعدادات الاختبار</h3>
+          </div>
+          <div class="exam-settings">
+            <div class="setting-row">
+              <label for="exam-q-count">عدد الأسئلة:</label>
+              <select id="exam-q-count">
+                <option value="10">10 أسئلة سريعة</option>
+                <option value="20">20 سؤال</option>
+                <option value="40" selected>40 سؤال (بنك كامل)</option>
+                <option value="80">80 سؤال</option>
+                <option value="all">كل الأسئلة المتاحة</option>
+              </select>
+            </div>
+            <div class="setting-row">
+              <label for="exam-timer-select">المؤقت الزمني:</label>
+              <select id="exam-timer-select">
+                <option value="0">بدون وقت (غير محدد)</option>
+                <option value="15">15 دقيقة</option>
+                <option value="30" selected>30 دقيقة</option>
+                <option value="60">60 دقيقة</option>
+                <option value="120">120 دقيقة (ساعتان)</option>
+              </select>
+            </div>
+            <div class="setting-row checkbox-row">
+              <label>
+                <input type="checkbox" id="exam-shuffle-toggle" checked>
+                <span>ترتيب عشوائي للأسئلة والخيارات</span>
+              </label>
+            </div>
+            <button id="btn-start-exam" class="btn btn-primary full-width">بدء الاختبار الآن 🚀</button>
+          </div>
+        </div>
+
+        <!-- Questions Grid Navigator -->
+        <div class="grid-section">
+          <div class="grid-section-header">
+            <h3>خريطة الأسئلة (<span id="grid-visible-count">160</span>)</h3>
+            <span class="grid-legend">
+              <span class="legend-dot answered"></span>مُجاب
+              <span class="legend-dot flagged"></span>مُميز
+            </span>
+          </div>
+          <div class="questions-grid" id="questions-grid">
+            <!-- Dynamically populated buttons -->
+          </div>
+        </div>
+
+        <!-- Sidebar footer stats -->
+        <div class="sidebar-stats">
+          <div class="stat-box">
+            <span class="stat-num" id="stat-answered">0</span>
+            <span class="stat-label">تمت الإجابة</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" id="stat-correct">0</span>
+            <span class="stat-label">إجابة صحيحة</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num" id="stat-percentage">0%</span>
+            <span class="stat-label">نسبة النجاح</span>
+          </div>
+        </div>
+
+        <button id="btn-reset-all" class="reset-link-btn">إعادة ضبط التقدم ومسح السجل</button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area: Question Display -->
+    <section class="content-area">
+      <!-- Status Bar above Question -->
+      <div class="status-bar">
+        <div class="status-left">
+          <span class="badge-bank" id="badge-bank">بنك 1: أساسيات التعلم العميق</span>
+          <span class="badge-type" id="badge-type">اختيار من متعدد MCQ</span>
+        </div>
+
+        <!-- Exam Timer (Visible in exam mode when running) -->
+        <div class="timer-box" id="exam-timer-box" style="display: none;">
+          <span class="timer-icon">⏳</span>
+          <span id="timer-display">30:00</span>
+        </div>
+
+        <div class="status-right">
+          <span class="q-progress-text">السؤال <strong id="current-q-index">1</strong> من <span id="total-q-count">160</span></span>
+          <button id="btn-flag" class="flag-btn" title="حفظ السؤال للمراجعة">
+            <span class="flag-icon">⚑</span>
+            <span class="flag-text">حفظ</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Linear Progress Bar -->
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progress-bar-fill" style="width: 1%;"></div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="question-card" id="question-card">
+        <!-- Question Content -->
+        <div class="question-content">
+          <div class="q-number-pill" id="q-code">A1</div>
+          
+          <div class="q-texts">
+            <!-- English Question (Original) -->
+            <h2 class="q-text-en" id="q-text-en">Loading question...</h2>
+            <!-- Arabic Translation -->
+            <p class="q-text-ar" id="q-text-ar">جاري تحميل السؤال...</p>
+          </div>
+        </div>
+
+        <!-- Options Container -->
+        <div class="options-container" id="options-container">
+          <!-- Dynamically generated options -->
+        </div>
+
+        <!-- Explanation Card (Visible in Study Mode after answering, or in Exam Review) -->
+        <div class="explanation-box" id="explanation-box" style="display: none;">
+          <div class="exp-header">
+            <div class="exp-title">
+              <span class="exp-icon" id="exp-status-icon">💡</span>
+              <h3 id="exp-status-title">الشرح والتوضيح العلمي</h3>
+            </div>
+            <div class="exp-tabs">
+              <button class="exp-tab-btn active" id="tab-exp-ar">الشرح بالعربية</button>
+              <button class="exp-tab-btn" id="tab-exp-en">English Explanation</button>
+            </div>
+          </div>
+          
+          <div class="exp-body">
+            <div id="exp-content-ar" class="exp-pane active">
+              <p id="exp-text-ar">الشرح المفصل هنا...</p>
+            </div>
+            <div id="exp-content-en" class="exp-pane" style="display: none;">
+              <p id="exp-text-en">English explanation goes here...</p>
+            </div>
+            <div class="exp-ref" id="exp-reference-wrap">
+              <span class="ref-label">مرجع المحاضرة:</span>
+              <span id="exp-reference" class="ref-text">CS433 Lecture Notes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card Footer / Navigation Buttons -->
+        <div class="card-footer">
+          <div class="nav-actions-left">
+            <button id="btn-prev" class="btn btn-secondary" title="السؤال السابق (سهم يسار)">
+              <span>← السابق</span>
+            </button>
+          </div>
+
+          <div class="card-footer-center">
+            <button id="btn-show-hint" class="btn btn-ghost" title="إظهار مفتاح الإجابة">
+              <span>💡 تلميح</span>
+            </button>
+            <!-- In Exam mode: submit exam button -->
+            <button id="btn-submit-exam" class="btn btn-warning" style="display: none;">
+              <span>تسليم الاختبار وتصحيحه 🏁</span>
+            </button>
+          </div>
+
+          <div class="nav-actions-right">
+            <button id="btn-next" class="btn btn-primary" title="السؤال التالي (سهم يمين)">
+              <span>التالي →</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Keyboard Shortcuts Guide -->
+      <div class="shortcuts-bar">
+        <span>💡 اختصارات لوحة المفاتيح:</span>
+        <span class="shortcut-tag"><kbd>→</kbd> التالي</span>
+        <span class="shortcut-tag"><kbd>←</kbd> السابق</span>
+        <span class="shortcut-tag"><kbd>1-4</kbd> أو <kbd>A-D</kbd> للخيارات</span>
+        <span class="shortcut-tag"><kbd>T</kbd>/<kbd>F</kbd> صح وخطأ</span>
+        <span class="shortcut-tag"><kbd>B</kbd> حفظ السؤال</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Exam Results Modal -->
+  <div class="modal-backdrop" id="modal-exam-results" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>🎉 نتيجة الاختبار</h2>
+        <button class="modal-close" id="btn-close-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="score-summary-card">
+          <div class="score-circle">
+            <span class="score-percent" id="modal-score-percent">85%</span>
+            <span class="score-grade" id="modal-score-grade">ممتاز</span>
+          </div>
+          <div class="score-details-list">
+            <div class="score-detail-item">
+              <span class="label">الدرجة الكلية:</span>
+              <span class="value" id="modal-score-ratio">34 / 40</span>
+            </div>
+            <div class="score-detail-item">
+              <span class="label">الإجابات الصحيحة:</span>
+              <span class="value text-success" id="modal-correct-count">34</span>
+            </div>
+            <div class="score-detail-item">
+              <span class="label">الإجابات الخاطئة:</span>
+              <span class="value text-danger" id="modal-wrong-count">6</span>
+            </div>
+            <div class="score-detail-item">
+              <span class="label">الوقت المستغرق:</span>
+              <span class="value" id="modal-time-spent">18 دقيقة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="results-actions">
+          <button id="btn-review-mistakes" class="btn btn-secondary">
+            <span>مراجعة الأسئلة الخاطئة فقط (❌)</span>
+          </button>
+          <button id="btn-review-all" class="btn btn-outline">
+            <span>مراجعة جميع الإجابات والشروح (📖)</span>
+          </button>
+          <button id="btn-retake-exam" class="btn btn-primary">
+            <span>إعادة الاختبار (🔄)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="quiz_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

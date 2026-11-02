@@ -1,0 +1,4682 @@
+[
+  {
+    "id": 1,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "In the term “deep learning”, what does the word deep refer to?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The large size of the training data set"
+      },
+      {
+        "key": "b",
+        "text": "The long time needed to train the network"
+      },
+      {
+        "key": "c",
+        "text": "The number of layers between the input and the output"
+      },
+      {
+        "key": "d",
+        "text": "The very large values of the weights"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "The number of layers between the input and the output",
+    "explanation": "The term deep describes the depth of the neural network: the number of layers between its input and output. It does not refer to the size of the data set, training time, or magnitude of the weights.",
+    "reference": ""
+  },
+  {
+    "id": 2,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "What is meant by representation learning?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The network learns useful features from raw data by itself, layer by layer"
+      },
+      {
+        "key": "b",
+        "text": "Human experts design features, and a simple algorithm uses them"
+      },
+      {
+        "key": "c",
+        "text": "The network stores the training examples so it can repeat them later"
+      },
+      {
+        "key": "d",
+        "text": "The data is converted into a table before learning starts"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The network learns useful features from raw data by itself, layer by layer",
+    "explanation": "Representation learning means that the network automati- cally discovers useful features from raw input data. Different layers learn increasingly useful representations instead of relying entirely on manually designed features.",
+    "reference": ""
+  },
+  {
+    "id": 3,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Deep networks took off around 2011 for three reasons. Which of the following is not one of them?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Huge labelled data sets from the internet, such as ImageNet"
+      },
+      {
+        "key": "b",
+        "text": "Fast matrix multiplication on graphics cards (GPUs)"
+      },
+      {
+        "key": "c",
+        "text": "Better methods such as ReLU, dropout and batch normalisation"
+      },
+      {
+        "key": "d",
+        "text": "The invention of the backpropagation algorithm in 2011"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "The invention of the backpropagation algorithm in 2011",
+    "explanation": "Backpropagation was not invented in 2011. The rise of deep learning was supported by large data sets, GPU computing, and improved training methods and architectures.",
+    "reference": ""
+  },
+  {
+    "id": 4,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "What event is described in the notes as the turning point for deep learning?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The proposal of the first artificial neuron in 1943"
+      },
+      {
+        "key": "b",
+        "text": "The 2012 ImageNet competition, won by a deep convolutional network"
+      },
+      {
+        "key": "c",
+        "text": "Minsky and Papert’s book on single-layer networks in 1969"
+      },
+      {
+        "key": "d",
+        "text": "The victory of AlphaGo at the game of Go"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The 2012 ImageNet competition, won by a deep convolutional network",
+    "explanation": "The 2012 ImageNet result demonstrated the strong perfor- mance of deep convolutional networks in image classification and is described in the notes as a major turning point.",
+    "reference": ""
+  },
+  {
+    "id": 5,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "A unit has inputs x = (2 ,−1), weights w = (0 .5,1.0), bias b = 0 .5 and ReLU activation. What is its output?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.5"
+      },
+      {
+        "key": "b",
+        "text": "0"
+      },
+      {
+        "key": "c",
+        "text": "1.5"
+      },
+      {
+        "key": "d",
+        "text": "−0.5"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.5",
+    "explanation": "First calculate the weighted sum: z = (2)(0.5) + (−1)(1.0) + 0.5 = 1 − 1 + 0.5 = 0.5. ReLU is max (0,z ), so the output is max (0,0.5) = 0.5.",
+    "reference": ""
+  },
+  {
+    "id": 6,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "What is the role of the bias b in a unit?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It decides how important each input is"
+      },
+      {
+        "key": "b",
+        "text": "It sets the size of each gradient-descent step"
+      },
+      {
+        "key": "c",
+        "text": "It shifts the point at which the unit “switches on”"
+      },
+      {
+        "key": "d",
+        "text": "It switches the unit off at random during training"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "It shifts the point at which the unit “switches on”",
+    "explanation": "The bias is added to the weighted sum, z = w · x + b. It shifts the activation threshold. The weights determine how strongly individual inputs contribute.",
+    "reference": ""
+  },
+  {
+    "id": 7,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "What is the output range of the tanh activation function?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0 to 1"
+      },
+      {
+        "key": "b",
+        "text": "0 to ∞"
+      },
+      {
+        "key": "c",
+        "text": "0 to 1, summing to 1"
+      },
+      {
+        "key": "d",
+        "text": "−1 to 1"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "−1 to 1",
+    "explanation": "The hyperbolic tangent function, tanh(z), produces values in the interval [−1,1].",
+    "reference": ""
+  },
+  {
+    "id": 8,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "Which activation function is used at the output of a multi-class classifier?",
+    "options": [
+      {
+        "key": "a",
+        "text": "ReLU"
+      },
+      {
+        "key": "b",
+        "text": "Softmax"
+      },
+      {
+        "key": "c",
+        "text": "tanh"
+      },
+      {
+        "key": "d",
+        "text": "Sigmoid"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Softmax",
+    "explanation": "Softmax converts the class logits into probabilities between 0 and 1 whose sum is 1, making it suitable for multi-class classification.",
+    "reference": ""
+  },
+  {
+    "id": 9,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "Why is ReLU the default activation for hidden layers today?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Its output always lies between 0 and 1"
+      },
+      {
+        "key": "b",
+        "text": "It gives probabilities that sum to 1"
+      },
+      {
+        "key": "c",
+        "text": "It is cheap to compute and its slope is exactly 1 for every positive input"
+      },
+      {
+        "key": "d",
+        "text": "Its slope is at most 0.25, which keeps the gradients small"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "It is cheap to compute and its slope is exactly 1 for every positive input",
+    "explanation": "ReLU is computationally inexpensive. For positive inputs its derivative is 1, which helps gradients pass through deep networks without the system- atic shrinking associated with sigmoid activations.",
+    "reference": ""
+  },
+  {
+    "id": 10,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "What happens if we remove the activation functions and stack many linear layers?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The whole network is still just one linear function"
+      },
+      {
+        "key": "b",
+        "text": "The network can learn any curved decision boundary"
+      },
+      {
+        "key": "c",
+        "text": "The network trains faster and generalises better"
+      },
+      {
+        "key": "d",
+        "text": "The network can learn XOR but not other problems"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The whole network is still just one linear function",
+    "explanation": "A composition of linear functions is itself a linear function. Therefore, stacking linear layers without non-linear activations does not increase the network’s ability to represent non-linear decision boundaries.",
+    "reference": ""
+  },
+  {
+    "id": 11,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "Which problem did Minsky and Papert use in 1969 to show the limits of single- layer networks?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Handwritten digit recognition"
+      },
+      {
+        "key": "b",
+        "text": "Face recognition"
+      },
+      {
+        "key": "c",
+        "text": "House-price prediction"
+      },
+      {
+        "key": "d",
+        "text": "XOR"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "XOR",
+    "explanation": "The XOR problem is not linearly separable. A single-layer perceptron cannot represent its decision boundary, illustrating the limitations of single- layer networks.",
+    "reference": ""
+  },
+  {
+    "id": 12,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "In a feedforward network, which layer does no computation?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The first hidden layer"
+      },
+      {
+        "key": "b",
+        "text": "The input layer"
+      },
+      {
+        "key": "c",
+        "text": "The output layer"
+      },
+      {
+        "key": "d",
+        "text": "The last hidden layer"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The input layer",
+    "explanation": "The input layer receives and passes the input values to the next layer. The weighted sums and activation computations are performed by subse- quent layers.",
+    "reference": ""
+  },
+  {
+    "id": 13,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "A network takes a 28 × 28 image (784 pixels), has one hidden layer of 128 units and outputs 10 classes. How many parameters does it have?",
+    "options": [
+      {
+        "key": "a",
+        "text": "100,480"
+      },
+      {
+        "key": "b",
+        "text": "1,290"
+      },
+      {
+        "key": "c",
+        "text": "101,770"
+      },
+      {
+        "key": "d",
+        "text": "101,632"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "101,770",
+    "explanation": "For a fully connected layer, parameters equal weights plus biases. Input-to-hidden: 784×128+128 = 100 ,480. Hidden-to-output: 128×10+10 = 1,290. Total: 100,480 + 1,290 = 101,770.",
+    "reference": ""
+  },
+  {
+    "id": 14,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "How many parameters does a fully connected network with layers 100 → 50 → 10 have?",
+    "options": [
+      {
+        "key": "a",
+        "text": "5,560"
+      },
+      {
+        "key": "b",
+        "text": "5,500"
+      },
+      {
+        "key": "c",
+        "text": "5,050"
+      },
+      {
+        "key": "d",
+        "text": "5,060"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "5,560",
+    "explanation": "For the first layer: 100 × 50 + 50 = 5 ,050. For the second layer: 50 × 10 + 10 = 510 . Total parameters: 5,050 + 510 = 5 ,560. 50 × 10ﻭﺯﻥﻭ 100 × 50ﺍܳޚٴگ۰ﺍ ﺍڤ",
+    "reference": ""
+  },
+  {
+    "id": 15,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "What does the universal approximation theorem say?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Any network with ReLU units will reach zero training loss"
+      },
+      {
+        "key": "b",
+        "text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like"
+      },
+      {
+        "key": "c",
+        "text": "Deep networks always need fewer training examples than shallow ones"
+      },
+      {
+        "key": "d",
+        "text": "Gradient descent always finds the global minimum of the loss"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like",
+    "explanation": "The universal approximation theorem states that a suffi- ciently wide network with one hidden layer can approximate continuous functions to arbitrary accuracy under the theorem’s conditions. It does not guarantee successful training or a global minimum.",
+    "reference": ""
+  },
+  {
+    "id": 16,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "In the forward-pass example, the input is x = (1 ,2) and hidden unit h2 has weights (−1,0.5), bias 0.5 and ReLU activation. What is the value of h2?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0"
+      },
+      {
+        "key": "b",
+        "text": "1.0"
+      },
+      {
+        "key": "c",
+        "text": "1.5"
+      },
+      {
+        "key": "d",
+        "text": "0.5"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.5",
+    "explanation": "Compute z = (1)(−1) + (2)(0.5) + 0.5 = −1 + 1 + 0.5 = 0 .5. Applying ReLU gives h2 = max(0,0.5) = 0.5.",
+    "reference": ""
+  },
+  {
+    "id": 17,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "In the same example, h1 = 1 .0 and h2 = 0 .5. The sigmoid output unit has weights (1,−2) and bias 0.5. What is ˆy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.50"
+      },
+      {
+        "key": "b",
+        "text": "0.73"
+      },
+      {
+        "key": "c",
+        "text": "0.62"
+      },
+      {
+        "key": "d",
+        "text": "0.38"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "0.62",
+    "explanation": "The output logit is z = (1)(1.0)+(−2)(0.5)+0.5 = 1 −1+0.5 = 0.5. The sigmoid gives σ(0.5) = 1/(1 + e−0.5) ≈ 0.622, so the closest option is 0.62.",
+    "reference": ""
+  },
+  {
+    "id": 18,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "For a binary (yes/no) classification task, which output layer and loss should be used?",
+    "options": [
+      {
+        "key": "a",
+        "text": "One sigmoid unit with binary cross-entropy"
+      },
+      {
+        "key": "b",
+        "text": "One linear unit with mean squared error"
+      },
+      {
+        "key": "c",
+        "text": "Softmax over K units with categorical cross-entropy"
+      },
+      {
+        "key": "d",
+        "text": "One ReLU unit with mean squared error"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "One sigmoid unit with binary cross-entropy",
+    "explanation": "A binary classifier uses one sigmoid output to represent the probability of the positive class and binary cross-entropy to measure the prediction error.",
+    "reference": ""
+  },
+  {
+    "id": 19,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "True prices are (3, 5, 2) and the predictions are (2.5, 5.5, 2). What is the mean squared error?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.5"
+      },
+      {
+        "key": "b",
+        "text": "0.333"
+      },
+      {
+        "key": "c",
+        "text": "0.25"
+      },
+      {
+        "key": "d",
+        "text": "0.167"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.167",
+    "explanation": "The squared errors are (3 − 2.5)2 = 0.25, (5 − 5.5)2 = 0.25, and (2 − 2)2 = 0. Thus, MSE = (0.25 + 0.25 + 0)/3 = 0 .5/3 ≈ 0.167.",
+    "reference": ""
+  },
+  {
+    "id": 20,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "A3-classnetworkoutputslogits z = (2.0,1.0,0.1). Given e2.0 = 7.389, e1.0 = 2.718 and e0.1 = 1.105, what is the softmax probability of class 1?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.242"
+      },
+      {
+        "key": "b",
+        "text": "0.659"
+      },
+      {
+        "key": "c",
+        "text": "0.667"
+      },
+      {
+        "key": "d",
+        "text": "0.099"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "0.659",
+    "explanation": "For class 1, softmax is e2.0/(e2.0+e1.0+e0.1). Substituting the values gives 7.389/(7.389 + 2.718 + 1.105) = 7.389/11.212 ≈ 0.659.",
+    "reference": ""
+  },
+  {
+    "id": 21,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "A classifier gives the correct class a probability of 0.1. What is the cross- entropy loss?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.105"
+      },
+      {
+        "key": "b",
+        "text": "0.9"
+      },
+      {
+        "key": "c",
+        "text": "2.303"
+      },
+      {
+        "key": "d",
+        "text": "0.1"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "2.303",
+    "explanation": "For a correct class probability p, the cross-entropy loss for one example is −log(p). Therefore, −log(0.1) ≈ 2.303.",
+    "reference": ""
+  },
+  {
+    "id": 22,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "Which rule is the gradient-descent update for a weight w with learning rate η?",
+    "options": [
+      {
+        "key": "a",
+        "text": "w ← w − η ,∂L /∂w"
+      },
+      {
+        "key": "b",
+        "text": "w ← w + η ,∂L /∂w"
+      },
+      {
+        "key": "c",
+        "text": "w ← η ,∂L /∂w"
+      },
+      {
+        "key": "d",
+        "text": "w ← w − ∂L/∂η"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "w ← w − η ,∂L /∂w",
+    "explanation": "Gradient descent updates a parameter by subtracting the learning rate multiplied by the loss gradient. The negative sign moves the parameter in the direction that locally decreases the loss.",
+    "reference": ""
+  },
+  {
+    "id": 23,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What is an epoch?",
+    "options": [
+      {
+        "key": "a",
+        "text": "One update of the weights"
+      },
+      {
+        "key": "b",
+        "text": "A small random group of examples, such as 32 or 128"
+      },
+      {
+        "key": "c",
+        "text": "The size of each gradient-descent step"
+      },
+      {
+        "key": "d",
+        "text": "One pass through the whole training set"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "One pass through the whole training set",
+    "explanation": "An epoch is one complete pass through all training examples. It usually consists of multiple mini-batches and parameter updates.",
+    "reference": ""
+  },
+  {
+    "id": 24,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "Backpropagation is best described as:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trying all combinations of weights and keeping the best"
+      },
+      {
+        "key": "b",
+        "text": "The chain rule of calculus, applied systematically from the output back to the input"
+      },
+      {
+        "key": "c",
+        "text": "Randomly switching off hidden units during training"
+      },
+      {
+        "key": "d",
+        "text": "Adding a penalty for large weights to the loss"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The chain rule of calculus, applied systematically from the output back to the input",
+    "explanation": "Backpropagation applies the chain rule through the network’s computation graph, propagating derivatives from the output toward earlier layers to calculate gradients for the parameters.",
+    "reference": ""
+  },
+  {
+    "id": 25,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "In the training step on one neuron ( x = 2 , y = 1 , w = 0 .5, b = 0 , sigmoid, cross-entropy), the forward pass gives a = 0 .731. Using ∂L/∂z = a − y, what is ∂L/∂w?",
+    "options": [
+      {
+        "key": "a",
+        "text": "−0.269"
+      },
+      {
+        "key": "b",
+        "text": "0.538"
+      },
+      {
+        "key": "c",
+        "text": "−0.538"
+      },
+      {
+        "key": "d",
+        "text": "1.462"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "−0.538",
+    "explanation": "First, ∂L/∂z = a − y = 0 .731 − 1 = −0.269. Since z = wx+b, the chain rule gives ∂L/∂w = (∂L/∂z)(∂z/∂w) = (−0.269)(x) = (−0.269)(2) =",
+    "reference": ""
+  },
+  {
+    "id": 26,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "Continuing A25 with learning rate η = 0.5, what is the new value of w?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.769"
+      },
+      {
+        "key": "b",
+        "text": "0.231"
+      },
+      {
+        "key": "c",
+        "text": "1.038"
+      },
+      {
+        "key": "d",
+        "text": "0.634"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.769",
+    "explanation": "Use wnew = wold − η(∂L/∂w). Therefore, wnew = 0 .5 − 0.5(−0.538) = 0.5 + 0.269 = 0.769.",
+    "reference": ""
+  },
+  {
+    "id": 27,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "The sigmoid’s slope is at most 0.25. In a 10-layer sigmoid network, how small can the gradient reaching the first layer be?",
+    "options": [
+      {
+        "key": "a",
+        "text": "About 2.5"
+      },
+      {
+        "key": "b",
+        "text": "About 0.025"
+      },
+      {
+        "key": "c",
+        "text": "About 0.000001"
+      },
+      {
+        "key": "d",
+        "text": "Exactly 0"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "About 0.000001",
+    "explanation": "In the worst shrinking case, the gradient is multiplied by a factor no larger than 0.25 at each of 10 layers: 0.2510 ≈ 9.54 × 10−7, which is about 0.000001. This illustrates vanishing gradients.",
+    "reference": ""
+  },
+  {
+    "id": 28,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "How is the problem of exploding gradients controlled?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Using sigmoid activations"
+      },
+      {
+        "key": "b",
+        "text": "Setting all initial weights equal"
+      },
+      {
+        "key": "c",
+        "text": "Removing the bias terms"
+      },
+      {
+        "key": "d",
+        "text": "Gradient clipping"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Gradient clipping",
+    "explanation": "Gradient clipping limits the magnitude of gradients when they become excessively large, helping prevent unstable updates caused by exploding gradients. Clipping Gradientﺍڤ",
+    "reference": ""
+  },
+  {
+    "id": 29,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "What is special about the Adam optimiser?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It uses the same fixed step size for every weight"
+      },
+      {
+        "key": "b",
+        "text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares"
+      },
+      {
+        "key": "c",
+        "text": "It computes the loss over the whole training set before every step"
+      },
+      {
+        "key": "d",
+        "text": "It switches off hidden units with probability p"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares",
+    "explanation": "Adam combines running estimates of the first moment (the gradient) and second moment (the squared gradient) to adapt parameter updates. This gives each parameter an adaptive effective step size.",
+    "reference": ""
+  },
+  {
+    "id": 30,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "Which statement about dropout is correct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "During training each hidden unit is switched off with probability p, and at test time all units are used"
+      },
+      {
+        "key": "b",
+        "text": "Units are switched off at test time to make predictions faster"
+      },
+      {
+        "key": "c",
+        "text": "It removes the weights with the largest values after training"
+      },
+      {
+        "key": "d",
+        "text": "It stops training when the validation loss starts to rise"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "During training each hidden unit is switched off with probability p, and at test time all units are used",
+    "explanation": "Dropout randomly disables units during training to reduce co- adaptation and overfitting. At test time, the full network is used, with the appropriate scaling handled by the dropout implementation.",
+    "reference": "2 Part B – True or False"
+  },
+  {
+    "id": 31,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "The first artificial neuron was proposed by McCulloch and Pitts in 1943.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "McCulloch and Pitts proposed an early mathematical model of an artificial neuron in 1943.",
+    "reference": ""
+  },
+  {
+    "id": 32,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "In a feedforward network, information can flow in loops from the output back to the input during the forward pass.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "In a feedforward network, information flows from the input toward the output without loops during the forward pass.",
+    "explanation": "Correct Statement: In a feedforward network, information flows from the input toward the output without loops during the forward pass.\n\nExplanation: A feedforward network passes information in one direction, from input through hidden layers to output. Feedback loops are not part of the feed- forward computation.",
+    "reference": ""
+  },
+  {
+    "id": 33,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "The cross-entropy loss is 0 when the network gives the correct class a proba- bility of 0.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "The cross-entropy loss becomes very large (tends to infinity) when the correct class is assigned a probability of 0; it is 0 when that probability is 1.",
+    "explanation": "Correct Statement: The cross-entropy loss becomes very large (tends to infinity) when the correct class is assigned a probability of 0; it is 0 when that probability is 1.\n\nExplanation: For the correct class, cross-entropy is −log(p). At p = 0, the loss tends to infinity; at p = 1, it equals zero.",
+    "reference": ""
+  },
+  {
+    "id": 34,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Mini-batch gradients are noisy, but the noise can help the network escape poor regions of the loss landscape.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "A mini-batch estimates the gradient using only a subset of the training data, so its gradient can be noisy. This noise can sometimes help optimisation move out of poor regions or shallow local structures.",
+    "reference": ""
+  },
+  {
+    "id": 35,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "The backward pass of backpropagation costs far more than the forward pass, which is why it cannot be used for networks with billions of weights.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Backpropagation is computationally practical because the backward pass has a cost of the same general order as the forward pass; it is routinely used to train large neural networks.",
+    "explanation": "Correct Statement: Backpropagation is computationally practical because the backward pass has a cost of the same general order as the forward pass; it is routinely used to train large neural networks.\n\nExplanation: Backpropagation efficiently computes gradients by reusing intermediate values from the forward computation. The backward pass is not pro- hibitively more expensive than the forward pass, so large networks can be trained with it.",
+    "reference": ""
+  },
+  {
+    "id": 36,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "If all the weights in a layer started with the same value, all the units in that layer would compute the same thing and learn the same thing.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "Identical initial weights create symmetry: units receiving the same inputs produce the same outputs and gradients, so they remain identical instead of learning different features. This is why suitable random initialisation is important.",
+    "reference": ""
+  },
+  {
+    "id": 37,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "Batch normalisation re-scales the values inside the network for each mini- batch to mean 0 and variance 1, followed by a learned scale and shift.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "Batch normalisation normalises activations using the mini- batch mean and variance, then applies learned scale and shift parameters.",
+    "reference": ""
+  },
+  {
+    "id": 38,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "The test set should be checked after every epoch to decide when to stop train- ing.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "The validation set should be monitored during training to decide when to stop; the test set should be reserved for final evaluation.",
+    "explanation": "Correct Statement: The validation set should be monitored during training to decide when to stop; the test set should be reserved for final evaluation.\n\nExplanation: Repeatedly using the test set to make training decisions leaks information from the test data into model development. Early stopping should monitor validation performance, while the test set is kept for an unbiased final evalu- ation.",
+    "reference": "stopping."
+  },
+  {
+    "id": 39,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Weight decay (L2 regularisation) adds the penalty λ∑ i w2 i to the loss to keep the weights small.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "L2 regularisation adds a penalty proportional to the sum of squared weights. This discourages excessively large weights and can reduce overfit- ting.",
+    "reference": ""
+  },
+  {
+    "id": 40,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "In early stopping, training is stopped when the training loss starts to rise.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "In early stopping, training is stopped when the validation loss stops improving (or begins to rise), according to the chosen patience rule.",
+    "explanation": "Correct Statement: In early stopping, training is stopped when the validation loss stops improving (or begins to rise), according to the chosen patience rule.\n\nExplanation: Training loss may continue to decrease while the model over- fits. Early stopping therefore monitors validation loss and stops when validation per- formance no longer improves.",
+    "reference": ""
+  },
+  {
+    "id": 41,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "Which of the four approaches to AI does the textbook adopt?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking humanly"
+      },
+      {
+        "key": "b",
+        "text": "Acting rationally"
+      },
+      {
+        "key": "c",
+        "text": "Acting humanly"
+      },
+      {
+        "key": "d",
+        "text": "Thinking rationally"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Acting rationally",
+    "explanation": "The textbook adopts the rational-agent approach. It defines AI around agents that choose actions to maximise the expected value of their perfor- mance measure.",
+    "reference": "model."
+  },
+  {
+    "id": 42,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "The Turing test (1950) belongs to which approach to AI?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking rationally"
+      },
+      {
+        "key": "b",
+        "text": "Thinking humanly"
+      },
+      {
+        "key": "c",
+        "text": "Acting rationally"
+      },
+      {
+        "key": "d",
+        "text": "Acting humanly"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Acting humanly",
+    "explanation": "The Turing test evaluates whether a machine can behave in conversation in a way that is indistinguishable from a human. It is therefore part of the acting-humanly approach.",
+    "reference": ""
+  },
+  {
+    "id": 43,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Under the standard model, a rational agent chooses the action that:",
+    "options": [
+      {
+        "key": "a",
+        "text": "maximises the expected value of its performance measure, given what it has per- ceived so far"
+      },
+      {
+        "key": "b",
+        "text": "is guaranteed to give the best actual outcome"
+      },
+      {
+        "key": "c",
+        "text": "most closely copies what a human would do"
+      },
+      {
+        "key": "d",
+        "text": "follows from Aristotle’s syllogisms"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "maximises the expected value of its performance measure, given what it has per- ceived so far",
+    "explanation": "The standard model defines rational action as maximising expected performance based on the percept history available to the agent. Rationality does not require knowing or guaranteeing the actual future outcome.",
+    "reference": ""
+  },
+  {
+    "id": 44,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "The danger that a machine pursuing a fixed objective does harm because the objective is slightly wrong is called:",
+    "options": [
+      {
+        "key": "a",
+        "text": "the combinatorial explosion"
+      },
+      {
+        "key": "b",
+        "text": "the curse of dimensionality"
+      },
+      {
+        "key": "c",
+        "text": "the value alignment problem"
+      },
+      {
+        "key": "d",
+        "text": "the frame problem"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "the value alignment problem",
+    "explanation": "The value alignment problem concerns the risk that a ma- chine optimising a specified objective may cause harm if that objective does not accu- rately reflect human values or intentions.",
+    "reference": ""
+  },
+  {
+    "id": 45,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "In which year did the Dartmouth workshop give the field of AI its name?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1943"
+      },
+      {
+        "key": "b",
+        "text": "1956"
+      },
+      {
+        "key": "c",
+        "text": "1969"
+      },
+      {
+        "key": "d",
+        "text": "1986"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "1956",
+    "explanation": "The Dartmouth workshop took place in 1956 and is identified in the historical timeline as the event that named the field of artificial intelligence.",
+    "reference": ""
+  },
+  {
+    "id": 46,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "According to the notes, an agent is made of:",
+    "options": [
+      {
+        "key": "a",
+        "text": "architecture + program"
+      },
+      {
+        "key": "b",
+        "text": "sensors + critic"
+      },
+      {
+        "key": "c",
+        "text": "percepts + goals"
+      },
+      {
+        "key": "d",
+        "text": "knowledge base + utility"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "architecture + program",
+    "explanation": "An agent program implements the agent function and runs on a physical architecture. The notes summarise this as agent = architecture + program.",
+    "reference": ""
+  },
+  {
+    "id": 47,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "Rationality depends on four things. Which of the following is NOT one of them?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The performance measure"
+      },
+      {
+        "key": "b",
+        "text": "The agent’s prior knowledge"
+      },
+      {
+        "key": "c",
+        "text": "The percept sequence so far"
+      },
+      {
+        "key": "d",
+        "text": "Knowing the actual outcome of every action in advance"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Knowing the actual outcome of every action in advance",
+    "explanation": "Rationality depends on the performance measure, prior knowledge, available actions, and the percept sequence so far. It does not require foreknowledge of the actual outcome of every action.",
+    "reference": ""
+  },
+  {
+    "id": 48,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "In the PEAS description of the automated taxi, “steering, accelerator, brake, signal, horn” are the:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Performance measure"
+      },
+      {
+        "key": "b",
+        "text": "Environment"
+      },
+      {
+        "key": "c",
+        "text": "Actuators"
+      },
+      {
+        "key": "d",
+        "text": "Sensors"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Actuators",
+    "explanation": "Actuators are the mechanisms through which an agent acts on its environment. Steering, accelerator, brake, signal, and horn are outputs used by the taxi to act.",
+    "reference": ""
+  },
+  {
+    "id": 49,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "In the table of environment dimensions, poker is given as an example of an environment that is:",
+    "options": [
+      {
+        "key": "a",
+        "text": "partially observable"
+      },
+      {
+        "key": "b",
+        "text": "deterministic"
+      },
+      {
+        "key": "c",
+        "text": "single-agent"
+      },
+      {
+        "key": "d",
+        "text": "static"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "partially observable",
+    "explanation": "Poker is partially observable because each player cannot see the other players’ private cards. The agent must make decisions with incomplete information.",
+    "reference": ""
+  },
+  {
+    "id": 50,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "Which agent program fails when the right action depends on history?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Utility-based agent"
+      },
+      {
+        "key": "b",
+        "text": "Simple reflex agent"
+      },
+      {
+        "key": "c",
+        "text": "Goal-based agent"
+      },
+      {
+        "key": "d",
+        "text": "Model-based reflex agent"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Simple reflex agent",
+    "explanation": "A simple reflex agent selects actions using only the current percept and condition–action rules. It has no internal state for remembering relevant history, so it can fail when past percepts matter.",
+    "reference": ""
+  },
+  {
+    "id": 51,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "In a learning agent, which component gives feedback on how well the agent is doing?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The performance element"
+      },
+      {
+        "key": "b",
+        "text": "The problem generator"
+      },
+      {
+        "key": "c",
+        "text": "The actuator"
+      },
+      {
+        "key": "d",
+        "text": "The critic"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "The critic",
+    "explanation": "The critic evaluates the agent’s behaviour against a perfor- mance standard and provides feedback to the learning element.",
+    "reference": ""
+  },
+  {
+    "id": 52,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "In a factored representation, a state is:",
+    "options": [
+      {
+        "key": "a",
+        "text": "an indivisible label"
+      },
+      {
+        "key": "b",
+        "text": "a set of objects and the relations among them"
+      },
+      {
+        "key": "c",
+        "text": "a vector of variable values"
+      },
+      {
+        "key": "d",
+        "text": "a single number giving its utility"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "a vector of variable values",
+    "explanation": "A factored representation describes a state using a collection of variables, with each state represented by the values assigned to those variables.",
+    "reference": ""
+  },
+  {
+    "id": 53,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "Which of the following is NOT one of the five parts of a search problem?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The initial state"
+      },
+      {
+        "key": "b",
+        "text": "A heuristic function"
+      },
+      {
+        "key": "c",
+        "text": "The transition model Result(s,a)"
+      },
+      {
+        "key": "d",
+        "text": "The goal test"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A heuristic function",
+    "explanation": "The five components of a search problem are the initial state, actions, transition model, goal test, and path-cost function. A heuristic function can guide informed search, but it is not one of the five basic components.",
+    "reference": ""
+  },
+  {
+    "id": 54,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "What is the space complexity of depth-first search, with branching factor b and maximum depth m?",
+    "options": [
+      {
+        "key": "a",
+        "text": "O(bm)"
+      },
+      {
+        "key": "b",
+        "text": "O(bm)"
+      },
+      {
+        "key": "c",
+        "text": "O(bd)"
+      },
+      {
+        "key": "d",
+        "text": "O(bd)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "O(bm)",
+    "explanation": "Depth-first search stores the current path and the unexplored siblings along that path. Its standard space complexity isO(bm), whereb is the branch- ing factor andm is the maximum depth. DFS ሒᇭﺍڤ",
+    "reference": ""
+  },
+  {
+    "id": 55,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "In the Romania A* example, Sibiu has g = 140 and h = 253. What is its f value?",
+    "options": [
+      {
+        "key": "a",
+        "text": "113"
+      },
+      {
+        "key": "b",
+        "text": "253"
+      },
+      {
+        "key": "c",
+        "text": "393"
+      },
+      {
+        "key": "d",
+        "text": "447"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "393",
+    "explanation": "A* evaluates a node usingf(n) = g(n) + h(n). Therefore, f(Sibiu) = 140 + 253 = 393 .",
+    "reference": ""
+  },
+  {
+    "id": 56,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "How long is the optimal route from Arad to Bucharest that A* finds?",
+    "options": [
+      {
+        "key": "a",
+        "text": "393 km"
+      },
+      {
+        "key": "b",
+        "text": "450 km"
+      },
+      {
+        "key": "c",
+        "text": "449 km"
+      },
+      {
+        "key": "d",
+        "text": "418 km"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "418 km",
+    "explanation": "The optimal route found by A* is Arad–Sibiu–Rimnicu Vilcea– Pitesti–Bucharest, with a total distance of 418 km. The 450 km route is the one found by greedy best-first search in the notes.",
+    "reference": ""
+  },
+  {
+    "id": 57,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "A heuristic h(n) is admissible if it:",
+    "options": [
+      {
+        "key": "a",
+        "text": "is always equal to zero"
+      },
+      {
+        "key": "b",
+        "text": "never overestimates the true cost to reach a goal"
+      },
+      {
+        "key": "c",
+        "text": "always overestimates the true cost to reach a goal"
+      },
+      {
+        "key": "d",
+        "text": "is learned from data"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "never overestimates the true cost to reach a goal",
+    "explanation": "An admissible heuristic is optimistic: its estimated cost to the goal is never greater than the true minimum remaining cost. This property supports A* optimality under the relevant search conditions.",
+    "reference": ""
+  },
+  {
+    "id": 58,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "When actions are nondeterministic, Chapter 4 uses AND–OR search. What form does a solution take?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A contingency plan (if–then)"
+      },
+      {
+        "key": "b",
+        "text": "A single fixed sequence of actions"
+      },
+      {
+        "key": "c",
+        "text": "A set of belief states"
+      },
+      {
+        "key": "d",
+        "text": "A gradient vector"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "A contingency plan (if–then)",
+    "explanation": "With nondeterministic actions, one action can lead to sev- eral possible outcomes. An AND–OR solution therefore specifies what to do for each possible outcome, forming a contingency plan.",
+    "reference": ""
+  },
+  {
+    "id": 59,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "In backtracking search for CSPs, the minimum-remaining-values heuristic:",
+    "options": [
+      {
+        "key": "a",
+        "text": "tries the friendliest value first"
+      },
+      {
+        "key": "b",
+        "text": "breaks ties by the most constraints"
+      },
+      {
+        "key": "c",
+        "text": "chooses the most constrained variable"
+      },
+      {
+        "key": "d",
+        "text": "chooses variables in random order"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "chooses the most constrained variable",
+    "explanation": "Minimum Remaining Values (MRV) selects the unassigned variable with the fewest legal values remaining. This is the most constrained variable and helps expose failure early.",
+    "reference": ""
+  },
+  {
+    "id": 60,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "In the minimax example, the left MIN node sees 3 and 12, and the right MIN node’s first child is 2. What is the value of the root?",
+    "options": [
+      {
+        "key": "a",
+        "text": "2"
+      },
+      {
+        "key": "b",
+        "text": "12"
+      },
+      {
+        "key": "c",
+        "text": "0"
+      },
+      {
+        "key": "d",
+        "text": "3"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "3",
+    "explanation": "The left MIN node returns min(3,12) = 3. The right MIN node has a child with value 2, so its value cannot exceed 2. The root is a MAX node and therefore selects max(3,right MIN value) = 3.",
+    "reference": ""
+  },
+  {
+    "id": 61,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "With perfect move ordering, α-β pruning examines about how many nodes?",
+    "options": [
+      {
+        "key": "a",
+        "text": "O(bm/2)"
+      },
+      {
+        "key": "b",
+        "text": "O(bm)"
+      },
+      {
+        "key": "c",
+        "text": "O(bm)"
+      },
+      {
+        "key": "d",
+        "text": "O(2m)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "O(bm/2)",
+    "explanation": "With ideal move ordering, alpha–beta pruning reduces the effective search depth roughly by half. Its best-case number of examined nodes is commonly expressed asO(bm/2).",
+    "reference": ""
+  },
+  {
+    "id": 62,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "KB |= α holds exactly when:",
+    "options": [
+      {
+        "key": "a",
+        "text": "KB ∧ α is unsatisfiable"
+      },
+      {
+        "key": "b",
+        "text": "KB ∧ ¬α is unsatisfiable"
+      },
+      {
+        "key": "c",
+        "text": "α is true in at least one model ofKB"
+      },
+      {
+        "key": "d",
+        "text": "KB ⇒ α is unsatisfiable"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "KB ∧ ¬α is unsatisfiable",
+    "explanation": "Knowledge baseKB entails α if every model satisfyingKB also satisfiesα. Equivalently, there is no model in whichKB is true andα is false; hence KB ∧ ¬α is unsatisfiable.",
+    "reference": ""
+  },
+  {
+    "id": 63,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What is Unify(Knows(John, x), Knows(y, Bill))?",
+    "options": [
+      {
+        "key": "a",
+        "text": "{x/John, y /Bill}"
+      },
+      {
+        "key": "b",
+        "text": "{x/y}"
+      },
+      {
+        "key": "c",
+        "text": "{x/Bill, y /John}"
+      },
+      {
+        "key": "d",
+        "text": "No unifier exists"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "{x/Bill, y /John}",
+    "explanation": "To unify the two expressions, match corresponding argu- ments. The first arguments requirey = John, and the second requirex = Bill. Thus the substitution is{y/John, x /Bill}, which corresponds to option (c), not option (a).",
+    "reference": ""
+  },
+  {
+    "id": 64,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "In the meningitis example, P(s | m) = 0 .7, P(m) = 1/50 ,000 and P(s) = 0 .01. What is P(m | s)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.7"
+      },
+      {
+        "key": "b",
+        "text": "0.07"
+      },
+      {
+        "key": "c",
+        "text": "0.014"
+      },
+      {
+        "key": "d",
+        "text": "0.0014"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.0014",
+    "explanation": "By Bayes’ rule, P(m | s) = P(s | m)P(m) P(s) = 0.7 × (1/50,000) 0.01 = 0.000014 0.01 = 0.0014.",
+    "reference": ""
+  },
+  {
+    "id": 65,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "How many numbers does the burglary Bayesian network (five Boolean vari- ables) need, compared with the full joint table?",
+    "options": [
+      {
+        "key": "a",
+        "text": "5 versus 32"
+      },
+      {
+        "key": "b",
+        "text": "10 versus 31"
+      },
+      {
+        "key": "c",
+        "text": "31 versus 10"
+      },
+      {
+        "key": "d",
+        "text": "10 versus 25"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "10 versus 31",
+    "explanation": "A full joint distribution over five Boolean variables has25 = 32 entries, but one is determined by the requirement that probabilities sum to 1, leaving 31 independent numbers. In the burglary network, the conditional probability tables require 10 numbers, exploiting conditional independence.",
+    "reference": "sentations."
+  },
+  {
+    "id": 66,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "Which algorithm computes the most likely explanation argmax x1:t P(x1:t | e1:t) in a temporal model?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Viterbi"
+      },
+      {
+        "key": "b",
+        "text": "The forward algorithm"
+      },
+      {
+        "key": "c",
+        "text": "Forward–backward"
+      },
+      {
+        "key": "d",
+        "text": "Value iteration"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Viterbi",
+    "explanation": "The Viterbi algorithm finds the most probable sequence of hidden states given the observations. The forward algorithm computes filtering prob- abilities, while forward–backward computes smoothed state probabilities.",
+    "reference": "els."
+  },
+  {
+    "id": 67,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "In the prisoner’s dilemma, both prisoners testifying is:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Pareto optimal but not a Nash equilibrium"
+      },
+      {
+        "key": "b",
+        "text": "neither a Nash equilibrium nor a dominant strategy"
+      },
+      {
+        "key": "c",
+        "text": "worse for Ali than refusing, whatever Bo does"
+      },
+      {
+        "key": "d",
+        "text": "a Nash equilibrium but not Pareto optimal"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "a Nash equilibrium but not Pareto optimal",
+    "explanation": "Testifying is a dominant strategy for each prisoner, so both testifying is a Nash equilibrium: neither can improve by changing strategy alone. How- ever, both refusing gives each a better outcome, so the equilibrium is not Pareto opti- mal.",
+    "reference": ""
+  },
+  {
+    "id": 68,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "In the restaurant problem, what is the information gain of splitting on Patrons?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0 bits"
+      },
+      {
+        "key": "b",
+        "text": "1 bit"
+      },
+      {
+        "key": "c",
+        "text": "about 0.541 bits"
+      },
+      {
+        "key": "d",
+        "text": "about 0.918 bits"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "about 0.541 bits",
+    "explanation": "Information gain is the entropy before the split minus the weighted average entropy after the split. For the restaurant example in the course material, splitting on Patrons gives approximately 0.541 bits. Gain Informationﺍڤ",
+    "reference": "gain."
+  },
+  {
+    "id": 69,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "One Q-learning update uses Q(s,a) = 0.5, R = −0.04, maxa′ Q(s′,a ′) = 0.8, γ = 1 and α = 0.1. What is the new Q(s,a)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.500"
+      },
+      {
+        "key": "b",
+        "text": "0.526"
+      },
+      {
+        "key": "c",
+        "text": "0.760"
+      },
+      {
+        "key": "d",
+        "text": "0.804"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "0.526",
+    "explanation": "Use the Q-learning update: Qnew(s,a) = Q(s,a) + α [ R + γ max a′ Q(s′,a ′) − Q(s,a) ] . Substitute the values: = 0.5 + 0.1[−0.04 + (1)(0.8) − 0.5] = 0.5 + 0.1(0.26) = 0.526.",
+    "reference": ""
+  },
+  {
+    "id": 70,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "In robotics (Chapter 26), localisation and mapping (SLAM) is done with which tools?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Kalman and particle filters"
+      },
+      {
+        "key": "b",
+        "text": "The CYK chart parser"
+      },
+      {
+        "key": "c",
+        "text": "Minimax andα-β pruning"
+      },
+      {
+        "key": "d",
+        "text": "PDDL action schemas"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Kalman and particle filters",
+    "explanation": "SLAM combines localisation (estimating the robot’s position) and mapping (building a map of the environment). Probabilistic state-estimation tools such as Kalman filters and particle filters are used for these tasks. SLAMﺍڤ",
+    "reference": "2 Part B – True or False"
+  },
+  {
+    "id": 71,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "Because perfect rationality is usually computationally impossible, the book aims for limited rationality.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "The notes state that perfect rationality is usually computation- ally impossible, motivating the aim of limited rationality.",
+    "reference": ""
+  },
+  {
+    "id": 72,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "In the Romania example, greedy best-first search finds the same 418 km route as A*.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Greedy best-first search finds the 450 km route, whereas A* finds the optimal 418 km route.",
+    "explanation": "Correct Statement: Greedy best-first search finds the 450 km route, whereas A* finds the optimal 418 km route.\n\nExplanation: The notes explicitly contrast the two results: A* finds the 418 km optimal route, while greedy best-first search takes the 450 km route through Fagaras.",
+    "reference": ""
+  },
+  {
+    "id": 73,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "Local search with min-conflicts solves the million-queens problem in about 50 steps.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "The course notes state that local search using the min- conflicts heuristic solves the million-queens problem in about 50 steps.",
+    "reference": ""
+  },
+  {
+    "id": 74,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Entailment in first-order logic is decidable: a procedure can always confirm that a sentence is not entailed.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Entailment in first-order logic is semi-decidable: if a sentence is entailed, a procedure can eventually confirm it, but it may not halt when the sentence is not entailed.",
+    "explanation": "Correct Statement: Entailment in first-order logic is semi-decidable: if a sentence is entailed, a procedure can eventually confirm it, but it may not halt when the sentence is not entailed.\n\nExplanation: First-order logic validity and entailment are semi-decidable, not fully decidable. A proof procedure can find a proof when one exists, but failure to find a proof does not necessarily establish non-entailment.",
+    "reference": ""
+  },
+  {
+    "id": 75,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "The naive Bayes model assumes all effects are independent given one cause, so it grows only linearly.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "Naive Bayes assumes conditional independence of the ef- fects given the class or common cause. This factorisation greatly reduces the number of parameters, making the model grow linearly with the number of effects.",
+    "reference": "Bayes."
+  },
+  {
+    "id": 76,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "If a machine is unsure what the human wants, it has a positive incentive to let the human switch it off.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "Under the uncertain-objective framework described in the notes, a machine that is uncertain about human preferences has an incentive to pre- serve human control, including allowing itself to be switched off.",
+    "reference": "s has an incentive to pre- serve human control, including allowing itself to be switched off."
+  },
+  {
+    "id": 77,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "In the book’s 4×3 grid world, the agent moves as intended with probability 0.9 and slips sideways with probability 0.05 each way.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "In the course notes’ 4×3 grid world, the agent moves as intended with probability 0.8 and slips sideways with probability 0.1 each way.",
+    "explanation": "Correct Statement: In the course notes’ 4×3 grid world, the agent moves as intended with probability 0.8 and slips sideways with probability 0.1 each way.\n\nExplanation: The lecture notes specify an intended-move probability of 0.8 and sideways-slip probabilities of 0.1 in each direction. The values 0.9 and 0.05 are not the values stated in the course notes.",
+    "reference": "world."
+  },
+  {
+    "id": 78,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Maximum-likelihood learning averages all hypotheses weighted by their poste- rior probability.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Bayesian learning averages hypotheses weighted by their posterior probabilities; maximum-likelihood learning selects the hypothesis that best explains the observed data.",
+    "explanation": "Correct Statement: Bayesian learning averages hypotheses weighted by their posterior probabilities; maximum-likelihood learning selects the hypothesis that best explains the observed data.\n\nExplanation: The statement describes Bayesian learning, not maximum likelihood. Maximum likelihood chooses the hypothesis with the highest likelihood of the observed data, whereas Bayesian learning averages predictions over hypotheses weighted by their posterior probabilities.",
+    "reference": ""
+  },
+  {
+    "id": 79,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Searle’s Chinese room argues that symbol manipulation is not the same as understanding.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "The Chinese Room argument distinguishes syntactic manipu- lation of symbols from semantic understanding. Following rules to manipulate symbols does not, by itself, establish genuine understanding.",
+    "reference": ""
+  },
+  {
+    "id": 80,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "Weak AI is the claim that machines would actually have minds.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Strong AI is the claim that machines could actually have minds; Weak AI treats machines as tools that can behave intelligently without claiming that they literally have minds.",
+    "explanation": "Correct Statement: Strong AI is the claim that machines could actually have minds; Weak AI treats machines as tools that can behave intelligently without claiming that they literally have minds.\n\nExplanation: The statement describes the strong-AI position. Weak AI claims that machines can simulate or exhibit intelligent behaviour, without asserting that they possess genuine minds or consciousness.",
+    "reference": ""
+  },
+  {
+    "id": 81,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "Which of the four approaches to AI does the textbook adopt?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking humanly"
+      },
+      {
+        "key": "b",
+        "text": "Acting humanly"
+      },
+      {
+        "key": "c",
+        "text": "Acting rationally"
+      },
+      {
+        "key": "d",
+        "text": "Thinking rationally"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Acting rationally",
+    "explanation": "The textbook adopts the rational-agent approach. It focuses on selecting actions that achieve the best outcome, or the best expected outcome under uncertainty, rather than imitating human thought or behaviour.",
+    "reference": ""
+  },
+  {
+    "id": 82,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "Which statement best describes the relationship between AI and ma- chine learning?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Machine learning is a subfield of AI that studies how to improve performance from experience."
+      },
+      {
+        "key": "b",
+        "text": "AI is a subfield of machine learning."
+      },
+      {
+        "key": "c",
+        "text": "AI and machine learning are two names for the same field."
+      },
+      {
+        "key": "d",
+        "text": "Every AI system, including route planners and theorem provers, uses ma- chine learning."
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Machine learning is a subfield of AI that studies how to improve performance from experience.",
+    "explanation": "Machine learning is part of AI, not a synonym for it. Some AI systems learn from data, while others rely on search, planning, or logical reasoning without machine learning.",
+    "reference": ""
+  },
+  {
+    "id": 83,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Which two questions separate the four historical definitions of AI?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Is AI built in hardware or software, and is it fast or accurate?"
+      },
+      {
+        "key": "b",
+        "text": "Is AI symbolic or neural, and is it supervised or unsupervised?"
+      },
+      {
+        "key": "c",
+        "text": "Is AI used in industry or research, and is it cheap or expensive?"
+      },
+      {
+        "key": "d",
+        "text": "Is intelligence about internal thought or external behaviour, and is it mea- sured against human performance or rationality?"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Is intelligence about internal thought or external behaviour, and is it mea- sured against human performance or rationality?",
+    "explanation": "The four approaches are formed by combining two distinc- tions: thinking versus acting, and human-like performance versus ideal rationality.",
+    "reference": ""
+  },
+  {
+    "id": 84,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "What does the total Turing test require in addition to the standard Tur- ing test?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Solving problems faster than a human"
+      },
+      {
+        "key": "b",
+        "text": "Interaction with objects and people in the physical world"
+      },
+      {
+        "key": "c",
+        "text": "Proving theorems from Principia Mathematica"
+      },
+      {
+        "key": "d",
+        "text": "Passing the test without any written questions"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Interaction with objects and people in the physical world",
+    "explanation": "The standard test is based on written interaction with a hu- man interrogator. The total Turing test adds perception and physical interaction, includ- ing vision and robotics.",
+    "reference": ""
+  },
+  {
+    "id": 85,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "What point does the book make with the example of artificial flight?",
+    "options": [
+      {
+        "key": "a",
+        "text": "AI should study the underlying principles of intelligence rather than copy humans."
+      },
+      {
+        "key": "b",
+        "text": "AI should copy the human brain as closely as possible."
+      },
+      {
+        "key": "c",
+        "text": "Machines will never be able to think, just as they cannot fly like birds."
+      },
+      {
+        "key": "d",
+        "text": "The Turing test should be replaced by a test that fools pigeons."
+      }
+    ],
+    "answer": "a",
+    "answer_text": "AI should study the underlying principles of intelligence rather than copy humans.",
+    "explanation": "Artificial flight succeeded by applying aerodynamics, not by building machines that imitate birds exactly. Similarly, AI should understand and apply principles of intelligence instead of merely copying people.",
+    "reference": ""
+  },
+  {
+    "id": 86,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "Newell and Simon’s General Problem Solver (GPS) was judged not only on solving problems but also on:",
+    "options": [
+      {
+        "key": "a",
+        "text": "how few lines of code it needed"
+      },
+      {
+        "key": "b",
+        "text": "whether it could fool a human interrogator"
+      },
+      {
+        "key": "c",
+        "text": "whether the sequence and timing of its reasoning steps matched human sub- jects"
+      },
+      {
+        "key": "d",
+        "text": "whether it could learn from experience"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "whether the sequence and timing of its reasoning steps matched human sub- jects",
+    "explanation": "GPS was studied as a cognitive model. Researchers com- pareditsreasoningstepsandtheirtimingwiththoseobservedinhumanproblem-solving experiments.",
+    "reference": ""
+  },
+  {
+    "id": 87,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "Logic needs certain knowledge, which is rarely available. According to the notes, what fills this gap?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Syllogisms"
+      },
+      {
+        "key": "b",
+        "text": "Introspection"
+      },
+      {
+        "key": "c",
+        "text": "Brain imaging"
+      },
+      {
+        "key": "d",
+        "text": "Probability"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Probability",
+    "explanation": "Logical reasoning often requires certain premises, but real- world knowledge is frequently uncertain. Probability provides a way to reason when certainty is unavailable.",
+    "reference": ""
+  },
+  {
+    "id": 88,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "A rational agent is one that acts so as to achieve:",
+    "options": [
+      {
+        "key": "a",
+        "text": "the outcome a human would choose"
+      },
+      {
+        "key": "b",
+        "text": "the best outcome or, when there is uncertainty, the best expected outcome"
+      },
+      {
+        "key": "c",
+        "text": "a correct logical inference in every situation"
+      },
+      {
+        "key": "d",
+        "text": "the fastest possible response"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "the best outcome or, when there is uncertainty, the best expected outcome",
+    "explanation": "This is the definition of a rational agent in the lecture. Note: the supplied question bank prints the label “(a)” twice for its first two choices; the correct answer is the second listed choice, whose label appears to be a typographical error.",
+    "reference": ""
+  },
+  {
+    "id": 89,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "The standard model appears in many fields under different names. In statistics, the agent:",
+    "options": [
+      {
+        "key": "a",
+        "text": "minimises a cost function"
+      },
+      {
+        "key": "b",
+        "text": "maximises a sum of rewards"
+      },
+      {
+        "key": "c",
+        "text": "minimises a loss function"
+      },
+      {
+        "key": "d",
+        "text": "maximises utility"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "minimises a loss function",
+    "explanation": "The lecture maps the standard model to different fields: con- trol theory minimises cost, operations research maximises rewards, statistics minimises loss, and economics maximises utility or social welfare.",
+    "reference": ""
+  },
+  {
+    "id": 90,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "What is the first refinement of the standard model, called limited ratio- nality?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Agents must act appropriately when there is not enough time to do every computation."
+      },
+      {
+        "key": "b",
+        "text": "Agents must be uncertain about the human objective."
+      },
+      {
+        "key": "c",
+        "text": "Agents must imitate human reasoning steps."
+      },
+      {
+        "key": "d",
+        "text": "Agents must use only logic, never probability."
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Agents must act appropriately when there is not enough time to do every computation.",
+    "explanation": "Perfect rationality may require more computation than is practical. Limited rationality recognises computational limits and requires an agent to make appropriate decisions with the time and resources available.",
+    "reference": ""
+  },
+  {
+    "id": 91,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "What is the value alignment problem?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Making sure an agent’s computations finish in time"
+      },
+      {
+        "key": "b",
+        "text": "Choosing between expected money and expected utility"
+      },
+      {
+        "key": "c",
+        "text": "Matching a program’s reasoning steps with those of humans"
+      },
+      {
+        "key": "d",
+        "text": "Making sure the values or objectives put into the machine are aligned with those of the human"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Making sure the values or objectives put into the machine are aligned with those of the human",
+    "explanation": "The value alignment problem arises because a machine may optimise an objective that does not accurately represent what humans really want. The objective must be aligned with human preferences.",
+    "reference": "s."
+  },
+  {
+    "id": 92,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "According to the notes, a machine that knows it does not know the full human objective has an incentive to:",
+    "options": [
+      {
+        "key": "a",
+        "text": "pursue its own objective as fast as possible"
+      },
+      {
+        "key": "b",
+        "text": "actcautiously, askpermission, learnourpreferencesanddefertohumancon- trol"
+      },
+      {
+        "key": "c",
+        "text": "hijack extra computing power to find the objective"
+      },
+      {
+        "key": "d",
+        "text": "switch itself off permanently"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "actcautiously, askpermission, learnourpreferencesanddefertohumancon- trol",
+    "explanation": "If the machine is uncertain about the human objective, it has reason to seek clarification and allow humans to guide or correct it instead of blindly pursuing a possibly incorrect fixed objective.",
+    "reference": "sanddefertohuman control. Explanation (English): If the machine is uncertain about the human objective, it has reason to seek clarification and allow humans to guide or correct it instead of blindly pursuing a possibly incorrect fixed objective."
+  },
+  {
+    "id": 93,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "The word “algorithm” comes from the name of:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Aristotle"
+      },
+      {
+        "key": "b",
+        "text": "al-Khwarizmi"
+      },
+      {
+        "key": "c",
+        "text": "Boole"
+      },
+      {
+        "key": "d",
+        "text": "Gödel"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "al-Khwarizmi",
+    "explanation": "The word algorithm is derived from the Latinized form of the name of the mathematician al-Khwarizmi.",
+    "reference": ""
+  },
+  {
+    "id": 94,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "Which is the correct order of the three steps of Craik’s knowledge-based agent (1943)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Act, then observe, then remember"
+      },
+      {
+        "key": "b",
+        "text": "Manipulate the representation, then sense the stimulus, then act"
+      },
+      {
+        "key": "c",
+        "text": "Translatethestimulusintoaninternalrepresentation, manipulateittoderive new representations, then translate them back into action"
+      },
+      {
+        "key": "d",
+        "text": "Translate action into a stimulus, then build a representation, then stop"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Translatethestimulusintoaninternalrepresentation, manipulateittoderive new representations, then translate them back into action",
+    "explanation": "Craik’s three stages are: represent the stimulus internally, manipulate the representation to derive new ones, and convert the resulting represen- tation into action.",
+    "reference": ""
+  },
+  {
+    "id": 95,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "You can choose (A) 1,000,000 EGP for certain or (B) a coin flip giving 3,000,000 EGP or nothing. What is the expected money of option B?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1,500,000 EGP"
+      },
+      {
+        "key": "b",
+        "text": "1,000,000 EGP"
+      },
+      {
+        "key": "c",
+        "text": "3,000,000 EGP"
+      },
+      {
+        "key": "d",
+        "text": "750,000 EGP"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "1,500,000 EGP",
+    "explanation": "A fair coin gives each outcome probability 0.5. Therefore, E(B) = 0.5(3,000,000) + 0.5(0) = 1,500,000 EGP.",
+    "reference": "8–9."
+  },
+  {
+    "id": 96,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "In the same choice, let U(0) = 0 , U(1M) = 0 .8 and U(3M) = 1 . Which option does a rational agent choose?",
+    "options": [
+      {
+        "key": "a",
+        "text": "B, because its expected money is higher"
+      },
+      {
+        "key": "b",
+        "text": "B, because EU(B) = 1"
+      },
+      {
+        "key": "c",
+        "text": "Either, because the expected utilities are equal"
+      },
+      {
+        "key": "d",
+        "text": "A, because EU(A) = 0.8 is greater than EU(B) = 0.5"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "A, because EU(A) = 0.8 is greater than EU(B) = 0.5",
+    "explanation": "For A, the utility is certain: EU(A) = 0.8. For B, EU(B) = 0.5(1) + 0.5(0) = 0.5. Since 0.8 > 0.5, the rational choice under the given utility function is A.",
+    "reference": ""
+  },
+  {
+    "id": 97,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "A problem is called intractable if:",
+    "options": [
+      {
+        "key": "a",
+        "text": "no program can solve it at all"
+      },
+      {
+        "key": "b",
+        "text": "it cannot be written in first-order logic"
+      },
+      {
+        "key": "c",
+        "text": "its solution time grows exponentially with the instance size"
+      },
+      {
+        "key": "d",
+        "text": "it needs a parallel computer"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "its solution time grows exponentially with the instance size",
+    "explanation": "Intractability concerns computational cost, not whether a solution exists. Exponential growth makes solving large real-world instances impracti- cal.",
+    "reference": ""
+  },
+  {
+    "id": 98,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "The brain’s cycle time is 10−3 s and a computer’s is 10−9 s. How many times faster per step is the computer?",
+    "options": [
+      {
+        "key": "a",
+        "text": "106"
+      },
+      {
+        "key": "b",
+        "text": "103"
+      },
+      {
+        "key": "c",
+        "text": "107"
+      },
+      {
+        "key": "d",
+        "text": "1012"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "106",
+    "explanation": "The speed ratio is the brain cycle time divided by the com- puter cycle time: 10−3 10−9 = 10−3−(−9) = 106.",
+    "reference": "cussion, pp. 7–10."
+  },
+  {
+    "id": 99,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "From 2012 to 2018 the compute used to train top ML systems grew 300,000-fold. About how many doublings is that?",
+    "options": [
+      {
+        "key": "a",
+        "text": "About 5"
+      },
+      {
+        "key": "b",
+        "text": "About 18"
+      },
+      {
+        "key": "c",
+        "text": "About 100"
+      },
+      {
+        "key": "d",
+        "text": "About 3.4"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "About 18",
+    "explanation": "The number of doublings is log 2(300,000): log2(300,000) ≈ 18.2. So the increase is about 18 doublings.",
+    "reference": ""
+  },
+  {
+    "id": 100,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "What did McCulloch and Pitts (1943) do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "They built SNARC, the first neural-network computer."
+      },
+      {
+        "key": "b",
+        "text": "They proposed a rule for strengthening connections between neurons."
+      },
+      {
+        "key": "c",
+        "text": "They proved that a perceptron cannot learn XOR."
+      },
+      {
+        "key": "d",
+        "text": "They modelled neurons as “on” or “off” and showed networks of them can compute any computable function."
+      }
+    ],
+    "answer": "d",
+    "answer_text": "They modelled neurons as “on” or “off” and showed networks of them can compute any computable function.",
+    "explanation": "McCulloch and Pitts introduced a simplified binary neuron model and demonstrated the computational power of networks built from such units.",
+    "reference": ""
+  },
+  {
+    "id": 101,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "What was the main outcome of the Dartmouth workshop of summer 1956, organised by McCarthy?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It gave the field of AI its name."
+      },
+      {
+        "key": "b",
+        "text": "It produced several major breakthroughs."
+      },
+      {
+        "key": "c",
+        "text": "It introduced the Turing test."
+      },
+      {
+        "key": "d",
+        "text": "It ended AI funding in Britain."
+      }
+    ],
+    "answer": "a",
+    "answer_text": "It gave the field of AI its name.",
+    "explanation": "The Dartmouth workshop is historically associated with the naming of the field of artificial intelligence. It did not itself produce the major break- throughs sometimes associated with later AI development.",
+    "reference": ""
+  },
+  {
+    "id": 102,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "Samuel’s checkers program learned to play better than its creator using what we now call:",
+    "options": [
+      {
+        "key": "a",
+        "text": "expert systems"
+      },
+      {
+        "key": "b",
+        "text": "Bayesian networks"
+      },
+      {
+        "key": "c",
+        "text": "reinforcement learning"
+      },
+      {
+        "key": "d",
+        "text": "resolution theorem proving"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "reinforcement learning",
+    "explanation": "Samuel’s checkers program improved through experience and feedback from playing games. This is an early example of what is now called rein- forcement learning.",
+    "reference": ""
+  },
+  {
+    "id": 103,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What did Minsky and Papert’s book Perceptrons (1969) show?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A perceptron can represent any function."
+      },
+      {
+        "key": "b",
+        "text": "A two-input perceptron cannot learn to tell whether its inputs differ (XOR)."
+      },
+      {
+        "key": "c",
+        "text": "Back-propagation cannot train multilayer networks."
+      },
+      {
+        "key": "d",
+        "text": "Perceptrons learn faster than expert systems."
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A two-input perceptron cannot learn to tell whether its inputs differ (XOR).",
+    "explanation": "A single perceptron cannot represent XOR because XOR is not linearly separable. The limitation concerns a single unit, not the impossibility of using multilayer networks.",
+    "reference": ""
+  },
+  {
+    "id": 104,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "DENDRAL’s ketone rule requires x1 + x2 = M + 28. For a molecule with M = 120 and a peak at x1 = 80, which value of x2 satisfies this condition?",
+    "options": [
+      {
+        "key": "a",
+        "text": "40"
+      },
+      {
+        "key": "b",
+        "text": "52"
+      },
+      {
+        "key": "c",
+        "text": "92"
+      },
+      {
+        "key": "d",
+        "text": "68"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "68",
+    "explanation": "Substitute the given values: x1 + x2 = M + 28 ⇒ 80 + x2 = 120 + 28 = 148 x2 = 148 − 80 = 68.",
+    "reference": "tory, pp. 13–14."
+  },
+  {
+    "id": 105,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "What did Banko and Brill (2001) find?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unlabelled data cannot improve accuracy."
+      },
+      {
+        "key": "b",
+        "text": "Better algorithms always beat more data."
+      },
+      {
+        "key": "c",
+        "text": "Increasing the data by two or three orders of magnitude outweighs any im- provement from tweaking the algorithm."
+      },
+      {
+        "key": "d",
+        "text": "Filling holes in photos needs only thousands of images."
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Increasing the data by two or three orders of magnitude outweighs any im- provement from tweaking the algorithm.",
+    "explanation": "Their finding highlighted the importance of data scale: sub- stantially increasing the amount of data could improve performance more than making smaller changes to the learning algorithm. Bankoﺍڤ",
+    "reference": ""
+  },
+  {
+    "id": 106,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "According to the notes, deep learning is machine learning with multiple layers of simple, adjustable computing elements. When did its take-off come?",
+    "options": [
+      {
+        "key": "a",
+        "text": "2011, first in speech and then in vision"
+      },
+      {
+        "key": "b",
+        "text": "1986, with Parallel Distributed Processing"
+      },
+      {
+        "key": "c",
+        "text": "1997, with Deep Blue"
+      },
+      {
+        "key": "d",
+        "text": "2022, with ChatGPT"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "2011, first in speech and then in vision",
+    "explanation": "The lecture describes the modern take-off of deep learning around 2011, with early major progress in speech recognition followed by computer vi- sion.",
+    "reference": ""
+  },
+  {
+    "id": 107,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "According to the book, why are parole or loan decisions made by AI sometimes biased by race or gender?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Because the hardware is too slow"
+      },
+      {
+        "key": "b",
+        "text": "Because the systems use logic instead of probability"
+      },
+      {
+        "key": "c",
+        "text": "Because the decisions are always made by humans"
+      },
+      {
+        "key": "d",
+        "text": "Because the data reflect bias in society"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Because the data reflect bias in society",
+    "explanation": "AI systems trained on historical or social data can reproduce existing patterns of discrimination. The bias may come from the data rather than from the hardware or the use of a particular reasoning method.",
+    "reference": ""
+  },
+  {
+    "id": 108,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "What does the King Midas problem describe?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A more intelligent species leaving us without control over our future"
+      },
+      {
+        "key": "b",
+        "text": "A machine giving us exactly what we asked for, not what we wanted"
+      },
+      {
+        "key": "c",
+        "text": "An AI industry that grows from millions to billions of dollars"
+      },
+      {
+        "key": "d",
+        "text": "A machine that cannot be switched off because it is too slow"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A machine giving us exactly what we asked for, not what we wanted",
+    "explanation": "The King Midas story illustrates the danger of specifying an objective incorrectly: the system fulfils the literal request, even when the result conflicts with the human’s real intentions.",
+    "reference": ""
+  },
+  {
+    "id": 109,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "In the lab, a McCulloch–Pitts unit fires when ∑wx ≥ threshold. For the unit with weights (−1,−1) and threshold −1, what is the output for inputs (1,1), and which gate is it?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1; it is AND"
+      },
+      {
+        "key": "b",
+        "text": "1; it is OR"
+      },
+      {
+        "key": "c",
+        "text": "0; it is NAND"
+      },
+      {
+        "key": "d",
+        "text": "0; it is NOT"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "0; it is NAND",
+    "explanation": "For input (1,1), the weighted sum is (−1)(1) + (−1)(1) = −2. Since −2 ̸≥ −1, the unit outputs 0. For inputs 00, 01, 10, and 11, the outputs are 1, 1, 1, and 0 respectively, which is NAND.",
+    "reference": ""
+  },
+  {
+    "id": 110,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "In the lab, how is XOR built from two layers of units?",
+    "options": [
+      {
+        "key": "a",
+        "text": "XOR(a,b) = AND(OR(a,b),NAND (a,b))"
+      },
+      {
+        "key": "b",
+        "text": "XOR(a,b) = OR(AND(a,b),NAND (a,b))"
+      },
+      {
+        "key": "c",
+        "text": "XOR(a,b) = AND(OR(a,b),AND (a,b))"
+      },
+      {
+        "key": "d",
+        "text": "XOR(a,b) = NOT (OR(a,b))"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "XOR(a,b) = AND(OR(a,b),NAND (a,b))",
+    "explanation": "The OR unit is 1 when at least one input is 1, while NAND is 1 except when both inputs are 1. ANDing these two outputs gives 1 exactly when the inputs differ.",
+    "reference": "2"
+  },
+  {
+    "id": 111,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "AIresearchershavespentagreatdealofefforttryingtopasstheTuring test.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "AI researchers have spent little effort trying to pass the Turing test. ﺍܳأٴ؇ﺭﺓﺍڤ ৙৑",
+    "explanation": "Correct Statement: AI researchers have spent little effort trying to pass the Turing test. ﺍܳأٴ؇ﺭﺓﺍڤ ৙৑\n\nExplanation: False The lecture explicitly says that AI researchers have spent little effort trying to pass the Turing test because they consider studying the underlying principles of intelli- gence more important than imitation.",
+    "reference": ""
+  },
+  {
+    "id": 112,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "For a self-driving car, “reach the destination safely” taken strictly would mean staying in the garage, because every road carries some risk.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "True Thelectureusesthisexampletoshowthataliteralsafety-onlyobjectivecanprevent the car from moving at all. The objective must balance safety with progress and other human preferences.",
+    "reference": "s."
+  },
+  {
+    "id": 113,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "Daniel Bernoulli (1738) introduced utility, the subjective value of an outcome, with diminishing marginal utility of money.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "True Bernoulli’s contribution is associated with utility as a subjective measure of value. Diminishing marginal utility means that an additional unit of money generally has less impact as wealth increases.",
+    "reference": ""
+  },
+  {
+    "id": 114,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Back-propagation for multilayer networks was first invented in the mid-1980s.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Back-propagation became widely influential in the mid-1980s; it was not first invented then. ﺍܳأٴ؇ﺭﺓﺍڤ ႟ၽ૰૖ Back-propagation ৙৑",
+    "explanation": "Correct Statement: Back-propagation became widely influential in the mid-1980s; it was not first invented then. ﺍܳأٴ؇ﺭﺓﺍڤ ႟ၽ૰૖ Back-propagation ৙৑\n\nExplanation: False The mid-1980s are associated with the popularisation and influential use of back- propagation for training multilayer networks, not its first invention.",
+    "reference": "pp. 13–14."
+  },
+  {
+    "id": 115,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "R1/XCON was the first successful knowledge-intensive system.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "DENDRAL was the first major successful knowledge-intensive system; R1/XCON came later. ﺍܳأٴ؇ﺭﺓﺍڤ ﺍ",
+    "explanation": "Correct Statement: DENDRAL was the first major successful knowledge-intensive system; R1/XCON came later. ﺍܳأٴ؇ﺭﺓﺍڤ ﺍ\n\nExplanation: False DENDRAL is identified in the history of AI as an early successful knowledge- intensive expert system. R1/XCON was a later successful commercial expert system, not the first.",
+    "reference": ""
+  },
+  {
+    "id": 116,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "MYCIN, which diagnosed blood infections with about 450 rules, han- dled uncertainty using certainty factors.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "True MYCIN was a medical expert system for diagnosing blood infections. Its rule-based reasoning used certainty factors to represent degrees of confidence under uncer- tainty.",
+    "reference": ""
+  },
+  {
+    "id": 117,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "According to the AI Index figures in the book, object-detection error rose from 2% in 2010 to 28% in 2017.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Object-detection error fell from 28% (2010) to 2% (2017). ﺍܳأٴ؇ﺭﺓﺍڤ ݿٷ۰",
+    "explanation": "Correct Statement: Object-detection error fell from 28% (2010) to 2% (2017). ﺍܳأٴ؇ﺭﺓﺍڤ ݿٷ۰\n\nExplanation: False The direction is reversed. The lecture reports that object-detection error fell from 28% in 2010 to 2% in 2017.",
+    "reference": ""
+  },
+  {
+    "id": 118,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Lethal autonomous weapons are a risk because they scale: without human supervision, a small group can deploy any number of weapons.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "True The lecture identifies scalability as a central risk: autonomous weapons can poten- tially be deployed at large scale by a small number of people without direct human supervision.",
+    "reference": ""
+  },
+  {
+    "id": 119,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "The book’s answer to the long-term control problem is to stop AI re- search.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "The proposed answer is to design beneficial machines that remain uncertain about human objectives and defer to humans, not to stop AI research. ﺍܳأٴ؇ﺭﺓﺍڤ ௡ਤ૭૜ ﻭ",
+    "explanation": "Correct Statement: The proposed answer is to design beneficial machines that remain uncertain about human objectives and defer to humans, not to stop AI research. ﺍܳأٴ؇ﺭﺓﺍڤ ௡ਤ૭૜ ﻭ\n\nExplanation: False The lecture explicitly says that the book’s answer is not to stop AI research. Instead, machines should pursue human objectives while remaining uncertain about what those objectives are, allowing them to ask, defer, and remain under human control.",
+    "reference": ""
+  },
+  {
+    "id": 120,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "In the lab, the brute-force search over weights and thresholds in range(-3, 4) finds no single unit that computes XOR.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "True The lab code tests all weights and thresholds in the range −3 through 3 and finds an empty set of solutions. This illustrates that a single McCulloch–Pitts unit cannot represent XOR.",
+    "reference": ""
+  },
+  {
+    "id": 121,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "What is an inductive bias?",
+    "options": [
+      {
+        "key": "a",
+        "text": "A systematic error in the labels of a data set"
+      },
+      {
+        "key": "b",
+        "text": "The bias term b added to each unit"
+      },
+      {
+        "key": "c",
+        "text": "An assumption about the data that is built into the network"
+      },
+      {
+        "key": "d",
+        "text": "The tendency of a network to overfit small data sets"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "An assumption about the data that is built into the network",
+    "explanation": "An inductive bias is an assumption built into a network about the structure of the data. It guides learning and can reduce the number of parameters and the amount of data required.",
+    "reference": "Lecture 5, Section 5.1 — Why different architectures?"
+  },
+  {
+    "id": 122,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "How many input values does a 32 × 32 colour image (3 channels) have?",
+    "options": [
+      {
+        "key": "a",
+        "text": "1,024"
+      },
+      {
+        "key": "b",
+        "text": "2,048"
+      },
+      {
+        "key": "c",
+        "text": "96"
+      },
+      {
+        "key": "d",
+        "text": "3,072"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "3,072",
+    "explanation": "A colour image has three channels (red, green and blue). Therefore, the number of values is 32 × 32 × 3 = 3,072.",
+    "reference": "Lecture 5, Section 5.2 — Convolutional neural networks"
+  },
+  {
+    "id": 123,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "About how many parameters does a dense layer with 3,072 units need on a 32 × 32 × 3 image?",
+    "options": [
+      {
+        "key": "a",
+        "text": "3,072"
+      },
+      {
+        "key": "b",
+        "text": "9.4 million"
+      },
+      {
+        "key": "c",
+        "text": "456"
+      },
+      {
+        "key": "d",
+        "text": "94 thousand"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "9.4 million",
+    "explanation": "A dense layer connects every input value to every output unit. The weights alone are 3,072 × 3,072 = 9,437,184, approximately 9.4 million (biases add 3,072 more).",
+    "reference": "Lecture 5, Section 5.2 — Why CNNs use fewer parameters"
+  },
+  {
+    "id": 124,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "Which two ideas do CNNs use to handle images efficiently?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Recurrence and gating"
+      },
+      {
+        "key": "b",
+        "text": "Dropout and weight decay"
+      },
+      {
+        "key": "c",
+        "text": "Local connectivity and weight sharing"
+      },
+      {
+        "key": "d",
+        "text": "Queries and keys"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Local connectivity and weight sharing",
+    "explanation": "CNNs use local connectivity, so each kernel processes a small neigh- bourhood, and weight sharing, so the same kernel is reused across image locations.",
+    "reference": "Lecture 5, Section 5.2 — Convolutional neural networks"
+  },
+  {
+    "id": 125,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "In the worked example, at the first (top-left) position the left column of the window gives 1 + 0 + 2 = 3, the middle column is multiplied by 0, and the right column (0,3,0) is multiplied by −1. What is the output value?",
+    "options": [
+      {
+        "key": "a",
+        "text": "6"
+      },
+      {
+        "key": "b",
+        "text": "3"
+      },
+      {
+        "key": "c",
+        "text": "−3"
+      },
+      {
+        "key": "d",
+        "text": "0"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0",
+    "explanation": "The left-column contribution is 3. The middle-column contribution is 0. The right-column contribution is (0×−1) + (3×−1) + (0×−1) = −3. Total = 3 + 0 − 3 = 0.",
+    "reference": "Lecture 5, Section 5.2 — Worked convolution example"
+  },
+  {
+    "id": 126,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "A 3 × 3 kernel slides with stride 1 and no padding over a 5 × 5 input. What is the size of the feature map?",
+    "options": [
+      {
+        "key": "a",
+        "text": "5 × 5"
+      },
+      {
+        "key": "b",
+        "text": "3 × 3"
+      },
+      {
+        "key": "c",
+        "text": "2 × 2"
+      },
+      {
+        "key": "d",
+        "text": "4 × 4"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "3 × 3",
+    "explanation": "The output size is floor((n + 2p − k)/s) + 1. Substituting n=5, p=0, k=3, s=1 gives floor((5−3)/1)+1 = 3, so the feature map is 3 × 3.",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 127,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "The worked-example kernel is a vertical-edge detector. What does the value −4 in the centre of its feature map show?",
+    "options": [
+      {
+        "key": "a",
+        "text": "No edge at all in that region"
+      },
+      {
+        "key": "b",
+        "text": "A horizontal edge"
+      },
+      {
+        "key": "c",
+        "text": "A strong edge that is darker on the left and brighter on the right"
+      },
+      {
+        "key": "d",
+        "text": "A strong edge that is brighter on the left and darker on the right"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "A strong edge that is brighter on the left and darker on the right",
+    "explanation": "The negative response indicates the opposite contrast direction to a positive response for this kernel: the region is brighter on the left and darker on the right.",
+    "reference": "Lecture 5, Section 5.2 — Convolution and edge detection"
+  },
+  {
+    "id": 128,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "In a real CNN, how are the kernel values obtained?",
+    "options": [
+      {
+        "key": "a",
+        "text": "They are learned by backpropagation"
+      },
+      {
+        "key": "b",
+        "text": "They are designed by hand by experts"
+      },
+      {
+        "key": "c",
+        "text": "They are fixed to vertical- and horizontal-edge detectors"
+      },
+      {
+        "key": "d",
+        "text": "They are chosen at random and never changed"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "They are learned by backpropagation",
+    "explanation": "In a trainable CNN, kernel values are parameters learned from data through the training process, using backpropagation and gradient-based updates.",
+    "reference": "Lecture 5, Section 5.2 — Learned convolutional kernels"
+  },
+  {
+    "id": 129,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "Using floor((n+2p−k)/s)+1, what is the output size for n=32, k=5, p=0, s=1?",
+    "options": [
+      {
+        "key": "a",
+        "text": "32 × 32"
+      },
+      {
+        "key": "b",
+        "text": "16 × 16"
+      },
+      {
+        "key": "c",
+        "text": "30 × 30"
+      },
+      {
+        "key": "d",
+        "text": "28 × 28"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "28 × 28",
+    "explanation": "The output dimension is floor((32+0−5)/1)+1 = 27+1 = 28. The feature map is 28 × 28.",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 130,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "A 64 × 64 input uses a 5 × 5 kernel with padding 2 and stride 2. What is the output size?",
+    "options": [
+      {
+        "key": "a",
+        "text": "64 × 64"
+      },
+      {
+        "key": "b",
+        "text": "32 × 32"
+      },
+      {
+        "key": "c",
+        "text": "30 × 30"
+      },
+      {
+        "key": "d",
+        "text": "31 × 31"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "32 × 32",
+    "explanation": "floor((64 + 2×2 − 5)/2)+1 = floor(63/2)+1 = 31+1 = 32. The output is 32",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 131,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "How many parameters does a convolutional layer with 32 kernels of size 3 × 3 have on an input with 16 channels?",
+    "options": [
+      {
+        "key": "a",
+        "text": "4,640"
+      },
+      {
+        "key": "b",
+        "text": "4,608"
+      },
+      {
+        "key": "c",
+        "text": "145"
+      },
+      {
+        "key": "d",
+        "text": "288"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "4,640",
+    "explanation": "Each kernel has 3×3×16 = 144 weights and one bias, giving 145 param- eters. For 32 kernels: 32×145 = 4,640.",
+    "reference": "Lecture 5, Section 5.2 — CNN parameter count"
+  },
+  {
+    "id": 132,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "What does 2 × 2 max pooling do to a feature map?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Averages each 2 × 2 block and doubles the size"
+      },
+      {
+        "key": "b",
+        "text": "Adds zeros around the border to keep the size"
+      },
+      {
+        "key": "c",
+        "text": "Keeps the largest value in each 2 × 2 block, halving the width and height"
+      },
+      {
+        "key": "d",
+        "text": "Multiplies each block by a learned kernel"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Keeps the largest value in each 2 × 2 block, halving the width and height",
+    "explanation": "A 2×2 max-pooling operation selects the maximum value from each 2×2 region. With the usual stride of 2, it halves the feature map’s width and height.",
+    "reference": "Lecture 5, Section 5.2 — Pooling"
+  },
+  {
+    "id": 133,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "In the hierarchy of features found inside a trained CNN, what does the first layer detect?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Whole objects such as faces and cars"
+      },
+      {
+        "key": "b",
+        "text": "Parts such as eyes and wheels"
+      },
+      {
+        "key": "c",
+        "text": "Class labels"
+      },
+      {
+        "key": "d",
+        "text": "Edges and colours"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Edges and colours",
+    "explanation": "Early CNN layers generally learn low-level visual features such as edges and colours. Deeper layers combine them into parts and then whole objects.",
+    "reference": "Lecture 5, Section 5.2 — Hierarchy of learned features"
+  },
+  {
+    "id": 134,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "In a residual block, what does the block itself have to learn?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The whole output from scratch"
+      },
+      {
+        "key": "b",
+        "text": "Only the change F(x) to make to its input"
+      },
+      {
+        "key": "c",
+        "text": "The kernel size"
+      },
+      {
+        "key": "d",
+        "text": "Which layers to delete"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Only the change F(x) to make to its input",
+    "explanation": "A residual block produces y = x + F(x). Instead of learning the complete output from scratch, the block learns the residual change F(x), while the input x is added through a skip connection.",
+    "reference": "Lecture 5, Section 5.2 — Residual connections"
+  },
+  {
+    "id": 135,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "In the RNN update h_t = g(W_x x_t + W_h h_(t−1) + b), what is h_(t−1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The previous hidden state (the memory so far)"
+      },
+      {
+        "key": "b",
+        "text": "The current input"
+      },
+      {
+        "key": "c",
+        "text": "The output label"
+      },
+      {
+        "key": "d",
+        "text": "The cell state of an LSTM"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The previous hidden state (the memory so far)",
+    "explanation": "h_(t−1) is the hidden state from the previous time step. It carries infor- mation from earlier elements of the sequence into the current step. hﺍڤ",
+    "reference": "Lecture 5, Section 5.3 — Recurrent neural networks"
+  },
+  {
+    "id": 136,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "How is an RNN trained?",
+    "options": [
+      {
+        "key": "a",
+        "text": "By max pooling over time"
+      },
+      {
+        "key": "b",
+        "text": "By a generator and a discriminator"
+      },
+      {
+        "key": "c",
+        "text": "By adding noise step by step"
+      },
+      {
+        "key": "d",
+        "text": "By unrolling it and applying backpropagation through time"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "By unrolling it and applying backpropagation through time",
+    "explanation": "An RNN is unrolled across the sequence’s time steps. The training algorithm then applies backpropagation through time (BPTT) to compute gradients.",
+    "reference": "Lecture 5, Section 5.3 — Training RNNs"
+  },
+  {
+    "id": 137,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "Reading a whole product review and outputting “positive” or “negative” is which kind of RNN use?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Many-to-many"
+      },
+      {
+        "key": "b",
+        "text": "Many-to-one"
+      },
+      {
+        "key": "c",
+        "text": "Sequence-to-sequence"
+      },
+      {
+        "key": "d",
+        "text": "One-to-many"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Many-to-one",
+    "explanation": "The network receives many input tokens (the review) and produces one output label (sentiment), so this is a many-to-one task.",
+    "reference": "Lecture 5, Section 5.3 — RNN input/output patterns"
+  },
+  {
+    "id": 138,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "Why can an LSTM carry information and gradients across many time steps?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Its cell state is updated mostly by addition, controlled by the gates"
+      },
+      {
+        "key": "b",
+        "text": "It processes all positions at the same time"
+      },
+      {
+        "key": "c",
+        "text": "It uses no weights at all"
+      },
+      {
+        "key": "d",
+        "text": "It replaces the sigmoid with max pooling"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Its cell state is updated mostly by addition, controlled by the gates",
+    "explanation": "The LSTM cell state has an additive update controlled by gates. This provides a path through which information and gradients can travel across many time steps more effectively.",
+    "reference": "Lecture 5, Section 5.4 — LSTM"
+  },
+  {
+    "id": 139,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "What is the remaining weakness of RNNs that led to the transformer?",
+    "options": [
+      {
+        "key": "a",
+        "text": "They cannot process text"
+      },
+      {
+        "key": "b",
+        "text": "They have too few parameters"
+      },
+      {
+        "key": "c",
+        "text": "They are sequential, so they cannot use the parallel power of GPUs well"
+      },
+      {
+        "key": "d",
+        "text": "They need labelled images"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "They are sequential, so they cannot use the parallel power of GPUs well",
+    "explanation": "RNNs process sequence elements step by step. This sequential depen- dency limits parallel computation and makes training long sequences slower.",
+    "reference": "Lecture 5, Section 5.4–5.5 — RNN limitations and transformers"
+  },
+  {
+    "id": 140,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "In the library analogy for attention, what plays the role of the key?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Your question"
+      },
+      {
+        "key": "b",
+        "text": "The contents of the book"
+      },
+      {
+        "key": "c",
+        "text": "The librarian"
+      },
+      {
+        "key": "d",
+        "text": "Each book’s title"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Each book’s title",
+    "explanation": "In the analogy, the query is your question, keys are like the titles or labels used to match books to the question, and values are the books’ contents.",
+    "reference": "Lecture 5, Section 5.5 — Attention: queries, keys and values"
+  },
+  {
+    "id": 141,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "In self-attention, why are the scores divided by √d?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To make the weights sum to 1"
+      },
+      {
+        "key": "b",
+        "text": "To keep the numbers in a good range for softmax"
+      },
+      {
+        "key": "c",
+        "text": "To add position information"
+      },
+      {
+        "key": "d",
+        "text": "To remove the value vectors"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "To keep the numbers in a good range for softmax",
+    "explanation": "Dividing QKᵀ by √d_k scales the dot-product scores, preventing them from becoming too large and pushing softmax into regions with very small gradients.",
+    "reference": "Lecture 5, Section 5.5 — Scaled dot-product attention"
+  },
+  {
+    "id": 142,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "In the worked example (tokens (1,0), (0,1), (1,1), d=2), what are the attention weights of token 1 with query (1,0)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.40, 0.20, 0.40"
+      },
+      {
+        "key": "b",
+        "text": "0.33, 0.33, 0.33"
+      },
+      {
+        "key": "c",
+        "text": "0.50, 0.00, 0.50"
+      },
+      {
+        "key": "d",
+        "text": "0.20, 0.40, 0.40"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.40, 0.20, 0.40",
+    "explanation": "The dot products with the three keys are 1, 0 and 1. After scaling by √2, the scores are approximately 0.707, 0 and 0.707. Applying softmax gives approximately 0.40, 0.20 and 0.40.",
+    "reference": "Lecture 5, Section 5.5 — Self-attention worked example"
+  },
+  {
+    "id": 143,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "With the same three tokens, token 2 has query (0,1), so its attention weights are 0.20, 0.40, 0.40. What is its output vector?",
+    "options": [
+      {
+        "key": "a",
+        "text": "(0.80,0.60)"
+      },
+      {
+        "key": "b",
+        "text": "(0.40,0.40)"
+      },
+      {
+        "key": "c",
+        "text": "(1.00,1.00)"
+      },
+      {
+        "key": "d",
+        "text": "(0.60,0.80)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "(0.60,0.80)",
+    "explanation": "The output is the weighted sum of the value vectors: 0.20(1,0) + 0.40(0,1) + 0.40(1,1) = (0.60, 0.80).",
+    "reference": "Lecture 5, Section 5.5 — Self-attention worked example"
+  },
+  {
+    "id": 144,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "Why does the transformer add a positional encoding to each token?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To reduce the number of parameters"
+      },
+      {
+        "key": "b",
+        "text": "To replace the residual connections"
+      },
+      {
+        "key": "c",
+        "text": "Because attention by itself ignores word order"
+      },
+      {
+        "key": "d",
+        "text": "To make the attention weights sum to 1"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Because attention by itself ignores word order",
+    "explanation": "Self-attention alone does not inherently represent the order of tokens. Positional encodings add information about each token’s position in the sequence.",
+    "reference": "Lecture 5, Section 5.5 — Positional encoding"
+  },
+  {
+    "id": 145,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "If the sequence length doubles, roughly how much more work does self-attention need?",
+    "options": [
+      {
+        "key": "a",
+        "text": "The same amount"
+      },
+      {
+        "key": "b",
+        "text": "Four times as much"
+      },
+      {
+        "key": "c",
+        "text": "Twice as much"
+      },
+      {
+        "key": "d",
+        "text": "Eight times as much"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Four times as much",
+    "explanation": "Self-attention compares positions with one another, giving quadratic complexity O(n²) in sequence length. Doubling n therefore requires roughly four times the work.",
+    "reference": "Lecture 5, Section 5.5 — Transformer computation"
+  },
+  {
+    "id": 146,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "What are GPT models pretrained to do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Predict the next token"
+      },
+      {
+        "key": "b",
+        "text": "Fill in missing words for understanding tasks"
+      },
+      {
+        "key": "c",
+        "text": "Classify image patches"
+      },
+      {
+        "key": "d",
+        "text": "Remove noise from images"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Predict the next token",
+    "explanation": "GPT models use autoregressive language modelling: they are pre- trained to predict the next token from the preceding context.",
+    "reference": "Lecture 5, Section 5.5 — BERT and GPT"
+  },
+  {
+    "id": 147,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "Why does an autoencoder learn useful features even though its task is just to copy its input?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is trained with many labelled examples"
+      },
+      {
+        "key": "b",
+        "text": "It uses a discriminator to check its output"
+      },
+      {
+        "key": "c",
+        "text": "The narrow middle layer forces it to compress the input into its most important features"
+      },
+      {
+        "key": "d",
+        "text": "It adds noise until only pure noise is left"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "The narrow middle layer forces it to compress the input into its most important features",
+    "explanation": "The bottleneck or narrow middle layer limits how much information can pass through. The autoencoder must therefore learn a compact representation that preserves important features for reconstruction.",
+    "reference": "Lecture 5, Section 5.6 — Autoencoders"
+  },
+  {
+    "id": 148,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "In a GAN, what is the job of the discriminator?",
+    "options": [
+      {
+        "key": "a",
+        "text": "To turn random noise into fake examples"
+      },
+      {
+        "key": "b",
+        "text": "To compress the input into a code"
+      },
+      {
+        "key": "c",
+        "text": "To remove a little noise at each step"
+      },
+      {
+        "key": "d",
+        "text": "To tell real examples from fakes"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "To tell real examples from fakes",
+    "explanation": "The discriminator receives real and generated examples and learns to distinguish between them. The generator tries to produce examples that fool it.",
+    "reference": "Lecture 5, Section 5.6 — Generative adversarial networks"
+  },
+  {
+    "id": 149,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "How does a trained diffusion model generate a new image?",
+    "options": [
+      {
+        "key": "a",
+        "text": "It starts from pure random noise and applies the denoising network many times"
+      },
+      {
+        "key": "b",
+        "text": "It copies an image from the training set"
+      },
+      {
+        "key": "c",
+        "text": "It passes an image through a narrow code layer once"
+      },
+      {
+        "key": "d",
+        "text": "It slides a kernel over a blank image"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "It starts from pure random noise and applies the denoising network many times",
+    "explanation": "A diffusion model starts with random noise and repeatedly applies a learned denoising process to gradually form a sample.",
+    "reference": "Lecture 5, Section 5.6 — Diffusion models"
+  },
+  {
+    "id": 150,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "A hospital has only 2,000 labelled X-ray images. According to the notes, what is the best approach?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Train a deep CNN from scratch on the 2,000 images"
+      },
+      {
+        "key": "b",
+        "text": "Use a fully connected network with no assumptions"
+      },
+      {
+        "key": "c",
+        "text": "Fine-tune a CNN pretrained on ImageNet on the X-rays"
+      },
+      {
+        "key": "d",
+        "text": "Train a GAN to classify the X-rays"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Fine-tune a CNN pretrained on ImageNet on the X-rays",
+    "explanation": "The lecture’s example recommends transfer learning: start with a CNN pretrained on ImageNet, replace or adapt the final layer, and fine-tune it on the small X-ray dataset.",
+    "reference": "Lecture 5, Section 5.7 — Transfer learning; medical X-ray example"
+  },
+  {
+    "id": 151,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "Using a stride of 2 in a convolutional layer halves the size of the output.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "A stride of 2 moves the kernel two positions at a time and commonly reduces each spatial dimension to about half, depending on the input size, kernel and padding.",
+    "reference": "Lecture 5, Section 5.2 — Stride and output size"
+  },
+  {
+    "id": 152,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "An RNN uses different weights W_x and W_h at each time step.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "An RNN shares the same W_x and W_h weights across time steps.",
+    "explanation": "Correct Statement: An RNN shares the same W_x and W_h weights across time steps.\n\nExplanation: An RNN normally shares the same W_x and W_h across time steps; the same recurrent cell is applied repeatedly to the sequence.",
+    "reference": "Lecture 5, Section 5.3 — Recurrent neural networks"
+  },
+  {
+    "id": 153,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "An LSTM has a separate cell state and three gates, each a small sigmoid layer giving values between 0 and 1.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "The standard LSTM has a cell state and three gates: input, forget and output. Their sigmoid activations produce values between 0 and 1.",
+    "reference": "Lecture 5, Section 5.4 — LSTM"
+  },
+  {
+    "id": 154,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "The transformer is built from attention, feed-forward layers and recurrence.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "The transformer uses attention and feed-forward layers, with residual connections and positional encodings; it does not use recurrence.",
+    "explanation": "Correct Statement: The transformer uses attention and feed-forward layers, with residual connections and positional encodings; it does not use recurrence.\n\nExplanation: The transformer uses attention and feed-forward layers, along with resid- ual connections and positional encodings; it does not use recurrence.",
+    "reference": "Lecture 5, Section 5.5 — The transformer"
+  },
+  {
+    "id": 155,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "BERT is pretrained to predict the next token and is mainly used for generating text.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "GPT predicts the next token; BERT is pretrained using masked-word prediction and is commonly used for language understanding.",
+    "explanation": "Correct Statement: GPT predicts the next token; BERT is pretrained using masked-word prediction and is commonly used for language understanding.\n\nExplanation: The lecture distinguishes BERT from GPT: GPT predicts the next token, while BERT is pretrained with a masked-word prediction objective and is commonly used for language understanding.",
+    "reference": "Lecture 5, Section 5.5 — BERT and GPT"
+  },
+  {
+    "id": 156,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "In multi-head attention, each head has its own learned query, key and value matrices.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "Each attention head has its own learned projection matrices for queries, keys and values, allowing heads to learn different relationships.",
+    "reference": "Lecture 5, Section 5.5 — Multi-head attention"
+  },
+  {
+    "id": 157,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "An autoencoder needs labelled examples, because each input must be paired with a class.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "A standard autoencoder does not require class labels; it learns to reconstruct its input.",
+    "explanation": "Correct Statement: A standard autoencoder does not require class labels; it learns to reconstruct its input.\n\nExplanation: A standard autoencoder is trained to reconstruct its input. The input itself supplies the reconstruction target, so class labels are not required.",
+    "reference": "Lecture 5, Section 5.6 — Autoencoders"
+  },
+  {
+    "id": 158,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Tiny, carefully chosen changes to an image that people cannot see can make a network confidently give a wrong answer.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "This describes adversarial examples: small, deliberately chosen pertur- bations can cause a neural network to make a confident incorrect prediction.",
+    "reference": "Lecture 5, Section 5.7 — Limitations: adversarial examples"
+  },
+  {
+    "id": 159,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Max pooling increases the width and height of a feature map.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "correct_statement": "Max pooling downsamples the feature map and usually reduces its width and height.",
+    "explanation": "Correct Statement: Max pooling downsamples the feature map and usually reduces its width and height.\n\nExplanation: Max pooling downsamples a feature map. With 2×2 pooling and stride 2, it usually halves the width and height rather than increasing them.",
+    "reference": "Lecture 5, Section 5.2 — Pooling"
+  },
+  {
+    "id": 160,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "If all the training photos of cows contain grass, a network may learn “grass” instead of “cow” and fail on a cow on a beach.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True"
+      },
+      {
+        "key": "False",
+        "text": "False"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "correct_statement": "",
+    "explanation": "A network can learn a spurious correlation in the training data. It may associate grass with the cow label and fail when that background cue is absent.",
+    "reference": "Lecture 5, Section 5.7 — Limitations: spurious patterns"
+  }
+]

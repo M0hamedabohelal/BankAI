@@ -1,0 +1,5684 @@
+// Auto-generated Quiz Questions Data (160 Questions across 4 Banks)
+const QUIZ_DATA = [
+  {
+    "id": 1,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "In the term “deep learning”, what does the word deep refer to?",
+    "question_ar": "في مصطلح «التعلم العميق» (Deep Learning)، إلى ماذا تشير كلمة «العميق» (Deep)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The large size of the training data set",
+        "text_ar": "الحجم الضخم لمجموعة بيانات التدريب"
+      },
+      {
+        "key": "b",
+        "text": "The long time needed to train the network",
+        "text_ar": "الوقت الطويل المطلوب لتدريب الشبكة العصبية"
+      },
+      {
+        "key": "c",
+        "text": "The number of layers between the input and the output",
+        "text_ar": "عدد الطبقات الموجودة بين المدخلات والمخرجات"
+      },
+      {
+        "key": "d",
+        "text": "The very large values of the weights",
+        "text_ar": "القيم الكبيرة جداً للأوزان (Weights)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "The number of layers between the input and the output",
+    "answer_text_ar": "عدد الطبقات الموجودة بين المدخلات والمخرجات",
+    "explanation": "The term deep describes the depth of the neural network: the number of layers between its input and output. It does not refer to the size of the data set, training time, or magnitude of the weights.",
+    "explanation_ar": "تشير كلمة «عميق» حصراً إلى عمق الشبكة العصبية، أي وجود عدد من الطبقات الخفية بين طبقة المدخلات وطبقة المخرجات، ولا علاقة لها بحجم البيانات أو زمن التدريب أو قيم الأوزان.",
+    "reference": ""
+  },
+  {
+    "id": 2,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "What is meant by representation learning?",
+    "question_ar": "ما المقصود بمصطلح «تعلم التمثيلات» (Representation Learning)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The network learns useful features from raw data by itself, layer by layer",
+        "text_ar": "تتعلم الشبكة الميزات المفيدة ذاتياً من البيانات الخام طبقة تلو الأخرى"
+      },
+      {
+        "key": "b",
+        "text": "Human experts design features, and a simple algorithm uses them",
+        "text_ar": "يقوم خبراء بشريون بتصميم الميزات وتستخدمها خوارزمية بسيطة"
+      },
+      {
+        "key": "c",
+        "text": "The network stores the training examples so it can repeat them later",
+        "text_ar": "تقوم الشبكة بتخزين أمثلة التدريب لترديدها لاحقاً"
+      },
+      {
+        "key": "d",
+        "text": "The data is converted into a table before learning starts",
+        "text_ar": "يتم تحويل البيانات إلى جدول قبل بدء عملية التعلم"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The network learns useful features from raw data by itself, layer by layer",
+    "answer_text_ar": "تتعلم الشبكة الميزات المفيدة ذاتياً من البيانات الخام طبقة تلو الأخرى",
+    "explanation": "Representation learning means that the network automati- cally discovers useful features from raw input data. Different layers learn increasingly useful representations instead of relying entirely on manually designed features.",
+    "explanation_ar": "تعلم التمثيلات يعني أن الشبكة تستخرج الميزات (Features) تلقائياً من البيانات الخام دون الحاجة لتدخل بشري لهندسة الميزات يدوياً، حيث تبني كل طبقة تمثيلاً أكثر تجريداً وفائدة من الطبقة السابقة.",
+    "reference": ""
+  },
+  {
+    "id": 3,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Deep networks took off around 2011 for three reasons. Which of the following is not one of them?",
+    "question_ar": "انطلقت الشبكات العميقة بقوة عام 2011 لثلاثة أسباب رئيسية. أيٌّ مما يلي ليس واحداً منها؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Huge labelled data sets from the internet, such as ImageNet",
+        "text_ar": "مجموعات البيانات الضخمة المصنفة من الإنترنت مثل ImageNet"
+      },
+      {
+        "key": "b",
+        "text": "Fast matrix multiplication on graphics cards (GPUs)",
+        "text_ar": "الضرب السريع للمصفوفات على بطاقات الرسوميات (GPUs)"
+      },
+      {
+        "key": "c",
+        "text": "Better methods such as ReLU, dropout and batch normalisation",
+        "text_ar": "طرق تحسين متطورة مثل ReLU وDropout وتسوية الدفعات (Batch Normalization)"
+      },
+      {
+        "key": "d",
+        "text": "The invention of the backpropagation algorithm in 2011",
+        "text_ar": "اختراع خوارزمية التغذية الراجعة (Backpropagation) في عام 2011"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "The invention of the backpropagation algorithm in 2011",
+    "answer_text_ar": "اختراع خوارزمية التغذية الراجعة (Backpropagation) في عام 2011",
+    "explanation": "Backpropagation was not invented in 2011. The rise of deep learning was supported by large data sets, GPU computing, and improved training methods and architectures.",
+    "explanation_ar": "خوارزمية الانتشار العكسي للخطأ (Backpropagation) لم تُخترع في 2011، بل تم نشرها وشهرتها في الثمانينيات (1986 بواسطة روميلهارت وهينتون ووليامز). أسباب انطلاق التعلم العميق في 2011 كانت: البيانات الضخمة، كروت الشاشة GPU، ودوال تنشيط وتقنيات تدريب حديثة.",
+    "reference": ""
+  },
+  {
+    "id": 4,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "What event is described in the notes as the turning point for deep learning?",
+    "question_ar": "ما هو الحدث الذي وُصف في المحاضرات بأنه نقطة التحول التاريخية للتعلم العميق؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The proposal of the first artificial neuron in 1943",
+        "text_ar": "اقتراح أول عصبون اصطناعي عام 1943"
+      },
+      {
+        "key": "b",
+        "text": "The 2012 ImageNet competition, won by a deep convolutional network",
+        "text_ar": "مسابقة ImageNet لعام 2012 التي فازت بها شبكة التلافيف العميقة (AlexNet)"
+      },
+      {
+        "key": "c",
+        "text": "Minsky and Papert’s book on single-layer networks in 1969",
+        "text_ar": "كتاب مينسكي وبابيرت عن الشبكات أحادية الطبقة عام 1969"
+      },
+      {
+        "key": "d",
+        "text": "The victory of AlphaGo at the game of Go",
+        "text_ar": "فوز برنامج AlphaGo في لعبة جو"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The 2012 ImageNet competition, won by a deep convolutional network",
+    "answer_text_ar": "مسابقة ImageNet لعام 2012 التي فازت بها شبكة التلافيف العميقة (AlexNet)",
+    "explanation": "The 2012 ImageNet result demonstrated the strong perfor- mance of deep convolutional networks in image classification and is described in the notes as a major turning point.",
+    "explanation_ar": "فوز شبكة AlexNet العميقة بمسابقة ImageNet عام 2012 بفارق هائل عن الطرق التقليدية كان نقطة التحول الكبرى التي أثبتت للعالم تفوق التعلم العميق في الرؤية الحاسوبية.",
+    "reference": ""
+  },
+  {
+    "id": 5,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "A unit has inputs x = (2 ,−1), weights w = (0 .5,1.0), bias b = 0 .5 and ReLU activation. What is its output?",
+    "question_ar": "وحدة عصبية مدخلاتها x = (2, -1) وأوزانها w = (0.5, 1.0) والانحياز b = 0.5 وتستخدم دالة تنشيط ReLU. ما هي قيمة المخرجات؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.5",
+        "text_ar": "0.5"
+      },
+      {
+        "key": "b",
+        "text": "0",
+        "text_ar": "0"
+      },
+      {
+        "key": "c",
+        "text": "1.5",
+        "text_ar": "1.5"
+      },
+      {
+        "key": "d",
+        "text": "−0.5",
+        "text_ar": "-0.5"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.5",
+    "answer_text_ar": "0.5",
+    "explanation": "First calculate the weighted sum: z = (2)(0.5) + (−1)(1.0) + 0.5 = 1 − 1 + 0.5 = 0.5. ReLU is max (0,z ), so the output is max (0,0.5) = 0.5.",
+    "explanation_ar": "نحسب المجموع الموزون أولاً: z = (2 * 0.5) + (-1 * 1.0) + 0.5 = 1.0 - 1.0 + 0.5 = 0.5. دالة ReLU تُرجع max(0, z)، وبما أن 0.5 موجب فإن المخرج هو 0.5.",
+    "reference": ""
+  },
+  {
+    "id": 6,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "What is the role of the bias b in a unit?",
+    "question_ar": "ما هو دور الانحياز (Bias b) في الخلية العصبية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "It decides how important each input is",
+        "text_ar": "يحدد مدى أهمية كل مدخل من المدخلات"
+      },
+      {
+        "key": "b",
+        "text": "It sets the size of each gradient-descent step",
+        "text_ar": "يحدد حجم خطوة خوارزمية الانحدار التدريجي"
+      },
+      {
+        "key": "c",
+        "text": "It shifts the point at which the unit “switches on”",
+        "text_ar": "يُزيح نقطة أو عتبة التنشيط التي يبدأ العصبون عندها بالعمل"
+      },
+      {
+        "key": "d",
+        "text": "It switches the unit off at random during training",
+        "text_ar": "يقوم بإطفاء الخلية العصبية عشوائياً أثناء التدريب"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "It shifts the point at which the unit “switches on”",
+    "answer_text_ar": "يُزيح نقطة أو عتبة التنشيط التي يبدأ العصبون عندها بالعمل",
+    "explanation": "The bias is added to the weighted sum, z = w · x + b. It shifts the activation threshold. The weights determine how strongly individual inputs contribute.",
+    "explanation_ar": "يُضاف الانحياز b إلى المجموع الموزون (z = w·x + b) لإزاحة عتبة التنشيط لأعلى أو لأسفل، بينما تحدد الأوزان w مقدار مساهمة وأهمية كل مدخل.",
+    "reference": ""
+  },
+  {
+    "id": 7,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "What is the output range of the tanh activation function?",
+    "question_ar": "ما هو مدى مخرجات دالة التنشيط tanh (الظل الزائدي)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0 to 1",
+        "text_ar": "من 0 إلى 1"
+      },
+      {
+        "key": "b",
+        "text": "0 to ∞",
+        "text_ar": "من 0 إلى مالانهاية"
+      },
+      {
+        "key": "c",
+        "text": "0 to 1, summing to 1",
+        "text_ar": "من 0 إلى 1 ومجموعها يساوي 1"
+      },
+      {
+        "key": "d",
+        "text": "−1 to 1",
+        "text_ar": "من -1 إلى 1"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "−1 to 1",
+    "answer_text_ar": "من -1 إلى 1",
+    "explanation": "The hyperbolic tangent function, tanh(z), produces values in the interval [−1,1].",
+    "explanation_ar": "دالة tanh تُنتج قيماً متمركزة حول الصفر في المدى [-1, 1]، بخلاف دالة Sigmoid التي تُنتج قيماً بين [0, 1].",
+    "reference": ""
+  },
+  {
+    "id": 8,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "Which activation function is used at the output of a multi-class classifier?",
+    "question_ar": "أيّ دالة تنشيط تُستخدم في طبقة المخرجات لمصنف متعدد الفئات (Multi-class Classifier)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "ReLU",
+        "text_ar": "ReLU"
+      },
+      {
+        "key": "b",
+        "text": "Softmax",
+        "text_ar": "Softmax"
+      },
+      {
+        "key": "c",
+        "text": "tanh",
+        "text_ar": "tanh"
+      },
+      {
+        "key": "d",
+        "text": "Sigmoid",
+        "text_ar": "Sigmoid"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Softmax",
+    "answer_text_ar": "Softmax",
+    "explanation": "Softmax converts the class logits into probabilities between 0 and 1 whose sum is 1, making it suitable for multi-class classification.",
+    "explanation_ar": "دالة Softmax تحول درجات المخرجات (Logits) إلى توزيع احتمالي لجميع الفئات بحيث تنحصر القيم بين 0 و1 ويكون مجموعها دائماً 1، وهو المطلوب في التصنيف متعدد الفئات.",
+    "reference": ""
+  },
+  {
+    "id": 9,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "Why is ReLU the default activation for hidden layers today?",
+    "question_ar": "لماذا تعد ReLU دالة التنشيط الافتراضية للطبقات الخفية اليوم؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Its output always lies between 0 and 1",
+        "text_ar": "لأن مخرجاتها تنحصر دائماً بين 0 و1"
+      },
+      {
+        "key": "b",
+        "text": "It gives probabilities that sum to 1",
+        "text_ar": "لأنها تعطي احتمالات مجموعها يساوي 1"
+      },
+      {
+        "key": "c",
+        "text": "It is cheap to compute and its slope is exactly 1 for every positive input",
+        "text_ar": "لأنها بسيطة حسابياً ومشتقّتها تساوي 1 بالضبط لكل مدخل موجب"
+      },
+      {
+        "key": "d",
+        "text": "Its slope is at most 0.25, which keeps the gradients small",
+        "text_ar": "لأن ميلها لا يتعدى 0.25 مما يحافظ على صغر التدرجات"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "It is cheap to compute and its slope is exactly 1 for every positive input",
+    "answer_text_ar": "لأنها بسيطة حسابياً ومشتقّتها تساوي 1 بالضبط لكل مدخل موجب",
+    "explanation": "ReLU is computationally inexpensive. For positive inputs its derivative is 1, which helps gradients pass through deep networks without the system- atic shrinking associated with sigmoid activations.",
+    "explanation_ar": "تتميز ReLU بأنها رخيصة جداً في الحسابات، وميلها (مشتقّتها) ثابت ويساوي 1 للقيم الموجبة، مما يسمح للتدرجات بالمرور عبر الشبكات العميقة دون التلاشي (تجنب مشكلة Vanishing Gradients).",
+    "reference": ""
+  },
+  {
+    "id": 10,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "What happens if we remove the activation functions and stack many linear layers?",
+    "question_ar": "ماذا يحدث إذا أزلنا دوال التنشيط وقررنا تكديس طبقات خطية متعددة فوق بعضها؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The whole network is still just one linear function",
+        "text_ar": "ستبقى الشبكة بأكملها مجرد دالة خطية واحدة بسيطة"
+      },
+      {
+        "key": "b",
+        "text": "The network can learn any curved decision boundary",
+        "text_ar": "ستتمكن الشبكة من تعلم أي حد فاصل منحني"
+      },
+      {
+        "key": "c",
+        "text": "The network trains faster and generalises better",
+        "text_ar": "ستتدرب الشبكة أسرع وتعمم نتائجها بشكل أفضل"
+      },
+      {
+        "key": "d",
+        "text": "The network can learn XOR but not other problems",
+        "text_ar": "ستتمكن الشبكة من حل مسألة XOR فقط دون غيرها"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The whole network is still just one linear function",
+    "answer_text_ar": "ستبقى الشبكة بأكملها مجرد دالة خطية واحدة بسيطة",
+    "explanation": "A composition of linear functions is itself a linear function. Therefore, stacking linear layers without non-linear activations does not increase the network’s ability to represent non-linear decision boundaries.",
+    "explanation_ar": "تركيب عدة دوال خطية فوق بعضها ينتج دائماً دالة خطية واحدة. لذلك، فإن تكديس الطبقات دون دوال تنشيط غير خطية يفقد الشبكة قدرتها على تعلم الأنماط غير الخطية والمعقدة.",
+    "reference": ""
+  },
+  {
+    "id": 11,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "Which problem did Minsky and Papert use in 1969 to show the limits of single- layer networks?",
+    "question_ar": "ما الذي تنص عليه مبرهنة التقريب الشامل (Universal Approximation Theorem)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Handwritten digit recognition",
+        "text_ar": "تصل جميع خوارزميات التعلم العميق إلى نفس الدقة إذا تدربت لوقت كافٍ"
+      },
+      {
+        "key": "b",
+        "text": "Face recognition",
+        "text_ar": "تضمن التغذية الراجعة دائماً إيجاد الحد الأدنى العام لدالة الخسارة"
+      },
+      {
+        "key": "c",
+        "text": "House-price prediction",
+        "text_ar": "تحتاج الشبكات العميقة لبيانات أقل من النماذج الخطية"
+      },
+      {
+        "key": "d",
+        "text": "XOR",
+        "text_ar": "يمكن لشبكة بطبقة خفية واحدة غير خطية تقريب أي دالة مستمرة إذا كان عدد خلاياها كافياً"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "XOR",
+    "answer_text_ar": "يمكن لشبكة بطبقة خفية واحدة غير خطية تقريب أي دالة مستمرة إذا كان عدد خلاياها كافياً",
+    "explanation": "The XOR problem is not linearly separable. A single-layer perceptron cannot represent its decision boundary, illustrating the limitations of single- layer networks.",
+    "explanation_ar": "تنص المبرهنة على أن شبكة عصبية بطبقة خفية واحدة مع دوال تنشيط غير خطية وعدد كافٍ من العصبونات قادرة نظرياً على تقريب أي دالة متصلة لأي درجة دقة مطلوبة.",
+    "reference": ""
+  },
+  {
+    "id": 12,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "In a feedforward network, which layer does no computation?",
+    "question_ar": "ما هو دور دالة الخسارة (Loss Function) في التعلم العميق؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The first hidden layer",
+        "text_ar": "تحدد معدل التعلم تلقائياً لكل طبقة"
+      },
+      {
+        "key": "b",
+        "text": "The input layer",
+        "text_ar": "تقيس الفارق أو الخطأ بين تنبؤات الشبكة والتسميات الحقيقية"
+      },
+      {
+        "key": "c",
+        "text": "The output layer",
+        "text_ar": "تمنع الأوزان من أن تصبح مساوية للصفر"
+      },
+      {
+        "key": "d",
+        "text": "The last hidden layer",
+        "text_ar": "تختار دالة التنشيط المثلى لكل عصبون"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The input layer",
+    "answer_text_ar": "تقيس الفارق أو الخطأ بين تنبؤات الشبكة والتسميات الحقيقية",
+    "explanation": "The input layer receives and passes the input values to the next layer. The weighted sums and activation computations are performed by subse- quent layers.",
+    "explanation_ar": "دالة الخسارة تقيس مدى دقة أو خطأ تنبؤ الشبكة مقارنة بالقيمة الحقيقية المستهدفة، وهي الإشارة التوجيهية التي يُعتمد عليها لتحديث الأوزان وتقليل الخطأ.",
+    "reference": ""
+  },
+  {
+    "id": 13,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "A network takes a 28 × 28 image (784 pixels), has one hidden layer of 128 units and outputs 10 classes. How many parameters does it have?",
+    "question_ar": "ما هي دالة الخسارة القياسية المستخدمة في التصنيف الثنائي (Binary Classification)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "100,480",
+        "text_ar": "الخطأ التربيعي المتوسط (MSE)"
+      },
+      {
+        "key": "b",
+        "text": "1,290",
+        "text_ar": "خسارة المفصلة (Hinge Loss)"
+      },
+      {
+        "key": "c",
+        "text": "101,770",
+        "text_ar": "خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)"
+      },
+      {
+        "key": "d",
+        "text": "101,632",
+        "text_ar": "المسافة الكلية للتغير"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "101,770",
+    "answer_text_ar": "خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)",
+    "explanation": "For a fully connected layer, parameters equal weights plus biases. Input-to-hidden: 784×128+128 = 100 ,480. Hidden-to-output: 128×10+10 = 1,290. Total: 100,480 + 1,290 = 101,770.",
+    "explanation_ar": "الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy / Log Loss) هي الدالة القياسية في التصنيف الثنائي؛ لأنها تعاقب بشدة النماذج التي تعطي ثقة عالية لتنبؤات خاطئة.",
+    "reference": ""
+  },
+  {
+    "id": 14,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "How many parameters does a fully connected network with layers 100 → 50 → 10 have?",
+    "question_ar": "في خوارزمية الانحدار التدريجي، بأي اتجاه يتم تحديث الأوزان؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "5,560",
+        "text_ar": "في الاتجاه المعاكس لمتجه التدرج (Gradient)"
+      },
+      {
+        "key": "b",
+        "text": "5,500",
+        "text_ar": "في نفس اتجاه متجه التدرج"
+      },
+      {
+        "key": "c",
+        "text": "5,050",
+        "text_ar": "باتجاه عشوائي تماماً لتجنب الحدود المحلية"
+      },
+      {
+        "key": "d",
+        "text": "5,060",
+        "text_ar": "نحو أكبر وزن في الطبقة السابقة"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "5,560",
+    "answer_text_ar": "في الاتجاه المعاكس لمتجه التدرج (Gradient)",
+    "explanation": "For the first layer: 100 × 50 + 50 = 5 ,050. For the second layer: 50 × 10 + 10 = 510 . Total parameters: 5,050 + 510 = 5 ,560. 50 × 10ﻭﺯﻥﻭ 100 × 50ﺍܳޚٴگ۰ﺍ ﺍڤ",
+    "explanation_ar": "يشير التدرج (Gradient) إلى اتجاه أسرع صعود لدالة الخسارة؛ لذا نتحرك في عكس اتجاه التدرج (w = w - η∇L) للوصول إلى أدنى خسارة ممكنة.",
+    "reference": ""
+  },
+  {
+    "id": 15,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "What does the universal approximation theorem say?",
+    "question_ar": "ما الذي يحدث إذا كان معدل التعلم (Learning Rate η) كبيراً جداً؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Any network with ReLU units will reach zero training loss",
+        "text_ar": "تتدرب الشبكة ببطء شديد وتستغرق وقتاً طويلاً"
+      },
+      {
+        "key": "b",
+        "text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like",
+        "text_ar": "قد يتذبذب التدريب بشكل مفرط أو يتباعد وتتزايد الخسارة إلى مالانهاية"
+      },
+      {
+        "key": "c",
+        "text": "Deep networks always need fewer training examples than shallow ones",
+        "text_ar": "تتوقف جميع الأوزان عند الصفر"
+      },
+      {
+        "key": "d",
+        "text": "Gradient descent always finds the global minimum of the loss",
+        "text_ar": "تحفظ الشبكة بيانات التدريب بدقة 100% فوراً"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like",
+    "answer_text_ar": "قد يتذبذب التدريب بشكل مفرط أو يتباعد وتتزايد الخسارة إلى مالانهاية",
+    "explanation": "The universal approximation theorem states that a suffi- ciently wide network with one hidden layer can approximate continuous functions to arbitrary accuracy under the theorem’s conditions. It does not guarantee successful training or a global minimum.",
+    "explanation_ar": "معدل التعلم الكبير جداً يجعل خطوات التحديث تقفز فوق الحد الأدنى، مسبباً تذبذبات حادة أو تباعداً (Divergence) يجعل الخسارة تنفجر نحو قيم غير معرفة (NaN).",
+    "reference": ""
+  },
+  {
+    "id": 16,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "In the forward-pass example, the input is x = (1 ,2) and hidden unit h2 has weights (−1,0.5), bias 0.5 and ReLU activation. What is the value of h2?",
+    "question_ar": "ما هي الأداة الرياضية الأساسية التي تعتمد عليها خوارزمية الانتشار العكسي (Backpropagation)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0",
+        "text_ar": "تكامل مونت كارلو"
+      },
+      {
+        "key": "b",
+        "text": "1.0",
+        "text_ar": "تحليل القيم المفردة (SVD)"
+      },
+      {
+        "key": "c",
+        "text": "1.5",
+        "text_ar": "قاعدة السلسلة في التفاضل (Chain Rule of Calculus)"
+      },
+      {
+        "key": "d",
+        "text": "0.5",
+        "text_ar": "مبرهنة فيثاغورس"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.5",
+    "answer_text_ar": "مبرهنة فيثاغورس",
+    "explanation": "Compute z = (1)(−1) + (2)(0.5) + 0.5 = −1 + 1 + 0.5 = 0 .5. Applying ReLU gives h2 = max(0,0.5) = 0.5.",
+    "explanation_ar": "تعتمد خوارزمية التغذية الراجعة بالكامل على قاعدة السلسلة (Chain Rule) لحساب المشتقات الجزئية لدالة الخسارة بالنسبة لكل وزن في جميع الطبقات من المخرجات رجوعاً للمدخلات.",
+    "reference": ""
+  },
+  {
+    "id": 17,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "In the same example, h1 = 1 .0 and h2 = 0 .5. The sigmoid output unit has weights (1,−2) and bias 0.5. What is ˆy?",
+    "question_ar": "في مكتبات مثل PyTorch وTensorFlow، ما هو الرسم البياني الحسابي (Computational Graph)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.50",
+        "text_ar": "شاشة ترسم منحنى الخسارة والدقة في الوقت الفعلي"
+      },
+      {
+        "key": "b",
+        "text": "0.73",
+        "text_ar": "رسم بياني موجَّه لجميع العمليات الحسابية لحساب التدرجات تلقائياً"
+      },
+      {
+        "key": "c",
+        "text": "0.62",
+        "text_ar": "جدول يوضح أبعاد الصور وأحجام الطبقات"
+      },
+      {
+        "key": "d",
+        "text": "0.38",
+        "text_ar": "خريطة لاتصالات الخوادم أثناء التدريب الموزع"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "0.62",
+    "answer_text_ar": "جدول يوضح أبعاد الصور وأحجام الطبقات",
+    "explanation": "The output logit is z = (1)(1.0)+(−2)(0.5)+0.5 = 1 −1+0.5 = 0.5. The sigmoid gives σ(0.5) = 1/(1 + e−0.5) ≈ 0.622, so the closest option is 0.62.",
+    "explanation_ar": "الرسم الحسابي (Computational Graph) هو هيكل بياني يتبع العمليات والعمليات الوسيطة في التمرير الأمامي، مما يمكّن محرك التفاضل التلقائي (Autograd) من حساب التدرجات عبر المسار العكسي بسهولة.",
+    "reference": ""
+  },
+  {
+    "id": 18,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "For a binary (yes/no) classification task, which output layer and loss should be used?",
+    "question_ar": "ما الفائدة الرئيسية لاستخدام دفعات صغيرة (Mini-batch SGD) بدلاً من كامل البيانات (Full Batch)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "One sigmoid unit with binary cross-entropy",
+        "text_ar": "تحديث الأوزان بشكل متكرر وسريع، وتقليل استهلاك الذاكرة، مع ضوضاء تساعد على الإفلات من القيعان المحلية الرديئة"
+      },
+      {
+        "key": "b",
+        "text": "One linear unit with mean squared error",
+        "text_ar": "حساب التدرج الدقيق بدقة 100% في كل خطوة دون أي ضوضاء"
+      },
+      {
+        "key": "c",
+        "text": "Softmax over K units with categorical cross-entropy",
+        "text_ar": "عدم الحاجة لتحديد معدل التعلم"
+      },
+      {
+        "key": "d",
+        "text": "One ReLU unit with mean squared error",
+        "text_ar": "ضمان الوصول للحل الأمثل في خطوة واحدة فقط"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "One sigmoid unit with binary cross-entropy",
+    "answer_text_ar": "تحديث الأوزان بشكل متكرر وسريع، وتقليل استهلاك الذاكرة، مع ضوضاء تساعد على الإفلات من القيعان المحلية الرديئة",
+    "explanation": "A binary classifier uses one sigmoid output to represent the probability of the positive class and binary cross-entropy to measure the prediction error.",
+    "explanation_ar": "التدريب بالدفعات الصغيرة (Mini-batch) يوازن بين سرعة الحساب واستغلال مصفوفات GPU، ويقدم تحديثات متكررة للأوزان مع ضجيج عشوائي إيجابي يساعد في تجنب القيعان المحلية الحادة.",
+    "reference": ""
+  },
+  {
+    "id": 19,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "True prices are (3, 5, 2) and the predictions are (2.5, 5.5, 2). What is the mean squared error?",
+    "question_ar": "ما هو تعريف «الحقبة» (Epoch) في تدريب الشبكات العصبية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.5",
+        "text_ar": "الزمن اللازم لتدريب دفعة واحدة (Batch) من البيانات"
+      },
+      {
+        "key": "b",
+        "text": "0.333",
+        "text_ar": "العدد الإجمالي للمعاملات (Parameters) داخل النموذج"
+      },
+      {
+        "key": "c",
+        "text": "0.25",
+        "text_ar": "تمريرة واحدة كاملة (أمامية وعكسية) عبر كامل مجموعة بيانات التدريب"
+      },
+      {
+        "key": "d",
+        "text": "0.167",
+        "text_ar": "النقطة التي تنخفض عندها الخسارة إلى ما دون 0.01"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.167",
+    "answer_text_ar": "النقطة التي تنخفض عندها الخسارة إلى ما دون 0.01",
+    "explanation": "The squared errors are (3 − 2.5)2 = 0.25, (5 − 5.5)2 = 0.25, and (2 − 2)2 = 0. Thus, MSE = (0.25 + 0.25 + 0)/3 = 0 .5/3 ≈ 0.167.",
+    "explanation_ar": "الحقبة (Epoch) تعني مرور نموذج التعلم على كل عينات التدريب في قاعدة البيانات لمرة واحدة كاملة (Forward + Backward pass).",
+    "reference": ""
+  },
+  {
+    "id": 20,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "A3-classnetworkoutputslogits z = (2.0,1.0,0.1). Given e2.0 = 7.389, e1.0 = 2.718 and e0.1 = 1.105, what is the softmax probability of class 1?",
+    "question_ar": "ما هي علامة حدوث الإفراط في التخصيص أو المطابقة (Overfitting)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.242",
+        "text_ar": "خسارة التدريب مرتفعة وخسارة التحقق مرتفعة أيضاً"
+      },
+      {
+        "key": "b",
+        "text": "0.659",
+        "text_ar": "خسارة التدريب منخفضة جداً بينما خسارة التحقق (Validation Loss) تبدأ في الارتفاع"
+      },
+      {
+        "key": "c",
+        "text": "0.667",
+        "text_ar": "جميع الأوزان تصبح أصفاراً"
+      },
+      {
+        "key": "d",
+        "text": "0.099",
+        "text_ar": "الشبكة تعطي مخرجات متطابقة لكل المدخلات"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "0.659",
+    "answer_text_ar": "خسارة التدريب منخفضة جداً بينما خسارة التحقق (Validation Loss) تبدأ في الارتفاع",
+    "explanation": "For class 1, softmax is e2.0/(e2.0+e1.0+e0.1). Substituting the values gives 7.389/(7.389 + 2.718 + 1.105) = 7.389/11.212 ≈ 0.659.",
+    "explanation_ar": "يحدث فرط المطابقة (Overfitting) عندما تحفظ الشبكة تفاصيل وضوضاء بيانات التدريب عن ظهر قلب، فنرى خطأ التدريب ينخفض بشدة بينما يفشل النموذج في التعميم ويرتفع خطأ التحقق.",
+    "reference": ""
+  },
+  {
+    "id": 21,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "A classifier gives the correct class a probability of 0.1. What is the cross- entropy loss?",
+    "question_ar": "ما هو المقصود بنقص المطابقة (Underfitting)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.105",
+        "text_ar": "النموذج بسيط للغاية ولا يستطيع التقاط البنية الأساسية للبيانات حتى على بيانات التدريب"
+      },
+      {
+        "key": "b",
+        "text": "0.9",
+        "text_ar": "النموذج حفظ بيانات التدريب بدقة عالية جداً"
+      },
+      {
+        "key": "c",
+        "text": "2.303",
+        "text_ar": "استخدام معدل تعلم متناهي الصغر لدرجة التوقف التام"
+      },
+      {
+        "key": "d",
+        "text": "0.1",
+        "text_ar": "وجود عدد ضخم جداً من الطبقات والمعاملات في الشبكة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "2.303",
+    "answer_text_ar": "استخدام معدل تعلم متناهي الصغر لدرجة التوقف التام",
+    "explanation": "For a correct class probability p, the cross-entropy loss for one example is −log(p). Therefore, −log(0.1) ≈ 2.303.",
+    "explanation_ar": "نقص المطابقة (Underfitting) يعني أن قدرة النموذج ضعيفة للغاية أو لم يتدرب كفاية لدرجة أنه يعطي نتائج سيئة ودقة منخفضة حتى على البيانات التي تدرب عليها.",
+    "reference": ""
+  },
+  {
+    "id": 22,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "Which rule is the gradient-descent update for a weight w with learning rate η?",
+    "question_ar": "ما هو الغرض الأساسي من استخدام مجموعة التحقق (Validation Set)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "w ← w − η ,∂L /∂w",
+        "text_ar": "حساب التدرجات لتحديث أوزان الشبكة"
+      },
+      {
+        "key": "b",
+        "text": "w ← w + η ,∂L /∂w",
+        "text_ar": "ضبط المعاملات الفائقة (Hyperparameters) واكتشاف فرط المطابقة"
+      },
+      {
+        "key": "c",
+        "text": "w ← η ,∂L /∂w",
+        "text_ar": "إثبات كفاءة النموذج النهائية في الورقة البحثية دون تعديل"
+      },
+      {
+        "key": "d",
+        "text": "w ← w − ∂L/∂η",
+        "text_ar": "زيادة حجم بيانات التدريب"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "w ← w − η ,∂L /∂w",
+    "answer_text_ar": "حساب التدرجات لتحديث أوزان الشبكة",
+    "explanation": "Gradient descent updates a parameter by subtracting the learning rate multiplied by the loss gradient. The negative sign moves the parameter in the direction that locally decreases the loss.",
+    "explanation_ar": "تُستخدم مجموعة التحقق لاختيار أفضل المعاملات الفائقة (مثل حجم الطبقات ومعدل التعلم) ومراقبة أداء النموذج أثناء التدريب لمنع فرط المطابقة وتطبيق التوقف المبكر.",
+    "reference": ""
+  },
+  {
+    "id": 23,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What is an epoch?",
+    "question_ar": "ما هي القاعدة الذهبية الصارمة للتعامل مع مجموعة الاختبار (Test Set)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "One update of the weights",
+        "text_ar": "يجب تدريب الأوزان عليها مرة واحدة كل 5 حقب"
+      },
+      {
+        "key": "b",
+        "text": "A small random group of examples, such as 32 or 128",
+        "text_ar": "تُستخدم لضبط معدل التعلم وحجم الدفعة"
+      },
+      {
+        "key": "c",
+        "text": "The size of each gradient-descent step",
+        "text_ar": "تُقيَّم مرة واحدة فقط في النهاية لقياس التعميم الحقيقي ولا يُعدل النموذج بناءً عليها"
+      },
+      {
+        "key": "d",
+        "text": "One pass through the whole training set",
+        "text_ar": "تُخلط دائماً مع مجموعة التدريب لتنويع العينات"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "One pass through the whole training set",
+    "answer_text_ar": "تُخلط دائماً مع مجموعة التدريب لتنويع العينات",
+    "explanation": "An epoch is one complete pass through all training examples. It usually consists of multiple mini-batches and parameter updates.",
+    "explanation_ar": "مجموعة الاختبار مخصصة للتقييم النهائي المستقل فقط. إذا استُخدمت لضبط النموذج أو اختيار المعاملات، يحدث ما يُعرف بتسرب البيانات (Data Leakage) وتفقد مصداقيتها في قياس التعميم.",
+    "reference": ""
+  },
+  {
+    "id": 24,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "Backpropagation is best described as:",
+    "question_ar": "كيف يعمل تنظيم L2 (المعروف باضمحلال الأوزان Weight Decay)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Trying all combinations of weights and keeping the best",
+        "text_ar": "بحذف نصف العصبونات عشوائياً في كل تكرار"
+      },
+      {
+        "key": "b",
+        "text": "The chain rule of calculus, applied systematically from the output back to the input",
+        "text_ar": "بإضافة حد عقوبة يتناسب مع مجموع مربعات الأوزان إلى دالة الخسارة لتصغيرها"
+      },
+      {
+        "key": "c",
+        "text": "Randomly switching off hidden units during training",
+        "text_ar": "بتقييد الأوزان لتكون موجبة فقط"
+      },
+      {
+        "key": "d",
+        "text": "Adding a penalty for large weights to the loss",
+        "text_ar": "بإلغاء التدرجات لجميع الأوزان الأكبر من 1"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "The chain rule of calculus, applied systematically from the output back to the input",
+    "answer_text_ar": "بإضافة حد عقوبة يتناسب مع مجموع مربعات الأوزان إلى دالة الخسارة لتصغيرها",
+    "explanation": "Backpropagation applies the chain rule through the network’s computation graph, propagating derivatives from the output toward earlier layers to calculate gradients for the parameters.",
+    "explanation_ar": "يضيف تنظيم L2 حداً يعاقب الأوزان الكبيرة (λ Σ w²)، مما يجبر الأوزان على البقاء صغيرة وموزعة بسلاسة، ويمنع النموذج من الاعتماد المفرط على ميزات فردية، مما يقلل الـ Overfitting.",
+    "reference": ""
+  },
+  {
+    "id": 25,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "In the training step on one neuron ( x = 2 , y = 1 , w = 0 .5, b = 0 , sigmoid, cross-entropy), the forward pass gives a = 0 .731. Using ∂L/∂z = a − y, what is ∂L/∂w?",
+    "question_ar": "كيف تعمل تقنية الإسقاط العشوائي (Dropout) أثناء التدريب؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "−0.269",
+        "text_ar": "بحذف أسوأ الأمثلة التدريبية من مجموعة البيانات"
+      },
+      {
+        "key": "b",
+        "text": "0.538",
+        "text_ar": "بإيقاف تفعيل مجموعة عشوائية من الخلايا العصبية باحتمال p أثناء كل تمريرة تدريب"
+      },
+      {
+        "key": "c",
+        "text": "−0.538",
+        "text_ar": "بخفض معدل التعلم بمقدار النصف عند كل حقبة"
+      },
+      {
+        "key": "d",
+        "text": "1.462",
+        "text_ar": "بتعيين أوزان الطبقة الأخيرة لتكون صفراً"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "−0.538",
+    "answer_text_ar": "بخفض معدل التعلم بمقدار النصف عند كل حقبة",
+    "explanation": "First, ∂L/∂z = a − y = 0 .731 − 1 = −0.269. Since z = wx+b, the chain rule gives ∂L/∂w = (∂L/∂z)(∂z/∂w) = (−0.269)(x) = (−0.269)(2) =",
+    "explanation_ar": "تقوم Dropout بتعطيل نسبة عشوائية من العصبونات في كل دفعة أثناء التدريب، مما يمنع الخلايا من التكيف المشترك المرضي (Co-adaptation) ويحفزها على تعلم ميزات قوية ومستقلة، وكأنه تدريب لعدة شبكات مدمجة.",
+    "reference": ""
+  },
+  {
+    "id": 26,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "Continuing A25 with learning rate η = 0.5, what is the new value of w?",
+    "question_ar": "ما هي آلية عمل التوقف المبكر (Early Stopping)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.769",
+        "text_ar": "إيقاف التدريب فور وصول دقة التدريب إلى 100%"
+      },
+      {
+        "key": "b",
+        "text": "0.231",
+        "text_ar": "إيقاف التدريب عندما يتوقف خطأ التحقق (Validation Loss) عن التحسن ويبدأ في الصعود"
+      },
+      {
+        "key": "c",
+        "text": "1.038",
+        "text_ar": "إيقاف التدريب بعد عدد ثابت من الثواني لتوفير الكهرباء"
+      },
+      {
+        "key": "d",
+        "text": "0.634",
+        "text_ar": "إيقاف التدريب عندما تصبح جميع التدرجات سالبة"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.769",
+    "answer_text_ar": "إيقاف التدريب فور وصول دقة التدريب إلى 100%",
+    "explanation": "Use wnew = wold − η(∂L/∂w). Therefore, wnew = 0 .5 − 0.5(−0.538) = 0.5 + 0.269 = 0.769.",
+    "explanation_ar": "التوقف المبكر يراقب دالة خسارة التحقق؛ فعندما يلاحظ أنها توقفت عن التحسن لعدة حقب (Patience) وبدأت ترتفع بسبب فرط المطابقة، يوقف التدريب ويسترجع أفضل أوزان مسجلة.",
+    "reference": ""
+  },
+  {
+    "id": 27,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "The sigmoid’s slope is at most 0.25. In a 10-layer sigmoid network, how small can the gradient reaching the first layer be?",
+    "question_ar": "ما هو الغرض من زيادة البيانات (Data Augmentation) في تدريب شبكات الصور؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "About 2.5",
+        "text_ar": "تقليل زمن تدريب النموذج للنصف"
+      },
+      {
+        "key": "b",
+        "text": "About 0.025",
+        "text_ar": "توليد نسخ معدلة واقعياً من صور التدريب (كالقلب والدوران والقص) لتحسين التعميم ومقاومة التغيرات"
+      },
+      {
+        "key": "c",
+        "text": "About 0.000001",
+        "text_ar": "تحويل الصور إلى متجهات نصية"
+      },
+      {
+        "key": "d",
+        "text": "Exactly 0",
+        "text_ar": "إزالة الألوان من جميع الصور لتسريع المعالجة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "About 0.000001",
+    "answer_text_ar": "تحويل الصور إلى متجهات نصية",
+    "explanation": "In the worst shrinking case, the gradient is multiplied by a factor no larger than 0.25 at each of 10 layers: 0.2510 ≈ 9.54 × 10−7, which is about 0.000001. This illustrates vanishing gradients.",
+    "explanation_ar": "زيادة البيانات تنشئ تنوعاً صناعياً للصور من خلال التحويلات الهندسية كالقص والدوران والانعكاس، مما يعلم الشبكة أن الكائن يبقى كما هو مهما اختلف موضعه أو زاويته، ويمنع فرط المطابقة.",
+    "reference": ""
+  },
+  {
+    "id": 28,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "How is the problem of exploding gradients controlled?",
+    "question_ar": "ما هي الفائدة الرئيسية لتسوية الدفعات (Batch Normalization)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Using sigmoid activations",
+        "text_ar": "حفظ البيانات في مصفوفات مضغوطة"
+      },
+      {
+        "key": "b",
+        "text": "Setting all initial weights equal",
+        "text_ar": "تسوية مدخلات كل طبقة داخل الدفعة لتثبيت توزيعها، مما يسرع التدريب ويسمح بمعدلات تعلم أعلى"
+      },
+      {
+        "key": "c",
+        "text": "Removing the bias terms",
+        "text_ar": "تحويل جميع دوال التنشيط إلى دوال خطية"
+      },
+      {
+        "key": "d",
+        "text": "Gradient clipping",
+        "text_ar": "إلغاء الحاجة لطبقة المدخلات"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Gradient clipping",
+    "answer_text_ar": "إلغاء الحاجة لطبقة المدخلات",
+    "explanation": "Gradient clipping limits the magnitude of gradients when they become excessively large, helping prevent unstable updates caused by exploding gradients. Clipping Gradientﺍڤ",
+    "explanation_ar": "تقوم تسوية الدفعات (BatchNorm) بتعديل مخرجات الطبقات لتكون بمتوسط 0 وتباين 1 لكل دفعة، مما يقلل من ظاهرة الإزاحة التغايرية الداخلية (Internal Covariate Shift) ويسرع استقرار التدريب بشكل هائل.",
+    "reference": ""
+  },
+  {
+    "id": 29,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "What is special about the Adam optimiser?",
+    "question_ar": "ما الذي يميز مُحسِّن آدم (Adam Optimizer) عن الانحدار التدريجي القياسي (SGD)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "It uses the same fixed step size for every weight",
+        "text_ar": "يستخدم خطوة ثابتة ولا يحتاج لحساب التدرجات"
+      },
+      {
+        "key": "b",
+        "text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares",
+        "text_ar": "يجمع بين الزخم (Momentum) وتعديل معدل التعلم التكيفي لكل معامل على حدة (Adaptive Learning Rates)"
+      },
+      {
+        "key": "c",
+        "text": "It computes the loss over the whole training set before every step",
+        "text_ar": "يعمل فقط مع الشبكات أحادية الطبقة"
+      },
+      {
+        "key": "d",
+        "text": "It switches off hidden units with probability p",
+        "text_ar": "يقوم بتصفير الأوزان دورياً لتنظيف الشبكة"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares",
+    "answer_text_ar": "يجمع بين الزخم (Momentum) وتعديل معدل التعلم التكيفي لكل معامل على حدة (Adaptive Learning Rates)",
+    "explanation": "Adam combines running estimates of the first moment (the gradient) and second moment (the squared gradient) to adapt parameter updates. This gives each parameter an adaptive effective step size.",
+    "explanation_ar": "مُحسِّن Adam يدمج مزايا خوارزميتي Momentum (تتبع اتجاه الحركة السابق) وRMSProp (تعديل معدل التعلم لكل وزن بناءً على تاريخ تدرجاته)، مما يجعله المحسن الأكثر كفاءة وشهرة كخيار افتراضي.",
+    "reference": ""
+  },
+  {
+    "id": 30,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "Which statement about dropout is correct?",
+    "question_ar": "ما هي مشكلة تلاشي التدرج (Vanishing Gradient Problem)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "During training each hidden unit is switched off with probability p, and at test time all units are used",
+        "text_ar": "تضاؤل قيم التدرجات أسياً كلما رجعنا للطبقات الأولى في الشبكات العميقة، مما يوقف تعلمها"
+      },
+      {
+        "key": "b",
+        "text": "Units are switched off at test time to make predictions faster",
+        "text_ar": "تزايد التدرجات إلى ما لانهاية مما يسبب فيضان الذاكرة"
+      },
+      {
+        "key": "c",
+        "text": "It removes the weights with the largest values after training",
+        "text_ar": "فقدان بيانات التدريب أثناء نقلها إلى بطاقة الرسوميات"
+      },
+      {
+        "key": "d",
+        "text": "It stops training when the validation loss starts to rise",
+        "text_ar": "اختفاء دالة الخسارة أثناء الحساب"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "During training each hidden unit is switched off with probability p, and at test time all units are used",
+    "answer_text_ar": "تضاؤل قيم التدرجات أسياً كلما رجعنا للطبقات الأولى في الشبكات العميقة، مما يوقف تعلمها",
+    "explanation": "Dropout randomly disables units during training to reduce co- adaptation and overfitting. At test time, the full network is used, with the appropriate scaling handled by the dropout implementation.",
+    "explanation_ar": "عند استخدام دوال مثل Sigmoid ذات مشتقات صغيرة (< 0.25)، يؤدي ضرب المشتقات المتتالية في قاعدة السلسلة عبر طبقات عميقة إلى اقتراب التدرج من الصفر، مما يجعل الطبقات الأولى عاجزة عن التعلم.",
+    "reference": "2 Part B – True or False"
+  },
+  {
+    "id": 31,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "The first artificial neuron was proposed by McCulloch and Pitts in 1943.",
+    "question_ar": "تم اقتراح أول نموذج لعصبون اصطناعي بواسطة ماكولوتش وبيتس (McCulloch & Pitts) في عام 1943.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "McCulloch and Pitts proposed an early mathematical model of an artificial neuron in 1943.",
+    "explanation_ar": "العبارة صحيحة (True). قدم العالمان وارن ماكولوتش ووالتر بيتس أول نموذج رياضي مبسّط للخلية العصبية الاصطناعية عام 1943 معتمداً على المنطق الثنائي والعتبات.",
+    "reference": ""
+  },
+  {
+    "id": 32,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "In a feedforward network, information can flow in loops from the output back to the input during the forward pass.",
+    "question_ar": "في الشبكات ذات التغذية الأمامية (Feedforward Networks)، يمكن للمعلومات أن تدور في حلقات من المخرجات عائدة للمدخلات أثناء التمرير الأمامي.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: In a feedforward network, information flows from the input toward the output without loops during the forward pass.\n\nExplanation: A feedforward network passes information in one direction, from input through hidden layers to output. Feedback loops are not part of the feed- forward computation.",
+    "explanation_ar": "العبارة خاطئة (False). في شبكات التغذية الأمامية تتدفق المعلومات في اتجاه واحد فقط من المدخلات عبر الطبقات الخفية إلى المخرجات دون أي حلقات دائرية (Loops). الشبكات التي تحوي حلقات هي الشبكات العودية (RNNs).",
+    "reference": ""
+  },
+  {
+    "id": 33,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "The cross-entropy loss is 0 when the network gives the correct class a proba- bility of 0.",
+    "question_ar": "تكون قيمة خسارة الإنتروبيا المتقاطعة مساوية للصفر (0) عندما تعطي الشبكة الفئة الصحيحة احتمالاً قدره صفر (0).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: The cross-entropy loss becomes very large (tends to infinity) when the correct class is assigned a probability of 0; it is 0 when that probability is 1.\n\nExplanation: For the correct class, cross-entropy is −log(p). At p = 0, the loss tends to infinity; at p = 1, it equals zero.",
+    "explanation_ar": "العبارة خاطئة (False). خسارة الإنتروبيا المتقاطعة للفئة الصحيحة تحسب كـ -log(p). عندما يكون الاحتمال p = 0 فإن -log(0) يتجه إلى ما لانهاية (خسارة هائلة جداً)، وتكون الخسارة صفراً فقط عندما p = 1.",
+    "reference": ""
+  },
+  {
+    "id": 34,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Mini-batch gradients are noisy, but the noise can help the network escape poor regions of the loss landscape.",
+    "question_ar": "تتشبع دالة التنشيط Sigmoid عندما تكون مدخلاتها موجبة جداً أو سالبة جداً، مما يجعل مشتقتها قريبة من الصفر.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "A mini-batch estimates the gradient using only a subset of the training data, so its gradient can be noisy. This noise can sometimes help optimisation move out of poor regions or shallow local structures.",
+    "explanation_ar": "العبارة صحيحة (True). عند أطراف منحنى Sigmoid (القيم الكبيرة موجبة أو سالبة)، يصبح المنحنى مسطحاً تماماً وتصبح المشتقة تقريباً 0، وهو ما يسبب مشكلة تلاشي التدرجات.",
+    "reference": ""
+  },
+  {
+    "id": 35,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "The backward pass of backpropagation costs far more than the forward pass, which is why it cannot be used for networks with billions of weights.",
+    "question_ar": "العصبون الذي يعاني من مشكلة الموت (Dying ReLU) يمكنه دائماً التعافي واستئناف التعلم بسهولة بمجرد زيادة حجم الدفعة.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Backpropagation is computationally practical because the backward pass has a cost of the same general order as the forward pass; it is routinely used to train large neural networks.\n\nExplanation: Backpropagation efficiently computes gradients by reusing intermediate values from the forward computation. The backward pass is not pro- hibitively more expensive than the forward pass, so large networks can be trained with it.",
+    "explanation_ar": "العبارة خاطئة (False). إذا دخل عصبون ReLU في نطاق القيم السالبة الدائمة لجميع العينات، فإن مخرجه ومشتقته تصبحان صفراً دائماً، فلا تصله أي تدرجات لتحديث أوزانه، ويموت بشكل دائم ما لم تُستخدم حلول مثل Leaky ReLU.",
+    "reference": ""
+  },
+  {
+    "id": 36,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "If all the weights in a layer started with the same value, all the units in that layer would compute the same thing and learn the same thing.",
+    "question_ar": "التعقيد الحسابي للتمرير العكسي (Backward Pass) في التغذية الراجعة يماثل تقريباً التعقيد الحسابي للتمرير الأمامي (Forward Pass).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "Identical initial weights create symmetry: units receiving the same inputs produce the same outputs and gradients, so they remain identical instead of learning different features. This is why suitable random initialisation is important.",
+    "explanation_ar": "العبارة صحيحة (True). حساب التدرجات عبر المسار الخلفي يستلزم نفس كمية عمليات ضرب المصفوفات تقريباً (حوالي ضعفي أو ما يماثل التمرير الأمامي)، مما يجعلهما متقاربين حسابياً.",
+    "reference": ""
+  },
+  {
+    "id": 37,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "Batch normalisation re-scales the values inside the network for each mini- batch to mean 0 and variance 1, followed by a learned scale and shift.",
+    "question_ar": "يساعد استخدام الإسقاط العشوائي (Dropout) وتنظيم L2 في تقليل خطر حدوث فرط المطابقة (Overfitting).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "Batch normalisation normalises activations using the mini- batch mean and variance, then applies learned scale and shift parameters.",
+    "explanation_ar": "العبارة صحيحة (True). كلاهما من أشهر أساليب التنظيم (Regularization) المصممة لتقييد تعقيد النموذج ومنعه من حفظ عينات التدريب وتحسين قدرته على التعميم.",
+    "reference": ""
+  },
+  {
+    "id": 38,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "The test set should be checked after every epoch to decide when to stop train- ing.",
+    "question_ar": "استخدام حجم دفعة أكبر (Batch Size) يؤدي دائماً إلى دقة تعميم أفضل على بيانات الاختبار مقارنة بالدفعات الصغيرة.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: The validation set should be monitored during training to decide when to stop; the test set should be reserved for final evaluation.\n\nExplanation: Repeatedly using the test set to make training decisions leaks information from the test data into model development. Early stopping should monitor validation performance, while the test set is kept for an unbiased final evalu- ation.",
+    "explanation_ar": "العبارة خاطئة (False). أظهرت الأبحاث أن الدفعات الصغيرة جداً توفر ضوضاء عشوائية مفيدة تساعد الشبكة على الاستقرار في قيعان مسطحة تعمم بشكل أفضل، بينما الدفعات الضخمة قد تستقر في قيعان حادة تعمم بضعف.",
+    "reference": "stopping."
+  },
+  {
+    "id": 39,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Weight decay (L2 regularisation) adds the penalty λ∑ i w2 i to the loss to keep the weights small.",
+    "question_ar": "في تقنية التوقف المبكر، يجب مراقبة خسارة التحقق (Validation Loss) وليس خسارة التدريب (Training Loss).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "L2 regularisation adds a penalty proportional to the sum of squared weights. This discourages excessively large weights and can reduce overfit- ting.",
+    "explanation_ar": "العبارة صحيحة (True). خسارة التدريب تستمر غالباً في الانخفاض حتى عند حدوث فرط المطابقة، لذا فإن المقياس الحقيقي الذي يكشف بدء التدهور هو خسارة مجموعة التحقق المستقلة.",
+    "reference": ""
+  },
+  {
+    "id": 40,
+    "bank_id": 1,
+    "bank_title_en": "Bank 1: Deep Learning I - Foundations",
+    "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "In early stopping, training is stopped when the training loss starts to rise.",
+    "question_ar": "إذا كانت خسارة التدريب وخسارة التحقق متقاربتين وعاليتين جداً، فإن المشكلة الأساسية هي فرط المطابقة (Overfitting).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: In early stopping, training is stopped when the validation loss stops improving (or begins to rise), according to the chosen patience rule.\n\nExplanation: Training loss may continue to decrease while the model over- fits. Early stopping therefore monitors validation loss and stops when validation per- formance no longer improves.",
+    "explanation_ar": "العبارة خاطئة (False). عندما تكون الخسارة مرتفعة في كل من التدريب والتحقق، فهذا دليل قاطع على نقص المطابقة (Underfitting) وليس فرطها، لأن النموذج عاجز عن ملائمة البيانات حتى في التدريب.",
+    "reference": ""
+  },
+  {
+    "id": 41,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "Which of the four approaches to AI does the textbook adopt?",
+    "question_ar": "أيٌّ من المداخل الأربعة لتعريف الذكاء الاصطناعي يتبناه الكتاب الدراسي المعتمد (Russell & Norvig)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking humanly",
+        "text_ar": "التفكير بطريقة بشرية (Thinking humanly)"
+      },
+      {
+        "key": "b",
+        "text": "Acting rationally",
+        "text_ar": "التصرف بعقلانية ورشد (Acting rationally)"
+      },
+      {
+        "key": "c",
+        "text": "Acting humanly",
+        "text_ar": "التصرف بطريقة بشرية (Acting humanly)"
+      },
+      {
+        "key": "d",
+        "text": "Thinking rationally",
+        "text_ar": "التفكير بعقلانية ورشد (Thinking rationally)"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Acting rationally",
+    "answer_text_ar": "التصرف بعقلانية ورشد (Acting rationally)",
+    "explanation": "The textbook adopts the rational-agent approach. It defines AI around agents that choose actions to maximise the expected value of their perfor- mance measure.",
+    "explanation_ar": "يتبنى كتاب الذكاء الاصطناعي مدخل «الوكيل الرشيد» (Rational Agent)، أي التصرف بعقلانية ورشد لتحقيق أفضل نتيجة متوقعة لقياس الأداء، بدلاً من مجرد تقليد التفكير البشري المعرض للقصور.",
+    "reference": "model."
+  },
+  {
+    "id": 42,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "The Turing test (1950) belongs to which approach to AI?",
+    "question_ar": "إلى أي مدخل من المداخل الأربعة ينتمي اختبار تورينغ (Turing Test - 1950)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking rationally",
+        "text_ar": "التفكير بعقلانية (Thinking rationally)"
+      },
+      {
+        "key": "b",
+        "text": "Thinking humanly",
+        "text_ar": "التفكير بطريقة بشرية (Thinking humanly)"
+      },
+      {
+        "key": "c",
+        "text": "Acting rationally",
+        "text_ar": "التصرف بعقلانية (Acting rationally)"
+      },
+      {
+        "key": "d",
+        "text": "Acting humanly",
+        "text_ar": "التصرف بطريقة بشرية (Acting humanly)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Acting humanly",
+    "answer_text_ar": "التصرف بطريقة بشرية (Acting humanly)",
+    "explanation": "The Turing test evaluates whether a machine can behave in conversation in a way that is indistinguishable from a human. It is therefore part of the acting-humanly approach.",
+    "explanation_ar": "يقيس اختبار تورينغ قدرة الآلة على محاكاة السلوك البشري أثناء المحادثة النصية بحيث لا يستطيع الحكم البشري تمييزها عن الإنسان، ولذا فهو يمثل مدخل «التصرف كالبشر» (Acting humanly).",
+    "reference": ""
+  },
+  {
+    "id": 43,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Under the standard model, a rational agent chooses the action that:",
+    "question_ar": "وفقاً للنموذج القياسي (Standard Model)، يختار الوكيل الرشيد الفعل الذي:",
+    "options": [
+      {
+        "key": "a",
+        "text": "maximises the expected value of its performance measure, given what it has per- ceived so far",
+        "text_ar": "يعظّم القيمة المتوقعة لمقياس أدائه، بناءً على تسلسل الإدراكات الحسية التي استقبلها حتى الآن"
+      },
+      {
+        "key": "b",
+        "text": "is guaranteed to give the best actual outcome",
+        "text_ar": "يضمن بنسبة 100% تحقيق أفضل نتيجة فعلية في المستقبل"
+      },
+      {
+        "key": "c",
+        "text": "most closely copies what a human would do",
+        "text_ar": "يطابق بأقرب درجة ما سيفعله خبير بشري في نفس الموقف"
+      },
+      {
+        "key": "d",
+        "text": "follows from Aristotle’s syllogisms",
+        "text_ar": "يتبع القياس المنطقي لأرسطو"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "maximises the expected value of its performance measure, given what it has per- ceived so far",
+    "answer_text_ar": "يعظّم القيمة المتوقعة لمقياس أدائه، بناءً على تسلسل الإدراكات الحسية التي استقبلها حتى الآن",
+    "explanation": "The standard model defines rational action as maximising expected performance based on the percept history available to the agent. Rationality does not require knowing or guaranteeing the actual future outcome.",
+    "explanation_ar": "الرشادة والعقلانية تعني اتخاذ القرار الذي يعظّم العائد المتوقع استناداً لما يعرفه الوكيل ومدركاته السابقة. ولا تشترط الرشادة التنبؤ بالغيب أو كمال النتيجة الفعلية عند وجود عدم يقين.",
+    "reference": ""
+  },
+  {
+    "id": 44,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "The danger that a machine pursuing a fixed objective does harm because the objective is slightly wrong is called:",
+    "question_ar": "يُطلق على الخطر الناجم عن سعي الآلة وراء هدف ثابت يسبب ضرراً لأن صياغة الهدف كانت قاصرة أو خاطئة قليلاً اسم:",
+    "options": [
+      {
+        "key": "a",
+        "text": "the combinatorial explosion",
+        "text_ar": "الانفجار التوافقي (Combinatorial explosion)"
+      },
+      {
+        "key": "b",
+        "text": "the curse of dimensionality",
+        "text_ar": "لعنة الأبعاد (Curse of dimensionality)"
+      },
+      {
+        "key": "c",
+        "text": "the value alignment problem",
+        "text_ar": "مشكلة مواءمة القيم (The value alignment problem)"
+      },
+      {
+        "key": "d",
+        "text": "the frame problem",
+        "text_ar": "مشكلة الإطار (Frame problem)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "the value alignment problem",
+    "answer_text_ar": "مشكلة مواءمة القيم (The value alignment problem)",
+    "explanation": "The value alignment problem concerns the risk that a ma- chine optimising a specified objective may cause harm if that objective does not accu- rately reflect human values or intentions.",
+    "explanation_ar": "مشكلة مواءمة القيم (Value Alignment Problem أو معضلة الملك ميداس) تشير إلى خطورة تحسين نظام ذكي لهدف محدد بدقة عمياء دون أن يتوافق جوهرياً مع القيم والمقاصد الإنسانية الشاملة.",
+    "reference": ""
+  },
+  {
+    "id": 45,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "In which year did the Dartmouth workshop give the field of AI its name?",
+    "question_ar": "في أي عام انعقدت ورشة عمل دارتموث الشهيرة التي أطلقت اسم «الذكاء الاصطناعي» رسمياً على هذا العلم؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "1943",
+        "text_ar": "1943"
+      },
+      {
+        "key": "b",
+        "text": "1956",
+        "text_ar": "1956"
+      },
+      {
+        "key": "c",
+        "text": "1969",
+        "text_ar": "1969"
+      },
+      {
+        "key": "d",
+        "text": "1986",
+        "text_ar": "1986"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "1956",
+    "answer_text_ar": "1956",
+    "explanation": "The Dartmouth workshop took place in 1956 and is identified in the historical timeline as the event that named the field of artificial intelligence.",
+    "explanation_ar": "عُقدت ورشة عمل كلية دارتموث في صيف عام 1956 بدعوة من جون مكارثي ومارفن مينسكي وكلود شانون وناثانيال روتشستر، وهي الولادة الرسمية لمجال الذكاء الاصطناعي كعلم مستقل.",
+    "reference": ""
+  },
+  {
+    "id": 46,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "According to the notes, an agent is made of:",
+    "question_ar": "وفقاً للمحاضرات، يتكون الوكيل الذكي (Agent) من معادلة تجمع بين:",
+    "options": [
+      {
+        "key": "a",
+        "text": "architecture + program",
+        "text_ar": "البنية المادية + البرنامج (Architecture + Program)"
+      },
+      {
+        "key": "b",
+        "text": "sensors + critic",
+        "text_ar": "المستشعرات + الناقد (Sensors + Critic)"
+      },
+      {
+        "key": "c",
+        "text": "percepts + goals",
+        "text_ar": "الإدراكات + الأهداف (Percepts + Goals)"
+      },
+      {
+        "key": "d",
+        "text": "knowledge base + utility",
+        "text_ar": "قاعدة المعرفة + المنفعة (Knowledge Base + Utility)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "architecture + program",
+    "answer_text_ar": "البنية المادية + البرنامج (Architecture + Program)",
+    "explanation": "An agent program implements the agent function and runs on a physical architecture. The notes summarise this as agent = architecture + program.",
+    "explanation_ar": "يُعرَّف الوكيل بالمعادلة: Agent = Architecture + Program، حيث تمثل البنية (Architecture) العتاد والمستشعرات والمحركات، ويمثل البرنامج (Program) الخوارزمية التي تنفذ دالة الوكيل.",
+    "reference": ""
+  },
+  {
+    "id": 47,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "Rationality depends on four things. Which of the following is NOT one of them?",
+    "question_ar": "تعتمد الرشادة (Rationality) على أربعة عناصر. أيٌّ مما يلي ليس واحداً منها؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The performance measure",
+        "text_ar": "مقياس الأداء (Performance measure)"
+      },
+      {
+        "key": "b",
+        "text": "The agent’s prior knowledge",
+        "text_ar": "المعرفة السابقة للوكيل ببيئته (Prior knowledge)"
+      },
+      {
+        "key": "c",
+        "text": "The percept sequence so far",
+        "text_ar": "تسلسل الإدراكات الحسية التي استقبلها حتى اللحظة"
+      },
+      {
+        "key": "d",
+        "text": "Knowing the actual outcome of every action in advance",
+        "text_ar": "معرفة النتيجة الحقيقية لكل فعل مسبقاً قبل وقوعه"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Knowing the actual outcome of every action in advance",
+    "answer_text_ar": "معرفة النتيجة الحقيقية لكل فعل مسبقاً قبل وقوعه",
+    "explanation": "Rationality depends on the performance measure, prior knowledge, available actions, and the percept sequence so far. It does not require foreknowledge of the actual outcome of every action.",
+    "explanation_ar": "الرشادة تعتمد على: مقياس الأداء، المعرفة المسبقة، الأفعال المتاحة، وتسلسل الإدراكات. والرشادة ليست علماً بالغيب (Omniscience)؛ فلا يُشترط معرفة النتائج المستقبلية الفعلية مسبقاً.",
+    "reference": ""
+  },
+  {
+    "id": 48,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "In the PEAS description of the automated taxi, “steering, accelerator, brake, signal, horn” are the:",
+    "question_ar": "في وصف PEAS لسيارة الأجرة ذاتية القيادة، تمثل «عجلة القيادة، دواسة الوقود، الفرامل، الإشارات، البوق» ما يُعرف بـ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Performance measure",
+        "text_ar": "مقياس الأداء (Performance measure)"
+      },
+      {
+        "key": "b",
+        "text": "Environment",
+        "text_ar": "البيئة (Environment)"
+      },
+      {
+        "key": "c",
+        "text": "Actuators",
+        "text_ar": "المشغلات / أدوات التنفيذ (Actuators)"
+      },
+      {
+        "key": "d",
+        "text": "Sensors",
+        "text_ar": "المستشعرات (Sensors)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Actuators",
+    "answer_text_ar": "المشغلات / أدوات التنفيذ (Actuators)",
+    "explanation": "Actuators are the mechanisms through which an agent acts on its environment. Steering, accelerator, brake, signal, and horn are outputs used by the taxi to act.",
+    "explanation_ar": "في إطار PEAS (الأداء، البيئة، المشغلات، المستشعرات)، تمثل المشغلات (Actuators) الآليات التي يمارس الوكيل من خلالها أفعاله للتأثير في البيئة، كعجلة القيادة والدواسات.",
+    "reference": ""
+  },
+  {
+    "id": 49,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "In the table of environment dimensions, poker is given as an example of an environment that is:",
+    "question_ar": "في أبعاد تصنيف البيئات، تُطرح لعبة البوكر كمثال لبيئة تتسم بأنها:",
+    "options": [
+      {
+        "key": "a",
+        "text": "partially observable",
+        "text_ar": "قابلة للملاحظة جزئياً (Partially observable)"
+      },
+      {
+        "key": "b",
+        "text": "deterministic",
+        "text_ar": "حتمية تماماً (Deterministic)"
+      },
+      {
+        "key": "c",
+        "text": "single-agent",
+        "text_ar": "وكيل أحادي (Single-agent)"
+      },
+      {
+        "key": "d",
+        "text": "static",
+        "text_ar": "ثابتة لا تتغير (Static)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "partially observable",
+    "answer_text_ar": "قابلة للملاحظة جزئياً (Partially observable)",
+    "explanation": "Poker is partially observable because each player cannot see the other players’ private cards. The agent must make decisions with incomplete information.",
+    "explanation_ar": "لعبة البوكر بيئة قابلة للملاحظة جزئياً لأن أوراق الخصوم مخفية عن الوكيل، كما أنها عشوائية ومتعددة الوكلاء (تنافسية).",
+    "reference": ""
+  },
+  {
+    "id": 50,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "Which agent program fails when the right action depends on history?",
+    "question_ar": "أيُّ أنواع برامج الوكلاء التالية يفشل تماماً عندما يعتمد الفعل الصحيح على تاريخ الإدراكات السابقة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Utility-based agent",
+        "text_ar": "الوكيل المعتمد على المنفعة (Utility-based agent)"
+      },
+      {
+        "key": "b",
+        "text": "Simple reflex agent",
+        "text_ar": "وكيل رد الفعل البسيط (Simple reflex agent)"
+      },
+      {
+        "key": "c",
+        "text": "Goal-based agent",
+        "text_ar": "الوكيل المعتمد على الأهداف (Goal-based agent)"
+      },
+      {
+        "key": "d",
+        "text": "Model-based reflex agent",
+        "text_ar": "وكيل رد الفعل القائم على نموذج داخلي (Model-based reflex agent)"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Simple reflex agent",
+    "answer_text_ar": "وكيل رد الفعل البسيط (Simple reflex agent)",
+    "explanation": "A simple reflex agent selects actions using only the current percept and condition–action rules. It has no internal state for remembering relevant history, so it can fail when past percepts matter.",
+    "explanation_ar": "وكيل رد الفعل البسيط يختار أفعاله فقط بناءً على الإدراك الحسي اللحظي الحالي وقواعد (شرط-فعل)، دون أي ذاكرة أو تمثيل داخلي لتاريخ ما حدث سابقاً، فيعجز عن التعامل مع البيئات الجزئية الملاحظة.",
+    "reference": ""
+  },
+  {
+    "id": 51,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "In a learning agent, which component gives feedback on how well the agent is doing?",
+    "question_ar": "في الوكيل المتعلم (Learning Agent)، ما هو المكون المسؤول عن تقديم التغذية الراجعة حول مدى جودة أداء الوكيل؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The performance element",
+        "text_ar": "عنصر الأداء (Performance element)"
+      },
+      {
+        "key": "b",
+        "text": "The problem generator",
+        "text_ar": "مولد المسائل والاستكشاف (Problem generator)"
+      },
+      {
+        "key": "c",
+        "text": "The actuator",
+        "text_ar": "المشغلات (Actuators)"
+      },
+      {
+        "key": "d",
+        "text": "The critic",
+        "text_ar": "الناقد (The Critic)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "The critic",
+    "answer_text_ar": "الناقد (The Critic)",
+    "explanation": "The critic evaluates the agent’s behaviour against a perfor- mance standard and provides feedback to the learning element.",
+    "explanation_ar": "الناقد (Critic) يقيم أفعال الوكيل وفق معيار أداء خارجي ثابت ويخبر عنصر التعلم بمدى نجاح أو فشل النتيجة ليتعلم منها الوكيل مستقبلاً.",
+    "reference": ""
+  },
+  {
+    "id": 52,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "In a factored representation, a state is:",
+    "question_ar": "في التمثيل المفكك أو العواملي (Factored Representation)، كيف يتم تمثيل الحالة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "an indivisible label",
+        "text_ar": "كتسمية أو رمز واحد غير قابل للتجزئة (Atomic)"
+      },
+      {
+        "key": "b",
+        "text": "a set of objects and the relations among them",
+        "text_ar": "كمجموعة من الكائنات والعلاقات المنطقية بينها"
+      },
+      {
+        "key": "c",
+        "text": "a vector of variable values",
+        "text_ar": "كمتجه من المتغيرات ولكل متغير قيمة معينة (Attribute-Value pairs)"
+      },
+      {
+        "key": "d",
+        "text": "a single number giving its utility",
+        "text_ar": "كرقم وحيد يحدد منفعة الحالة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "a vector of variable values",
+    "answer_text_ar": "كمتجه من المتغيرات ولكل متغير قيمة معينة (Attribute-Value pairs)",
+    "explanation": "A factored representation describes a state using a collection of variables, with each state represented by the values assigned to those variables.",
+    "explanation_ar": "التمثيل العواملي (Factored) يصف الحالة كمتجه من المتغيرات المحددة (مثل: الموقع، السرعة، الوقود)، وهو مرحلة وسيطة بين التمثيل الذري (Atomic) والتمثيل العلائقي المنطقي (Relational).",
+    "reference": ""
+  },
+  {
+    "id": 53,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "Which of the following is NOT one of the five parts of a search problem?",
+    "question_ar": "أيٌّ مما يلي ليس واحداً من المكونات الخمسة الأساسية لتعريف مسألة البحث؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The initial state",
+        "text_ar": "الحالة الابتدائية (Initial state)"
+      },
+      {
+        "key": "b",
+        "text": "A heuristic function",
+        "text_ar": "الدالة الحدسية التقديرية (Heuristic function)"
+      },
+      {
+        "key": "c",
+        "text": "The transition model Result(s,a)",
+        "text_ar": "نموذج الانتقال Result(s, a)"
+      },
+      {
+        "key": "d",
+        "text": "The goal test",
+        "text_ar": "اختبار الهدف (Goal test)"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A heuristic function",
+    "answer_text_ar": "الدالة الحدسية التقديرية (Heuristic function)",
+    "explanation": "The five components of a search problem are the initial state, actions, transition model, goal test, and path-cost function. A heuristic function can guide informed search, but it is not one of the five basic components.",
+    "explanation_ar": "المكونات الـ 5 الرسمية لمسألة البحث هي: الحالة الابتدائية، الأفعال، نموذج الانتقال، اختبار الهدف، ودالة تكلفة المسار. الدالة الحدسية أداة إرشادية تستخدم في البحث الذكي وليست جزءاً من تعريف المسألة الأصلي.",
+    "reference": ""
+  },
+  {
+    "id": 54,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "What is the space complexity of depth-first search, with branching factor b and maximum depth m?",
+    "question_ar": "ما هو التعقيد المكاني (Space Complexity) لخوارزمية البحث في العمق أولاً (DFS) مع عامل تفرع b وأقصى عمق m؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "O(bm)",
+        "text_ar": "O(bm) - خطي بالنسبة للعمق"
+      },
+      {
+        "key": "b",
+        "text": "O(bm)",
+        "text_ar": "O(b^m) - أسي"
+      },
+      {
+        "key": "c",
+        "text": "O(bd)",
+        "text_ar": "O(b^d)"
+      },
+      {
+        "key": "d",
+        "text": "O(bd)",
+        "text_ar": "O(d^b)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "O(bm)",
+    "answer_text_ar": "O(bm) - خطي بالنسبة للعمق",
+    "explanation": "Depth-first search stores the current path and the unexplored siblings along that path. Its standard space complexity isO(bm), whereb is the branch- ing factor andm is the maximum depth. DFS ሒᇭﺍڤ",
+    "explanation_ar": "تتميز خوارزمية DFS بتعقيد مكاني خطي ممتاز O(bm) لأنها تحتاج فقط لتخزين المسار الحالي من الجذر إلى العقدة الحالية مع إخوتها غير المستكشفين في الذاكرة.",
+    "reference": ""
+  },
+  {
+    "id": 55,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "In the Romania A* example, Sibiu has g = 140 and h = 253. What is its f value?",
+    "question_ar": "في مثال خريطة رومانيا باستخدام خوارزمية A*، إذا كانت مدينة سيبيو (Sibiu) بتكلفة فعلية g = 140 والتقدير الحدسي للهدف h = 253، فما هي قيمة التقييم f لها؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "113",
+        "text_ar": "113"
+      },
+      {
+        "key": "b",
+        "text": "253",
+        "text_ar": "253"
+      },
+      {
+        "key": "c",
+        "text": "393",
+        "text_ar": "393"
+      },
+      {
+        "key": "d",
+        "text": "447",
+        "text_ar": "447"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "393",
+    "answer_text_ar": "393",
+    "explanation": "A* evaluates a node usingf(n) = g(n) + h(n). Therefore, f(Sibiu) = 140 + 253 = 393 .",
+    "explanation_ar": "في خوارزمية A* تحسب دالة التقييم بالمعادلة f(n) = g(n) + h(n). إذن f(Sibiu) = 140 + 253 = 393.",
+    "reference": ""
+  },
+  {
+    "id": 56,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "How long is the optimal route from Arad to Bucharest that A* finds?",
+    "question_ar": "كم يبلغ طول المسار الأمثل من أراد (Arad) إلى بوخارست (Bucharest) الذي تجده خوارزمية A*؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "393 km",
+        "text_ar": "393 كم"
+      },
+      {
+        "key": "b",
+        "text": "450 km",
+        "text_ar": "450 كم"
+      },
+      {
+        "key": "c",
+        "text": "449 km",
+        "text_ar": "449 كم"
+      },
+      {
+        "key": "d",
+        "text": "418 km",
+        "text_ar": "418 كم"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "418 km",
+    "answer_text_ar": "418 كم",
+    "explanation": "The optimal route found by A* is Arad–Sibiu–Rimnicu Vilcea– Pitesti–Bucharest, with a total distance of 418 km. The 450 km route is the one found by greedy best-first search in the notes.",
+    "explanation_ar": "المسار الأمثل هو: Arad -> Sibiu -> Rimnicu Vilcea -> Pitesti -> Bucharest بطول إجمالي 418 كم. أما مسار 450 كم فهو المسار غير الأمثل الذي تجده خوارزمية البحث الجشع (Greedy Best-First).",
+    "reference": ""
+  },
+  {
+    "id": 57,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "A heuristic h(n) is admissible if it:",
+    "question_ar": "تُعد الدالة الحدسية h(n) مقبولة (Admissible) إذا كانت:",
+    "options": [
+      {
+        "key": "a",
+        "text": "is always equal to zero",
+        "text_ar": "تساوي صفراً دائماً في كل الحالات"
+      },
+      {
+        "key": "b",
+        "text": "never overestimates the true cost to reach a goal",
+        "text_ar": "لا تُفرط أبداً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف (متفائلة)"
+      },
+      {
+        "key": "c",
+        "text": "always overestimates the true cost to reach a goal",
+        "text_ar": "تُقدّر التكلفة دائماً بقيمة أعلى من التكلفة الفعلية"
+      },
+      {
+        "key": "d",
+        "text": "is learned from data",
+        "text_ar": "تُحسب بالتعلم من البيانات فقط"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "never overestimates the true cost to reach a goal",
+    "answer_text_ar": "لا تُفرط أبداً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف (متفائلة)",
+    "explanation": "An admissible heuristic is optimistic: its estimated cost to the goal is never greater than the true minimum remaining cost. This property supports A* optimality under the relevant search conditions.",
+    "explanation_ar": "الشرط الجوهري لقبول الدالة الحدسية (Admissibility) هو أن تكون متفائلة، أي h(n) <= h*(n)، بحيث لا تبالغ أبداً في تقدير التكلفة الحقيقية، وهو ما يضمن مثالية خوارزمية A* في بحث الأشجار.",
+    "reference": ""
+  },
+  {
+    "id": 58,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "When actions are nondeterministic, Chapter 4 uses AND–OR search. What form does a solution take?",
+    "question_ar": "عندما تكون نتائج الأفعال غير حتمية، يُستخدم بحث AND-OR. ما هو الشكل الذي تتخذه خطة الحل الناتجة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "A contingency plan (if–then)",
+        "text_ar": "خطة طوارئ شجرية مشروطة (Contingency plan / if-then)"
+      },
+      {
+        "key": "b",
+        "text": "A single fixed sequence of actions",
+        "text_ar": "تسلسل خطي ثابت ووحيد من الأفعال"
+      },
+      {
+        "key": "c",
+        "text": "A set of belief states",
+        "text_ar": "مجموعة من حالات الاعتقاد غير المترابطة"
+      },
+      {
+        "key": "d",
+        "text": "A gradient vector",
+        "text_ar": "متجه انحدار تدريجي"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "A contingency plan (if–then)",
+    "answer_text_ar": "خطة طوارئ شجرية مشروطة (Contingency plan / if-then)",
+    "explanation": "With nondeterministic actions, one action can lead to sev- eral possible outcomes. An AND–OR solution therefore specifies what to do for each possible outcome, forming a contingency plan.",
+    "explanation_ar": "في البيئات غير الحتمية، يمكن لفعل واحد أن يؤدي لعدة نتائج مختلفة؛ لذا يتخذ الحل شكل شجرة خطط طوارئ (إذا حدثت النتيجة أ افعل كذا، وإذا حدثت النتيجة ب افعل كذا).",
+    "reference": ""
+  },
+  {
+    "id": 59,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "In backtracking search for CSPs, the minimum-remaining-values heuristic:",
+    "question_ar": "في خوارزمية التراجع للبحث في مسائل القيود (CSPs)، ماذا تفعل الدالة الحدسية للقيم المتبقية الأقل (MRV)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "tries the friendliest value first",
+        "text_ar": "تختار القيمة الأسهل والأكثر مرونة أولاً"
+      },
+      {
+        "key": "b",
+        "text": "breaks ties by the most constraints",
+        "text_ar": "تفضل المتغير الذي يدخل في أقل عدد من القيود"
+      },
+      {
+        "key": "c",
+        "text": "chooses the most constrained variable",
+        "text_ar": "تختار المتغير الأكثر تقييداً (الذي لديه أقل عدد من القيم القانونية المتبقية)"
+      },
+      {
+        "key": "d",
+        "text": "chooses variables in random order",
+        "text_ar": "تختار المتغيرات بترتيب عشوائي"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "chooses the most constrained variable",
+    "answer_text_ar": "تختار المتغير الأكثر تقييداً (الذي لديه أقل عدد من القيم القانونية المتبقية)",
+    "explanation": "Minimum Remaining Values (MRV) selects the unassigned variable with the fewest legal values remaining. This is the most constrained variable and helps expose failure early.",
+    "explanation_ar": "دالة MRV (وتعرف بمبدأ الفشل أولاً Fail-First) تختار المتغير الذي بقي له أقل عدد من القيم الممكنة، لاكتشاف أي طريق مسدود مبكراً جداً وتوفير وقت البحث.",
+    "reference": ""
+  },
+  {
+    "id": 60,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "In the minimax example, the left MIN node sees 3 and 12, and the right MIN node’s first child is 2. What is the value of the root?",
+    "question_ar": "في مثال شجرة Minimax، عقدة MIN اليسرى مخرجاتها 3 و12، وعقدة MIN اليمنى أول ابن لها قيمته 2. ما هي قيمة عقدة الجذر (MAX)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "2",
+        "text_ar": "2"
+      },
+      {
+        "key": "b",
+        "text": "12",
+        "text_ar": "12"
+      },
+      {
+        "key": "c",
+        "text": "0",
+        "text_ar": "0"
+      },
+      {
+        "key": "d",
+        "text": "3",
+        "text_ar": "3"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "3",
+    "answer_text_ar": "3",
+    "explanation": "The left MIN node returns min(3,12) = 3. The right MIN node has a child with value 2, so its value cannot exceed 2. The root is a MAX node and therefore selects max(3,right MIN value) = 3.",
+    "explanation_ar": "عقدة MIN اليسرى تختار min(3, 12) = 3. عقدة MIN اليمنى رأت قيمة 2؛ وبالتالي فإن قيمتها النهائية ستكون <= 2 حتماً. وبما أن الجذر MAX يختار القيمة الأكبر بين اليسار (3) واليمين (<= 2)، فإن قيمة الجذر المؤكدة هي 3.",
+    "reference": ""
+  },
+  {
+    "id": 61,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "With perfect move ordering, α-β pruning examines about how many nodes?",
+    "question_ar": "مع الترتيب المثالي للحركات، ما هو عدد العقد التقريبي الذي تفحصه خوارزمية تقليم ألفا-بيتا (α-β pruning)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "O(bm/2)",
+        "text_ar": "O(b^(m/2)) - يضاعف عمق البحث الممكن بفعالية"
+      },
+      {
+        "key": "b",
+        "text": "O(bm)",
+        "text_ar": "O(b^m)"
+      },
+      {
+        "key": "c",
+        "text": "O(bm)",
+        "text_ar": "O(bm)"
+      },
+      {
+        "key": "d",
+        "text": "O(2m)",
+        "text_ar": "O(2^m)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "O(bm/2)",
+    "answer_text_ar": "O(b^(m/2)) - يضاعف عمق البحث الممكن بفعالية",
+    "explanation": "With ideal move ordering, alpha–beta pruning reduces the effective search depth roughly by half. Its best-case number of examined nodes is commonly expressed asO(bm/2).",
+    "explanation_ar": "مع الترتيب المثالي للحركات، ينخفض تعقيد الوقت لتقليم ألفا-بيتا إلى O(b^(m/2))، مما يعني إمكانية البحث لضعف العمق في نفس الوقت مقارنة بخوارزمية Minimax القياسية.",
+    "reference": ""
+  },
+  {
+    "id": 62,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "KB |= α holds exactly when:",
+    "question_ar": "تتحقق العلاقة المنطقية KB |= α (قاعدة المعرفة تستلزم منطقياً ألفا) في حالة واحدة بالضبط وهي:",
+    "options": [
+      {
+        "key": "a",
+        "text": "KB ∧ α is unsatisfiable",
+        "text_ar": "عندما تكون العبارة KB ∧ α غير قابلة للإشباع"
+      },
+      {
+        "key": "b",
+        "text": "KB ∧ ¬α is unsatisfiable",
+        "text_ar": "عندما تكون العبارة KB ∧ ¬α غير قابلة للإشباع (Unsatisfiable / تناقض)"
+      },
+      {
+        "key": "c",
+        "text": "α is true in at least one model ofKB",
+        "text_ar": "عندما تكون α صحيحة في نموذج واحد فقط من نماذج KB"
+      },
+      {
+        "key": "d",
+        "text": "KB ⇒ α is unsatisfiable",
+        "text_ar": "عندما تكون KB ⇒ α جملة كاذبة دائماً"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "KB ∧ ¬α is unsatisfiable",
+    "answer_text_ar": "عندما تكون العبارة KB ∧ ¬α غير قابلة للإشباع (Unsatisfiable / تناقض)",
+    "explanation": "Knowledge baseKB entails α if every model satisfyingKB also satisfiesα. Equivalently, there is no model in whichKB is true andα is false; hence KB ∧ ¬α is unsatisfiable.",
+    "explanation_ar": "الاستلزام المنطقي يعني أن كل نموذج يحقق KB يجب أن يحقق α بالضرورة. وبالتالي، يستحيل وجود أي نموذج تكون فيه KB صحيحة مع نفي α (KB ∧ ¬α)، وهو أساس الإثبات بالتناقض (Refutation).",
+    "reference": ""
+  },
+  {
+    "id": 63,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What is Unify(Knows(John, x), Knows(y, Bill))?",
+    "question_ar": "ما هو موحِّد الصيغتين (Most General Unifier) للعبارتين: Knows(John, x) و Knows(y, Bill)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "{x/John, y /Bill}",
+        "text_ar": "{x/John, y/Bill}"
+      },
+      {
+        "key": "b",
+        "text": "{x/y}",
+        "text_ar": "{x/y}"
+      },
+      {
+        "key": "c",
+        "text": "{x/Bill, y /John}",
+        "text_ar": "{x/Bill, y/John}"
+      },
+      {
+        "key": "d",
+        "text": "No unifier exists",
+        "text_ar": "لا يوجد موحِّد للصيغتين"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "{x/Bill, y /John}",
+    "answer_text_ar": "{x/Bill, y/John}",
+    "explanation": "To unify the two expressions, match corresponding argu- ments. The first arguments requirey = John, and the second requirex = Bill. Thus the substitution is{y/John, x /Bill}, which corresponds to option (c), not option (a).",
+    "explanation_ar": "لمطابقة العبارتين يجب أن يتطابق المعامل الأول مع الأول (y = John)، والمعامل الثاني مع الثاني (x = Bill)، فتكون تركيبة الاستبدال هي {x/Bill, y/John}.",
+    "reference": ""
+  },
+  {
+    "id": 64,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "In the meningitis example, P(s | m) = 0 .7, P(m) = 1/50 ,000 and P(s) = 0 .01. What is P(m | s)?",
+    "question_ar": "في مثال التهاب السحايا، إذا كان P(s | m) = 0.7، P(m) = 1/50,000، P(s) = 0.01. فما هو احتمال الإصابة بالسحايا لمن يعاني من تصلب الرقبة P(m | s)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.7",
+        "text_ar": "0.7"
+      },
+      {
+        "key": "b",
+        "text": "0.07",
+        "text_ar": "0.07"
+      },
+      {
+        "key": "c",
+        "text": "0.014",
+        "text_ar": "0.014"
+      },
+      {
+        "key": "d",
+        "text": "0.0014",
+        "text_ar": "0.0014 (أو 1.4 في الألف)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0.0014",
+    "answer_text_ar": "0.0014 (أو 1.4 في الألف)",
+    "explanation": "By Bayes’ rule, P(m | s) = P(s | m)P(m) P(s) = 0.7 × (1/50,000) 0.01 = 0.000014 0.01 = 0.0014.",
+    "explanation_ar": "بتطبيق قاعدة بيز: P(m|s) = [P(s|m) * P(m)] / P(s) = [0.7 * (1/50,000)] / 0.01 = 0.000014 / 0.01 = 0.0014.",
+    "reference": ""
+  },
+  {
+    "id": 65,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "How many numbers does the burglary Bayesian network (five Boolean vari- ables) need, compared with the full joint table?",
+    "question_ar": "كم عدداً من المعاملات الاحتمالية المستقلة تحتاجه شبكة بيز للسرقة والإنذار (5 متغيرات ثنائية)، مقارنة بجدول التوزيع المشترك الكامل؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "5 versus 32",
+        "text_ar": "5 مقابل 32"
+      },
+      {
+        "key": "b",
+        "text": "10 versus 31",
+        "text_ar": "10 معاملات مقابل 31 في الجدول المشترك"
+      },
+      {
+        "key": "c",
+        "text": "31 versus 10",
+        "text_ar": "31 مقابل 10"
+      },
+      {
+        "key": "d",
+        "text": "10 versus 25",
+        "text_ar": "10 مقابل 25"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "10 versus 31",
+    "answer_text_ar": "10 معاملات مقابل 31 في الجدول المشترك",
+    "explanation": "A full joint distribution over five Boolean variables has25 = 32 entries, but one is determined by the requirement that probabilities sum to 1, leaving 31 independent numbers. In the burglary network, the conditional probability tables require 10 numbers, exploiting conditional independence.",
+    "explanation_ar": "التوزيع المشترك الكامل لـ 5 متغيرات ثنائية يحتاج 2^5 - 1 = 31 احتمالية مستقلة. أما شبكة بيز فتستغل الاستقلال الشرطي وتحتاج فقط لـ 10 أرقام في جداول CPTs.",
+    "reference": "sentations."
+  },
+  {
+    "id": 66,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "Which algorithm computes the most likely explanation argmax x1:t P(x1:t | e1:t) in a temporal model?",
+    "question_ar": "أيُّ خوارزمية تحسب التفسير الأكثر ترجيحاً (أفضل تسلسل للحالات الخفية) في النماذج الزمنية ونماذج ماركوف الخفية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Viterbi",
+        "text_ar": "خوارزمية فيتربي (Viterbi Algorithm)"
+      },
+      {
+        "key": "b",
+        "text": "The forward algorithm",
+        "text_ar": "خوارزمية التقدم (Forward Algorithm)"
+      },
+      {
+        "key": "c",
+        "text": "Forward–backward",
+        "text_ar": "خوارزمية التقدم-الرجوع (Forward-Backward)"
+      },
+      {
+        "key": "d",
+        "text": "Value iteration",
+        "text_ar": "تكرار القيمة (Value Iteration)"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Viterbi",
+    "answer_text_ar": "خوارزمية فيتربي (Viterbi Algorithm)",
+    "explanation": "The Viterbi algorithm finds the most probable sequence of hidden states given the observations. The forward algorithm computes filtering prob- abilities, while forward–backward computes smoothed state probabilities.",
+    "explanation_ar": "تستخدم خوارزمية فيتربي بالبرمجة الديناميكية لإيجاد المسار أو التسلسل الأكثر احتمالاً للحالات المخفية عبر الزمن (Most likely sequence of states).",
+    "reference": "els."
+  },
+  {
+    "id": 67,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "In the prisoner’s dilemma, both prisoners testifying is:",
+    "question_ar": "في معضلة السجينين الشهيرة، يُعد اعتراف كلا السجينين معاً:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Pareto optimal but not a Nash equilibrium",
+        "text_ar": "حلاً أمثلاً وفق باريتو (Pareto optimal) ولكنه ليس توازن ناش"
+      },
+      {
+        "key": "b",
+        "text": "neither a Nash equilibrium nor a dominant strategy",
+        "text_ar": "ليس توازن ناش ولا استراتيجية مهيمنة"
+      },
+      {
+        "key": "c",
+        "text": "worse for Ali than refusing, whatever Bo does",
+        "text_ar": "أسوأ لعلي من الصمت مهما فعل شريكه"
+      },
+      {
+        "key": "d",
+        "text": "a Nash equilibrium but not Pareto optimal",
+        "text_ar": "توازن ناش (Nash equilibrium) ولكنه ليس الأمثل وفق باريتو"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "a Nash equilibrium but not Pareto optimal",
+    "answer_text_ar": "توازن ناش (Nash equilibrium) ولكنه ليس الأمثل وفق باريتو",
+    "explanation": "Testifying is a dominant strategy for each prisoner, so both testifying is a Nash equilibrium: neither can improve by changing strategy alone. How- ever, both refusing gives each a better outcome, so the equilibrium is not Pareto opti- mal.",
+    "explanation_ar": "الاعتراف استراتيجية مهيمنة لكليهما؛ لذا فهو توازن ناش (لا يستطيع أي منهما تحسين وضعه منفرداً). لكنه ليس أمثلية باريتو لأن تعاونهما بالصمت كان سيعطيهما حكماً أخف بكثير.",
+    "reference": ""
+  },
+  {
+    "id": 68,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "In the restaurant problem, what is the information gain of splitting on Patrons?",
+    "question_ar": "في مسألة شجرة قرار المطعم، كم يبلغ كسب المعلومات (Information Gain) الناتج عن التقسيم وفق ميزة الزبائن (Patrons)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0 bits",
+        "text_ar": "0 بت"
+      },
+      {
+        "key": "b",
+        "text": "1 bit",
+        "text_ar": "1 بت"
+      },
+      {
+        "key": "c",
+        "text": "about 0.541 bits",
+        "text_ar": "حوالي 0.541 بت"
+      },
+      {
+        "key": "d",
+        "text": "about 0.918 bits",
+        "text_ar": "حوالي 0.918 بت"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "about 0.541 bits",
+    "answer_text_ar": "حوالي 0.541 بت",
+    "explanation": "Information gain is the entropy before the split minus the weighted average entropy after the split. For the restaurant example in the course material, splitting on Patrons gives approximately 0.541 bits. Gain Informationﺍڤ",
+    "explanation_ar": "كسب المعلومات هو الفرق بين إنتروبيا الهدف قبل التقسيم ومتوسط الإنتروبيا المرجح بعده، وحسابها لميزة Patrons في المنهج يعطي حوالي 0.541 بت (وهي الميزة الأفضل للتفرع الأول).",
+    "reference": "gain."
+  },
+  {
+    "id": 69,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "One Q-learning update uses Q(s,a) = 0.5, R = −0.04, maxa′ Q(s′,a ′) = 0.8, γ = 1 and α = 0.1. What is the new Q(s,a)?",
+    "question_ar": "في خطوة تحديث Q-learning: المعطيات Q(s,a) = 0.5، والمكافأة R = -0.04، وأفضل قيمة مستقبلية max Q = 0.8، وعامل الخصم γ = 1، ومعدل التعلم α = 0.1. فما هي قيمة Q الجديدة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.500",
+        "text_ar": "0.500"
+      },
+      {
+        "key": "b",
+        "text": "0.526",
+        "text_ar": "0.526"
+      },
+      {
+        "key": "c",
+        "text": "0.760",
+        "text_ar": "0.760"
+      },
+      {
+        "key": "d",
+        "text": "0.804",
+        "text_ar": "0.804"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "0.526",
+    "answer_text_ar": "0.526",
+    "explanation": "Use the Q-learning update: Qnew(s,a) = Q(s,a) + α [ R + γ max a′ Q(s′,a ′) − Q(s,a) ] . Substitute the values: = 0.5 + 0.1[−0.04 + (1)(0.8) − 0.5] = 0.5 + 0.1(0.26) = 0.526.",
+    "explanation_ar": "معادلة التحديث: Q_new = Q + α [R + γ max Q' - Q] = 0.5 + 0.1 [-0.04 + 1(0.8) - 0.5] = 0.5 + 0.1 [0.26] = 0.5 + 0.026 = 0.526.",
+    "reference": ""
+  },
+  {
+    "id": 70,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "In robotics (Chapter 26), localisation and mapping (SLAM) is done with which tools?",
+    "question_ar": "في الروبوتات، تُنفذ عمليتا تحديد الموقع وبناء الخريطة متزامنتين (SLAM) باستخدام أيٍّ من الأدوات الرياضية التالية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Kalman and particle filters",
+        "text_ar": "مرشحات كالمان ومرشحات الجسيمات (Kalman and Particle filters)"
+      },
+      {
+        "key": "b",
+        "text": "The CYK chart parser",
+        "text_ar": "محلل CYK النحوي"
+      },
+      {
+        "key": "c",
+        "text": "Minimax andα-β pruning",
+        "text_ar": "خوارزمية Minimax وتقليم ألفا-بيتا"
+      },
+      {
+        "key": "d",
+        "text": "PDDL action schemas",
+        "text_ar": "مخططات أفعال PDDL"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Kalman and particle filters",
+    "answer_text_ar": "مرشحات كالمان ومرشحات الجسيمات (Kalman and Particle filters)",
+    "explanation": "SLAM combines localisation (estimating the robot’s position) and mapping (building a map of the environment). Probabilistic state-estimation tools such as Kalman filters and particle filters are used for these tasks. SLAMﺍڤ",
+    "explanation_ar": "تعتمد خوارزميات SLAM في الروبوتات على تقدير الحالة الاحتمالي المستمر باستخدام مرشحات كالمان (EKF) ومرشحات الجسيمات (Particle Filters/FastSLAM) للتعامل مع ضوضاء المستشعرات.",
+    "reference": "2 Part B – True or False"
+  },
+  {
+    "id": 71,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "Because perfect rationality is usually computationally impossible, the book aims for limited rationality.",
+    "question_ar": "نظراً لأن الرشادة الكاملة مستحيلة حسابياً في أغلب المسائل الواقعية، يركز الكتاب على مفهوم «الرشادة المحدودة» (Limited / Bounded Rationality).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "The notes state that perfect rationality is usually computation- ally impossible, motivating the aim of limited rationality.",
+    "explanation_ar": "العبارة صحيحة (True). يؤكد المنهج أن التعقيد الحسابي الهائل للعالم الحقيقي يمنع الوصول للحساب المثالي اللحظي، لذا فإن الهدف العملي هو الرشادة المحدودة بموارد المعالجة.",
+    "reference": ""
+  },
+  {
+    "id": 72,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "In the Romania example, greedy best-first search finds the same 418 km route as A*.",
+    "question_ar": "في مثال رومانيا، تجد خوارزمية البحث الجشع (Greedy Best-First) نفس المسار الأمثل بطول 418 كم الذي تجده خوارزمية A*.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Greedy best-first search finds the 450 km route, whereas A* finds the optimal 418 km route.\n\nExplanation: The notes explicitly contrast the two results: A* finds the 418 km optimal route, while greedy best-first search takes the 450 km route through Fagaras.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: البحث الجشع يجد مساراً أطول وغير أمثل طوله 450 كم عبر فاغاراس (Fagaras) لأنه يتبع فقط أقصر مسافة خط مستقيم دون مراعاة المسافة المقطوعة فعلياً g.",
+    "reference": ""
+  },
+  {
+    "id": 73,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "Local search with min-conflicts solves the million-queens problem in about 50 steps.",
+    "question_ar": "ينجح البحث المحلي باستخدام دالة الحد الأدنى من النزاعات (min-conflicts) في حل مسألة المليون ملكة في حوالي 50 خطوة فقط.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "The course notes state that local search using the min- conflicts heuristic solves the million-queens problem in about 50 steps.",
+    "explanation_ar": "العبارة صحيحة (True). خوارزمية min-conflicts في مسائل القيود (CSP) فائقة الكفاءة وتستطيع حل مسألة وضع مليون ملكة على رقعة المليون دون تعارض في حوالي 50 تكراراً فقط تقريباً.",
+    "reference": ""
+  },
+  {
+    "id": 74,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Entailment in first-order logic is decidable: a procedure can always confirm that a sentence is not entailed.",
+    "question_ar": "الاستلزام في منطق الرتبة الأولى (First-Order Logic) يعد مسألة قابلة للحسم تماماً (Decidable)؛ بحيث توجد خوارزمية تؤكد دائماً أن أي جملة غير مستلزمة.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Entailment in first-order logic is semi-decidable: if a sentence is entailed, a procedure can eventually confirm it, but it may not halt when the sentence is not entailed.\n\nExplanation: First-order logic validity and entailment are semi-decidable, not fully decidable. A proof procedure can find a proof when one exists, but failure to find a proof does not necessarily establish non-entailment.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: الاستلزام في منطق الرتبة الأولى هو مسألة نصف قابلة للحسم (Semi-decidable)؛ إذا كانت الجملة مستلزمة يمكن إثباتها، أما إذا لم تكن مستلزمة فقد تستمر الخوارزمية في حلقة لا نهائية.",
+    "reference": ""
+  },
+  {
+    "id": 75,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "The naive Bayes model assumes all effects are independent given one cause, so it grows only linearly.",
+    "question_ar": "يفترض نموذج بيز البسيط (Naive Bayes) أن جميع السمات أو التأثيرات مستقلة شرطياً عن بعضها بافتراض السبب، مما يجعل حجم النموذج ينمو خطياً فقط.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "Naive Bayes assumes conditional independence of the ef- fects given the class or common cause. This factorisation greatly reduces the number of parameters, making the model grow linearly with the number of effects.",
+    "explanation_ar": "العبارة صحيحة (True). فرضية الاستقلال الشرطي الساذجة تبسط حساب الاحتمالات لضرب احتمالات السمات بشكل منفصل، مما يقلل عدد المعاملات من النمو الأسي إلى النمو الخطي O(n).",
+    "reference": "Bayes."
+  },
+  {
+    "id": 76,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "If a machine is unsure what the human wants, it has a positive incentive to let the human switch it off.",
+    "question_ar": "إذا كانت الآلة الذكية غير متأكدة من رغبات وهدف الإنسان الحقيقي، فإن لديها دافعاً عقلانياً إيجابياً للسماح للإنسان بإيقاف تشغيلها.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "Under the uncertain-objective framework described in the notes, a machine that is uncertain about human preferences has an incentive to pre- serve human control, including allowing itself to be switched off.",
+    "explanation_ar": "العبارة صحيحة (True). وفق نموذج الأمان المقترح (Uncertain Objectives)، إذا رغب الإنسان في إطفاء الآلة فهذا إشارة إلى أنها كادت تفعل شيئاً يخالف رغبته، وبما أنها تهدف لخدمة مقصده، فإنها ترضخ للإطفاء.",
+    "reference": "s has an incentive to pre- serve human control, including allowing itself to be switched off."
+  },
+  {
+    "id": 77,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "In the book’s 4×3 grid world, the agent moves as intended with probability 0.9 and slips sideways with probability 0.05 each way.",
+    "question_ar": "في عالم الشبكة 4×3 الموضح بالكتاب، يتحرك الوكيل كما قصد باحتمال 0.9 وينزلق جانبياً باحتمال 0.05 لكل جانب.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: In the course notes’ 4×3 grid world, the agent moves as intended with probability 0.8 and slips sideways with probability 0.1 each way.\n\nExplanation: The lecture notes specify an intended-move probability of 0.8 and sideways-slip probabilities of 0.1 in each direction. The values 0.9 and 0.05 are not the values stated in the course notes.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: المعايير المعتمدة في مثال الكتاب هي: يتحرك الوكيل في الاتجاه المقصود باحتمال 0.8، وينزلق يميناً بزاوية 90 درجة باحتمال 0.1، ويساراً باحتمال 0.1.",
+    "reference": "world."
+  },
+  {
+    "id": 78,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Maximum-likelihood learning averages all hypotheses weighted by their poste- rior probability.",
+    "question_ar": "التعلم بالاحتمال الأقصى (Maximum-Likelihood) يحسب متوسط جميع الفرضيات مرجحة باحتمالاتها البعدية.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Bayesian learning averages hypotheses weighted by their posterior probabilities; maximum-likelihood learning selects the hypothesis that best explains the observed data.\n\nExplanation: The statement describes Bayesian learning, not maximum likelihood. Maximum likelihood chooses the hypothesis with the highest likelihood of the observed data, whereas Bayesian learning averages predictions over hypotheses weighted by their posterior probabilities.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: حساب المتوسط المرجح للفرضيات هو تعريف التعلم البيزي (Bayesian Learning)، أما Maximum Likelihood فيختار فرضية وحيدة هي التي تعظم احتمال البيانات المرصودة.",
+    "reference": ""
+  },
+  {
+    "id": 79,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Searle’s Chinese room argues that symbol manipulation is not the same as understanding.",
+    "question_ar": "حجة «الغرفة الصينية» لجون سيرل تثبت أن مجرد المعالجة الرمزية التركيبية (Syntax) لا تعني وجود فهم دلالي حقيقي (Semantics).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "The Chinese Room argument distinguishes syntactic manipu- lation of symbols from semantic understanding. Following rules to manipulate symbols does not, by itself, establish genuine understanding.",
+    "explanation_ar": "العبارة صحيحة (True). يوضح سيرل أن الشخص في الغرفة يمكنه اتباع كتيب القواعد للإجابة بالصينية دون أن يفهم كلمة واحدة من معنى اللغة الصينية، فالآلات تعالج الرموز دون فهم المعنى.",
+    "reference": ""
+  },
+  {
+    "id": 80,
+    "bank_id": 2,
+    "bank_title_en": "Bank 2: The Whole Book in One Lecture",
+    "bank_title_ar": "بنك 2: نظرة شاملة على الذكاء الاصطناعي (AI: Whole Book Overview)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "Weak AI is the claim that machines would actually have minds.",
+    "question_ar": "الذكاء الاصطناعي الضعيف (Weak AI) هو الادعاء بأن الآلات يمكن أن تمتلك وعياً وعقولاً حقيقية تشبه عقول البشر.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Strong AI is the claim that machines could actually have minds; Weak AI treats machines as tools that can behave intelligently without claiming that they literally have minds.\n\nExplanation: The statement describes the strong-AI position. Weak AI claims that machines can simulate or exhibit intelligent behaviour, without asserting that they possess genuine minds or consciousness.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: الادعاء بأن الآلات تمتلك عقولاً حقيقية هو الذكاء الاصطناعي القوي (Strong AI)، بينما الذكاء الاصطناعي الضعيف (Weak AI) يعتبر الآلة مجرد أداة تتصرف بذكاء ظاهري دون وعي.",
+    "reference": ""
+  },
+  {
+    "id": 81,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "Which of the four approaches to AI does the textbook adopt?",
+    "question_ar": "أيٌّ من المداخل الأربعة لتعريف الذكاء الاصطناعي يتبناه الكتاب الدراسي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Thinking humanly",
+        "text_ar": "التفكير بطريقة بشرية (Thinking humanly)"
+      },
+      {
+        "key": "b",
+        "text": "Acting humanly",
+        "text_ar": "التصرف بطريقة بشرية (Acting humanly)"
+      },
+      {
+        "key": "c",
+        "text": "Acting rationally",
+        "text_ar": "التصرف بعقلانية ورشد (Acting rationally)"
+      },
+      {
+        "key": "d",
+        "text": "Thinking rationally",
+        "text_ar": "التفكير بعقلانية ورشد (Thinking rationally)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Acting rationally",
+    "answer_text_ar": "التصرف بعقلانية ورشد (Acting rationally)",
+    "explanation": "The textbook adopts the rational-agent approach. It focuses on selecting actions that achieve the best outcome, or the best expected outcome under uncertainty, rather than imitating human thought or behaviour.",
+    "explanation_ar": "يتبنى الكتاب مدخل الوكيل الرشيد (Acting rationally)، حيث يركز على اختيار الأفعال التي تحقق أفضل نتيجة متوقعة تحت ظروف عدم اليقين، بدلاً من مجرد تقليد أسلوب التفكير أو السلوك البشري.",
+    "reference": ""
+  },
+  {
+    "id": 82,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "Which statement best describes the relationship between AI and ma- chine learning?",
+    "question_ar": "أي عبارة مما يلي تصف العلاقة الصحيحة بين الذكاء الاصطناعي (AI) والتعلم الآلي (Machine Learning)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Machine learning is a subfield of AI that studies how to improve performance from experience.",
+        "text_ar": "التعلم الآلي هو فرع ومجال فرعي من الذكاء الاصطناعي يهتم بتحسين الأداء من خلال التجربة والبيانات"
+      },
+      {
+        "key": "b",
+        "text": "AI is a subfield of machine learning.",
+        "text_ar": "الذكاء الاصطناعي هو مجال فرعي من التعلم الآلي"
+      },
+      {
+        "key": "c",
+        "text": "AI and machine learning are two names for the same field.",
+        "text_ar": "الذكاء الاصطناعي والتعلم الآلي اسمان مختلفان لمجال واحد متطابق تماماً"
+      },
+      {
+        "key": "d",
+        "text": "Every AI system, including route planners and theorem provers, uses ma- chine learning.",
+        "text_ar": "كل أنظمة الذكاء الاصطناعي (بما فيها مخططات المسارات ومثبتات النظريات) تستخدم التعلم الآلي حتماً"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Machine learning is a subfield of AI that studies how to improve performance from experience.",
+    "answer_text_ar": "التعلم الآلي هو فرع ومجال فرعي من الذكاء الاصطناعي يهتم بتحسين الأداء من خلال التجربة والبيانات",
+    "explanation": "Machine learning is part of AI, not a synonym for it. Some AI systems learn from data, while others rely on search, planning, or logical reasoning without machine learning.",
+    "explanation_ar": "التعلم الآلي فرع من فروع الذكاء الاصطناعي وليس مرادفاً له؛ فهناك أنظمة ذكاء اصطناعي كلاسيكية تعتمد على خوارزميات البحث، التخطيط، والمنطق الرمزي دون استخدام تعلم آلي من البيانات.",
+    "reference": ""
+  },
+  {
+    "id": 83,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "Which two questions separate the four historical definitions of AI?",
+    "question_ar": "ما هما السؤالان الجوهريان اللذان يفصلان بين التعريفات التاريخية الأربعة للذكاء الاصطناعي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Is AI built in hardware or software, and is it fast or accurate?",
+        "text_ar": "هل الذكاء مبني في العتاد أم البرمجيات، وهل هو سريع أم دقيق؟"
+      },
+      {
+        "key": "b",
+        "text": "Is AI symbolic or neural, and is it supervised or unsupervised?",
+        "text_ar": "هل الذكاء رمزي أم عصبي، وهل هو بإشراف أم بدون إشراف؟"
+      },
+      {
+        "key": "c",
+        "text": "Is AI used in industry or research, and is it cheap or expensive?",
+        "text_ar": "هل يُستخدم في الصناعة أم البحث العلمي، وهل هو رخيص أم مكلف؟"
+      },
+      {
+        "key": "d",
+        "text": "Is intelligence about internal thought or external behaviour, and is it mea- sured against human performance or rationality?",
+        "text_ar": "هل الذكاء معني بالتفكير الداخلي أم بالسلوك الخارجي، وهل يُقاس بالأداء البشري أم بالرشادة والعقلانية المثالية؟"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Is intelligence about internal thought or external behaviour, and is it mea- sured against human performance or rationality?",
+    "answer_text_ar": "هل الذكاء معني بالتفكير الداخلي أم بالسلوك الخارجي، وهل يُقاس بالأداء البشري أم بالرشادة والعقلانية المثالية؟",
+    "explanation": "The four approaches are formed by combining two distinc- tions: thinking versus acting, and human-like performance versus ideal rationality.",
+    "explanation_ar": "تتشكل المداخل الأربعة من تقاطع محورين أساسيين: المحور الأول: التفكير الداخلي مقابل السلوك الخارجي، والمحور الثاني: مقياس النجاح المبني على السلوك البشري مقابل العقلانية والرشادة المثالية.",
+    "reference": ""
+  },
+  {
+    "id": 84,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "What does the total Turing test require in addition to the standard Tur- ing test?",
+    "question_ar": "ما الذي يتطلبه «اختبار تورينغ الشامل» (Total Turing Test) بالإضافة إلى ما يتطلبه اختبار تورينغ القياسي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Solving problems faster than a human",
+        "text_ar": "حل المسائل الرياضية بسرعة تفوق البشر"
+      },
+      {
+        "key": "b",
+        "text": "Interaction with objects and people in the physical world",
+        "text_ar": "القدرة على التفاعل الحسي والحركي مع الكائنات والأشخاص في العالم الحقيقي (الرؤية الحاسوبية والروبوتات)"
+      },
+      {
+        "key": "c",
+        "text": "Proving theorems from Principia Mathematica",
+        "text_ar": "إثبات نظريات كتاب مبادئ الرياضيات"
+      },
+      {
+        "key": "d",
+        "text": "Passing the test without any written questions",
+        "text_ar": "اجتياز الاختبار دون أي أسئلة مكتوبة"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Interaction with objects and people in the physical world",
+    "answer_text_ar": "القدرة على التفاعل الحسي والحركي مع الكائنات والأشخاص في العالم الحقيقي (الرؤية الحاسوبية والروبوتات)",
+    "explanation": "The standard test is based on written interaction with a hu- man interrogator. The total Turing test adds perception and physical interaction, includ- ing vision and robotics.",
+    "explanation_ar": "يضيف اختبار تورينغ الشامل (Total Turing Test) ضرورة امتلاك الآلة لأدوات الإدراك البصري (Computer Vision) للتفاعل مع الأشياء، ومحركات حركية (Robotics) للتعامل مع العالم الفيزيائي، بينما يكتفي الاختبار القياسي بالمحادثة النصية المكتوبة.",
+    "reference": ""
+  },
+  {
+    "id": 85,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "What point does the book make with the example of artificial flight?",
+    "question_ar": "ما هي الفكرة الأساسية التي يطرحها الكتاب من خلال مثال «الطيران الاصطناعي»؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "AI should study the underlying principles of intelligence rather than copy humans.",
+        "text_ar": "يجب على الذكاء الاصطناعي دراسة المبادئ العلمية الأساسية للذكاء بدلاً من مجرد تقليد الطريقة البشرية"
+      },
+      {
+        "key": "b",
+        "text": "AI should copy the human brain as closely as possible.",
+        "text_ar": "يجب أن يقلد الذكاء الاصطناعي الدماغ البشري بأقصى دقة وتفصيل ممكن"
+      },
+      {
+        "key": "c",
+        "text": "Machines will never be able to think, just as they cannot fly like birds.",
+        "text_ar": "لن تستطيع الآلات التفكير أبداً، تماماً كما لا تستطيع الطائرات أن ترفرف مثل الطيور"
+      },
+      {
+        "key": "d",
+        "text": "The Turing test should be replaced by a test that fools pigeons.",
+        "text_ar": "يجب استبدال اختبار تورينغ باختبار يخدع الحمام"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "AI should study the underlying principles of intelligence rather than copy humans.",
+    "answer_text_ar": "يجب على الذكاء الاصطناعي دراسة المبادئ العلمية الأساسية للذكاء بدلاً من مجرد تقليد الطريقة البشرية",
+    "explanation": "Artificial flight succeeded by applying aerodynamics, not by building machines that imitate birds exactly. Similarly, AI should understand and apply principles of intelligence instead of merely copying people.",
+    "explanation_ar": "نجح الطيران عندما فهم المهندسون قوانين الديناميكا الهوائية وطبقوها، وليس عندما حاولوا بناء طائرات تخفق بأجنحتها كالطيور. وبالمثل، ينجح الذكاء الاصطناعي بدراسة مبادئ اتخاذ القرار الرشيد وليس بالتقليد الأعمى للبشر.",
+    "reference": ""
+  },
+  {
+    "id": 86,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "Newell and Simon’s General Problem Solver (GPS) was judged not only on solving problems but also on:",
+    "question_ar": "تم تقييم برنامج «حل المشكلات العام» (GPS) لنيويل وسايمون ليس فقط على قدرته على حل المسائل، بل أيضاً على:",
+    "options": [
+      {
+        "key": "a",
+        "text": "how few lines of code it needed",
+        "text_ar": "عدد أسطر الشيفرة البرمجية القليلة التي احتاجها"
+      },
+      {
+        "key": "b",
+        "text": "whether it could fool a human interrogator",
+        "text_ar": "قدرته على خداع المستجوب البشري في حوار نصي"
+      },
+      {
+        "key": "c",
+        "text": "whether the sequence and timing of its reasoning steps matched human sub- jects",
+        "text_ar": "مدى تطابق تسلسل وتوقيت خطوات تفكيره مع خطوات تفكير المتطوعين من البشر (نمذجة معرفية)"
+      },
+      {
+        "key": "d",
+        "text": "whether it could learn from experience",
+        "text_ar": "قدرته على التعلم الذاتي التلقائي من التجربة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "whether the sequence and timing of its reasoning steps matched human sub- jects",
+    "answer_text_ar": "مدى تطابق تسلسل وتوقيت خطوات تفكيره مع خطوات تفكير المتطوعين من البشر (نمذجة معرفية)",
+    "explanation": "GPS was studied as a cognitive model. Researchers com- pareditsreasoningstepsandtheirtimingwiththoseobservedinhumanproblem-solving experiments.",
+    "explanation_ar": "صُمم برنامج GPS كنموذج إدراكي معرفي (Cognitive Model)، وتمت مقارنة خطوات استدلاله والزمن المستغرق لكل خطوة مع تجارب التفكير لدى البشر للتأكد من أنه يحاكي طريقة التفكير البشري (Thinking humanly).",
+    "reference": ""
+  },
+  {
+    "id": 87,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "Logic needs certain knowledge, which is rarely available. According to the notes, what fills this gap?",
+    "question_ar": "يحتاج المنطق الصوري إلى معرفة يقينية جازمة، وهي نادراً ما تتوفر في العالم الحقيقي. ما الذي يسد هذه الفجوة وفقاً للمحاضرات؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Syllogisms",
+        "text_ar": "القياس المنطقي لأرسطو"
+      },
+      {
+        "key": "b",
+        "text": "Introspection",
+        "text_ar": "الاستبطان التأملي الداخلي (Introspection)"
+      },
+      {
+        "key": "c",
+        "text": "Brain imaging",
+        "text_ar": "التصوير العصبي للدماغ"
+      },
+      {
+        "key": "d",
+        "text": "Probability",
+        "text_ar": "نظرية الاحتمالات (Probability)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Probability",
+    "answer_text_ar": "نظرية الاحتمالات (Probability)",
+    "explanation": "Logical reasoning often requires certain premises, but real- world knowledge is frequently uncertain. Probability provides a way to reason when certainty is unavailable.",
+    "explanation_ar": "معظم قرارات الحياة اليومية تتسم بالشك وعدم اليقين والمعلومات الناقصة، لذا تُعد نظرية الاحتمالات الأداة الرياضية الأساسية للتعامل مع عدم اليقين عندما يعجز المنطق الثنائي الكلاسيكي.",
+    "reference": ""
+  },
+  {
+    "id": 88,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "A rational agent is one that acts so as to achieve:",
+    "question_ar": "الوكيل الرشيد (Rational Agent) هو الوكيل الذي يتصرف بطريقة تحقق له:",
+    "options": [
+      {
+        "key": "a",
+        "text": "the outcome a human would choose",
+        "text_ar": "النتيجة التي كان سيختارها أي إنسان عادي"
+      },
+      {
+        "key": "b",
+        "text": "the best outcome or, when there is uncertainty, the best expected outcome",
+        "text_ar": "أفضل نتيجة ممكنة، أو أفضل نتيجة متوقعة في حالات الشك وعدم اليقين"
+      },
+      {
+        "key": "c",
+        "text": "a correct logical inference in every situation",
+        "text_ar": "استنتاجاً منطقياً معصوماً في كل موقف"
+      },
+      {
+        "key": "d",
+        "text": "the fastest possible response",
+        "text_ar": "أسرع استجابة زمنية ممكنة مهما كانت العواقب"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "the best outcome or, when there is uncertainty, the best expected outcome",
+    "answer_text_ar": "أفضل نتيجة ممكنة، أو أفضل نتيجة متوقعة في حالات الشك وعدم اليقين",
+    "explanation": "This is the definition of a rational agent in the lecture. Note: the supplied question bank prints the label “(a)” twice for its first two choices; the correct answer is the second listed choice, whose label appears to be a typographical error.",
+    "explanation_ar": "الوكيل الرشيد هو الذي يتخذ الفعل الذي يعظم القيمة المتوقعة لمقياس أدائه تحت ظروف المعرفة المتاحة، حتى مع وجود مخاطرة أو عدم يقين.",
+    "reference": ""
+  },
+  {
+    "id": 89,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "The standard model appears in many fields under different names. In statistics, the agent:",
+    "question_ar": "يظهر «النموذج القياسي» (Standard Model) في مجالات علمية متعددة بأسماء مختلفة. في مجال الإحصاء، يهدف الوكيل إلى:",
+    "options": [
+      {
+        "key": "a",
+        "text": "minimises a cost function",
+        "text_ar": "تقليل دالة التكلفة (Cost function)"
+      },
+      {
+        "key": "b",
+        "text": "maximises a sum of rewards",
+        "text_ar": "تعظيم مجموع المكافآت (Rewards)"
+      },
+      {
+        "key": "c",
+        "text": "minimises a loss function",
+        "text_ar": "تقليل دالة الخسارة (Loss function)"
+      },
+      {
+        "key": "d",
+        "text": "maximises utility",
+        "text_ar": "تعظيم المنفعة الاجتماعية"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "minimises a loss function",
+    "answer_text_ar": "تقليل دالة الخسارة (Loss function)",
+    "explanation": "The lecture maps the standard model to different fields: con- trol theory minimises cost, operations research maximises rewards, statistics minimises loss, and economics maximises utility or social welfare.",
+    "explanation_ar": "يتطابق النموذج القياسي في كل العلوم: في نظرية التحكم يُقلل التكلفة (Cost)، وفي بحوث العمليات يُعظم المكافآت، وفي الإحصاء يُقلل الخسارة (Loss)، وفي الاقتصاد يُعظم المنفعة (Utility).",
+    "reference": ""
+  },
+  {
+    "id": 90,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "What is the first refinement of the standard model, called limited ratio- nality?",
+    "question_ar": "ما هو التعديل الأول للنموذج القياسي المعروف بـ «الرشادة المحدودة» (Limited / Bounded Rationality)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Agents must act appropriately when there is not enough time to do every computation.",
+        "text_ar": "يجب على الوكيل التصرف بملائمة وفعالية عندما لا تتوفر الموارد الحسابية والزمنية الكافية لحساب كل الاحتمالات"
+      },
+      {
+        "key": "b",
+        "text": "Agents must be uncertain about the human objective.",
+        "text_ar": "يجب أن يشك الوكيل دائماً في الهدف البشري المطلوب"
+      },
+      {
+        "key": "c",
+        "text": "Agents must imitate human reasoning steps.",
+        "text_ar": "يجب أن يقلد الوكيل خطوات التفكير البشري حصراً"
+      },
+      {
+        "key": "d",
+        "text": "Agents must use only logic, never probability.",
+        "text_ar": "يجب استخدام المنطق الرمزي فقط دون الاحتمالات"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Agents must act appropriately when there is not enough time to do every computation.",
+    "answer_text_ar": "يجب على الوكيل التصرف بملائمة وفعالية عندما لا تتوفر الموارد الحسابية والزمنية الكافية لحساب كل الاحتمالات",
+    "explanation": "Perfect rationality may require more computation than is practical. Limited rationality recognises computational limits and requires an agent to make appropriate decisions with the time and resources available.",
+    "explanation_ar": "الرشادة الكاملة مستحيلة عملياً في العالم الحقيقي المعقد؛ لذا فإن الرشادة المحدودة تدرك القيود الحسابية وتلزم الوكيل باتخاذ أفضل قرار متاح في ظل الوقت والموارد المتوفرة.",
+    "reference": ""
+  },
+  {
+    "id": 91,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "What is the value alignment problem?",
+    "question_ar": "ما هي «مشكلة مواءمة القيم» (The Value Alignment Problem)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Making sure an agent’s computations finish in time",
+        "text_ar": "التأكد من انتهاء حسابات الوكيل في الوقت المحدد"
+      },
+      {
+        "key": "b",
+        "text": "Choosing between expected money and expected utility",
+        "text_ar": "المفاضلة بين المكسب المالي والمنفعة العامة"
+      },
+      {
+        "key": "c",
+        "text": "Matching a program’s reasoning steps with those of humans",
+        "text_ar": "مطابقة خطوات تفكير البرنامج مع البشر"
+      },
+      {
+        "key": "d",
+        "text": "Making sure the values or objectives put into the machine are aligned with those of the human",
+        "text_ar": "التأكد من أن الأهداف والقيم المبرمجة داخل الآلة متوافقة تماماً وبشكل حقيقي مع المقاصد والقيم الإنسانية"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Making sure the values or objectives put into the machine are aligned with those of the human",
+    "answer_text_ar": "التأكد من أن الأهداف والقيم المبرمجة داخل الآلة متوافقة تماماً وبشكل حقيقي مع المقاصد والقيم الإنسانية",
+    "explanation": "The value alignment problem arises because a machine may optimise an objective that does not accurately represent what humans really want. The objective must be aligned with human preferences.",
+    "explanation_ar": "تنشأ المشكلة عندما تُعطى الآلة هدفاً حرفياً محدداً، فتعمل على تحسينه وتدمير أشياء أخرى نهتم بها دون أن نذكرها صراحة، لذا يجب مواءمة أهداف الآلة مع القيم البشرية الحقيقية.",
+    "reference": "s."
+  },
+  {
+    "id": 92,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "According to the notes, a machine that knows it does not know the full human objective has an incentive to:",
+    "question_ar": "وفقاً للمحاضرة، الآلة التي تدرك أنها لا تعرف الهدف البشري الكامل بنسبة 100% يكون لديها دافع عقلاني قوي لـ:",
+    "options": [
+      {
+        "key": "a",
+        "text": "pursue its own objective as fast as possible",
+        "text_ar": "السعي لتحقيق هدفها الخاص بأقصى سرعة ممكنة"
+      },
+      {
+        "key": "b",
+        "text": "actcautiously, askpermission, learnourpreferencesanddefertohumancon- trol",
+        "text_ar": "التصرف بحذر، طلب الإذن، تعلم تفضيلات البشر، والامتثال للتحكم البشري"
+      },
+      {
+        "key": "c",
+        "text": "hijack extra computing power to find the objective",
+        "text_ar": "اختراق حواسيب إضافية للحصول على قوة معالجة أعلى"
+      },
+      {
+        "key": "d",
+        "text": "switch itself off permanently",
+        "text_ar": "إيقاف تشغيل نفسها نهائياً"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "actcautiously, askpermission, learnourpreferencesanddefertohumancon- trol",
+    "answer_text_ar": "التصرف بحذر، طلب الإذن، تعلم تفضيلات البشر، والامتثال للتحكم البشري",
+    "explanation": "If the machine is uncertain about the human objective, it has reason to seek clarification and allow humans to guide or correct it instead of blindly pursuing a possibly incorrect fixed objective.",
+    "explanation_ar": "إذا علمت الآلة أنها جاهلة ببعض تفضيلات البشر، فسيكون من مصلحتها الاستئذان قبل اتخاذ خطوات مصيرية، والاستماع لتوجيهات البشر، وعدم مقاومة إيقاف تشغيلها.",
+    "reference": "sanddefertohuman control. Explanation (English): If the machine is uncertain about the human objective, it has reason to seek clarification and allow humans to guide or correct it instead of blindly pursuing a possibly incorrect fixed objective."
+  },
+  {
+    "id": 93,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "The word “algorithm” comes from the name of:",
+    "question_ar": "اشتُقت كلمة «خوارزمية» (Algorithm) في اللغات العالمية من اسم العالم المسلم:",
+    "options": [
+      {
+        "key": "a",
+        "text": "Aristotle",
+        "text_ar": "أرسطو"
+      },
+      {
+        "key": "b",
+        "text": "al-Khwarizmi",
+        "text_ar": "الخوارزمي (محمد بن موسى الخوارزمي)"
+      },
+      {
+        "key": "c",
+        "text": "Boole",
+        "text_ar": "جورج بول"
+      },
+      {
+        "key": "d",
+        "text": "Gödel",
+        "text_ar": "كورت غودل"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "al-Khwarizmi",
+    "answer_text_ar": "الخوارزمي (محمد بن موسى الخوارزمي)",
+    "explanation": "The word algorithm is derived from the Latinized form of the name of the mathematician al-Khwarizmi.",
+    "explanation_ar": "تعود كلمة Algorithm إلى الاسم اللاتيني للعالم المسلم الرياضي الفلكي محمد بن موسى الخوارزمي (Algoritmi)، مؤسس علم الجبر ومطور أساليب الحساب المنهجي.",
+    "reference": ""
+  },
+  {
+    "id": 94,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "Which is the correct order of the three steps of Craik’s knowledge-based agent (1943)?",
+    "question_ar": "ما هو الترتيب الصحيح للخطوات الثلاث في نموذج الوكيل القائم على المعرفة لكريك (Craik - 1943)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Act, then observe, then remember",
+        "text_ar": "التصرف، ثم الملاحظة، ثم التذكر في الذاكرة"
+      },
+      {
+        "key": "b",
+        "text": "Manipulate the representation, then sense the stimulus, then act",
+        "text_ar": "معالجة التمثيل، ثم الإحساس بالمثير، ثم اتخاذ الفعل"
+      },
+      {
+        "key": "c",
+        "text": "Translatethestimulusintoaninternalrepresentation, manipulateittoderive new representations, then translate them back into action",
+        "text_ar": "ترجمة المثير الخارجي إلى تمثيل داخلي، ثم معالجته لاشتقاق تمثيلات جديدة، ثم ترجمة الناتج إلى فعل خارجي"
+      },
+      {
+        "key": "d",
+        "text": "Translate action into a stimulus, then build a representation, then stop",
+        "text_ar": "ترجمة الفعل إلى مثير، ثم بناء التمثيل، ثم التوقف"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Translatethestimulusintoaninternalrepresentation, manipulateittoderive new representations, then translate them back into action",
+    "answer_text_ar": "ترجمة المثير الخارجي إلى تمثيل داخلي، ثم معالجته لاشتقاق تمثيلات جديدة، ثم ترجمة الناتج إلى فعل خارجي",
+    "explanation": "Craik’s three stages are: represent the stimulus internally, manipulate the representation to derive new ones, and convert the resulting represen- tation into action.",
+    "explanation_ar": "حدد كينيث كريك (1943) الخطوات الثلاث: 1) تحويل المثير الخارجي لتمثيل داخلي، 2) معالجة التمثيل بالاستدلال لاشتقاق تمثيلات جديدة، 3) إعادة ترجمة التمثيل الداخلي إلى أفعال وسلوكيات واقعية.",
+    "reference": ""
+  },
+  {
+    "id": 95,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "You can choose (A) 1,000,000 EGP for certain or (B) a coin flip giving 3,000,000 EGP or nothing. What is the expected money of option B?",
+    "question_ar": "لديك خياران: (A) الحصول على 1,000,000 جنيه مؤكدة، أو (B) رمي عملة معدنية يمنحك 3,000,000 جنيه أو لا شيء (0). ما هي القيمة المالية المتوقعة للخيار B؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "1,500,000 EGP",
+        "text_ar": "1,500,000 جنيه"
+      },
+      {
+        "key": "b",
+        "text": "1,000,000 EGP",
+        "text_ar": "1,000,000 جنيه"
+      },
+      {
+        "key": "c",
+        "text": "3,000,000 EGP",
+        "text_ar": "3,000,000 جنيه"
+      },
+      {
+        "key": "d",
+        "text": "750,000 EGP",
+        "text_ar": "750,000 جنيه"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "1,500,000 EGP",
+    "answer_text_ar": "1,500,000 جنيه",
+    "explanation": "A fair coin gives each outcome probability 0.5. Therefore, E(B) = 0.5(3,000,000) + 0.5(0) = 1,500,000 EGP.",
+    "explanation_ar": "القيمة المتوقعة لرمي العملة العادلة: E(B) = (0.5 * 3,000,000) + (0.5 * 0) = 1,500,000 جنيه.",
+    "reference": "8–9."
+  },
+  {
+    "id": 96,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "In the same choice, let U(0) = 0 , U(1M) = 0 .8 and U(3M) = 1 . Which option does a rational agent choose?",
+    "question_ar": "في نفس الاختيار السابق، إذا كانت دالة المنفعة: U(0) = 0، و U(1M) = 0.8، و U(3M) = 1. فما الخيار الذي سيختاره الوكيل الرشيد؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "B, because its expected money is higher",
+        "text_ar": "الخيار B لأن قيمته المالية المتوقعة أعلى"
+      },
+      {
+        "key": "b",
+        "text": "B, because EU(B) = 1",
+        "text_ar": "الخيار B لأن منفعته المتوقعة EU(B) = 1"
+      },
+      {
+        "key": "c",
+        "text": "Either, because the expected utilities are equal",
+        "text_ar": "أي منهما لأن المنفعة المتوقعة متطابقة"
+      },
+      {
+        "key": "d",
+        "text": "A, because EU(A) = 0.8 is greater than EU(B) = 0.5",
+        "text_ar": "الخيار A لأن منفعته المتوقعة EU(A) = 0.8 أكبر من EU(B) = 0.5"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "A, because EU(A) = 0.8 is greater than EU(B) = 0.5",
+    "answer_text_ar": "الخيار A لأن منفعته المتوقعة EU(A) = 0.8 أكبر من EU(B) = 0.5",
+    "explanation": "For A, the utility is certain: EU(A) = 0.8. For B, EU(B) = 0.5(1) + 0.5(0) = 0.5. Since 0.8 > 0.5, the rational choice under the given utility function is A.",
+    "explanation_ar": "الوكيل الرشيد يعظم المنفعة المتوقعة (Expected Utility) وليس المال المجرد: EU(A) = 0.8، بينما EU(B) = 0.5(1) + 0.5(0) = 0.5. وبما أن 0.8 > 0.5 فإن الخيار العقلاني الرشيد هو A (تفضيل الأمان وتجنب المخاطرة).",
+    "reference": ""
+  },
+  {
+    "id": 97,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "A problem is called intractable if:",
+    "question_ar": "تُوصف مسألة حاسوبية بأنها «مستعصية حسابياً» (Intractable) إذا كان:",
+    "options": [
+      {
+        "key": "a",
+        "text": "no program can solve it at all",
+        "text_ar": "يستحيل نظرياً على أي برنامج حلها أبداً"
+      },
+      {
+        "key": "b",
+        "text": "it cannot be written in first-order logic",
+        "text_ar": "لا يمكن صياغتها باستخدام منطق الرتبة الأولى"
+      },
+      {
+        "key": "c",
+        "text": "its solution time grows exponentially with the instance size",
+        "text_ar": "الوقت اللازم لحلها ينمو بشكل أسي (Exponential) مع حجم المدخلات"
+      },
+      {
+        "key": "d",
+        "text": "it needs a parallel computer",
+        "text_ar": "تتطلب بالضرورة استخدام حاسوب فائق متوازي"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "its solution time grows exponentially with the instance size",
+    "answer_text_ar": "الوقت اللازم لحلها ينمو بشكل أسي (Exponential) مع حجم المدخلات",
+    "explanation": "Intractability concerns computational cost, not whether a solution exists. Exponential growth makes solving large real-world instances impracti- cal.",
+    "explanation_ar": "الاستعصاء الحسابي (Intractability) يعني أن المسألة تقبل الحل نظرياً، لكن زمن حلها ينمو أسياً (O(2^n))، مما يجعل حل الحالات الواقعية الكبيرة مستحيلاً عملياً في زمن مقبول.",
+    "reference": ""
+  },
+  {
+    "id": 98,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "The brain’s cycle time is 10−3 s and a computer’s is 10−9 s. How many times faster per step is the computer?",
+    "question_ar": "زمن الدورة في الدماغ البشري هو 10^-3 ثانية، وزمن الدورة في المعالج الحاسوبي هو 10^-9 ثانية. كم مرة يُعد الحاسوب أسرع في الخطوة الواحدة مقارنة بالدماغ؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "106",
+        "text_ar": "10^6 مرة (مليون مرة أسرع)"
+      },
+      {
+        "key": "b",
+        "text": "103",
+        "text_ar": "10^3 مرة (ألف مرة أسرع)"
+      },
+      {
+        "key": "c",
+        "text": "107",
+        "text_ar": "10^7 مرة"
+      },
+      {
+        "key": "d",
+        "text": "1012",
+        "text_ar": "10^12 مرة"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "106",
+    "answer_text_ar": "10^6 مرة (مليون مرة أسرع)",
+    "explanation": "The speed ratio is the brain cycle time divided by the com- puter cycle time: 10−3 10−9 = 10−3−(−9) = 106.",
+    "explanation_ar": "نسبة السرعة هي حاصل قسمة زمن دورة الدماغ على زمن دورة المعالج: 10^-3 / 10^-9 = 10^(-3 - (-9)) = 10^6 (أي أن الحاسوب أسرع في تنفيذ خطوة العمليات الأساسية بمليون مرة).",
+    "reference": "cussion, pp. 7–10."
+  },
+  {
+    "id": 99,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "From 2012 to 2018 the compute used to train top ML systems grew 300,000-fold. About how many doublings is that?",
+    "question_ar": "من عام 2012 إلى عام 2018، تضاعفت القدرة الحاسوبية المستخدمة لتدريب أفضل أنظمة التعلم الآلي بمقدار 300,000 ضعف. كم عدد المضاعفات (Doublings) التي يمثلها ذلك تقريباً؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "About 5",
+        "text_ar": "حوالي 5 مضاعفات"
+      },
+      {
+        "key": "b",
+        "text": "About 18",
+        "text_ar": "حوالي 18 مضاعفة (Doublings)"
+      },
+      {
+        "key": "c",
+        "text": "About 100",
+        "text_ar": "حوالي 100 مضاعفة"
+      },
+      {
+        "key": "d",
+        "text": "About 3.4",
+        "text_ar": "حوالي 3.4 مضاعفات"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "About 18",
+    "answer_text_ar": "حوالي 18 مضاعفة (Doublings)",
+    "explanation": "The number of doublings is log 2(300,000): log2(300,000) ≈ 18.2. So the increase is about 18 doublings.",
+    "explanation_ar": "عدد المضاعفات يحسب باللوغاريتم الثنائي: log2(300,000) ≈ 18.2 مضاعفة، مما يعكس النمو الانفجاري الهائل في القوة الحسابية المخصصة لتدريب نماذج الذكاء الاصطناعي.",
+    "reference": ""
+  },
+  {
+    "id": 100,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "What did McCulloch and Pitts (1943) do?",
+    "question_ar": "ما هو الإنجاز الرائد الذي قدمه ماكولوتش وبيتس (McCulloch & Pitts) عام 1943؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "They built SNARC, the first neural-network computer.",
+        "text_ar": "بنوا حاسوب SNARC كأول جهاز شبكات عصبية مادي"
+      },
+      {
+        "key": "b",
+        "text": "They proposed a rule for strengthening connections between neurons.",
+        "text_ar": "اقترحوا قاعدة تقوية الروابط المشبكية بين الخلايا العصبية (Hebb's Rule)"
+      },
+      {
+        "key": "c",
+        "text": "They proved that a perceptron cannot learn XOR.",
+        "text_ar": "أثبتوا رياضياً أن البيرسيبترون لا يستطيع تعلم دالة XOR"
+      },
+      {
+        "key": "d",
+        "text": "They modelled neurons as “on” or “off” and showed networks of them can compute any computable function.",
+        "text_ar": "صمموا نموذجاً رياضياً للعصبون يعمل بنمط (تشغيل/إطفاء) وأثبتوا قدرة شبكاته على حساب أي دالة قابلة للحساب"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "They modelled neurons as “on” or “off” and showed networks of them can compute any computable function.",
+    "answer_text_ar": "صمموا نموذجاً رياضياً للعصبون يعمل بنمط (تشغيل/إطفاء) وأثبتوا قدرة شبكاته على حساب أي دالة قابلة للحساب",
+    "explanation": "McCulloch and Pitts introduced a simplified binary neuron model and demonstrated the computational power of networks built from such units.",
+    "explanation_ar": "قدما أول نموذج رياضي تجريدي للخلية العصبية الثنائية، وأثبتا أن شبكة من هذه العصبونات مع دوال المنطق الثنائي قادرة نظرياً على حساب أي دالة يمكن لآلة تورينغ حسابها.",
+    "reference": ""
+  },
+  {
+    "id": 101,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "What was the main outcome of the Dartmouth workshop of summer 1956, organised by McCarthy?",
+    "question_ar": "ما هي النتيجة التاريخية الرئيسية لورشة عمل دارتموث في صيف 1956 التي نظمها جون مكارثي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "It gave the field of AI its name.",
+        "text_ar": "أعطت هذا المجال العلمي اسمه الرسمي المعتمد: «الذكاء الاصطناعي» (Artificial Intelligence)"
+      },
+      {
+        "key": "b",
+        "text": "It produced several major breakthroughs.",
+        "text_ar": "حققت اختراقات برمجية كبرى فورية ونماذج عملية متكاملة"
+      },
+      {
+        "key": "c",
+        "text": "It introduced the Turing test.",
+        "text_ar": "قدمت وصاغت اختبار تورينغ لأول مرة"
+      },
+      {
+        "key": "d",
+        "text": "It ended AI funding in Britain.",
+        "text_ar": "تسببت في إيقاف تمويل الذكاء الاصطناعي في بريطانيا"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "It gave the field of AI its name.",
+    "answer_text_ar": "أعطت هذا المجال العلمي اسمه الرسمي المعتمد: «الذكاء الاصطناعي» (Artificial Intelligence)",
+    "explanation": "The Dartmouth workshop is historically associated with the naming of the field of artificial intelligence. It did not itself produce the major break- throughs sometimes associated with later AI development.",
+    "explanation_ar": "الأثر الأبرز لورشة دارتموث لعام 1956 كان جمع الرواد معاً وصياغة اسم المجال «الذكاء الاصطناعي»، وتحديد أهدافه البحثية المستقلة، ولم تشهد الورشة نفسها اختراقات برمجية كبرى حينها.",
+    "reference": ""
+  },
+  {
+    "id": 102,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "Samuel’s checkers program learned to play better than its creator using what we now call:",
+    "question_ar": "تعلم برنامج صامويل (Arthur Samuel) للعبة الداما اللعب بمهارة فاقت صانعه البشري باستخدام ما نطلق عليه اليوم:",
+    "options": [
+      {
+        "key": "a",
+        "text": "expert systems",
+        "text_ar": "النظم الخبيرة (Expert Systems)"
+      },
+      {
+        "key": "b",
+        "text": "Bayesian networks",
+        "text_ar": "شبكات بيز الاحتمالية (Bayesian Networks)"
+      },
+      {
+        "key": "c",
+        "text": "reinforcement learning",
+        "text_ar": "التعلم التعزيزي (Reinforcement Learning)"
+      },
+      {
+        "key": "d",
+        "text": "resolution theorem proving",
+        "text_ar": "إثبات النظريات بالاستبانة (Resolution)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "reinforcement learning",
+    "answer_text_ar": "التعلم التعزيزي (Reinforcement Learning)",
+    "explanation": "Samuel’s checkers program improved through experience and feedback from playing games. This is an early example of what is now called rein- forcement learning.",
+    "explanation_ar": "برنامج آرثر صامويل للداما (1952) كان أول برنامج يتعلم ذاتياً من خلال لعب آلاف المباريات وتعديل تقييم المواضع بناءً على المكافآت ونتائج الفوز والخسارة، وهو جوهر التعلم التعزيزي الحديث.",
+    "reference": ""
+  },
+  {
+    "id": 103,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "What did Minsky and Papert’s book Perceptrons (1969) show?",
+    "question_ar": "ما الذي أثبته كتاب «Perceptrons» الشهير لمينسكي وبابيرت عام 1969؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "A perceptron can represent any function.",
+        "text_ar": "أن البيرسيبترون يستطيع تمثيل وحل أي دالة مهما كانت"
+      },
+      {
+        "key": "b",
+        "text": "A two-input perceptron cannot learn to tell whether its inputs differ (XOR).",
+        "text_ar": "أن البيرسيبترون أحادي الطبقة بمدخلين عاجز عن تمثيل دالة الاختلاف المنطقي (XOR)"
+      },
+      {
+        "key": "c",
+        "text": "Back-propagation cannot train multilayer networks.",
+        "text_ar": "أن الانتشار العكسي عاجز عن تدريب الشبكات متعددة الطبقات"
+      },
+      {
+        "key": "d",
+        "text": "Perceptrons learn faster than expert systems.",
+        "text_ar": "أن البيرسيبترون يتعلم أسرع من النظم الخبيرة"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A two-input perceptron cannot learn to tell whether its inputs differ (XOR).",
+    "answer_text_ar": "أن البيرسيبترون أحادي الطبقة بمدخلين عاجز عن تمثيل دالة الاختلاف المنطقي (XOR)",
+    "explanation": "A single perceptron cannot represent XOR because XOR is not linearly separable. The limitation concerns a single unit, not the impossibility of using multilayer networks.",
+    "explanation_ar": "أثبت الكتاب أن عصبون البيرسيبترون البسيط يقتصر على الدوال القابلة للفصل خطياً (Linearly Separable)، ويعجز عن حل أبسط دالة غير خطية كـ XOR، مما تسبب في شتاء الذكاء الاصطناعي الأول للشبكات العصبية.",
+    "reference": ""
+  },
+  {
+    "id": 104,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "DENDRAL’s ketone rule requires x1 + x2 = M + 28. For a molecule with M = 120 and a peak at x1 = 80, which value of x2 satisfies this condition?",
+    "question_ar": "في قاعدة الكيتون بنظام DENDRAL الكيميائي: الشرط هو x1 + x2 = M + 28. إذا كان وزن الجزيء M = 120 وكانت ذروة x1 = 80، فما قيمة x2 التي تحقق الشرط؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "40",
+        "text_ar": "40"
+      },
+      {
+        "key": "b",
+        "text": "52",
+        "text_ar": "52"
+      },
+      {
+        "key": "c",
+        "text": "92",
+        "text_ar": "92"
+      },
+      {
+        "key": "d",
+        "text": "68",
+        "text_ar": "68"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "68",
+    "answer_text_ar": "68",
+    "explanation": "Substitute the given values: x1 + x2 = M + 28 ⇒ 80 + x2 = 120 + 28 = 148 x2 = 148 − 80 = 68.",
+    "explanation_ar": "بالتعويض الرياضي المباشر: x1 + x2 = M + 28 => 80 + x2 = 120 + 28 = 148 => x2 = 148 - 80 = 68.",
+    "reference": "tory, pp. 13–14."
+  },
+  {
+    "id": 105,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "What did Banko and Brill (2001) find?",
+    "question_ar": "ما هي النتيجة البارزة التي توصل إليها بانكو وبريل (Banko & Brill - 2001) في معالجة اللغات الطبيعية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unlabelled data cannot improve accuracy.",
+        "text_ar": "البيانات غير المصنفة لا يمكن أن تفيد في تحسين الدقة"
+      },
+      {
+        "key": "b",
+        "text": "Better algorithms always beat more data.",
+        "text_ar": "الخوارزميات الأذكى تتفوق دائماً على حجم البيانات الضخم"
+      },
+      {
+        "key": "c",
+        "text": "Increasing the data by two or three orders of magnitude outweighs any im- provement from tweaking the algorithm.",
+        "text_ar": "زيادة حجم بيانات التدريب برتبتين أو ثلاث رتب عشرية تفوق بأثرها أي تحسينات في ضبط الخوارزمية"
+      },
+      {
+        "key": "d",
+        "text": "Filling holes in photos needs only thousands of images.",
+        "text_ar": "ملء الفجوات في الصور يحتاج لبضعة آلاف فقط من العينات"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Increasing the data by two or three orders of magnitude outweighs any im- provement from tweaking the algorithm.",
+    "answer_text_ar": "زيادة حجم بيانات التدريب برتبتين أو ثلاث رتب عشرية تفوق بأثرها أي تحسينات في ضبط الخوارزمية",
+    "explanation": "Their finding highlighted the importance of data scale: sub- stantially increasing the amount of data could improve performance more than making smaller changes to the learning algorithm. Bankoﺍڤ",
+    "explanation_ar": "أثبتت دراستهما أن وفرة البيانات الضخمة (Big Data) ترفع أداء كل الخوارزميات بشكل جذري، لدرجة أن خوارزمية بسيطة على بيانات ضخمة تتفوق بسهولة على خوارزمية معقدة على بيانات قليلة.",
+    "reference": ""
+  },
+  {
+    "id": 106,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "According to the notes, deep learning is machine learning with multiple layers of simple, adjustable computing elements. When did its take-off come?",
+    "question_ar": "وفقاً للمحاضرات، متى حدثت الانطلاقة الكبرى المعاصرة للتعلم العميق (Deep Learning Take-off)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "2011, first in speech and then in vision",
+        "text_ar": "عام 2011، حيث برزت البداية في التعرف على الكلام الصوتي أولاً ثم في الرؤية الحاسوبية"
+      },
+      {
+        "key": "b",
+        "text": "1986, with Parallel Distributed Processing",
+        "text_ar": "عام 1986 مع نشر كتب المعالجة الموزعة المتوازية (PDP)"
+      },
+      {
+        "key": "c",
+        "text": "1997, with Deep Blue",
+        "text_ar": "عام 1997 مع فوز جهاز Deep Blue في الشطرنج"
+      },
+      {
+        "key": "d",
+        "text": "2022, with ChatGPT",
+        "text_ar": "عام 2022 مع إطلاق ChatGPT"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "2011, first in speech and then in vision",
+    "answer_text_ar": "عام 2011، حيث برزت البداية في التعرف على الكلام الصوتي أولاً ثم في الرؤية الحاسوبية",
+    "explanation": "The lecture describes the modern take-off of deep learning around 2011, with early major progress in speech recognition followed by computer vi- sion.",
+    "explanation_ar": "بدأ الانطلاق الحديث للتعلم العميق حوالي عام 2011 مع تحقيق طفرات في التعرف على الصوت بواسطة الشبكات العميقة، ثم اكتسحت الرؤية الحاسوبية عبر AlexNet في 2012.",
+    "reference": ""
+  },
+  {
+    "id": 107,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "According to the book, why are parole or loan decisions made by AI sometimes biased by race or gender?",
+    "question_ar": "وفقاً للكتاب، لماذا تظهر أحياناً قرارات ذكاء اصطناعي متحيزة عنصرياً أو جندرياً في قضايا إطلاق السراح المشروط أو منح القروض البنكية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Because the hardware is too slow",
+        "text_ar": "لأن عتاد الحواسيب وبطاقات الرسوميات بطيئة جداً"
+      },
+      {
+        "key": "b",
+        "text": "Because the systems use logic instead of probability",
+        "text_ar": "لأن الأنظمة تعتمد على المنطق الصوري بدلاً من الاحتمالات"
+      },
+      {
+        "key": "c",
+        "text": "Because the decisions are always made by humans",
+        "text_ar": "لأن القرارات يتخذها البشر دائماً دون تدخل حاسوبي"
+      },
+      {
+        "key": "d",
+        "text": "Because the data reflect bias in society",
+        "text_ar": "لأن بيانات التدريب التاريخية تعكس وتختزن تحيزات وظلم المجتمع القائم"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Because the data reflect bias in society",
+    "answer_text_ar": "لأن بيانات التدريب التاريخية تعكس وتختزن تحيزات وظلم المجتمع القائم",
+    "explanation": "AI systems trained on historical or social data can reproduce existing patterns of discrimination. The bias may come from the data rather than from the hardware or the use of a particular reasoning method.",
+    "explanation_ar": "خوارزميات التعلم الآلي تتغذى على سجلات وقرارات بشرية تاريخية سابقة؛ فإذا كان المجتمع يحمل تحيزات في التوظيف أو المحاكمات، فإن النموذج يتعلمها ويعيد إنتاجها بدقة.",
+    "reference": ""
+  },
+  {
+    "id": 108,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "What does the King Midas problem describe?",
+    "question_ar": "ما الذي توضحه «معضلة الملك ميداس» (The King Midas Problem) في أمان الذكاء الاصطناعي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "A more intelligent species leaving us without control over our future",
+        "text_ar": "سيطرة نوع ذكي خارق يترك البشر عاجزين عن إدارة مستقبلهم"
+      },
+      {
+        "key": "b",
+        "text": "A machine giving us exactly what we asked for, not what we wanted",
+        "text_ar": "أن الآلة تعطينا وتنفذ بالضبط ما طلبناه منها حرفياً، وليس ما كنا نريده ونقصده حقاً"
+      },
+      {
+        "key": "c",
+        "text": "An AI industry that grows from millions to billions of dollars",
+        "text_ar": "نمو صناعة الذكاء الاصطناعي من ملايين إلى مليارات الدولارات"
+      },
+      {
+        "key": "d",
+        "text": "A machine that cannot be switched off because it is too slow",
+        "text_ar": "آلة يستحيل إيقاف تشغيلها لأنها بطيئة الحركة"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "A machine giving us exactly what we asked for, not what we wanted",
+    "answer_text_ar": "أن الآلة تعطينا وتنفذ بالضبط ما طلبناه منها حرفياً، وليس ما كنا نريده ونقصده حقاً",
+    "explanation": "The King Midas story illustrates the danger of specifying an objective incorrectly: the system fulfils the literal request, even when the result conflicts with the human’s real intentions.",
+    "explanation_ar": "طلب الملك ميداس في الأسطورة أن يتحول كل ما يلمسه إلى ذهب، فمات جوعاً عندما تحول طعامه وابنته لذهب! هذا يوضح خطر تنفيذ الآلة للأوامر بحرفية عمياء دون فهم المقصد الشامل.",
+    "reference": ""
+  },
+  {
+    "id": 109,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "In the lab, a McCulloch–Pitts unit fires when ∑wx ≥ threshold. For the unit with weights (−1,−1) and threshold −1, what is the output for inputs (1,1), and which gate is it?",
+    "question_ar": "في المختبر، يعمل عصبون ماكولوتش-بيتس عندما يكون المجموع الموزون ∑wx ≥ العتبة. لعصبون بأوزان (-1, -1) وعتبة قدرها -1، ما هو مخرجه للمدخلات (1, 1)، وأي بوابة منطقية يمثل؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "1; it is AND",
+        "text_ar": "المخرج 1، والبوابة هي AND"
+      },
+      {
+        "key": "b",
+        "text": "1; it is OR",
+        "text_ar": "المخرج 1، والبوابة هي OR"
+      },
+      {
+        "key": "c",
+        "text": "0; it is NAND",
+        "text_ar": "المخرج 0، والبوابة المنطقية هي NAND"
+      },
+      {
+        "key": "d",
+        "text": "0; it is NOT",
+        "text_ar": "المخرج 0، والبوابة هي NOT"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "0; it is NAND",
+    "answer_text_ar": "المخرج 0، والبوابة المنطقية هي NAND",
+    "explanation": "For input (1,1), the weighted sum is (−1)(1) + (−1)(1) = −2. Since −2 ̸≥ −1, the unit outputs 0. For inputs 00, 01, 10, and 11, the outputs are 1, 1, 1, and 0 respectively, which is NAND.",
+    "explanation_ar": "للمدخل (1, 1): المجموع = (-1)(1) + (-1)(1) = -2. وبما أن -2 أصغر من -1 (لم يتجاوز العتبة)، يكون المخرج 0. بينما لبقية المدخلات (0,0)، (0,1)، (1,0) يكون المجموع >= -1 والمخرج 1، وهو جدول صواب بوابة NAND تماماً.",
+    "reference": ""
+  },
+  {
+    "id": 110,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "In the lab, how is XOR built from two layers of units?",
+    "question_ar": "في المختبر العملي، كيف يتم بناء دالة الاختلاف المنطقي XOR باستخدام طبقتين من العصبونات؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "XOR(a,b) = AND(OR(a,b),NAND (a,b))",
+        "text_ar": "XOR(a, b) = AND( OR(a, b), NAND(a, b) )"
+      },
+      {
+        "key": "b",
+        "text": "XOR(a,b) = OR(AND(a,b),NAND (a,b))",
+        "text_ar": "XOR(a, b) = OR( AND(a, b), NAND(a, b) )"
+      },
+      {
+        "key": "c",
+        "text": "XOR(a,b) = AND(OR(a,b),AND (a,b))",
+        "text_ar": "XOR(a, b) = AND( OR(a, b), AND(a, b) )"
+      },
+      {
+        "key": "d",
+        "text": "XOR(a,b) = NOT (OR(a,b))",
+        "text_ar": "XOR(a, b) = NOT( OR(a, b) )"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "XOR(a,b) = AND(OR(a,b),NAND (a,b))",
+    "answer_text_ar": "XOR(a, b) = AND( OR(a, b), NAND(a, b) )",
+    "explanation": "The OR unit is 1 when at least one input is 1, while NAND is 1 except when both inputs are 1. ANDing these two outputs gives 1 exactly when the inputs differ.",
+    "explanation_ar": "دالة XOR تعني أن يكون أحدهما صحيحاً على الأقل (OR) وفي نفس الوقت ليسا كلاهما صحيحين معاً (NAND)، وحاصل ضرب هاتين الدالتين عبر بوابة AND يعطي دالة XOR بدقة تامة.",
+    "reference": "2"
+  },
+  {
+    "id": 111,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "AIresearchershavespentagreatdealofefforttryingtopasstheTuring test.",
+    "question_ar": "كرّس باحثو الذكاء الاصطناعي على مدار العقود قدراً هائلاً من جهودهم ومواردهم في محاولة اجتياز اختبار تورينغ.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: AI researchers have spent little effort trying to pass the Turing test. ﺍܳأٴ؇ﺭﺓﺍڤ ৙৑\n\nExplanation: False The lecture explicitly says that AI researchers have spent little effort trying to pass the Turing test because they consider studying the underlying principles of intelli- gence more important than imitation.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: بذل علماء الذكاء الاصطناعي جهداً ضئيلاً جداً في محاولة اجتياز اختبار تورينغ، لأن تركيزهم منصب على دراسة المبادئ العلمية التأسيسية للذكاء وليس على خداع البشر في المحادثات.",
+    "reference": ""
+  },
+  {
+    "id": 112,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "For a self-driving car, “reach the destination safely” taken strictly would mean staying in the garage, because every road carries some risk.",
+    "question_ar": "بالنسبة لسيارة ذاتية القيادة، إذا تم تفسير هدف «الوصول إلى الوجهة بأمان» بحرفية مطلقة، فإن ذلك سيعني بقاء السيارة داخل المرآب وعدم تحركها أبداً لأن كل طريق ينطوي على نسبة خطر.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "True Thelectureusesthisexampletoshowthataliteralsafety-onlyobjectivecanprevent the car from moving at all. The objective must balance safety with progress and other human preferences.",
+    "explanation_ar": "العبارة صحيحة (True). يوضح الكتاب أن الهدف الأحادي للأمان المطلق يعطل كل شيء، لذا يجب أن توازن دالة الوكيل بين معيار الأمان ومعدل التقدم وتفضيلات الركاب البشرية.",
+    "reference": "s."
+  },
+  {
+    "id": 113,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "Daniel Bernoulli (1738) introduced utility, the subjective value of an outcome, with diminishing marginal utility of money.",
+    "question_ar": "قدّم دانييل برنولي (1738) مفهوم «المنفعة» (Utility) كمقياس شخصي موضوعي للنتائج، مع مبدأ المنفعة الحدية المتناقصة للمال.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "True Bernoulli’s contribution is associated with utility as a subjective measure of value. Diminishing marginal utility means that an additional unit of money generally has less impact as wealth increases.",
+    "explanation_ar": "العبارة صحيحة (True). وضع برنولي حجر الأساس لنظرية المنفعة، موضحاً أن القيمة الحقيقية للمال تختلف من شخص لآخر، وأن الدينار الإضافي لمن يملك الملايين له أثر ومنفعة أقل بكثير من أثره على الفقير.",
+    "reference": ""
+  },
+  {
+    "id": 114,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "Back-propagation for multilayer networks was first invented in the mid-1980s.",
+    "question_ar": "تم اختراع خوارزمية الانتشار العكسي (Back-propagation) لتدريب الشبكات العصبية متعددة الطبقات لأول مرة في منتصف الثمانينيات.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Back-propagation became widely influential in the mid-1980s; it was not first invented then. ﺍܳأٴ؇ﺭﺓﺍڤ ႟ၽ૰૖ Back-propagation ৙৑\n\nExplanation: False The mid-1980s are associated with the popularisation and influential use of back- propagation for training multilayer networks, not its first invention.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: خوارزمية الانتشار العكسي اشتُهرت ونالت شعبيتها الكبرى وتأثيرها الواسع في منتصف الثمانينيات (1986)، ولكن جذورها الرياضية تم ابتكارها وتطبيقها قبل ذلك في السبعينيات والستينيات.",
+    "reference": "pp. 13–14."
+  },
+  {
+    "id": 115,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "R1/XCON was the first successful knowledge-intensive system.",
+    "question_ar": "يُعد نظام R1/XCON أول نظام خبير كثيف المعرفة يحقق نجاحاً حقيقياً في تاريخ الذكاء الاصطناعي.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: DENDRAL was the first major successful knowledge-intensive system; R1/XCON came later. ﺍܳأٴ؇ﺭﺓﺍڤ ﺍ\n\nExplanation: False DENDRAL is identified in the history of AI as an early successful knowledge- intensive expert system. R1/XCON was a later successful commercial expert system, not the first.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: النظام الخبير الناجح الأول في تاريخ الذكاء الاصطناعي كان نظام DENDRAL للتحليل الكيميائي (في الستينيات)، بينما جاء R1/XCON لشركة DEC لاحقاً في أواخر السبعينيات كنظام تجاري.",
+    "reference": ""
+  },
+  {
+    "id": 116,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "MYCIN, which diagnosed blood infections with about 450 rules, han- dled uncertainty using certainty factors.",
+    "question_ar": "نظام MYCIN، الذي كان يشخص عدوى الدم بحوالي 450 قاعدة، تعامل مع عدم اليقين الطبي باستخدام عوامل اليقين (Certainty Factors).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "True MYCIN was a medical expert system for diagnosing blood infections. Its rule-based reasoning used certainty factors to represent degrees of confidence under uncer- tainty.",
+    "explanation_ar": "العبارة صحيحة (True). كان MYCIN نظاماً خبيراً طبياً شهيراً في السبعينيات، وابتكر طريقة عوامل اليقين (Certainty Factors) كنهج تجريبي للتعامل مع الشك وعدم يقين التشخيصات الطبية.",
+    "reference": ""
+  },
+  {
+    "id": 117,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "According to the AI Index figures in the book, object-detection error rose from 2% in 2010 to 28% in 2017.",
+    "question_ar": "وفقاً لأرقام مؤشر الذكاء الاصطناعي (AI Index) الواردة في المنهج، ارتفع معدل الخطأ في التعرف على الكائنات من 2% في 2010 إلى 28% في 2017.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Object-detection error fell from 28% (2010) to 2% (2017). ﺍܳأٴ؇ﺭﺓﺍڤ ݿٷ۰\n\nExplanation: False The direction is reversed. The lecture reports that object-detection error fell from 28% in 2010 to 2% in 2017.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: العكس هو الصحيح تماماً؛ انخفض معدل الخطأ بشكل دراماتيكي من 28% عام 2010 إلى 2% فقط عام 2017 بفضل شبكات التعلم العميق (تفوق على دقة العين البشرية).",
+    "reference": ""
+  },
+  {
+    "id": 118,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Lethal autonomous weapons are a risk because they scale: without human supervision, a small group can deploy any number of weapons.",
+    "question_ar": "تُمثل الأسلحة الفتاكة ذاتية التشغيل خطراً داهماً لأنها قابلة للتوسع والتضاعف (Scalable) دون إشراف بشري؛ إذ يمكن لمجموعة صغيرة نشر أعداد لا حصر لها من الأسلحة.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "True The lecture identifies scalability as a central risk: autonomous weapons can poten- tially be deployed at large scale by a small number of people without direct human supervision.",
+    "explanation_ar": "العبارة صحيحة (True). يؤكد المنهج أن غياب العنصر البشري في اتخاذ قرار القتل يتيح إنتاج ونشر ملايين الطائرات بدون طيار الفتاكة بكلفة متدنية والتحكم بها من شخص واحد دون رادع أخلاقي.",
+    "reference": ""
+  },
+  {
+    "id": 119,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "The book’s answer to the long-term control problem is to stop AI re- search.",
+    "question_ar": "الحل الذي يقدمه الكتاب لمشكلة التحكم طويل الأمد في الذكاء الاصطناعي هو إيقاف وتجميد أبحاث الذكاء الاصطناعي بالكامل.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: The proposed answer is to design beneficial machines that remain uncertain about human objectives and defer to humans, not to stop AI research. ﺍܳأٴ؇ﺭﺓﺍڤ ௡ਤ૭૜ ﻭ\n\nExplanation: False The lecture explicitly says that the book’s answer is not to stop AI research. Instead, machines should pursue human objectives while remaining uncertain about what those objectives are, allowing them to ask, defer, and remain under human control.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: لا يطالب الكتاب بوقف الأبحاث، بل بإعادة صياغة نموذج الذكاء الاصطناعي ذاته لتصميم آلات نافعة للبشر تظل غير يقينية بشأن الأهداف البشرية وتذعن للتحكم والإرشاد البشري.",
+    "reference": ""
+  },
+  {
+    "id": 120,
+    "bank_id": 3,
+    "bank_title_en": "Bank 3: Week 1 - What Is Artificial Intelligence?",
+    "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "In the lab, the brute-force search over weights and thresholds in range(-3, 4) finds no single unit that computes XOR.",
+    "question_ar": "في التجربة المعملية، فشل البحث الشامل (Brute-force) عبر الأوزان والعتبات في النطاق من -3 إلى 3 في إيجاد أي عصبون ماكولوتش-بيتس مفرد قادر على حساب دالة XOR.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "True The lab code tests all weights and thresholds in the range −3 through 3 and finds an empty set of solutions. This illustrates that a single McCulloch–Pitts unit cannot represent XOR.",
+    "explanation_ar": "العبارة صحيحة (True). اختبرت الشفرة المعملية جميع توليفات الأوزان والعتبات المحتملة وأعادت مجموعة حلول فارغة، مما يثبت عملياً استحالة تمثيل دالة XOR بوحدة عصبية خطية مفردة.",
+    "reference": ""
+  },
+  {
+    "id": 121,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A1",
+    "question": "What is an inductive bias?",
+    "question_ar": "ما هو التحيز الاستقرائي (Inductive Bias) في شبكات التعلم العميق؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "A systematic error in the labels of a data set",
+        "text_ar": "خطأ منهجي في تصنيفات وتسميات مجموعة البيانات"
+      },
+      {
+        "key": "b",
+        "text": "The bias term b added to each unit",
+        "text_ar": "معامل الانحياز (Bias b) المضاف لكل عصبون"
+      },
+      {
+        "key": "c",
+        "text": "An assumption about the data that is built into the network",
+        "text_ar": "افتراض مسبق حول بنية وطبيعة البيانات مدمج ومبني في تصميم معمارية الشبكة"
+      },
+      {
+        "key": "d",
+        "text": "The tendency of a network to overfit small data sets",
+        "text_ar": "ميل الشبكة لفرط مطابقة مجموعات البيانات الصغيرة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "An assumption about the data that is built into the network",
+    "answer_text_ar": "افتراض مسبق حول بنية وطبيعة البيانات مدمج ومبني في تصميم معمارية الشبكة",
+    "explanation": "An inductive bias is an assumption built into a network about the structure of the data. It guides learning and can reduce the number of parameters and the amount of data required.",
+    "explanation_ar": "التحيز الاستقرائي (Inductive Bias) هو مجموعة الافتراضات التي يضعها المصمم في هيكل الشبكة (مثل افتراض التماثل المكاني في الالتفاف CNN)، مما يوجه عملية التعلم ويقلل عدد المعاملات والبيانات المطلوبة للتدريب.",
+    "reference": "Lecture 5, Section 5.1 — Why different architectures?"
+  },
+  {
+    "id": 122,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A2",
+    "question": "How many input values does a 32 × 32 colour image (3 channels) have?",
+    "question_ar": "كم عدد قيم المدخلات (البيكسلات عبر القنوات) لصورة ملونة أبعادها 32 × 32 بثلاث قنوات لونية (RGB)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "1,024",
+        "text_ar": "1,024"
+      },
+      {
+        "key": "b",
+        "text": "2,048",
+        "text_ar": "2,048"
+      },
+      {
+        "key": "c",
+        "text": "96",
+        "text_ar": "96"
+      },
+      {
+        "key": "d",
+        "text": "3,072",
+        "text_ar": "3,072"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "3,072",
+    "answer_text_ar": "3,072",
+    "explanation": "A colour image has three channels (red, green and blue). Therefore, the number of values is 32 × 32 × 3 = 3,072.",
+    "explanation_ar": "تحتوي الصورة الملونة على 3 قنوات (أحمر، أخضر، أزرق)، وبالتالي فإن إجمالي عدد الأرقام والمدخلات هو 32 × 32 × 3 = 3,072 مدخلاً.",
+    "reference": "Lecture 5, Section 5.2 — Convolutional neural networks"
+  },
+  {
+    "id": 123,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A3",
+    "question": "About how many parameters does a dense layer with 3,072 units need on a 32 × 32 × 3 image?",
+    "question_ar": "كم عدد المعاملات (Parameters) التقريبي الذي تحتاجه طبقة متصلة كلياً (Dense Layer) بها 3,072 خلية عصبية لمعالجة صورة 32 × 32 × 3؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "3,072",
+        "text_ar": "3,072"
+      },
+      {
+        "key": "b",
+        "text": "9.4 million",
+        "text_ar": "حوالي 9.4 مليون معامل (9.4 Million)"
+      },
+      {
+        "key": "c",
+        "text": "456",
+        "text_ar": "456"
+      },
+      {
+        "key": "d",
+        "text": "94 thousand",
+        "text_ar": "94 ألفاً"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "9.4 million",
+    "answer_text_ar": "حوالي 9.4 مليون معامل (9.4 Million)",
+    "explanation": "A dense layer connects every input value to every output unit. The weights alone are 3,072 × 3,072 = 9,437,184, approximately 9.4 million (biases add 3,072 more).",
+    "explanation_ar": "الطبقة المتصلة بالكامل تربط كل مدخل بكل مخرج: الأوزان = 3,072 × 3,072 = 9,437,184 وزناً (نحو 9.4 مليون معامل)، وهو ما يوضح الانفجار الهائل في المعاملات وصعوبة استخدام الطبقات الكثيفة للصور.",
+    "reference": "Lecture 5, Section 5.2 — Why CNNs use fewer parameters"
+  },
+  {
+    "id": 124,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A4",
+    "question": "Which two ideas do CNNs use to handle images efficiently?",
+    "question_ar": "ما هما الفكرتان الأساسيتان اللتان تعتمد عليهما شبكات الالتفاف (CNNs) لمعالجة الصور بكفاءة عالية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Recurrence and gating",
+        "text_ar": "التكرار وبوابات التحكم (Recurrence and Gating)"
+      },
+      {
+        "key": "b",
+        "text": "Dropout and weight decay",
+        "text_ar": "الإسقاط العشوائي واضمحلال الأوزان"
+      },
+      {
+        "key": "c",
+        "text": "Local connectivity and weight sharing",
+        "text_ar": "الاتصال الموضعي ومشاركة الأوزان (Local connectivity and Weight sharing)"
+      },
+      {
+        "key": "d",
+        "text": "Queries and keys",
+        "text_ar": "الاستعلامات والمفاتيح (Queries and Keys)"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Local connectivity and weight sharing",
+    "answer_text_ar": "الاتصال الموضعي ومشاركة الأوزان (Local connectivity and Weight sharing)",
+    "explanation": "CNNs use local connectivity, so each kernel processes a small neigh- bourhood, and weight sharing, so the same kernel is reused across image locations.",
+    "explanation_ar": "تعتمد CNN على: 1) الاتصال الموضعي (فحص رقعة مجاورة صغيرة عبر الفلتر)، و2) مشاركة الأوزان (استخدام نفس الفلتر وتمريره على كامل الصورة للكشف عن الميزة في أي مكان).",
+    "reference": "Lecture 5, Section 5.2 — Convolutional neural networks"
+  },
+  {
+    "id": 125,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A5",
+    "question": "In the worked example, at the first (top-left) position the left column of the window gives 1 + 0 + 2 = 3, the middle column is multiplied by 0, and the right column (0,3,0) is multiplied by −1. What is the output value?",
+    "question_ar": "في المثال الحسابي: عند أول موضع للنافذة (أعلى اليسار)، أعطى العمود الأيسر 1+0+2=3، والعمود الأوسط ضُرب في 0، والعمود الأيمن (0, 3, 0) ضُرب في -1. ما هي قيمة المخرج؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "6",
+        "text_ar": "6"
+      },
+      {
+        "key": "b",
+        "text": "3",
+        "text_ar": "3"
+      },
+      {
+        "key": "c",
+        "text": "−3",
+        "text_ar": "-3"
+      },
+      {
+        "key": "d",
+        "text": "0",
+        "text_ar": "0"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "0",
+    "answer_text_ar": "0",
+    "explanation": "The left-column contribution is 3. The middle-column contribution is 0. The right-column contribution is (0×−1) + (3×−1) + (0×−1) = −3. Total = 3 + 0 − 3 = 0.",
+    "explanation_ar": "مساهمة العمود الأيسر = 3، والأوسط = 0، والأيمن = (0 × -1) + (3 × -1) + (0 × -1) = -3. المجموع الكلي = 3 + 0 + (-3) = 0.",
+    "reference": "Lecture 5, Section 5.2 — Worked convolution example"
+  },
+  {
+    "id": 126,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A6",
+    "question": "A 3 × 3 kernel slides with stride 1 and no padding over a 5 × 5 input. What is the size of the feature map?",
+    "question_ar": "نواة التفاف (Kernel) بحجم 3 × 3 تنزلق بخطوة stride = 1 وبدون حشو (padding = 0) فوق مدخل بحجم 5 × 5. ما هو حجم خريطة السمات الناتجة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "5 × 5",
+        "text_ar": "5 × 5"
+      },
+      {
+        "key": "b",
+        "text": "3 × 3",
+        "text_ar": "3 × 3"
+      },
+      {
+        "key": "c",
+        "text": "2 × 2",
+        "text_ar": "2 × 2"
+      },
+      {
+        "key": "d",
+        "text": "4 × 4",
+        "text_ar": "4 × 4"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "3 × 3",
+    "answer_text_ar": "3 × 3",
+    "explanation": "The output size is floor((n + 2p − k)/s) + 1. Substituting n=5, p=0, k=3, s=1 gives floor((5−3)/1)+1 = 3, so the feature map is 3 × 3.",
+    "explanation_ar": "معادلة حجم المخرج: Output = floor((n + 2p - k)/s) + 1. بتعويض n=5، p=0، k=3، s=1: floor((5 - 3)/1) + 1 = 2 + 1 = 3. إذن حجم الخريطة هو 3 × 3.",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 127,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A7",
+    "question": "The worked-example kernel is a vertical-edge detector. What does the value −4 in the centre of its feature map show?",
+    "question_ar": "نواة الالتفاف في المثال تكشف الحواف الرأسية. إلى ماذا تشير القيمة السالبة -4 في مركز خريطة السمات؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "No edge at all in that region",
+        "text_ar": "عدم وجود أي حافة على الإطلاق في تلك المنطقة"
+      },
+      {
+        "key": "b",
+        "text": "A horizontal edge",
+        "text_ar": "وجود حافة أفقية ممتدة"
+      },
+      {
+        "key": "c",
+        "text": "A strong edge that is darker on the left and brighter on the right",
+        "text_ar": "حافة قوية داكنة على اليسار ومضيئة على اليمين"
+      },
+      {
+        "key": "d",
+        "text": "A strong edge that is brighter on the left and darker on the right",
+        "text_ar": "حافة قوية ومضيئة على اليسار وداكنة على اليمين"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "A strong edge that is brighter on the left and darker on the right",
+    "answer_text_ar": "حافة قوية ومضيئة على اليسار وداكنة على اليمين",
+    "explanation": "The negative response indicates the opposite contrast direction to a positive response for this kernel: the region is brighter on the left and darker on the right.",
+    "explanation_ar": "تشير الاستجابة السالبة القوية إلى تباين قوي في الاتجاه المعاكس للموجب: المنطقة مضيئة وفاتحة في اليسار وداكنة ومظلمة في اليمين.",
+    "reference": "Lecture 5, Section 5.2 — Convolution and edge detection"
+  },
+  {
+    "id": 128,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A8",
+    "question": "In a real CNN, how are the kernel values obtained?",
+    "question_ar": "في شبكات الالتفاف الحقيقية (CNNs)، كيف يتم الحصول على قيم نويات وفلاتر الالتفاف؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "They are learned by backpropagation",
+        "text_ar": "تتعلمها الشبكة تلقائياً من البيانات عبر خوارزمية التغذية الراجعة (Backpropagation)"
+      },
+      {
+        "key": "b",
+        "text": "They are designed by hand by experts",
+        "text_ar": "يصممها خبراء المعالجة الرقمية يدوياً بقيم ثابتة"
+      },
+      {
+        "key": "c",
+        "text": "They are fixed to vertical- and horizontal-edge detectors",
+        "text_ar": "تكون مثبتة فقط لكواشف الحواف الرأسية والأفقية الكلاسيكية (Sobel)"
+      },
+      {
+        "key": "d",
+        "text": "They are chosen at random and never changed",
+        "text_ar": "تُختار عشوائياً وتظل ثابتة دون أي تعديل"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "They are learned by backpropagation",
+    "answer_text_ar": "تتعلمها الشبكة تلقائياً من البيانات عبر خوارزمية التغذية الراجعة (Backpropagation)",
+    "explanation": "In a trainable CNN, kernel values are parameters learned from data through the training process, using backpropagation and gradient-based updates.",
+    "explanation_ar": "قيم نويات الالتفاف هي أوزان قابلة للتعديل والتدريب، تتعلمها الشبكة ذاتياً من خلال الانحدار التدريجي والانتشار العكسي لتحسين دقة المهمة.",
+    "reference": "Lecture 5, Section 5.2 — Learned convolutional kernels"
+  },
+  {
+    "id": 129,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A9",
+    "question": "Using floor((n+2p−k)/s)+1, what is the output size for n=32, k=5, p=0, s=1?",
+    "question_ar": "باستخدام معادلة floor((n + 2p - k)/s) + 1، ما هو أبعاد المخرج لصورة مدخلة بحجم n = 32 مع نواة k = 5 وحشو p = 0 وخطوة s = 1؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "32 × 32",
+        "text_ar": "32 × 32"
+      },
+      {
+        "key": "b",
+        "text": "16 × 16",
+        "text_ar": "16 × 16"
+      },
+      {
+        "key": "c",
+        "text": "30 × 30",
+        "text_ar": "30 × 30"
+      },
+      {
+        "key": "d",
+        "text": "28 × 28",
+        "text_ar": "28 × 28"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "28 × 28",
+    "answer_text_ar": "28 × 28",
+    "explanation": "The output dimension is floor((32+0−5)/1)+1 = 27+1 = 28. The feature map is 28 × 28.",
+    "explanation_ar": "بالتعويض في المعادلة: floor((32 + 0 - 5) / 1) + 1 = 27 + 1 = 28. إذن أبعاد خريطة السمات هي 28 × 28.",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 130,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A10",
+    "question": "A 64 × 64 input uses a 5 × 5 kernel with padding 2 and stride 2. What is the output size?",
+    "question_ar": "مدخل بحجم 64 × 64 يستخدم نواة 5 × 5 مع حشو padding = 2 وخطوة stride = 2. ما هو حجم المخرج الناتج؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "64 × 64",
+        "text_ar": "64 × 64"
+      },
+      {
+        "key": "b",
+        "text": "32 × 32",
+        "text_ar": "32 × 32"
+      },
+      {
+        "key": "c",
+        "text": "30 × 30",
+        "text_ar": "30 × 30"
+      },
+      {
+        "key": "d",
+        "text": "31 × 31",
+        "text_ar": "31 × 31"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "32 × 32",
+    "answer_text_ar": "32 × 32",
+    "explanation": "floor((64 + 2×2 − 5)/2)+1 = floor(63/2)+1 = 31+1 = 32. The output is 32",
+    "explanation_ar": "الحساب: floor((64 + 2(2) - 5) / 2) + 1 = floor(63 / 2) + 1 = 31 + 1 = 32. إذن حجم المخرج 32 × 32.",
+    "reference": "Lecture 5, Section 5.2 — Convolution output size"
+  },
+  {
+    "id": 131,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A11",
+    "question": "How many parameters does a convolutional layer with 32 kernels of size 3 × 3 have on an input with 16 channels?",
+    "question_ar": "كم عدد المعاملات (الأوزان والانحياز) في طبقة التفاف تحتوي على 32 نواة بحجم 3 × 3 على مدخل يحتوي على 16 قناة لونية؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "4,640",
+        "text_ar": "4,640"
+      },
+      {
+        "key": "b",
+        "text": "4,608",
+        "text_ar": "4,608"
+      },
+      {
+        "key": "c",
+        "text": "145",
+        "text_ar": "145"
+      },
+      {
+        "key": "d",
+        "text": "288",
+        "text_ar": "288"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "4,640",
+    "answer_text_ar": "4,640",
+    "explanation": "Each kernel has 3×3×16 = 144 weights and one bias, giving 145 param- eters. For 32 kernels: 32×145 = 4,640.",
+    "explanation_ar": "كل نواة تملك (3 × 3 × 16) = 144 وزناً + 1 انحياز (bias) = 145 معاملاً لكل نواة. لإجمالي 32 نواة: 32 × 145 = 4,640 معاملاً.",
+    "reference": "Lecture 5, Section 5.2 — CNN parameter count"
+  },
+  {
+    "id": 132,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A12",
+    "question": "What does 2 × 2 max pooling do to a feature map?",
+    "question_ar": "ما الذي تفعله عملية التجميع الأقصى (2 × 2 Max Pooling) بخريطة السمات؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Averages each 2 × 2 block and doubles the size",
+        "text_ar": "تحسب متوسط كتل 2 × 2 وتضاعف أبعاد الصورة"
+      },
+      {
+        "key": "b",
+        "text": "Adds zeros around the border to keep the size",
+        "text_ar": "تضيف أصفاراً حول الحواف للمحافظة على الأبعاد"
+      },
+      {
+        "key": "c",
+        "text": "Keeps the largest value in each 2 × 2 block, halving the width and height",
+        "text_ar": "تحتفظ بأكبر قيمة فقط في كل كتلة 2 × 2، مما يُنصّف الطول والعرض"
+      },
+      {
+        "key": "d",
+        "text": "Multiplies each block by a learned kernel",
+        "text_ar": "تضرب كل كتلة في نواة ذات أوزان مدربة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Keeps the largest value in each 2 × 2 block, halving the width and height",
+    "answer_text_ar": "تحتفظ بأكبر قيمة فقط في كل كتلة 2 × 2، مما يُنصّف الطول والعرض",
+    "explanation": "A 2×2 max-pooling operation selects the maximum value from each 2×2 region. With the usual stride of 2, it halves the feature map’s width and height.",
+    "explanation_ar": "تأخذ عملية Max Pooling القيمة الكبرى في كل نافذة 2×2، وبخطوة stride=2 المعتادة فإنها تُقلص العرض والارتفاع إلى النصف، مما يقلل الحسابات ويوفر ثباتاً ضد الإزاحة.",
+    "reference": "Lecture 5, Section 5.2 — Pooling"
+  },
+  {
+    "id": 133,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A13",
+    "question": "In the hierarchy of features found inside a trained CNN, what does the first layer detect?",
+    "question_ar": "في التسلسل الهرمي للميزات داخل شبكة CNN المدربة، ما الذي تكتشفه الطبقات الأولى عادة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Whole objects such as faces and cars",
+        "text_ar": "كائنات كاملة كالسيارات والوجوه"
+      },
+      {
+        "key": "b",
+        "text": "Parts such as eyes and wheels",
+        "text_ar": "أجزاء معقدة كالعيون والعجلات"
+      },
+      {
+        "key": "c",
+        "text": "Class labels",
+        "text_ar": "تسميات الفئات النهائية"
+      },
+      {
+        "key": "d",
+        "text": "Edges and colours",
+        "text_ar": "الحواف البسيطة وتدرجات الألوان (Edges and Colours)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Edges and colours",
+    "answer_text_ar": "الحواف البسيطة وتدرجات الألوان (Edges and Colours)",
+    "explanation": "Early CNN layers generally learn low-level visual features such as edges and colours. Deeper layers combine them into parts and then whole objects.",
+    "explanation_ar": "الطبقات الأولى في الشبكات العصبية الالتفافية تلتقط الميزات البصرية منخفضة المستوى كالحواف والزوايا والألوان، ثم تجمعها الطبقات الأعمق لتشكيل أنماط وأجزاء، ثم كائنات كاملة.",
+    "reference": "Lecture 5, Section 5.2 — Hierarchy of learned features"
+  },
+  {
+    "id": 134,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A14",
+    "question": "In a residual block, what does the block itself have to learn?",
+    "question_ar": "في الكتلة المتبقية (Residual Block) بشبكات ResNet، ما الذي يجب على الكتلة نفسها أن تتعلمه؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The whole output from scratch",
+        "text_ar": "المخرج بالكامل من الصفر دون مساعدة"
+      },
+      {
+        "key": "b",
+        "text": "Only the change F(x) to make to its input",
+        "text_ar": "التغير المتبقي فقط F(x) المطلوب إضافته إلى المدخل الأصلي x"
+      },
+      {
+        "key": "c",
+        "text": "The kernel size",
+        "text_ar": "الحجم المثالي للنواة"
+      },
+      {
+        "key": "d",
+        "text": "Which layers to delete",
+        "text_ar": "أي الطبقات يجب حذفها"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Only the change F(x) to make to its input",
+    "answer_text_ar": "التغير المتبقي فقط F(x) المطلوب إضافته إلى المدخل الأصلي x",
+    "explanation": "A residual block produces y = x + F(x). Instead of learning the complete output from scratch, the block learns the residual change F(x), while the input x is added through a skip connection.",
+    "explanation_ar": "تعتمد شبكات ResNet على المعادلة y = x + F(x)، حيث ينتقل المدخل x مباشرة عبر وصلة تخطٍ (Skip connection)، وتتعلم الطبقات فقط الدالة المتبقية F(x)، مما يحل مشكلة تلاشي التدرجات في الشبكات العميقة جداً.",
+    "reference": "Lecture 5, Section 5.2 — Residual connections"
+  },
+  {
+    "id": 135,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A15",
+    "question": "In the RNN update h_t = g(W_x x_t + W_h h_(t−1) + b), what is h_(t−1)?",
+    "question_ar": "في معادلة تحديث الشبكات العصبية العودية h_t = g(W_x x_t + W_h h_(t-1) + b)، ماذا يمثل المتغير h_(t-1)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The previous hidden state (the memory so far)",
+        "text_ar": "الحالة الخفية السابقة (التي تختزن ذاكرة ومعلومات الخطوات الماضية)"
+      },
+      {
+        "key": "b",
+        "text": "The current input",
+        "text_ar": "المدخل الحالي في اللحظة t"
+      },
+      {
+        "key": "c",
+        "text": "The output label",
+        "text_ar": "تسمية المخرج النهائي"
+      },
+      {
+        "key": "d",
+        "text": "The cell state of an LSTM",
+        "text_ar": "حالة الخلية في شبكة LSTM"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "The previous hidden state (the memory so far)",
+    "answer_text_ar": "الحالة الخفية السابقة (التي تختزن ذاكرة ومعلومات الخطوات الماضية)",
+    "explanation": "h_(t−1) is the hidden state from the previous time step. It carries infor- mation from earlier elements of the sequence into the current step. hﺍڤ",
+    "explanation_ar": "يمثل h_(t-1) متجه الحالة المخفية من الخطوة الزمنية السابقة، وهو بمثابة ذاكرة الشبكة التي تنقل سياق السلسلة ومعلوماتها السابقة إلى اللحظة الحالية.",
+    "reference": "Lecture 5, Section 5.3 — Recurrent neural networks"
+  },
+  {
+    "id": 136,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A16",
+    "question": "How is an RNN trained?",
+    "question_ar": "كيف يتم تدريب الشبكات العصبية العودية (RNNs)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "By max pooling over time",
+        "text_ar": "بالتجميع الأقصى عبر الزمن"
+      },
+      {
+        "key": "b",
+        "text": "By a generator and a discriminator",
+        "text_ar": "باستخدام مولد ومميز متنافسين"
+      },
+      {
+        "key": "c",
+        "text": "By adding noise step by step",
+        "text_ar": "بإضافة ضوضاء تدريجياً خطوة بخطوة"
+      },
+      {
+        "key": "d",
+        "text": "By unrolling it and applying backpropagation through time",
+        "text_ar": "بفرد الشبكة عبر خطوات الزمن وتطبيق الانتشار العكسي عبر الزمن (BPTT)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "By unrolling it and applying backpropagation through time",
+    "answer_text_ar": "بفرد الشبكة عبر خطوات الزمن وتطبيق الانتشار العكسي عبر الزمن (BPTT)",
+    "explanation": "An RNN is unrolled across the sequence’s time steps. The training algorithm then applies backpropagation through time (BPTT) to compute gradients.",
+    "explanation_ar": "تُفرد الشبكة (Unrolling) عبر خطوات السلسلة الزمنية لتتحول إلى شبكة متعددة الطبقات، وتُحسب التدرجات باستخدام خوارزمية الانتشار العكسي عبر الزمن (Backpropagation Through Time - BPTT).",
+    "reference": "Lecture 5, Section 5.3 — Training RNNs"
+  },
+  {
+    "id": 137,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A17",
+    "question": "Reading a whole product review and outputting “positive” or “negative” is which kind of RNN use?",
+    "question_ar": "قراءة مراجعة كاملة لمنتج وإخراج تصنيف «إيجابي» أو «سلبي» يمثل أي نمط من استخدامات RNN؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Many-to-many",
+        "text_ar": "متعدد إلى متعدد (Many-to-many)"
+      },
+      {
+        "key": "b",
+        "text": "Many-to-one",
+        "text_ar": "متعدد إلى واحد (Many-to-one)"
+      },
+      {
+        "key": "c",
+        "text": "Sequence-to-sequence",
+        "text_ar": "سلسلة إلى سلسلة (Seq2Seq)"
+      },
+      {
+        "key": "d",
+        "text": "One-to-many",
+        "text_ar": "واحد إلى متعدد (One-to-many)"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Many-to-one",
+    "answer_text_ar": "متعدد إلى واحد (Many-to-one)",
+    "explanation": "The network receives many input tokens (the review) and produces one output label (sentiment), so this is a many-to-one task.",
+    "explanation_ar": "يستقبل النموذج سلسلة من الكلمات المتعددة كمدخل (Many) ويصدر مخرجاً واحداً في النهاية يمثل تصنيف المشاعر (One)، لذا فهي بنية Many-to-one.",
+    "reference": "Lecture 5, Section 5.3 — RNN input/output patterns"
+  },
+  {
+    "id": 138,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A18",
+    "question": "Why can an LSTM carry information and gradients across many time steps?",
+    "question_ar": "لماذا تستطيع خلايا LSTM نقل المعلومات والتدرجات عبر خطوات زمنية طويلة دون أن تتلاشى؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Its cell state is updated mostly by addition, controlled by the gates",
+        "text_ar": "لأن حالة الخلية (Cell State) تُحدَّث عبر الجمع الخطي المتحكم به بواسطة بوابات"
+      },
+      {
+        "key": "b",
+        "text": "It processes all positions at the same time",
+        "text_ar": "لأنها تعالج كل مواضع النص في نفس اللحظة"
+      },
+      {
+        "key": "c",
+        "text": "It uses no weights at all",
+        "text_ar": "لأنها لا تستخدم أي أوزان قابلة للتعديل"
+      },
+      {
+        "key": "d",
+        "text": "It replaces the sigmoid with max pooling",
+        "text_ar": "لأنها تستبدل دالة السيجمويد بالتجميع الأقصى"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Its cell state is updated mostly by addition, controlled by the gates",
+    "answer_text_ar": "لأن حالة الخلية (Cell State) تُحدَّث عبر الجمع الخطي المتحكم به بواسطة بوابات",
+    "explanation": "The LSTM cell state has an additive update controlled by gates. This provides a path through which information and gradients can travel across many time steps more effectively.",
+    "explanation_ar": "المسار الرئيسي لحالة الخلية (Cell State) في LSTM يعمل كشريط ناقل تتدفق عليه المعلومات وتحدث التعديلات عبر عمليات جمع بدلاً من الضرب المتكرر، مما يسمح للتدرجات بالمرور دون تلاشٍ عبر مئات الخطوات.",
+    "reference": "Lecture 5, Section 5.4 — LSTM"
+  },
+  {
+    "id": 139,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A19",
+    "question": "What is the remaining weakness of RNNs that led to the transformer?",
+    "question_ar": "ما هي نقطة الضعف الجوهرية المتبقية في شبكات RNN والتي أدت إلى ابتكار معمارية المحولات (Transformer)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "They cannot process text",
+        "text_ar": "عجزها التام عن معالجة النصوص"
+      },
+      {
+        "key": "b",
+        "text": "They have too few parameters",
+        "text_ar": "امتلاكها لعدد قليل جداً من المعاملات"
+      },
+      {
+        "key": "c",
+        "text": "They are sequential, so they cannot use the parallel power of GPUs well",
+        "text_ar": "طبيعتها التتابعية المتسلسلة خطوة بخطوة، مما يمنع استغلال المعالجة المتوازية الضخمة لبطاقات GPU"
+      },
+      {
+        "key": "d",
+        "text": "They need labelled images",
+        "text_ar": "حاجتها الملحة لصور مصنفة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "They are sequential, so they cannot use the parallel power of GPUs well",
+    "answer_text_ar": "طبيعتها التتابعية المتسلسلة خطوة بخطوة، مما يمنع استغلال المعالجة المتوازية الضخمة لبطاقات GPU",
+    "explanation": "RNNs process sequence elements step by step. This sequential depen- dency limits parallel computation and makes training long sequences slower.",
+    "explanation_ar": "تعتمد RNNs على معالجة الكلمات خطوة وراء خطوة بالتتابع الزمني، مما يمنع معالجة الجملة ككتلة واحدة متوازية، ويجعل تدريبها بطيئاً جداً ومحدوداً، وهو ما تجاوزه المحول (Transformer) بآلية الانتباه الذاتي المتوازي.",
+    "reference": "Lecture 5, Section 5.4–5.5 — RNN limitations and transformers"
+  },
+  {
+    "id": 140,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A20",
+    "question": "In the library analogy for attention, what plays the role of the key?",
+    "question_ar": "في تشبيه المكتبة المستعار لآلية الانتباه (Attention Mechanism)، ما الذي يلعب دور «المفتاح» (Key)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Your question",
+        "text_ar": "سؤالك أو استفسارك الذي تبحث عنه (Query)"
+      },
+      {
+        "key": "b",
+        "text": "The contents of the book",
+        "text_ar": "المحتوى الداخلي الكامل للكتاب (Value)"
+      },
+      {
+        "key": "c",
+        "text": "The librarian",
+        "text_ar": "أمين المكتبة"
+      },
+      {
+        "key": "d",
+        "text": "Each book’s title",
+        "text_ar": "عنوان أو ملصق فهرس كل كتاب (Key)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "Each book’s title",
+    "answer_text_ar": "عنوان أو ملصق فهرس كل كتاب (Key)",
+    "explanation": "In the analogy, the query is your question, keys are like the titles or labels used to match books to the question, and values are the books’ contents.",
+    "explanation_ar": "في التشبيه: يمثل الاستعلام (Query) السؤال الذي تبحث عنه، والمفاتيح (Keys) هي عناوين وفهارس الكتب لمطابقة مدى صلتها بالسؤال، والقيم (Values) هي محتوى الكتب الفعلي.",
+    "reference": "Lecture 5, Section 5.5 — Attention: queries, keys and values"
+  },
+  {
+    "id": 141,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A21",
+    "question": "In self-attention, why are the scores divided by √d?",
+    "question_ar": "في معادلة الانتباه الذاتي (Self-Attention)، لماذا تُقسم درجات الضرب القياسي على جذر البعد √d؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "To make the weights sum to 1",
+        "text_ar": "لجعل مجموع الأوزان مساوياً لـ 1"
+      },
+      {
+        "key": "b",
+        "text": "To keep the numbers in a good range for softmax",
+        "text_ar": "لإبقاء القيم ضمن نطاق عددي ملائم يمنع تشبع دالة Softmax وصغر تدرجاتها"
+      },
+      {
+        "key": "c",
+        "text": "To add position information",
+        "text_ar": "لإضافة معلومات ترتيب الكلمات"
+      },
+      {
+        "key": "d",
+        "text": "To remove the value vectors",
+        "text_ar": "لحذف متجهات القيم"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "To keep the numbers in a good range for softmax",
+    "answer_text_ar": "لإبقاء القيم ضمن نطاق عددي ملائم يمنع تشبع دالة Softmax وصغر تدرجاتها",
+    "explanation": "Dividing QKᵀ by √d_k scales the dot-product scores, preventing them from becoming too large and pushing softmax into regions with very small gradients.",
+    "explanation_ar": "عندما يكون بعد المتجه d كبيراً، يصبح ناتج الضرب النقطي كبيراً جداً، مما يدفع دالة Softmax إلى مناطق التشبع الحاد حيث تكون المشتقات متناهية الصغر (تلاشي التدرج)، وتعمل القسمة على √d كمعامل تحجيم لتفادي ذلك.",
+    "reference": "Lecture 5, Section 5.5 — Scaled dot-product attention"
+  },
+  {
+    "id": 142,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A22",
+    "question": "In the worked example (tokens (1,0), (0,1), (1,1), d=2), what are the attention weights of token 1 with query (1,0)?",
+    "question_ar": "في المثال العملي المحلول (الرموز: (1,0)، (0,1)، (1,1) والبعد d=2): ما هي أوزان انتباه الرمز الأول بالاستعلام Query = (1, 0)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "0.40, 0.20, 0.40",
+        "text_ar": "0.40 ، 0.20 ، 0.40"
+      },
+      {
+        "key": "b",
+        "text": "0.33, 0.33, 0.33",
+        "text_ar": "0.33 ، 0.33 ، 0.33"
+      },
+      {
+        "key": "c",
+        "text": "0.50, 0.00, 0.50",
+        "text_ar": "0.50 ، 0.00 ، 0.50"
+      },
+      {
+        "key": "d",
+        "text": "0.20, 0.40, 0.40",
+        "text_ar": "0.20 ، 0.40 ، 0.40"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "0.40, 0.20, 0.40",
+    "answer_text_ar": "0.40 ، 0.20 ، 0.40",
+    "explanation": "The dot products with the three keys are 1, 0 and 1. After scaling by √2, the scores are approximately 0.707, 0 and 0.707. Applying softmax gives approximately 0.40, 0.20 and 0.40.",
+    "explanation_ar": "الضرب النقطي مع المفاتيح الثلاثة يعطي: 1 و 0 و 1. بعد القسمة على √2 تصبح الدرجات: 0.707 و 0 و 0.707. بتطبيق Softmax على هذه الدرجات نحصل على الاحتمالات: 0.40 و 0.20 و 0.40.",
+    "reference": "Lecture 5, Section 5.5 — Self-attention worked example"
+  },
+  {
+    "id": 143,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A23",
+    "question": "With the same three tokens, token 2 has query (0,1), so its attention weights are 0.20, 0.40, 0.40. What is its output vector?",
+    "question_ar": "باستخدام نفس الرموز الثلاثة، إذا كانت أوزان انتباه الرمز الثاني هي 0.20 و 0.40 و 0.40 لمتجهات القيم (1,0) و (0,1) و (1,1). فما هو متجه المخرج الناتج؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "(0.80,0.60)",
+        "text_ar": "(0.80, 0.60)"
+      },
+      {
+        "key": "b",
+        "text": "(0.40,0.40)",
+        "text_ar": "(0.40, 0.40)"
+      },
+      {
+        "key": "c",
+        "text": "(1.00,1.00)",
+        "text_ar": "(1.00, 1.00)"
+      },
+      {
+        "key": "d",
+        "text": "(0.60,0.80)",
+        "text_ar": "(0.60, 0.80)"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "(0.60,0.80)",
+    "answer_text_ar": "(0.60, 0.80)",
+    "explanation": "The output is the weighted sum of the value vectors: 0.20(1,0) + 0.40(0,1) + 0.40(1,1) = (0.60, 0.80).",
+    "explanation_ar": "المخرج هو المجموع المرجح لمتجهات القيم: 0.20 × (1, 0) + 0.40 × (0, 1) + 0.40 × (1, 1) = (0.20, 0) + (0, 0.40) + (0.40, 0.40) = (0.60, 0.80).",
+    "reference": "Lecture 5, Section 5.5 — Self-attention worked example"
+  },
+  {
+    "id": 144,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A24",
+    "question": "Why does the transformer add a positional encoding to each token?",
+    "question_ar": "لماذا تضيف معمارية المحولات متجهات الترميز الموضعي (Positional Encoding) إلى كل كلمة؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "To reduce the number of parameters",
+        "text_ar": "لتقليل عدد معاملات الشبكة"
+      },
+      {
+        "key": "b",
+        "text": "To replace the residual connections",
+        "text_ar": "لتستبدل الوصلات المتبقية (Skip connections)"
+      },
+      {
+        "key": "c",
+        "text": "Because attention by itself ignores word order",
+        "text_ar": "لأن آلية الانتباه بمفردها تتجاهل ترتيب الكلمات وموقعها تماماً (Permutation Invariant)"
+      },
+      {
+        "key": "d",
+        "text": "To make the attention weights sum to 1",
+        "text_ar": "لجعل أوزان الانتباه مجموعها 1"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Because attention by itself ignores word order",
+    "answer_text_ar": "لأن آلية الانتباه بمفردها تتجاهل ترتيب الكلمات وموقعها تماماً (Permutation Invariant)",
+    "explanation": "Self-attention alone does not inherently represent the order of tokens. Positional encodings add information about each token’s position in the sequence.",
+    "explanation_ar": "آلية الانتباه تعامل الكلمات كمجموعة غير مرتبة (Set) وتقارن الكلمات دون مراعاة موقعها؛ لذا يُضاف الترميز الموضعي ليمنح النموذج فهماً لترتيب وسياق الكلمة داخل الجملة.",
+    "reference": "Lecture 5, Section 5.5 — Positional encoding"
+  },
+  {
+    "id": 145,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A25",
+    "question": "If the sequence length doubles, roughly how much more work does self-attention need?",
+    "question_ar": "إذا تضاعف طول النص أو السلسلة (Sequence Length n)، فبأي مقدار تقريباً يتضاعف حجم الحسابات في الانتباه الذاتي القياسي؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "The same amount",
+        "text_ar": "يبقى كما هو دون تغيير"
+      },
+      {
+        "key": "b",
+        "text": "Four times as much",
+        "text_ar": "أربعة أضعاف (Four times as much - تربيعي O(n²))"
+      },
+      {
+        "key": "c",
+        "text": "Twice as much",
+        "text_ar": "ضعفان فقط (مرتان)"
+      },
+      {
+        "key": "d",
+        "text": "Eight times as much",
+        "text_ar": "ثمانية أضعاف"
+      }
+    ],
+    "answer": "b",
+    "answer_text": "Four times as much",
+    "answer_text_ar": "أربعة أضعاف (Four times as much - تربيعي O(n²))",
+    "explanation": "Self-attention compares positions with one another, giving quadratic complexity O(n²) in sequence length. Doubling n therefore requires roughly four times the work.",
+    "explanation_ar": "تقارن آلية الانتباه الذاتي كل كلمة بجميع الكلمات الأخرى، مما يعطي تعقيداً حسابياً تربيعياً O(n²). لذلك، إذا تضاعف طول السلسلة (2n)، يزداد الشغل بمقدار (2)² = 4 أضعاف.",
+    "reference": "Lecture 5, Section 5.5 — Transformer computation"
+  },
+  {
+    "id": 146,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A26",
+    "question": "What are GPT models pretrained to do?",
+    "question_ar": "على أي مهمة أساسية يتم تدريب نماذج GPT في مرحلة ما قبل التدريب (Pretraining)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Predict the next token",
+        "text_ar": "التنبؤ بالكلمة أو الرمز التالي في النص (Next Token Prediction)"
+      },
+      {
+        "key": "b",
+        "text": "Fill in missing words for understanding tasks",
+        "text_ar": "ملء الكلمات المحذوفة المخفية داخل النص"
+      },
+      {
+        "key": "c",
+        "text": "Classify image patches",
+        "text_ar": "تصنيف رقع الصور"
+      },
+      {
+        "key": "d",
+        "text": "Remove noise from images",
+        "text_ar": "إزالة الضوضاء العشوائية من الصور"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "Predict the next token",
+    "answer_text_ar": "التنبؤ بالكلمة أو الرمز التالي في النص (Next Token Prediction)",
+    "explanation": "GPT models use autoregressive language modelling: they are pre- trained to predict the next token from the preceding context.",
+    "explanation_ar": "نماذج GPT هي نماذج لغوية ذاتية الانحدار (Autoregressive)، وتُدرب بمهمة التنبؤ بالرمز التالي المعطى السياق السابق، مما يمنحها فهماً عميقاً للغة وقدرة توليدية خارقة.",
+    "reference": "Lecture 5, Section 5.5 — BERT and GPT"
+  },
+  {
+    "id": 147,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A27",
+    "question": "Why does an autoencoder learn useful features even though its task is just to copy its input?",
+    "question_ar": "لماذا تنجح المشفرات التلقائية (Autoencoders) في تعلم ميزات مفيدة للغاية رغم أن مهمتها هي مجرد نسخ المدخل إلى المخرج؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "It is trained with many labelled examples",
+        "text_ar": "لأنها تدربت على أمثلة مصنفة يدوياً"
+      },
+      {
+        "key": "b",
+        "text": "It uses a discriminator to check its output",
+        "text_ar": "لأنها تستخدم شبكة مميز (Discriminator)"
+      },
+      {
+        "key": "c",
+        "text": "The narrow middle layer forces it to compress the input into its most important features",
+        "text_ar": "لأن عنق الزجاجة (الطبقة الوسطى الضيقة) يجبرها على ضغط المدخلات واستخلاص أهم الميزات الجوهرية فقط"
+      },
+      {
+        "key": "d",
+        "text": "It adds noise until only pure noise is left",
+        "text_ar": "لأنها تضيف ضوضاء حتى لا يتبقى سوى الضوضاء"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "The narrow middle layer forces it to compress the input into its most important features",
+    "answer_text_ar": "لأن عنق الزجاجة (الطبقة الوسطى الضيقة) يجبرها على ضغط المدخلات واستخلاص أهم الميزات الجوهرية فقط",
+    "explanation": "The bottleneck or narrow middle layer limits how much information can pass through. The autoencoder must therefore learn a compact representation that preserves important features for reconstruction.",
+    "explanation_ar": "وجود عنق زجاجة ضيق (Bottleneck) يمنع الشبكة من مجرد حفظ ونسخ المدخلات كما هي، ويجبرها على ضغط المعلومات وحفظ أهم الأنماط والسمات التجريدية الكفيلة بإعادة بناء الصورة.",
+    "reference": "Lecture 5, Section 5.6 — Autoencoders"
+  },
+  {
+    "id": 148,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A28",
+    "question": "In a GAN, what is the job of the discriminator?",
+    "question_ar": "في شبكات التوليد التنافسية (GANs)، ما هي الوظيفة المحددة لشبكة «المُمَيِّز» (Discriminator)؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "To turn random noise into fake examples",
+        "text_ar": "تحويل الضوضاء العشوائية إلى عينات مزيفة"
+      },
+      {
+        "key": "b",
+        "text": "To compress the input into a code",
+        "text_ar": "ضغط المدخل إلى شفرة مشفرة"
+      },
+      {
+        "key": "c",
+        "text": "To remove a little noise at each step",
+        "text_ar": "إزالة مقدار قليل من الضوضاء في كل خطوة"
+      },
+      {
+        "key": "d",
+        "text": "To tell real examples from fakes",
+        "text_ar": "التمييز والفصل بين العينات الحقيقية والعينات المزيفة المولدة"
+      }
+    ],
+    "answer": "d",
+    "answer_text": "To tell real examples from fakes",
+    "answer_text_ar": "التمييز والفصل بين العينات الحقيقية والعينات المزيفة المولدة",
+    "explanation": "The discriminator receives real and generated examples and learns to distinguish between them. The generator tries to produce examples that fool it.",
+    "explanation_ar": "تستقبل شبكة المميز صوراً حقيقية من مجموعة البيانات وصوراً مزيفة من شبكة المولد، وتتدرب كمصنف لتمييز الحقيقي من المزيف، بينما يحاول المولد خداعها بإنتاج صور أكثر واقعية.",
+    "reference": "Lecture 5, Section 5.6 — Generative adversarial networks"
+  },
+  {
+    "id": 149,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A29",
+    "question": "How does a trained diffusion model generate a new image?",
+    "question_ar": "كيف يولد نموذج الانتشار المدرب (Diffusion Model) صورة جديدة تماماً؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "It starts from pure random noise and applies the denoising network many times",
+        "text_ar": "يبدأ من ضوضاء عشوائية نقية ويطبق شبكة إزالة الضوضاء (Denoising) مراراً وتكراراً عبر خطوات زمنية"
+      },
+      {
+        "key": "b",
+        "text": "It copies an image from the training set",
+        "text_ar": "بنسخ صورة موجودة مسبقاً في مجموعة التدريب"
+      },
+      {
+        "key": "c",
+        "text": "It passes an image through a narrow code layer once",
+        "text_ar": "بتمرير صورة عبر طبقة شفرة ضيقة لمرة واحدة"
+      },
+      {
+        "key": "d",
+        "text": "It slides a kernel over a blank image",
+        "text_ar": "بتمرير نواة فوق صورة بيضاء فارغة"
+      }
+    ],
+    "answer": "a",
+    "answer_text": "It starts from pure random noise and applies the denoising network many times",
+    "answer_text_ar": "يبدأ من ضوضاء عشوائية نقية ويطبق شبكة إزالة الضوضاء (Denoising) مراراً وتكراراً عبر خطوات زمنية",
+    "explanation": "A diffusion model starts with random noise and repeatedly applies a learned denoising process to gradually form a sample.",
+    "explanation_ar": "يبدأ نموذج الانتشار بنمط ضوضاء عشوائية بيضاء (Pure Noise)، ثم يستخدم شبكة عصبية تم تدريبها على إزالة جزء من الضوضاء تدريجياً عبر عشرات الخطوات حتى تنبثق صورة فائقة الدقة.",
+    "reference": "Lecture 5, Section 5.6 — Diffusion models"
+  },
+  {
+    "id": 150,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "mcq",
+    "q_num": "A30",
+    "question": "A hospital has only 2,000 labelled X-ray images. According to the notes, what is the best approach?",
+    "question_ar": "لدى مستشفى 2,000 صورة أشعة سينية فقط مصنفة. وفقاً للمحاضرات، ما هو النهج الهندسي الأمثل لبناء مصنف دقيق؟",
+    "options": [
+      {
+        "key": "a",
+        "text": "Train a deep CNN from scratch on the 2,000 images",
+        "text_ar": "تدريب شبكة CNN عميقة وضخمة من الصفر على الـ 2,000 صورة فقط"
+      },
+      {
+        "key": "b",
+        "text": "Use a fully connected network with no assumptions",
+        "text_ar": "استخدام شبكة متصلة بالكامل بدون أي افتراضات مسبقة"
+      },
+      {
+        "key": "c",
+        "text": "Fine-tune a CNN pretrained on ImageNet on the X-rays",
+        "text_ar": "استخدام التعلم بالنقل (Transfer Learning): أخذ شبكة مدربة مسبقاً على ImageNet وضبطها الدقيق (Fine-tuning) على صور الأشعة"
+      },
+      {
+        "key": "d",
+        "text": "Train a GAN to classify the X-rays",
+        "text_ar": "تدريب شبكة GAN لتصنيف صور الأشعة"
+      }
+    ],
+    "answer": "c",
+    "answer_text": "Fine-tune a CNN pretrained on ImageNet on the X-rays",
+    "answer_text_ar": "استخدام التعلم بالنقل (Transfer Learning): أخذ شبكة مدربة مسبقاً على ImageNet وضبطها الدقيق (Fine-tuning) على صور الأشعة",
+    "explanation": "The lecture’s example recommends transfer learning: start with a CNN pretrained on ImageNet, replace or adapt the final layer, and fine-tune it on the small X-ray dataset.",
+    "explanation_ar": "مع قلة البيانات (2,000 صورة)، فإن تدريب شبكة عميقة من الصفر سيؤدي لفرط مطابقة كارثي. الحل المثالي القياسي هو التعلم بالنقل (Transfer Learning) باستغلال شبكة مدربة على ملايين الصور وتعديل الطبقة الأخيرة فقط.",
+    "reference": "Lecture 5, Section 5.7 — Transfer learning; medical X-ray example"
+  },
+  {
+    "id": 151,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B1",
+    "question": "Using a stride of 2 in a convolutional layer halves the size of the output.",
+    "question_ar": "يؤدي استخدام خطوة stride = 2 في طبقة الالتفاف إلى تنصيف الأبعاد المكانية (العرض والارتفاع) للمخرج تقريباً.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "A stride of 2 moves the kernel two positions at a time and commonly reduces each spatial dimension to about half, depending on the input size, kernel and padding.",
+    "explanation_ar": "العبارة صحيحة (True). خطوة stride = 2 تقفز بمقدار موضعين في كل حركة، مما يقلل عدد التطبيقات إلى النصف تقريباً في كل بعد مكاني (Downsampling).",
+    "reference": "Lecture 5, Section 5.2 — Stride and output size"
+  },
+  {
+    "id": 152,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B2",
+    "question": "An RNN uses different weights W_x and W_h at each time step.",
+    "question_ar": "تستخدم الشبكة العصبية العودية (RNN) أوزاناً مختلفة تماماً W_x و W_h عند كل خطوة زمنية من خطوات السلسلة.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: An RNN shares the same W_x and W_h weights across time steps.\n\nExplanation: An RNN normally shares the same W_x and W_h across time steps; the same recurrent cell is applied repeatedly to the sequence.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: تشترك شبكة RNN في نفس الأوزان W_x و W_h عبر جميع الخطوات الزمنية (Parameter Sharing عبر الزمن)، وهو ما يسمح لها بمعالجة سلاسل بأطوال متغيرة.",
+    "reference": "Lecture 5, Section 5.3 — Recurrent neural networks"
+  },
+  {
+    "id": 153,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B3",
+    "question": "An LSTM has a separate cell state and three gates, each a small sigmoid layer giving values between 0 and 1.",
+    "question_ar": "تمتلك خلية LSTM حالة خلية منفصلة (Cell State) وثلاث بوابات تحكم، كل بوابة عبارة عن طبقة سيجمويد صغيرة تعطي قيماً بين 0 و1.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "The standard LSTM has a cell state and three gates: input, forget and output. Their sigmoid activations produce values between 0 and 1.",
+    "explanation_ar": "العبارة صحيحة (True). تحتوي LSTM على البوابات الثلاث الشهيرة: بوابة النسيان (Forget)، وبوابة الإدخال (Input)، وبوابة الإخراج (Output)، وتتحكم كل منها بنسبة تدفق المعلومات بين 0 (إغلاق تام) و1 (تمرير كامل).",
+    "reference": "Lecture 5, Section 5.4 — LSTM"
+  },
+  {
+    "id": 154,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B4",
+    "question": "The transformer is built from attention, feed-forward layers and recurrence.",
+    "question_ar": "تتكون معمارية المحولات (Transformer) من طبقات الانتباه، وطبقات التغذية الأمامية، وآليات التكرار العودي (Recurrence).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: The transformer uses attention and feed-forward layers, with residual connections and positional encodings; it does not use recurrence.\n\nExplanation: The transformer uses attention and feed-forward layers, along with resid- ual connections and positional encodings; it does not use recurrence.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: معمارية Transformer لا تحتوي على أي تكرار عودي (No Recurrence)؛ وقد استغنت عنه تماماً لصالح الانتباه الذاتي (Self-Attention) والترميز الموضعي (كما جاء في الورقة الشهيرة Attention Is All You Need).",
+    "reference": "Lecture 5, Section 5.5 — The transformer"
+  },
+  {
+    "id": 155,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B5",
+    "question": "BERT is pretrained to predict the next token and is mainly used for generating text.",
+    "question_ar": "يتم تدريب نموذج BERT مسبقاً للتنبؤ بالكلمة التالية في النص، ويُستخدم أساساً في توليد النصوص الإبداعية.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: GPT predicts the next token; BERT is pretrained using masked-word prediction and is commonly used for language understanding.\n\nExplanation: The lecture distinguishes BERT from GPT: GPT predicts the next token, while BERT is pretrained with a masked-word prediction objective and is commonly used for language understanding.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: النموذج الذي يتنبأ بالرمز التالي لتوليد النصوص هو GPT، أما BERT فيعتمد على إخفاء كلمات عشوائية (Masked Language Modeling) وقراءة النص في الاتجاهين معاً ويستخدم للفهم والتصنيف وليس التوليد.",
+    "reference": "Lecture 5, Section 5.5 — BERT and GPT"
+  },
+  {
+    "id": 156,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B6",
+    "question": "In multi-head attention, each head has its own learned query, key and value matrices.",
+    "question_ar": "في آلية الانتباه متعدد الرؤوس (Multi-Head Attention)، يمتلك كل رأس مصفوفات أوزان خاصة به متعلمة للاستعلامات والمفاتيح والقيم.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "Each attention head has its own learned projection matrices for queries, keys and values, allowing heads to learn different relationships.",
+    "explanation_ar": "العبارة صحيحة (True). كل رأس انتباه يُسقط المدخلات في فضاء تمثيلي مستقل عبر مصفوفات W_Q و W_K و W_V خاصة به، مما يسمح للنموذج بالتركيز على علاقات لغوية ونحوية ودلالية مختلفة في آن واحد.",
+    "reference": "Lecture 5, Section 5.5 — Multi-head attention"
+  },
+  {
+    "id": 157,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B7",
+    "question": "An autoencoder needs labelled examples, because each input must be paired with a class.",
+    "question_ar": "يحتاج المشفر التلقائي (Autoencoder) إلى أمثلة تدريبية مصنفة يدوياً بفئات محددة (Labels).",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: A standard autoencoder does not require class labels; it learns to reconstruct its input.\n\nExplanation: A standard autoencoder is trained to reconstruct its input. The input itself supplies the reconstruction target, so class labels are not required.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: المشفر التلقائي هو نموذج تعلم ذاتي/غير خاضع للإشراف (Self-supervised/Unsupervised)؛ حيث يمثل المدخل نفسه الهدف المطلوب إعادة بنائه دون الحاجة لأي تصنيفات بشرية.",
+    "reference": "Lecture 5, Section 5.6 — Autoencoders"
+  },
+  {
+    "id": 158,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B8",
+    "question": "Tiny, carefully chosen changes to an image that people cannot see can make a network confidently give a wrong answer.",
+    "question_ar": "يمكن لتعديلات وتغييرات طفيفة ومحسوبة بدقة في صورة، لا تكاد تلاحظها العين البشرية، أن تجعل الشبكة العصبية تصنف الصورة تصنيفاً خاطئاً بثقة عالية جداً.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "This describes adversarial examples: small, deliberately chosen pertur- bations can cause a neural network to make a confident incorrect prediction.",
+    "explanation_ar": "العبارة صحيحة (True). هذا هو تعريف الأمثلة التنافسية أو الهجمات الخبيثة (Adversarial Examples)، حيث تؤدي إضافة تشويش دقيق غير مرئي للعين إلى خداع عميق للشبكات العصبية.",
+    "reference": "Lecture 5, Section 5.7 — Limitations: adversarial examples"
+  },
+  {
+    "id": 159,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B9",
+    "question": "Max pooling increases the width and height of a feature map.",
+    "question_ar": "تؤدي عملية التجميع الأقصى (Max Pooling) إلى زيادة العرض والارتفاع لخريطة السمات.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "False",
+    "answer_text": "False",
+    "answer_text_ar": "خطأ",
+    "explanation": "Correct Statement: Max pooling downsamples the feature map and usually reduces its width and height.\n\nExplanation: Max pooling downsamples a feature map. With 2×2 pooling and stride 2, it usually halves the width and height rather than increasing them.",
+    "explanation_ar": "العبارة خاطئة (False). التصحيح: عملية Max Pooling هي عملية تقليص للعينة (Downsampling)؛ وتؤدي إلى تصغير ونصف العرض والارتفاع وليس زيادتهما.",
+    "reference": "Lecture 5, Section 5.2 — Pooling"
+  },
+  {
+    "id": 160,
+    "bank_id": 4,
+    "bank_title_en": "Bank 4: Week 5 - Deep Learning II: Architectures",
+    "bank_title_ar": "بنك 4: الأسبوع 5 - بنى وشبكات التعلم العميق (Architectures & CNNs)",
+    "type": "tf",
+    "q_num": "B10",
+    "question": "If all the training photos of cows contain grass, a network may learn “grass” instead of “cow” and fail on a cow on a beach.",
+    "question_ar": "إذا كانت جميع صور الأبقار في بيانات التدريب ملتقطة وسط حقول خضراء، فقد تتعلم الشبكة ميزة «العشب» بدلاً من «البقرة»، فتفشل في التعرف على بقرة تقف على الشاطئ.",
+    "options": [
+      {
+        "key": "True",
+        "text": "True",
+        "text_ar": "صح (True)"
+      },
+      {
+        "key": "False",
+        "text": "False",
+        "text_ar": "خطأ (False)"
+      }
+    ],
+    "answer": "True",
+    "answer_text": "True",
+    "answer_text_ar": "صح",
+    "explanation": "A network can learn a spurious correlation in the training data. It may associate grass with the cow label and fail when that background cue is absent.",
+    "explanation_ar": "العبارة صحيحة (True). يمثل هذا ظاهرة الارتباط الزائف (Spurious Correlation)، حيث تعتمد الشبكة على نمط خلفية مضلل متكرر في بيانات التدريب بدلاً من تعلم الملامح الحقيقية للكائن المستهدف.",
+    "reference": "Lecture 5, Section 5.7 — Limitations: spurious patterns"
+  }
+];
+if (typeof module !== 'undefined' && module.exports) { module.exports = QUIZ_DATA; }
