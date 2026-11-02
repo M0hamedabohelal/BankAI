@@ -277,16 +277,16 @@
     if (state.langMode === 'en') {
       DOM.qTextEn.style.display = 'block';
       DOM.qTextAr.style.display = 'none';
-      DOM.qTextEn.textContent = q.question;
+      DOM.qTextEn.innerHTML = q.question;
     } else if (state.langMode === 'ar') {
       DOM.qTextEn.style.display = 'none';
       DOM.qTextAr.style.display = 'block';
-      DOM.qTextAr.textContent = q.question_ar || q.question;
+      DOM.qTextAr.innerHTML = q.question_ar || q.question;
     } else { // both
       DOM.qTextEn.style.display = 'block';
       DOM.qTextAr.style.display = 'block';
-      DOM.qTextEn.textContent = q.question;
-      DOM.qTextAr.textContent = q.question_ar || '';
+      DOM.qTextEn.innerHTML = q.question;
+      DOM.qTextAr.innerHTML = q.question_ar || '';
     }
 
     // Render Options
@@ -358,11 +358,11 @@
         DOM.expStatusTitle.textContent = 'إجابة صحيحة! أحسنت.';
       } else {
         DOM.expStatusIcon.textContent = '❌';
-        DOM.expStatusTitle.textContent = `إجابة خاطئة. الإجابة الصحيحة هي: (${q.answer.toUpperCase()}) ${q.answer_text_ar || q.answer_text}`;
+        DOM.expStatusTitle.innerHTML = `إجابة خاطئة. الإجابة الصحيحة هي: (${q.answer.toUpperCase()}) ${q.answer_text_ar || q.answer_text}`;
       }
 
-      DOM.expTextAr.textContent = q.explanation_ar || q.explanation;
-      DOM.expTextEn.textContent = q.explanation || 'No English explanation provided.';
+      DOM.expTextAr.innerHTML = q.explanation_ar || q.explanation;
+      DOM.expTextEn.innerHTML = q.explanation || 'No English explanation provided.';
 
       if (q.reference) {
         DOM.expReferenceWrap.style.display = 'flex';

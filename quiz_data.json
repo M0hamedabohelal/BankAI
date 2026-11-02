@@ -387,34 +387,34 @@
     "type": "mcq",
     "q_num": "A11",
     "question": "Which problem did Minsky and Papert use in 1969 to show the limits of single- layer networks?",
-    "question_ar": "ما الذي تنص عليه مبرهنة التقريب الشامل (Universal Approximation Theorem)؟",
+    "question_ar": "أي مسألة استخدمها مينسكي وبابيرت عام 1969 لإثبات قصور ومحدودية الشبكات أحادية الطبقة (Single-layer Perceptrons)؟",
     "options": [
       {
         "key": "a",
         "text": "Handwritten digit recognition",
-        "text_ar": "تصل جميع خوارزميات التعلم العميق إلى نفس الدقة إذا تدربت لوقت كافٍ"
+        "text_ar": "التعرف على الأرقام المكتوبة بخط اليد"
       },
       {
         "key": "b",
         "text": "Face recognition",
-        "text_ar": "تضمن التغذية الراجعة دائماً إيجاد الحد الأدنى العام لدالة الخسارة"
+        "text_ar": "التعرف على الوجوه"
       },
       {
         "key": "c",
         "text": "House-price prediction",
-        "text_ar": "تحتاج الشبكات العميقة لبيانات أقل من النماذج الخطية"
+        "text_ar": "التنبؤ بأسعار المنازل"
       },
       {
         "key": "d",
         "text": "XOR",
-        "text_ar": "يمكن لشبكة بطبقة خفية واحدة غير خطية تقريب أي دالة مستمرة إذا كان عدد خلاياها كافياً"
+        "text_ar": "مسألة XOR (الفصل المنطقي الحصري)"
       }
     ],
     "answer": "d",
     "answer_text": "XOR",
-    "answer_text_ar": "يمكن لشبكة بطبقة خفية واحدة غير خطية تقريب أي دالة مستمرة إذا كان عدد خلاياها كافياً",
+    "answer_text_ar": "مسألة XOR (الفصل المنطقي الحصري)",
     "explanation": "The XOR problem is not linearly separable. A single-layer perceptron cannot represent its decision boundary, illustrating the limitations of single- layer networks.",
-    "explanation_ar": "تنص المبرهنة على أن شبكة عصبية بطبقة خفية واحدة مع دوال تنشيط غير خطية وعدد كافٍ من العصبونات قادرة نظرياً على تقريب أي دالة متصلة لأي درجة دقة مطلوبة.",
+    "explanation_ar": "مسألة XOR ليست قابلة للفصل خطياً (Not linearly separable). وبالتالي لا يمكن لخلية بيرسيبترون أحادية الطبقة رسم حد قرار مستقيم يفصل بين فئاتها، مما أثبت عجز الشبكات البسيطة وحتمية استخدام الطبقات الخفية المتعددة.",
     "reference": ""
   },
   {
@@ -425,34 +425,34 @@
     "type": "mcq",
     "q_num": "A12",
     "question": "In a feedforward network, which layer does no computation?",
-    "question_ar": "ما هو دور دالة الخسارة (Loss Function) في التعلم العميق؟",
+    "question_ar": "في الشبكة العصبية المغذاة أمامياً (Feedforward Network)، أيُّ الطبقات التالية لا تقوم بأي عمليات حسابية؟",
     "options": [
       {
         "key": "a",
         "text": "The first hidden layer",
-        "text_ar": "تحدد معدل التعلم تلقائياً لكل طبقة"
+        "text_ar": "الطبقة الخفية الأولى"
       },
       {
         "key": "b",
         "text": "The input layer",
-        "text_ar": "تقيس الفارق أو الخطأ بين تنبؤات الشبكة والتسميات الحقيقية"
+        "text_ar": "طبقة المدخلات (Input Layer)"
       },
       {
         "key": "c",
         "text": "The output layer",
-        "text_ar": "تمنع الأوزان من أن تصبح مساوية للصفر"
+        "text_ar": "طبقة المخرجات (Output Layer)"
       },
       {
         "key": "d",
         "text": "The last hidden layer",
-        "text_ar": "تختار دالة التنشيط المثلى لكل عصبون"
+        "text_ar": "الطبقة الخفية الأخيرة"
       }
     ],
     "answer": "b",
     "answer_text": "The input layer",
-    "answer_text_ar": "تقيس الفارق أو الخطأ بين تنبؤات الشبكة والتسميات الحقيقية",
+    "answer_text_ar": "طبقة المدخلات (Input Layer)",
     "explanation": "The input layer receives and passes the input values to the next layer. The weighted sums and activation computations are performed by subse- quent layers.",
-    "explanation_ar": "دالة الخسارة تقيس مدى دقة أو خطأ تنبؤ الشبكة مقارنة بالقيمة الحقيقية المستهدفة، وهي الإشارة التوجيهية التي يُعتمد عليها لتحديث الأوزان وتقليل الخطأ.",
+    "explanation_ar": "طبقة المدخلات (Input Layer) تستقبل فقط قيم المدخلات وتمررها إلى الطبقة التالية دون إجراء أي حسابات أو ضرب بالأوزان أو تطبيق دوال تنشيط؛ حيث تبدأ العمليات الحسابية الفعلية من الطبقات الخفية.",
     "reference": ""
   },
   {
@@ -463,34 +463,34 @@
     "type": "mcq",
     "q_num": "A13",
     "question": "A network takes a 28 × 28 image (784 pixels), has one hidden layer of 128 units and outputs 10 classes. How many parameters does it have?",
-    "question_ar": "ما هي دالة الخسارة القياسية المستخدمة في التصنيف الثنائي (Binary Classification)؟",
+    "question_ar": "شبكة عصبية تستقبل صورة بحجم 28 × 28 (784 بكسل)، وبها طبقة خفية واحدة تحوي 128 وحدة، وتخرج 10 فئات. كم يبلغ العدد الإجمالي للمعاملات (Parameters) في الشبكة؟",
     "options": [
       {
         "key": "a",
         "text": "100,480",
-        "text_ar": "الخطأ التربيعي المتوسط (MSE)"
+        "text_ar": "100,480"
       },
       {
         "key": "b",
         "text": "1,290",
-        "text_ar": "خسارة المفصلة (Hinge Loss)"
+        "text_ar": "1,290"
       },
       {
         "key": "c",
         "text": "101,770",
-        "text_ar": "خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)"
+        "text_ar": "101,770"
       },
       {
         "key": "d",
         "text": "101,632",
-        "text_ar": "المسافة الكلية للتغير"
+        "text_ar": "101,632"
       }
     ],
     "answer": "c",
     "answer_text": "101,770",
-    "answer_text_ar": "خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)",
+    "answer_text_ar": "101,770",
     "explanation": "For a fully connected layer, parameters equal weights plus biases. Input-to-hidden: 784×128+128 = 100 ,480. Hidden-to-output: 128×10+10 = 1,290. Total: 100,480 + 1,290 = 101,770.",
-    "explanation_ar": "الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy / Log Loss) هي الدالة القياسية في التصنيف الثنائي؛ لأنها تعاقب بشدة النماذج التي تعطي ثقة عالية لتنبؤات خاطئة.",
+    "explanation_ar": "معاملات أي طبقة متصلة كلياً = (المدخلات × المخرجات) + الانحيازات (Biases). من المدخلات للطبقة الخفية: 784 × 128 + 128 = 100,480. ومن الطبقة الخفية للمخرجات: 128 × 10 + 10 = 1,290. الإجمالي = 100,480 + 1,290 = 101,770 معاملاً.",
     "reference": ""
   },
   {
@@ -501,34 +501,34 @@
     "type": "mcq",
     "q_num": "A14",
     "question": "How many parameters does a fully connected network with layers 100 → 50 → 10 have?",
-    "question_ar": "في خوارزمية الانحدار التدريجي، بأي اتجاه يتم تحديث الأوزان؟",
+    "question_ar": "كم يبلغ عدد المعاملات لشبكة عصبية متصلة كلياً تتكون من الطبقات: 100 مدخل → 50 وحدة خفية → 10 مخرجات؟",
     "options": [
       {
         "key": "a",
         "text": "5,560",
-        "text_ar": "في الاتجاه المعاكس لمتجه التدرج (Gradient)"
+        "text_ar": "5,560"
       },
       {
         "key": "b",
         "text": "5,500",
-        "text_ar": "في نفس اتجاه متجه التدرج"
+        "text_ar": "5,500"
       },
       {
         "key": "c",
         "text": "5,050",
-        "text_ar": "باتجاه عشوائي تماماً لتجنب الحدود المحلية"
+        "text_ar": "5,050"
       },
       {
         "key": "d",
         "text": "5,060",
-        "text_ar": "نحو أكبر وزن في الطبقة السابقة"
+        "text_ar": "5,060"
       }
     ],
     "answer": "a",
     "answer_text": "5,560",
-    "answer_text_ar": "في الاتجاه المعاكس لمتجه التدرج (Gradient)",
+    "answer_text_ar": "5,560",
     "explanation": "For the first layer: 100 × 50 + 50 = 5 ,050. For the second layer: 50 × 10 + 10 = 510 . Total parameters: 5,050 + 510 = 5 ,560. 50 × 10ﻭﺯﻥﻭ 100 × 50ﺍܳޚٴگ۰ﺍ ﺍڤ",
-    "explanation_ar": "يشير التدرج (Gradient) إلى اتجاه أسرع صعود لدالة الخسارة؛ لذا نتحرك في عكس اتجاه التدرج (w = w - η∇L) للوصول إلى أدنى خسارة ممكنة.",
+    "explanation_ar": "الطبقة الأولى: 100 × 50 (أوزان) + 50 (انحياز) = 5,050. الطبقة الثانية: 50 × 10 (أوزان) + 10 (انحياز) = 510. المجموع الكلي = 5,050 + 510 = 5,560 معاملاً.",
     "reference": ""
   },
   {
@@ -539,34 +539,34 @@
     "type": "mcq",
     "q_num": "A15",
     "question": "What does the universal approximation theorem say?",
-    "question_ar": "ما الذي يحدث إذا كان معدل التعلم (Learning Rate η) كبيراً جداً؟",
+    "question_ar": "ما الذي تنص عليه مبرهنة التقريب الشامل (Universal Approximation Theorem)؟",
     "options": [
       {
         "key": "a",
         "text": "Any network with ReLU units will reach zero training loss",
-        "text_ar": "تتدرب الشبكة ببطء شديد وتستغرق وقتاً طويلاً"
+        "text_ar": "أي شبكة تستخدم وحدات ReLU ستصل دائماً إلى خسارة تدريب تساوي صفراً"
       },
       {
         "key": "b",
         "text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like",
-        "text_ar": "قد يتذبذب التدريب بشكل مفرط أو يتباعد وتتزايد الخسارة إلى مالانهاية"
+        "text_ar": "شبكة بطبقة خفية واحدة غير خطية، وبعدد كافٍ من العصبونات، يمكنها تقريب أي دالة مستمرة لأي درجة دقة مطلوبة"
       },
       {
         "key": "c",
         "text": "Deep networks always need fewer training examples than shallow ones",
-        "text_ar": "تتوقف جميع الأوزان عند الصفر"
+        "text_ar": "الشبكات العميقة تحتاج دائماً لأمثلة تدريب أقل من الشبكات الضحلة"
       },
       {
         "key": "d",
         "text": "Gradient descent always finds the global minimum of the loss",
-        "text_ar": "تحفظ الشبكة بيانات التدريب بدقة 100% فوراً"
+        "text_ar": "الانحدار التدريجي يضمن دائماً الوصول للحد الأدنى العام لدالة الخسارة"
       }
     ],
     "answer": "b",
     "answer_text": "A network with just one hidden layer, given enough units, can approximate any continuous function as closely as we like",
-    "answer_text_ar": "قد يتذبذب التدريب بشكل مفرط أو يتباعد وتتزايد الخسارة إلى مالانهاية",
+    "answer_text_ar": "شبكة بطبقة خفية واحدة غير خطية، وبعدد كافٍ من العصبونات، يمكنها تقريب أي دالة مستمرة لأي درجة دقة مطلوبة",
     "explanation": "The universal approximation theorem states that a suffi- ciently wide network with one hidden layer can approximate continuous functions to arbitrary accuracy under the theorem’s conditions. It does not guarantee successful training or a global minimum.",
-    "explanation_ar": "معدل التعلم الكبير جداً يجعل خطوات التحديث تقفز فوق الحد الأدنى، مسبباً تذبذبات حادة أو تباعداً (Divergence) يجعل الخسارة تنفجر نحو قيم غير معرفة (NaN).",
+    "explanation_ar": "تنص المبرهنة على أن شبكة بطبقة خفية واحدة غير خطية وعريضة بما فيه الكفاية قادرة نظرياً على تمثيل وتقريب أي دالة رياضية مستمرة بدقة عشوائية، لكنها لا تضمن كيفية إيجاد هذه الأوزان عملياً بالتدريب.",
     "reference": ""
   },
   {
@@ -576,35 +576,35 @@
     "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
     "type": "mcq",
     "q_num": "A16",
-    "question": "In the forward-pass example, the input is x = (1 ,2) and hidden unit h2 has weights (−1,0.5), bias 0.5 and ReLU activation. What is the value of h2?",
-    "question_ar": "ما هي الأداة الرياضية الأساسية التي تعتمد عليها خوارزمية الانتشار العكسي (Backpropagation)؟",
+    "question": "In the forward-pass example, the input is x = (1, 2) and hidden unit h<sub>2</sub> has weights (−1, 0.5), bias 0.5 and ReLU activation. What is the value of h<sub>2</sub>?",
+    "question_ar": "في مثال التمرير الأمامي، المدخل x = (1, 2) والوحدة الخفية h<sub>2</sub> لها أوزان (−1, 0.5) وانحياز 0.5 وتنشيط ReLU. ما هي قيمة h<sub>2</sub>؟",
     "options": [
       {
         "key": "a",
         "text": "0",
-        "text_ar": "تكامل مونت كارلو"
+        "text_ar": "0"
       },
       {
         "key": "b",
         "text": "1.0",
-        "text_ar": "تحليل القيم المفردة (SVD)"
+        "text_ar": "1.0"
       },
       {
         "key": "c",
         "text": "1.5",
-        "text_ar": "قاعدة السلسلة في التفاضل (Chain Rule of Calculus)"
+        "text_ar": "1.5"
       },
       {
         "key": "d",
         "text": "0.5",
-        "text_ar": "مبرهنة فيثاغورس"
+        "text_ar": "0.5"
       }
     ],
     "answer": "d",
     "answer_text": "0.5",
-    "answer_text_ar": "مبرهنة فيثاغورس",
-    "explanation": "Compute z = (1)(−1) + (2)(0.5) + 0.5 = −1 + 1 + 0.5 = 0 .5. Applying ReLU gives h2 = max(0,0.5) = 0.5.",
-    "explanation_ar": "تعتمد خوارزمية التغذية الراجعة بالكامل على قاعدة السلسلة (Chain Rule) لحساب المشتقات الجزئية لدالة الخسارة بالنسبة لكل وزن في جميع الطبقات من المخرجات رجوعاً للمدخلات.",
+    "answer_text_ar": "0.5",
+    "explanation": "Compute z = (1)(−1) + (2)(0.5) + 0.5 = −1 + 1 + 0.5 = 0.5. Applying ReLU gives h<sub>2</sub> = max(0, 0.5) = 0.5.",
+    "explanation_ar": "نحسب المجموع الموزون أولاً: z = (1)(−1) + (2)(0.5) + 0.5 = −1 + 1 + 0.5 = 0.5. بتطبيق دالة التنشيط ReLU: h<sub>2</sub> = max(0, 0.5) = 0.5.",
     "reference": ""
   },
   {
@@ -614,35 +614,35 @@
     "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
     "type": "mcq",
     "q_num": "A17",
-    "question": "In the same example, h1 = 1 .0 and h2 = 0 .5. The sigmoid output unit has weights (1,−2) and bias 0.5. What is ˆy?",
-    "question_ar": "في مكتبات مثل PyTorch وTensorFlow، ما هو الرسم البياني الحسابي (Computational Graph)؟",
+    "question": "In the same example, h<sub>1</sub> = 1.0 and h<sub>2</sub> = 0.5. The sigmoid output unit has weights (1, −2) and bias 0.5. What is ŷ?",
+    "question_ar": "في نفس المثال السابق، إذا كانت h<sub>1</sub> = 1.0 و h<sub>2</sub> = 0.5، ووحدة المخرجات تستخدم دالة Sigmoid بأوزان (1, −2) وانحياز 0.5. ما هي قيمة التنبؤ ŷ؟",
     "options": [
       {
         "key": "a",
         "text": "0.50",
-        "text_ar": "شاشة ترسم منحنى الخسارة والدقة في الوقت الفعلي"
+        "text_ar": "0.50"
       },
       {
         "key": "b",
         "text": "0.73",
-        "text_ar": "رسم بياني موجَّه لجميع العمليات الحسابية لحساب التدرجات تلقائياً"
+        "text_ar": "0.73"
       },
       {
         "key": "c",
         "text": "0.62",
-        "text_ar": "جدول يوضح أبعاد الصور وأحجام الطبقات"
+        "text_ar": "0.62"
       },
       {
         "key": "d",
         "text": "0.38",
-        "text_ar": "خريطة لاتصالات الخوادم أثناء التدريب الموزع"
+        "text_ar": "0.38"
       }
     ],
     "answer": "c",
     "answer_text": "0.62",
-    "answer_text_ar": "جدول يوضح أبعاد الصور وأحجام الطبقات",
-    "explanation": "The output logit is z = (1)(1.0)+(−2)(0.5)+0.5 = 1 −1+0.5 = 0.5. The sigmoid gives σ(0.5) = 1/(1 + e−0.5) ≈ 0.622, so the closest option is 0.62.",
-    "explanation_ar": "الرسم الحسابي (Computational Graph) هو هيكل بياني يتبع العمليات والعمليات الوسيطة في التمرير الأمامي، مما يمكّن محرك التفاضل التلقائي (Autograd) من حساب التدرجات عبر المسار العكسي بسهولة.",
+    "answer_text_ar": "0.62",
+    "explanation": "The output logit is z = (1)(1.0) + (−2)(0.5) + 0.5 = 1 − 1 + 0.5 = 0.5. The sigmoid gives σ(0.5) = 1 / (1 + e<sup>−0.5</sup>) ≈ 0.622, so the closest option is 0.62.",
+    "explanation_ar": "قيمة z الناتجة هي: (1)(1.0) + (−2)(0.5) + 0.5 = 1 − 1 + 0.5 = 0.5. بتطبيق دالة Sigmoid: σ(0.5) = 1 / (1 + e<sup>−0.5</sup>) ≈ 0.622، وأقرب خيار هو 0.62.",
     "reference": ""
   },
   {
@@ -653,34 +653,34 @@
     "type": "mcq",
     "q_num": "A18",
     "question": "For a binary (yes/no) classification task, which output layer and loss should be used?",
-    "question_ar": "ما الفائدة الرئيسية لاستخدام دفعات صغيرة (Mini-batch SGD) بدلاً من كامل البيانات (Full Batch)؟",
+    "question_ar": "لمهمة تصنيف ثنائي (نعم/لا)، ما هي طبقة المخرجات ودالة الخسارة المناسب استخدامها؟",
     "options": [
       {
         "key": "a",
         "text": "One sigmoid unit with binary cross-entropy",
-        "text_ar": "تحديث الأوزان بشكل متكرر وسريع، وتقليل استهلاك الذاكرة، مع ضوضاء تساعد على الإفلات من القيعان المحلية الرديئة"
+        "text_ar": "وحدة واحدة بدالة Sigmoid مع خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)"
       },
       {
         "key": "b",
         "text": "One linear unit with mean squared error",
-        "text_ar": "حساب التدرج الدقيق بدقة 100% في كل خطوة دون أي ضوضاء"
+        "text_ar": "وحدة خطية واحدة مع متوسط مربع الخطأ (MSE)"
       },
       {
         "key": "c",
         "text": "Softmax over K units with categorical cross-entropy",
-        "text_ar": "عدم الحاجة لتحديد معدل التعلم"
+        "text_ar": "دالة Softmax على K وحدة مع الإنتروبيا المتقاطعة الفئوية"
       },
       {
         "key": "d",
         "text": "One ReLU unit with mean squared error",
-        "text_ar": "ضمان الوصول للحل الأمثل في خطوة واحدة فقط"
+        "text_ar": "وحدة واحدة بدالة ReLU مع متوسط مربع الخطأ (MSE)"
       }
     ],
     "answer": "a",
     "answer_text": "One sigmoid unit with binary cross-entropy",
-    "answer_text_ar": "تحديث الأوزان بشكل متكرر وسريع، وتقليل استهلاك الذاكرة، مع ضوضاء تساعد على الإفلات من القيعان المحلية الرديئة",
+    "answer_text_ar": "وحدة واحدة بدالة Sigmoid مع خسارة الإنتروبيا المتقاطعة الثنائية (Binary Cross-Entropy)",
     "explanation": "A binary classifier uses one sigmoid output to represent the probability of the positive class and binary cross-entropy to measure the prediction error.",
-    "explanation_ar": "التدريب بالدفعات الصغيرة (Mini-batch) يوازن بين سرعة الحساب واستغلال مصفوفات GPU، ويقدم تحديثات متكررة للأوزان مع ضجيج عشوائي إيجابي يساعد في تجنب القيعان المحلية الحادة.",
+    "explanation_ar": "في التصنيف الثنائي، نستخدم عصبوناً واحداً في المخرج مع دالة تنشيط Sigmoid لتمثيل الاحتمالية [0, 1] للفئة الموجبة، ونستخدم دالة الخسارة القياسية Binary Cross-Entropy لقياس الخطأ بدقة.",
     "reference": ""
   },
   {
@@ -691,34 +691,34 @@
     "type": "mcq",
     "q_num": "A19",
     "question": "True prices are (3, 5, 2) and the predictions are (2.5, 5.5, 2). What is the mean squared error?",
-    "question_ar": "ما هو تعريف «الحقبة» (Epoch) في تدريب الشبكات العصبية؟",
+    "question_ar": "الأسعار الحقيقية هي (3, 5, 2) والتوقعات هي (2.5, 5.5, 2). ما هو متوسط مربع الخطأ (Mean Squared Error - MSE)؟",
     "options": [
       {
         "key": "a",
         "text": "0.5",
-        "text_ar": "الزمن اللازم لتدريب دفعة واحدة (Batch) من البيانات"
+        "text_ar": "0.5"
       },
       {
         "key": "b",
         "text": "0.333",
-        "text_ar": "العدد الإجمالي للمعاملات (Parameters) داخل النموذج"
+        "text_ar": "0.333"
       },
       {
         "key": "c",
         "text": "0.25",
-        "text_ar": "تمريرة واحدة كاملة (أمامية وعكسية) عبر كامل مجموعة بيانات التدريب"
+        "text_ar": "0.25"
       },
       {
         "key": "d",
         "text": "0.167",
-        "text_ar": "النقطة التي تنخفض عندها الخسارة إلى ما دون 0.01"
+        "text_ar": "0.167"
       }
     ],
     "answer": "d",
     "answer_text": "0.167",
-    "answer_text_ar": "النقطة التي تنخفض عندها الخسارة إلى ما دون 0.01",
-    "explanation": "The squared errors are (3 − 2.5)2 = 0.25, (5 − 5.5)2 = 0.25, and (2 − 2)2 = 0. Thus, MSE = (0.25 + 0.25 + 0)/3 = 0 .5/3 ≈ 0.167.",
-    "explanation_ar": "الحقبة (Epoch) تعني مرور نموذج التعلم على كل عينات التدريب في قاعدة البيانات لمرة واحدة كاملة (Forward + Backward pass).",
+    "answer_text_ar": "0.167",
+    "explanation": "The squared errors are (3 − 2.5)<sup>2</sup> = 0.25, (5 − 5.5)<sup>2</sup> = 0.25, and (2 − 2)<sup>2</sup> = 0. Thus, MSE = (0.25 + 0.25 + 0) / 3 = 0.5 / 3 ≈ 0.167.",
+    "explanation_ar": "مربعات الأخطاء: (3 − 2.5)<sup>2</sup> = 0.25 و (5 − 5.5)<sup>2</sup> = 0.25 و (2 − 2)<sup>2</sup> = 0. إذن: MSE = (0.25 + 0.25 + 0) / 3 = 0.5 / 3 ≈ 0.167.",
     "reference": ""
   },
   {
@@ -728,35 +728,35 @@
     "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
     "type": "mcq",
     "q_num": "A20",
-    "question": "A3-classnetworkoutputslogits z = (2.0,1.0,0.1). Given e2.0 = 7.389, e1.0 = 2.718 and e0.1 = 1.105, what is the softmax probability of class 1?",
-    "question_ar": "ما هي علامة حدوث الإفراط في التخصيص أو المطابقة (Overfitting)؟",
+    "question": "A 3-class network outputs logits z = (2.0, 1.0, 0.1). Given e<sup>2.0</sup> = 7.389, e<sup>1.0</sup> = 2.718 and e<sup>0.1</sup> = 1.105, what is the softmax probability of class 1?",
+    "question_ar": "شبكة عصبية لـ 3 فئات تعطي مخرجات logits هي z = (2.0, 1.0, 0.1). بمعلومية e<sup>2.0</sup> = 7.389 و e<sup>1.0</sup> = 2.718 و e<sup>0.1</sup> = 1.105، ما هو احتمال الفئة الأولى (class 1) باستخدام دالة Softmax؟",
     "options": [
       {
         "key": "a",
         "text": "0.242",
-        "text_ar": "خسارة التدريب مرتفعة وخسارة التحقق مرتفعة أيضاً"
+        "text_ar": "0.242"
       },
       {
         "key": "b",
         "text": "0.659",
-        "text_ar": "خسارة التدريب منخفضة جداً بينما خسارة التحقق (Validation Loss) تبدأ في الارتفاع"
+        "text_ar": "0.659"
       },
       {
         "key": "c",
         "text": "0.667",
-        "text_ar": "جميع الأوزان تصبح أصفاراً"
+        "text_ar": "0.667"
       },
       {
         "key": "d",
         "text": "0.099",
-        "text_ar": "الشبكة تعطي مخرجات متطابقة لكل المدخلات"
+        "text_ar": "0.099"
       }
     ],
     "answer": "b",
     "answer_text": "0.659",
-    "answer_text_ar": "خسارة التدريب منخفضة جداً بينما خسارة التحقق (Validation Loss) تبدأ في الارتفاع",
-    "explanation": "For class 1, softmax is e2.0/(e2.0+e1.0+e0.1). Substituting the values gives 7.389/(7.389 + 2.718 + 1.105) = 7.389/11.212 ≈ 0.659.",
-    "explanation_ar": "يحدث فرط المطابقة (Overfitting) عندما تحفظ الشبكة تفاصيل وضوضاء بيانات التدريب عن ظهر قلب، فنرى خطأ التدريب ينخفض بشدة بينما يفشل النموذج في التعميم ويرتفع خطأ التحقق.",
+    "answer_text_ar": "0.659",
+    "explanation": "For class 1, softmax is e<sup>2.0</sup> / (e<sup>2.0</sup> + e<sup>1.0</sup> + e<sup>0.1</sup>). Substituting the values gives 7.389 / (7.389 + 2.718 + 1.105) = 7.389 / 11.212 ≈ 0.659.",
+    "explanation_ar": "احتمال الفئة الأولى لدالة Softmax هو: P(class 1) = e<sup>2.0</sup> / (e<sup>2.0</sup> + e<sup>1.0</sup> + e<sup>0.1</sup>). بالتعويض: 7.389 / (7.389 + 2.718 + 1.105) = 7.389 / 11.212 ≈ 0.659 (أي 65.9%).",
     "reference": ""
   },
   {
@@ -767,34 +767,34 @@
     "type": "mcq",
     "q_num": "A21",
     "question": "A classifier gives the correct class a probability of 0.1. What is the cross- entropy loss?",
-    "question_ar": "ما هو المقصود بنقص المطابقة (Underfitting)؟",
+    "question_ar": "أعطى نموذج تصنيف للفئة الصحيحة احتمالاً قدره 0.1. ما هي قيمة خسارة الإنتروبيا المتقاطعة (Cross-Entropy Loss)؟",
     "options": [
       {
         "key": "a",
         "text": "0.105",
-        "text_ar": "النموذج بسيط للغاية ولا يستطيع التقاط البنية الأساسية للبيانات حتى على بيانات التدريب"
+        "text_ar": "0.105"
       },
       {
         "key": "b",
         "text": "0.9",
-        "text_ar": "النموذج حفظ بيانات التدريب بدقة عالية جداً"
+        "text_ar": "0.9"
       },
       {
         "key": "c",
         "text": "2.303",
-        "text_ar": "استخدام معدل تعلم متناهي الصغر لدرجة التوقف التام"
+        "text_ar": "2.303"
       },
       {
         "key": "d",
         "text": "0.1",
-        "text_ar": "وجود عدد ضخم جداً من الطبقات والمعاملات في الشبكة"
+        "text_ar": "0.1"
       }
     ],
     "answer": "c",
     "answer_text": "2.303",
-    "answer_text_ar": "استخدام معدل تعلم متناهي الصغر لدرجة التوقف التام",
-    "explanation": "For a correct class probability p, the cross-entropy loss for one example is −log(p). Therefore, −log(0.1) ≈ 2.303.",
-    "explanation_ar": "نقص المطابقة (Underfitting) يعني أن قدرة النموذج ضعيفة للغاية أو لم يتدرب كفاية لدرجة أنه يعطي نتائج سيئة ودقة منخفضة حتى على البيانات التي تدرب عليها.",
+    "answer_text_ar": "2.303",
+    "explanation": "For a correct class probability p, the cross-entropy loss for one example is −log(p). Therefore, −ln(0.1) ≈ 2.303.",
+    "explanation_ar": "خسارة الإنتروبيا المتقاطعة لمثال احتمالية فئته الصحيحة هي p تُحسب بالمعادلة: −ln(p). إذن: −ln(0.1) ≈ 2.303.",
     "reference": ""
   },
   {
@@ -805,34 +805,34 @@
     "type": "mcq",
     "q_num": "A22",
     "question": "Which rule is the gradient-descent update for a weight w with learning rate η?",
-    "question_ar": "ما هو الغرض الأساسي من استخدام مجموعة التحقق (Validation Set)؟",
+    "question_ar": "أيُّ القواعد التالية تمثل قاعدة تحديث الوزن w في خوارزمية الانحدار التدريجي (Gradient Descent) بمعدل تعلم η؟",
     "options": [
       {
         "key": "a",
-        "text": "w ← w − η ,∂L /∂w",
-        "text_ar": "حساب التدرجات لتحديث أوزان الشبكة"
+        "text": "w ← w − η · ∂L/∂w",
+        "text_ar": "w ← w − η · ∂L/∂w (طرح خطوة التدرج للنزول بالخسارة)"
       },
       {
         "key": "b",
-        "text": "w ← w + η ,∂L /∂w",
-        "text_ar": "ضبط المعاملات الفائقة (Hyperparameters) واكتشاف فرط المطابقة"
+        "text": "w ← w + η · ∂L/∂w",
+        "text_ar": "w ← w + η · ∂L/∂w"
       },
       {
         "key": "c",
-        "text": "w ← η ,∂L /∂w",
-        "text_ar": "إثبات كفاءة النموذج النهائية في الورقة البحثية دون تعديل"
+        "text": "w ← η · ∂L/∂w",
+        "text_ar": "w ← η · ∂L/∂w"
       },
       {
         "key": "d",
         "text": "w ← w − ∂L/∂η",
-        "text_ar": "زيادة حجم بيانات التدريب"
+        "text_ar": "w ← w − ∂L/∂η"
       }
     ],
     "answer": "a",
     "answer_text": "w ← w − η ,∂L /∂w",
-    "answer_text_ar": "حساب التدرجات لتحديث أوزان الشبكة",
-    "explanation": "Gradient descent updates a parameter by subtracting the learning rate multiplied by the loss gradient. The negative sign moves the parameter in the direction that locally decreases the loss.",
-    "explanation_ar": "تُستخدم مجموعة التحقق لاختيار أفضل المعاملات الفائقة (مثل حجم الطبقات ومعدل التعلم) ومراقبة أداء النموذج أثناء التدريب لمنع فرط المطابقة وتطبيق التوقف المبكر.",
+    "answer_text_ar": "w ← w − η · ∂L/∂w",
+    "explanation": "Gradient descent updates a parameter by subtracting the learning rate multiplied by the loss gradient: w ← w − η · (∂L/∂w). The negative sign moves the parameter in the direction that locally decreases the loss.",
+    "explanation_ar": "يقوم الانحدار التدريجي بتحديث المعاملات بطرح حاصل ضرب معدل التعلم في تدرج الخسارة (w ← w − η · ∂L/∂w). الإشارة السالبة ضرورية للحركة في عكس اتجاه التدرج، أي الاتجاه الذي تنخفض فيه دالة الخسارة محلياً.",
     "reference": ""
   },
   {
@@ -843,34 +843,34 @@
     "type": "mcq",
     "q_num": "A23",
     "question": "What is an epoch?",
-    "question_ar": "ما هي القاعدة الذهبية الصارمة للتعامل مع مجموعة الاختبار (Test Set)؟",
+    "question_ar": "ما هو تعريف «الحقبة» (Epoch) في تدريب الشبكات العصبية؟",
     "options": [
       {
         "key": "a",
         "text": "One update of the weights",
-        "text_ar": "يجب تدريب الأوزان عليها مرة واحدة كل 5 حقب"
+        "text_ar": "تحديث واحد فقط للأوزان"
       },
       {
         "key": "b",
         "text": "A small random group of examples, such as 32 or 128",
-        "text_ar": "تُستخدم لضبط معدل التعلم وحجم الدفعة"
+        "text_ar": "مجموعة عشوائية صغيرة من الأمثلة كـ 32 أو 128 (Batch)"
       },
       {
         "key": "c",
         "text": "The size of each gradient-descent step",
-        "text_ar": "تُقيَّم مرة واحدة فقط في النهاية لقياس التعميم الحقيقي ولا يُعدل النموذج بناءً عليها"
+        "text_ar": "حجم خطوة الانحدار التدريجي (معدل التعلم)"
       },
       {
         "key": "d",
         "text": "One pass through the whole training set",
-        "text_ar": "تُخلط دائماً مع مجموعة التدريب لتنويع العينات"
+        "text_ar": "تمريرة واحدة كاملة عبر كامل مجموعة بيانات التدريب"
       }
     ],
     "answer": "d",
     "answer_text": "One pass through the whole training set",
-    "answer_text_ar": "تُخلط دائماً مع مجموعة التدريب لتنويع العينات",
+    "answer_text_ar": "تمريرة واحدة كاملة عبر كامل مجموعة بيانات التدريب",
     "explanation": "An epoch is one complete pass through all training examples. It usually consists of multiple mini-batches and parameter updates.",
-    "explanation_ar": "مجموعة الاختبار مخصصة للتقييم النهائي المستقل فقط. إذا استُخدمت لضبط النموذج أو اختيار المعاملات، يحدث ما يُعرف بتسرب البيانات (Data Leakage) وتفقد مصداقيتها في قياس التعميم.",
+    "explanation_ar": "الحقبة (Epoch) تعني مرور نموذج التعلم على جميع عينات بيانات التدريب لمرة واحدة كاملة (ذهاباً وإياباً)، وتتكون عادةً من عدة دفعات صغيرة (Mini-batches) وتحديثات متعددة للأوزان.",
     "reference": ""
   },
   {
@@ -881,34 +881,34 @@
     "type": "mcq",
     "q_num": "A24",
     "question": "Backpropagation is best described as:",
-    "question_ar": "كيف يعمل تنظيم L2 (المعروف باضمحلال الأوزان Weight Decay)؟",
+    "question_ar": "أفضل وأدق وصف لخوارزمية الانتشار العكسي (Backpropagation) هو أنها:",
     "options": [
       {
         "key": "a",
         "text": "Trying all combinations of weights and keeping the best",
-        "text_ar": "بحذف نصف العصبونات عشوائياً في كل تكرار"
+        "text_ar": "تجربة جميع تركيبات الأوزان الممكنة واختيار أفضلها"
       },
       {
         "key": "b",
         "text": "The chain rule of calculus, applied systematically from the output back to the input",
-        "text_ar": "بإضافة حد عقوبة يتناسب مع مجموع مربعات الأوزان إلى دالة الخسارة لتصغيرها"
+        "text_ar": "تطبيق منهجي لقاعدة السلسلة (Chain Rule) في التفاضل من المخرجات رجوعاً إلى المدخلات"
       },
       {
         "key": "c",
         "text": "Randomly switching off hidden units during training",
-        "text_ar": "بتقييد الأوزان لتكون موجبة فقط"
+        "text_ar": "إيقاف تفعيل وحدات خفية عشوائياً أثناء التدريب"
       },
       {
         "key": "d",
         "text": "Adding a penalty for large weights to the loss",
-        "text_ar": "بإلغاء التدرجات لجميع الأوزان الأكبر من 1"
+        "text_ar": "إضافة عقوبة للأوزان الكبيرة إلى دالة الخسارة"
       }
     ],
     "answer": "b",
     "answer_text": "The chain rule of calculus, applied systematically from the output back to the input",
-    "answer_text_ar": "بإضافة حد عقوبة يتناسب مع مجموع مربعات الأوزان إلى دالة الخسارة لتصغيرها",
+    "answer_text_ar": "تطبيق منهجي لقاعدة السلسلة (Chain Rule) في التفاضل من المخرجات رجوعاً إلى المدخلات",
     "explanation": "Backpropagation applies the chain rule through the network’s computation graph, propagating derivatives from the output toward earlier layers to calculate gradients for the parameters.",
-    "explanation_ar": "يضيف تنظيم L2 حداً يعاقب الأوزان الكبيرة (λ Σ w²)، مما يجبر الأوزان على البقاء صغيرة وموزعة بسلاسة، ويمنع النموذج من الاعتماد المفرط على ميزات فردية، مما يقلل الـ Overfitting.",
+    "explanation_ar": "تعتمد خوارزمية التغذية الراجعة (Backpropagation) بالكامل على التطبيق المنظم لقاعدة السلسلة (Chain Rule) في التفاضل عبر الرسم البياني الحسابي، حيث تنقل المشتقات من طبقة المخرجات رجوعاً نحو الطبقات الأولى لحساب تدرج كل وزن بدقة وسرعة.",
     "reference": ""
   },
   {
@@ -918,35 +918,35 @@
     "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
     "type": "mcq",
     "q_num": "A25",
-    "question": "In the training step on one neuron ( x = 2 , y = 1 , w = 0 .5, b = 0 , sigmoid, cross-entropy), the forward pass gives a = 0 .731. Using ∂L/∂z = a − y, what is ∂L/∂w?",
-    "question_ar": "كيف تعمل تقنية الإسقاط العشوائي (Dropout) أثناء التدريب؟",
+    "question": "In the training step on one neuron (x = 2, y = 1, w = 0.5, b = 0, sigmoid, cross-entropy), the forward pass gives a = 0.731. Using ∂L/∂z = a − y, what is ∂L/∂w?",
+    "question_ar": "في خطوة تدريب لخلية عصبية واحدة (x = 2, y = 1, w = 0.5, b = 0 مع دالة Sigmoid وخسارة Cross-entropy)، التمرير الأمامي يعطي a = 0.731. باستخدام ∂L/∂z = a − y، ما هي قيمة المشتقة الجزئية ∂L/∂w؟",
     "options": [
       {
         "key": "a",
         "text": "−0.269",
-        "text_ar": "بحذف أسوأ الأمثلة التدريبية من مجموعة البيانات"
+        "text_ar": "−0.269"
       },
       {
         "key": "b",
         "text": "0.538",
-        "text_ar": "بإيقاف تفعيل مجموعة عشوائية من الخلايا العصبية باحتمال p أثناء كل تمريرة تدريب"
+        "text_ar": "0.538"
       },
       {
         "key": "c",
         "text": "−0.538",
-        "text_ar": "بخفض معدل التعلم بمقدار النصف عند كل حقبة"
+        "text_ar": "−0.538"
       },
       {
         "key": "d",
         "text": "1.462",
-        "text_ar": "بتعيين أوزان الطبقة الأخيرة لتكون صفراً"
+        "text_ar": "1.462"
       }
     ],
     "answer": "c",
     "answer_text": "−0.538",
-    "answer_text_ar": "بخفض معدل التعلم بمقدار النصف عند كل حقبة",
-    "explanation": "First, ∂L/∂z = a − y = 0 .731 − 1 = −0.269. Since z = wx+b, the chain rule gives ∂L/∂w = (∂L/∂z)(∂z/∂w) = (−0.269)(x) = (−0.269)(2) =",
-    "explanation_ar": "تقوم Dropout بتعطيل نسبة عشوائية من العصبونات في كل دفعة أثناء التدريب، مما يمنع الخلايا من التكيف المشترك المرضي (Co-adaptation) ويحفزها على تعلم ميزات قوية ومستقلة، وكأنه تدريب لعدة شبكات مدمجة.",
+    "answer_text_ar": "−0.538",
+    "explanation": "First, ∂L/∂z = a − y = 0.731 − 1 = −0.269. Since z = wx + b, the chain rule gives ∂L/∂w = (∂L/∂z)(∂z/∂w) = (−0.269)(x) = (−0.269)(2) = −0.538.",
+    "explanation_ar": "أولاً: ∂L/∂z = a − y = 0.731 − 1 = −0.269. بما أن z = wx + b، فإن ∂z/∂w = x = 2. بتطبيق قاعدة السلسلة: ∂L/∂w = (∂L/∂z) · (∂z/∂w) = (−0.269) × 2 = −0.538.",
     "reference": ""
   },
   {
@@ -957,34 +957,34 @@
     "type": "mcq",
     "q_num": "A26",
     "question": "Continuing A25 with learning rate η = 0.5, what is the new value of w?",
-    "question_ar": "ما هي آلية عمل التوقف المبكر (Early Stopping)؟",
+    "question_ar": "استكمالاً للمسألة السابقة A25، إذا كان معدل التعلم η = 0.5، فما هي القيمة الجديدة للوزن w؟",
     "options": [
       {
         "key": "a",
         "text": "0.769",
-        "text_ar": "إيقاف التدريب فور وصول دقة التدريب إلى 100%"
+        "text_ar": "0.769"
       },
       {
         "key": "b",
         "text": "0.231",
-        "text_ar": "إيقاف التدريب عندما يتوقف خطأ التحقق (Validation Loss) عن التحسن ويبدأ في الصعود"
+        "text_ar": "0.231"
       },
       {
         "key": "c",
         "text": "1.038",
-        "text_ar": "إيقاف التدريب بعد عدد ثابت من الثواني لتوفير الكهرباء"
+        "text_ar": "1.038"
       },
       {
         "key": "d",
         "text": "0.634",
-        "text_ar": "إيقاف التدريب عندما تصبح جميع التدرجات سالبة"
+        "text_ar": "0.634"
       }
     ],
     "answer": "a",
     "answer_text": "0.769",
-    "answer_text_ar": "إيقاف التدريب فور وصول دقة التدريب إلى 100%",
-    "explanation": "Use wnew = wold − η(∂L/∂w). Therefore, wnew = 0 .5 − 0.5(−0.538) = 0.5 + 0.269 = 0.769.",
-    "explanation_ar": "التوقف المبكر يراقب دالة خسارة التحقق؛ فعندما يلاحظ أنها توقفت عن التحسن لعدة حقب (Patience) وبدأت ترتفع بسبب فرط المطابقة، يوقف التدريب ويسترجع أفضل أوزان مسجلة.",
+    "answer_text_ar": "0.769",
+    "explanation": "Use w_new = w_old − η(∂L/∂w). Therefore, w_new = 0.5 − 0.5(−0.538) = 0.5 + 0.269 = 0.769.",
+    "explanation_ar": "نطبق معادلة التحديث: w_new = w_old − η · (∂L/∂w) = 0.5 − 0.5 × (−0.538) = 0.5 + 0.269 = 0.769.",
     "reference": ""
   },
   {
@@ -995,34 +995,34 @@
     "type": "mcq",
     "q_num": "A27",
     "question": "The sigmoid’s slope is at most 0.25. In a 10-layer sigmoid network, how small can the gradient reaching the first layer be?",
-    "question_ar": "ما هو الغرض من زيادة البيانات (Data Augmentation) في تدريب شبكات الصور؟",
+    "question_ar": "أقصى ميل لدالة Sigmoid هو 0.25. في شبكة عميقة مكونة من 10 طبقات تستخدم Sigmoid، إلى أي حد يمكن أن يتضاءل التدرج الواصل للطبقة الأولى؟",
     "options": [
       {
         "key": "a",
         "text": "About 2.5",
-        "text_ar": "تقليل زمن تدريب النموذج للنصف"
+        "text_ar": "حوالي 2.5"
       },
       {
         "key": "b",
         "text": "About 0.025",
-        "text_ar": "توليد نسخ معدلة واقعياً من صور التدريب (كالقلب والدوران والقص) لتحسين التعميم ومقاومة التغيرات"
+        "text_ar": "حوالي 0.025"
       },
       {
         "key": "c",
         "text": "About 0.000001",
-        "text_ar": "تحويل الصور إلى متجهات نصية"
+        "text_ar": "حوالي 0.000001 (واحد من المليون)"
       },
       {
         "key": "d",
         "text": "Exactly 0",
-        "text_ar": "إزالة الألوان من جميع الصور لتسريع المعالجة"
+        "text_ar": "صفر بالضبط"
       }
     ],
     "answer": "c",
     "answer_text": "About 0.000001",
-    "answer_text_ar": "تحويل الصور إلى متجهات نصية",
-    "explanation": "In the worst shrinking case, the gradient is multiplied by a factor no larger than 0.25 at each of 10 layers: 0.2510 ≈ 9.54 × 10−7, which is about 0.000001. This illustrates vanishing gradients.",
-    "explanation_ar": "زيادة البيانات تنشئ تنوعاً صناعياً للصور من خلال التحويلات الهندسية كالقص والدوران والانعكاس، مما يعلم الشبكة أن الكائن يبقى كما هو مهما اختلف موضعه أو زاويته، ويمنع فرط المطابقة.",
+    "answer_text_ar": "حوالي 0.000001 (واحد من المليون)",
+    "explanation": "In the worst shrinking case, the gradient is multiplied by a factor no larger than 0.25 at each of 10 layers: 0.25<sup>10</sup> ≈ 9.54 &times; 10<sup>−7</sup>, which is about 0.000001 (10<sup>−6</sup>). This illustrates vanishing gradients.",
+    "explanation_ar": "في أسوأ حالات التضاؤل، يُضرب التدرج بعامل لا يتجاوز 0.25 عند كل طبقة من الطبقات العشر: 0.25<sup>10</sup> ≈ 9.54 &times; 10<sup>−7</sup> أي حوالي 0.000001 (واحد من المليون). وهذا يوضح مشكلة تلاشي التدرج (Vanishing Gradients).",
     "reference": ""
   },
   {
@@ -1033,34 +1033,34 @@
     "type": "mcq",
     "q_num": "A28",
     "question": "How is the problem of exploding gradients controlled?",
-    "question_ar": "ما هي الفائدة الرئيسية لتسوية الدفعات (Batch Normalization)؟",
+    "question_ar": "كيف يتم التحكم في مشكلة تضخم التدرج (Exploding Gradients) وعلاجها؟",
     "options": [
       {
         "key": "a",
         "text": "Using sigmoid activations",
-        "text_ar": "حفظ البيانات في مصفوفات مضغوطة"
+        "text_ar": "استخدام دوال تنشيط Sigmoid"
       },
       {
         "key": "b",
         "text": "Setting all initial weights equal",
-        "text_ar": "تسوية مدخلات كل طبقة داخل الدفعة لتثبيت توزيعها، مما يسرع التدريب ويسمح بمعدلات تعلم أعلى"
+        "text_ar": "تعيين جميع الأوزان الابتدائية بقيم متساوية"
       },
       {
         "key": "c",
         "text": "Removing the bias terms",
-        "text_ar": "تحويل جميع دوال التنشيط إلى دوال خطية"
+        "text_ar": "حذف حدود الانحياز (Bias)"
       },
       {
         "key": "d",
         "text": "Gradient clipping",
-        "text_ar": "إلغاء الحاجة لطبقة المدخلات"
+        "text_ar": "قص التدرج (Gradient Clipping)"
       }
     ],
     "answer": "d",
     "answer_text": "Gradient clipping",
-    "answer_text_ar": "إلغاء الحاجة لطبقة المدخلات",
-    "explanation": "Gradient clipping limits the magnitude of gradients when they become excessively large, helping prevent unstable updates caused by exploding gradients. Clipping Gradientﺍڤ",
-    "explanation_ar": "تقوم تسوية الدفعات (BatchNorm) بتعديل مخرجات الطبقات لتكون بمتوسط 0 وتباين 1 لكل دفعة، مما يقلل من ظاهرة الإزاحة التغايرية الداخلية (Internal Covariate Shift) ويسرع استقرار التدريب بشكل هائل.",
+    "answer_text_ar": "قص التدرج (Gradient Clipping)",
+    "explanation": "Gradient clipping limits the magnitude of gradients when they become excessively large, helping prevent unstable updates caused by exploding gradients.",
+    "explanation_ar": "تعمل تقنية قص التدرج (Gradient Clipping) على وضع حد أقصى لسعة أو طول متجه التدرج عند تجاوزه قيمة معينة، مما يمنع خطوات التحديث الهائلة وغير المستقرة الناتجة عن تضخم التدرج.",
     "reference": ""
   },
   {
@@ -1071,34 +1071,34 @@
     "type": "mcq",
     "q_num": "A29",
     "question": "What is special about the Adam optimiser?",
-    "question_ar": "ما الذي يميز مُحسِّن آدم (Adam Optimizer) عن الانحدار التدريجي القياسي (SGD)؟",
+    "question_ar": "ما الذي يميز مُحسِّن آدم (Adam Optimizer) عن الانحدار التدريجي القياسي؟",
     "options": [
       {
         "key": "a",
         "text": "It uses the same fixed step size for every weight",
-        "text_ar": "يستخدم خطوة ثابتة ولا يحتاج لحساب التدرجات"
+        "text_ar": "يستخدم نفس حجم الخطوة الثابت لكل وزن"
       },
       {
         "key": "b",
         "text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares",
-        "text_ar": "يجمع بين الزخم (Momentum) وتعديل معدل التعلم التكيفي لكل معامل على حدة (Adaptive Learning Rates)"
+        "text_ar": "يكيف حجم الخطوة لكل وزن على حدة باستخدام المتوسطات المتحركة للتدرجات ومربعاتها"
       },
       {
         "key": "c",
         "text": "It computes the loss over the whole training set before every step",
-        "text_ar": "يعمل فقط مع الشبكات أحادية الطبقة"
+        "text_ar": "يحسب الخسارة على كامل مجموعة التدريب قبل كل خطوة"
       },
       {
         "key": "d",
         "text": "It switches off hidden units with probability p",
-        "text_ar": "يقوم بتصفير الأوزان دورياً لتنظيف الشبكة"
+        "text_ar": "يوقف تشغيل الوحدات الخفية باحتمالية p"
       }
     ],
     "answer": "b",
     "answer_text": "It adapts the step size for each weight separately, using running averages of the gradients and their squares",
-    "answer_text_ar": "يجمع بين الزخم (Momentum) وتعديل معدل التعلم التكيفي لكل معامل على حدة (Adaptive Learning Rates)",
+    "answer_text_ar": "يكيف حجم الخطوة لكل وزن على حدة باستخدام المتوسطات المتحركة للتدرجات ومربعاتها",
     "explanation": "Adam combines running estimates of the first moment (the gradient) and second moment (the squared gradient) to adapt parameter updates. This gives each parameter an adaptive effective step size.",
-    "explanation_ar": "مُحسِّن Adam يدمج مزايا خوارزميتي Momentum (تتبع اتجاه الحركة السابق) وRMSProp (تعديل معدل التعلم لكل وزن بناءً على تاريخ تدرجاته)، مما يجعله المحسن الأكثر كفاءة وشهرة كخيار افتراضي.",
+    "explanation_ar": "يدمج مُحسِّن Adam بين ميزتي الزخم (العزم الأول - متوسط التدرجات) ومعدل التعلم التكيفي (العزم الثاني - متوسط مربعات التدرجات)، مما يمنح كل وزن في الشبكة معدل تعلم فعالاً خاصاً به يتكيف باستمرار.",
     "reference": ""
   },
   {
@@ -1109,34 +1109,34 @@
     "type": "mcq",
     "q_num": "A30",
     "question": "Which statement about dropout is correct?",
-    "question_ar": "ما هي مشكلة تلاشي التدرج (Vanishing Gradient Problem)؟",
+    "question_ar": "أيُّ العبارات التالية صحيحة بخصوص تقنية الإسقاط العشوائي (Dropout)؟",
     "options": [
       {
         "key": "a",
         "text": "During training each hidden unit is switched off with probability p, and at test time all units are used",
-        "text_ar": "تضاؤل قيم التدرجات أسياً كلما رجعنا للطبقات الأولى في الشبكات العميقة، مما يوقف تعلمها"
+        "text_ar": "أثناء التدريب يتم إيقاف تفعيل كل وحدة خفية باحتمالية p، وفي وقت الاختبار تُستخدم جميع الوحدات مع تحجيم مناسب"
       },
       {
         "key": "b",
         "text": "Units are switched off at test time to make predictions faster",
-        "text_ar": "تزايد التدرجات إلى ما لانهاية مما يسبب فيضان الذاكرة"
+        "text_ar": "يتم إيقاف تفعيل الوحدات في وقت الاختبار لتسريع التنبؤات"
       },
       {
         "key": "c",
         "text": "It removes the weights with the largest values after training",
-        "text_ar": "فقدان بيانات التدريب أثناء نقلها إلى بطاقة الرسوميات"
+        "text_ar": "تحذف الأوزان ذات القيم الكبرى بعد انتهاء التدريب"
       },
       {
         "key": "d",
         "text": "It stops training when the validation loss starts to rise",
-        "text_ar": "اختفاء دالة الخسارة أثناء الحساب"
+        "text_ar": "توقف التدريب تلقائياً عندما تبدأ خسارة التحقق بالارتفاع"
       }
     ],
     "answer": "a",
     "answer_text": "During training each hidden unit is switched off with probability p, and at test time all units are used",
-    "answer_text_ar": "تضاؤل قيم التدرجات أسياً كلما رجعنا للطبقات الأولى في الشبكات العميقة، مما يوقف تعلمها",
+    "answer_text_ar": "أثناء التدريب يتم إيقاف تفعيل كل وحدة خفية باحتمالية p، وفي وقت الاختبار تُستخدم جميع الوحدات مع تحجيم مناسب",
     "explanation": "Dropout randomly disables units during training to reduce co- adaptation and overfitting. At test time, the full network is used, with the appropriate scaling handled by the dropout implementation.",
-    "explanation_ar": "عند استخدام دوال مثل Sigmoid ذات مشتقات صغيرة (< 0.25)، يؤدي ضرب المشتقات المتتالية في قاعدة السلسلة عبر طبقات عميقة إلى اقتراب التدرج من الصفر، مما يجعل الطبقات الأولى عاجزة عن التعلم.",
+    "explanation_ar": "أثناء التدريب، تقوم Dropout بتعطيل نسبة عشوائية من الوحدات الخفية في كل تكرار لتقليل التكيف المشترك وفرط المطابقة. أما عند الاختبار، فتُستخدم جميع وحدات الشبكة بالكامل لتقديم أدق تنبؤ ممكن.",
     "reference": "2 Part B – True or False"
   },
   {
@@ -1231,7 +1231,7 @@
     "type": "tf",
     "q_num": "B4",
     "question": "Mini-batch gradients are noisy, but the noise can help the network escape poor regions of the loss landscape.",
-    "question_ar": "تتشبع دالة التنشيط Sigmoid عندما تكون مدخلاتها موجبة جداً أو سالبة جداً، مما يجعل مشتقتها قريبة من الصفر.",
+    "question_ar": "تدرجات الدفعات الصغيرة (Mini-batch) تتسم بوجود ضوضاء عشوائية، لكن هذه الضوضاء يمكن أن تساعد الشبكة في الإفلات من المناطق الرديئة في مشهد الخسارة.",
     "options": [
       {
         "key": "True",
@@ -1248,7 +1248,7 @@
     "answer_text": "True",
     "answer_text_ar": "صح",
     "explanation": "A mini-batch estimates the gradient using only a subset of the training data, so its gradient can be noisy. This noise can sometimes help optimisation move out of poor regions or shallow local structures.",
-    "explanation_ar": "العبارة صحيحة (True). عند أطراف منحنى Sigmoid (القيم الكبيرة موجبة أو سالبة)، يصبح المنحنى مسطحاً تماماً وتصبح المشتقة تقريباً 0، وهو ما يسبب مشكلة تلاشي التدرجات.",
+    "explanation_ar": "العبارة صحيحة (True). نظراً لأن الدفعة الصغيرة تقدّر التدرج باستخدام عينة فرعية فقط من البيانات، فإن تقديرها يحمل ضوضاء عشوائية تفيد في مساعدة الخوارزمية على تجاوز القيعان المحلية الضحلة أو النقاط السرجية.",
     "reference": ""
   },
   {
@@ -1259,7 +1259,7 @@
     "type": "tf",
     "q_num": "B5",
     "question": "The backward pass of backpropagation costs far more than the forward pass, which is why it cannot be used for networks with billions of weights.",
-    "question_ar": "العصبون الذي يعاني من مشكلة الموت (Dying ReLU) يمكنه دائماً التعافي واستئناف التعلم بسهولة بمجرد زيادة حجم الدفعة.",
+    "question_ar": "تكلفة التمرير العكسي لخوارزمية الانتشار العكسي تفوق بكثير تكلفة التمرير الأمامي، ولهذا السبب لا يمكن استخدامها للشبكات التي تحتوي على مليارات الأوزان.",
     "options": [
       {
         "key": "True",
@@ -1276,7 +1276,7 @@
     "answer_text": "False",
     "answer_text_ar": "خطأ",
     "explanation": "Correct Statement: Backpropagation is computationally practical because the backward pass has a cost of the same general order as the forward pass; it is routinely used to train large neural networks.\n\nExplanation: Backpropagation efficiently computes gradients by reusing intermediate values from the forward computation. The backward pass is not pro- hibitively more expensive than the forward pass, so large networks can be trained with it.",
-    "explanation_ar": "العبارة خاطئة (False). إذا دخل عصبون ReLU في نطاق القيم السالبة الدائمة لجميع العينات، فإن مخرجه ومشتقته تصبحان صفراً دائماً، فلا تصله أي تدرجات لتحديث أوزانه، ويموت بشكل دائم ما لم تُستخدم حلول مثل Leaky ReLU.",
+    "explanation_ar": "العبارة خاطئة (False). تكلفة التمرير العكسي تماثل تقريباً تكلفة التمرير الأمامي (عادة نحو ضعفي إلى ثلاثة أضعاف فقط)، مما يجعلها عملية وقابلة للتطبيق حتى مع أضخم النماذج ذات مليارات المعاملات.",
     "reference": ""
   },
   {
@@ -1287,7 +1287,7 @@
     "type": "tf",
     "q_num": "B6",
     "question": "If all the weights in a layer started with the same value, all the units in that layer would compute the same thing and learn the same thing.",
-    "question_ar": "التعقيد الحسابي للتمرير العكسي (Backward Pass) في التغذية الراجعة يماثل تقريباً التعقيد الحسابي للتمرير الأمامي (Forward Pass).",
+    "question_ar": "إذا بدأت جميع الأوزان في طبقة معينة بنفس القيمة الابتدائية، فإن جميع الوحدات في تلك الطبقة ستحسب نفس الشيء وتتعلم نفس الشيء.",
     "options": [
       {
         "key": "True",
@@ -1304,7 +1304,7 @@
     "answer_text": "True",
     "answer_text_ar": "صح",
     "explanation": "Identical initial weights create symmetry: units receiving the same inputs produce the same outputs and gradients, so they remain identical instead of learning different features. This is why suitable random initialisation is important.",
-    "explanation_ar": "العبارة صحيحة (True). حساب التدرجات عبر المسار الخلفي يستلزم نفس كمية عمليات ضرب المصفوفات تقريباً (حوالي ضعفي أو ما يماثل التمرير الأمامي)، مما يجعلهما متقاربين حسابياً.",
+    "explanation_ar": "العبارة صحيحة (True). البدء بأوزان متطابقة يُحدث تناظراً (Symmetry)؛ فتستقبل جميع الوحدات نفس المدخلات وتنتج نفس المخرجات ونفس التدرجات، فتفشل الشبكة في تعلم ميزات متنوعة، ولهذا يُستخدم التهيئة العشوائية (Symmetry Breaking).",
     "reference": ""
   },
   {
@@ -1315,7 +1315,7 @@
     "type": "tf",
     "q_num": "B7",
     "question": "Batch normalisation re-scales the values inside the network for each mini- batch to mean 0 and variance 1, followed by a learned scale and shift.",
-    "question_ar": "يساعد استخدام الإسقاط العشوائي (Dropout) وتنظيم L2 في تقليل خطر حدوث فرط المطابقة (Overfitting).",
+    "question_ar": "تقوم تسوية الدفعات (Batch Normalization) بإعادة تحجيم القيم داخل الشبكة لكل دفعة صغيرة ليكون متوسطها 0 وتباينها 1، متبوعة بمعاملي مقياس وإزاحة قابلين للتعلم.",
     "options": [
       {
         "key": "True",
@@ -1332,7 +1332,7 @@
     "answer_text": "True",
     "answer_text_ar": "صح",
     "explanation": "Batch normalisation normalises activations using the mini- batch mean and variance, then applies learned scale and shift parameters.",
-    "explanation_ar": "العبارة صحيحة (True). كلاهما من أشهر أساليب التنظيم (Regularization) المصممة لتقييد تعقيد النموذج ومنعه من حفظ عينات التدريب وتحسين قدرته على التعميم.",
+    "explanation_ar": "العبارة صحيحة (True). تعمل تسوية الدفعات على تحجيم مخرجات الطبقات ليكون لها متوسط صفر وتباين واحد عبر الدفعة، ثم تطبق معاملي γ و β لتمكين الشبكة من استعادة أي توزيع مناسب.",
     "reference": ""
   },
   {
@@ -1343,7 +1343,7 @@
     "type": "tf",
     "q_num": "B8",
     "question": "The test set should be checked after every epoch to decide when to stop train- ing.",
-    "question_ar": "استخدام حجم دفعة أكبر (Batch Size) يؤدي دائماً إلى دقة تعميم أفضل على بيانات الاختبار مقارنة بالدفعات الصغيرة.",
+    "question_ar": "يجب فحص وتقييم مجموعة الاختبار (Test Set) بعد كل حقبة تدريب لتحديد موعد إيقاف التدريب.",
     "options": [
       {
         "key": "True",
@@ -1360,7 +1360,7 @@
     "answer_text": "False",
     "answer_text_ar": "خطأ",
     "explanation": "Correct Statement: The validation set should be monitored during training to decide when to stop; the test set should be reserved for final evaluation.\n\nExplanation: Repeatedly using the test set to make training decisions leaks information from the test data into model development. Early stopping should monitor validation performance, while the test set is kept for an unbiased final evalu- ation.",
-    "explanation_ar": "العبارة خاطئة (False). أظهرت الأبحاث أن الدفعات الصغيرة جداً توفر ضوضاء عشوائية مفيدة تساعد الشبكة على الاستقرار في قيعان مسطحة تعمم بشكل أفضل، بينما الدفعات الضخمة قد تستقر في قيعان حادة تعمم بضعف.",
+    "explanation_ar": "العبارة خاطئة (False). يجب مراقبة مجموعة التحقق (Validation Set) أثناء التدريب لتحديد موعد التوقف، أما مجموعة الاختبار فتُحفظ دون مساس حتى النهاية للتقييم المستقل غير المتحيز.",
     "reference": "stopping."
   },
   {
@@ -1370,8 +1370,8 @@
     "bank_title_ar": "بنك 1: أساسيات التعلم العميق (Deep Learning I: Foundations)",
     "type": "tf",
     "q_num": "B9",
-    "question": "Weight decay (L2 regularisation) adds the penalty λ∑ i w2 i to the loss to keep the weights small.",
-    "question_ar": "في تقنية التوقف المبكر، يجب مراقبة خسارة التحقق (Validation Loss) وليس خسارة التدريب (Training Loss).",
+    "question": "Weight decay (L2 regularisation) adds the penalty λ∑<sub>i</sub> w<sub>i</sub><sup>2</sup> to the loss to keep the weights small.",
+    "question_ar": "يضيف اضمحلال الأوزان (تنظيم L2) عقوبة بقيمة λ∑ w<sub>i</sub><sup>2</sup> إلى دالة الخسارة للحفاظ على صغر الأوزان.",
     "options": [
       {
         "key": "True",
@@ -1387,8 +1387,8 @@
     "answer": "True",
     "answer_text": "True",
     "answer_text_ar": "صح",
-    "explanation": "L2 regularisation adds a penalty proportional to the sum of squared weights. This discourages excessively large weights and can reduce overfit- ting.",
-    "explanation_ar": "العبارة صحيحة (True). خسارة التدريب تستمر غالباً في الانخفاض حتى عند حدوث فرط المطابقة، لذا فإن المقياس الحقيقي الذي يكشف بدء التدهور هو خسارة مجموعة التحقق المستقلة.",
+    "explanation": "L2 regularisation adds a penalty proportional to the sum of squared weights: λ∑ w<sub>i</sub><sup>2</sup>. This discourages excessively large weights and reduces overfitting.",
+    "explanation_ar": "العبارة صحيحة (True). يضيف تنظيم L2 حداً يتناسب مع مجموع مربعات الأوزان إلى دالة الخسارة، مما يعاقب الأوزان الكبيرة ويحد من فرط المطابقة (Overfitting).",
     "reference": ""
   },
   {
@@ -1399,7 +1399,7 @@
     "type": "tf",
     "q_num": "B10",
     "question": "In early stopping, training is stopped when the training loss starts to rise.",
-    "question_ar": "إذا كانت خسارة التدريب وخسارة التحقق متقاربتين وعاليتين جداً، فإن المشكلة الأساسية هي فرط المطابقة (Overfitting).",
+    "question_ar": "في تقنية التوقف المبكر (Early Stopping)، يتم إيقاف التدريب عندما تبدأ خسارة التدريب (Training Loss) في الارتفاع.",
     "options": [
       {
         "key": "True",
@@ -1416,7 +1416,7 @@
     "answer_text": "False",
     "answer_text_ar": "خطأ",
     "explanation": "Correct Statement: In early stopping, training is stopped when the validation loss stops improving (or begins to rise), according to the chosen patience rule.\n\nExplanation: Training loss may continue to decrease while the model over- fits. Early stopping therefore monitors validation loss and stops when validation per- formance no longer improves.",
-    "explanation_ar": "العبارة خاطئة (False). عندما تكون الخسارة مرتفعة في كل من التدريب والتحقق، فهذا دليل قاطع على نقص المطابقة (Underfitting) وليس فرطها، لأن النموذج عاجز عن ملائمة البيانات حتى في التدريب.",
+    "explanation_ar": "العبارة خاطئة (False). في التوقف المبكر، يتم إيقاف التدريب عندما تتوقف خسارة التحقق (Validation Loss) عن التحسن وتبدأ بالارتفاع، لأن خسارة التدريب تستمر عادة في الانخفاض حتى مع حدوث فرط المطابقة.",
     "reference": ""
   },
   {
@@ -1930,25 +1930,25 @@
       },
       {
         "key": "b",
-        "text": "O(bm)",
-        "text_ar": "O(b^m) - أسي"
+        "text": "O(b<sup>m</sup>)",
+        "text_ar": "O(b<sup>m</sup>) - أسي"
       },
       {
         "key": "c",
-        "text": "O(bd)",
-        "text_ar": "O(b^d)"
+        "text": "O(b<sup>d</sup>)",
+        "text_ar": "O(b<sup>d</sup>)"
       },
       {
         "key": "d",
-        "text": "O(bd)",
-        "text_ar": "O(d^b)"
+        "text": "O(d<sup>b</sup>)",
+        "text_ar": "O(d<sup>b</sup>)"
       }
     ],
     "answer": "a",
     "answer_text": "O(bm)",
     "answer_text_ar": "O(bm) - خطي بالنسبة للعمق",
-    "explanation": "Depth-first search stores the current path and the unexplored siblings along that path. Its standard space complexity isO(bm), whereb is the branch- ing factor andm is the maximum depth. DFS ሒᇭﺍڤ",
-    "explanation_ar": "تتميز خوارزمية DFS بتعقيد مكاني خطي ممتاز O(bm) لأنها تحتاج فقط لتخزين المسار الحالي من الجذر إلى العقدة الحالية مع إخوتها غير المستكشفين في الذاكرة.",
+    "explanation": "Depth-first search stores the current path and the unexplored siblings along that path. Its standard space complexity is O(bm), where b is the branching factor and m is the maximum depth.",
+    "explanation_ar": "تتميز خوارزمية البحث في العمق أولاً (DFS) بتعقيد مكاني خطي ممتاز O(bm) لأنها تحتاج فقط لتخزين المسار الحالي من الجذر إلى العقدة الحالية مع إخوتها غير المستكشفين في الذاكرة.",
     "reference": ""
   },
   {
@@ -2191,13 +2191,13 @@
     "options": [
       {
         "key": "a",
-        "text": "O(bm/2)",
-        "text_ar": "O(b^(m/2)) - يضاعف عمق البحث الممكن بفعالية"
+        "text": "O(b<sup>m/2</sup>)",
+        "text_ar": "O(b<sup>m/2</sup>) - يضاعف عمق البحث الممكن بفعالية"
       },
       {
         "key": "b",
-        "text": "O(bm)",
-        "text_ar": "O(b^m)"
+        "text": "O(b<sup>m</sup>)",
+        "text_ar": "O(b<sup>m</sup>)"
       },
       {
         "key": "c",
@@ -2206,15 +2206,15 @@
       },
       {
         "key": "d",
-        "text": "O(2m)",
-        "text_ar": "O(2^m)"
+        "text": "O(2<sup>m</sup>)",
+        "text_ar": "O(2<sup>m</sup>)"
       }
     ],
     "answer": "a",
-    "answer_text": "O(bm/2)",
-    "answer_text_ar": "O(b^(m/2)) - يضاعف عمق البحث الممكن بفعالية",
-    "explanation": "With ideal move ordering, alpha–beta pruning reduces the effective search depth roughly by half. Its best-case number of examined nodes is commonly expressed asO(bm/2).",
-    "explanation_ar": "مع الترتيب المثالي للحركات، ينخفض تعقيد الوقت لتقليم ألفا-بيتا إلى O(b^(m/2))، مما يعني إمكانية البحث لضعف العمق في نفس الوقت مقارنة بخوارزمية Minimax القياسية.",
+    "answer_text": "O(b<sup>m/2</sup>)",
+    "answer_text_ar": "O(b<sup>m/2</sup>) - يضاعف عمق البحث الممكن بفعالية",
+    "explanation": "With ideal move ordering, alpha–beta pruning reduces the effective search depth roughly by half. Its best-case number of examined nodes is commonly expressed as O(b<sup>m/2</sup>).",
+    "explanation_ar": "مع الترتيب المثالي للحركات، ينخفض تعقيد تقليم ألفا-بيتا في أفضل حالاته إلى O(b<sup>m/2</sup>)، مما يعني إمكانية البحث لضعف العمق في نفس الوقت مقارنة بخوارزمية Minimax القياسية.",
     "reference": ""
   },
   {
@@ -2365,8 +2365,8 @@
     "answer": "b",
     "answer_text": "10 versus 31",
     "answer_text_ar": "10 معاملات مقابل 31 في الجدول المشترك",
-    "explanation": "A full joint distribution over five Boolean variables has25 = 32 entries, but one is determined by the requirement that probabilities sum to 1, leaving 31 independent numbers. In the burglary network, the conditional probability tables require 10 numbers, exploiting conditional independence.",
-    "explanation_ar": "التوزيع المشترك الكامل لـ 5 متغيرات ثنائية يحتاج 2^5 - 1 = 31 احتمالية مستقلة. أما شبكة بيز فتستغل الاستقلال الشرطي وتحتاج فقط لـ 10 أرقام في جداول CPTs.",
+    "explanation": "A full joint distribution over five Boolean variables has 2<sup>5</sup> = 32 entries, but one is determined by the requirement that probabilities sum to 1, leaving 31 independent numbers. In the burglary network, the conditional probability tables require 10 numbers, exploiting conditional independence.",
+    "explanation_ar": "التوزيع المشترك الكامل لـ 5 متغيرات ثنائية يحتاج 2<sup>5</sup> − 1 = 31 احتمالية مستقلة. أما شبكة بيز فتستغل الاستقلال الشرطي وتحتاج فقط لـ 10 أرقام في جداول CPTs.",
     "reference": "sentations."
   },
   {
@@ -3482,7 +3482,7 @@
     "answer_text": "its solution time grows exponentially with the instance size",
     "answer_text_ar": "الوقت اللازم لحلها ينمو بشكل أسي (Exponential) مع حجم المدخلات",
     "explanation": "Intractability concerns computational cost, not whether a solution exists. Exponential growth makes solving large real-world instances impracti- cal.",
-    "explanation_ar": "الاستعصاء الحسابي (Intractability) يعني أن المسألة تقبل الحل نظرياً، لكن زمن حلها ينمو أسياً (O(2^n))، مما يجعل حل الحالات الواقعية الكبيرة مستحيلاً عملياً في زمن مقبول.",
+    "explanation_ar": "الاستعصاء الحسابي (Intractability) يعني أن المسألة تقبل الحل نظرياً، لكن زمن حلها ينمو أسياً (O(2<sup>n</sup>))، مما يجعل حل الحالات الواقعية الكبيرة مستحيلاً عملياً في زمن مقبول.",
     "reference": ""
   },
   {
@@ -3492,35 +3492,35 @@
     "bank_title_ar": "بنك 3: الأسبوع 1 - ما هو الذكاء الاصطناعي؟ (Introduction to AI)",
     "type": "mcq",
     "q_num": "A18",
-    "question": "The brain’s cycle time is 10−3 s and a computer’s is 10−9 s. How many times faster per step is the computer?",
-    "question_ar": "زمن الدورة في الدماغ البشري هو 10^-3 ثانية، وزمن الدورة في المعالج الحاسوبي هو 10^-9 ثانية. كم مرة يُعد الحاسوب أسرع في الخطوة الواحدة مقارنة بالدماغ؟",
+    "question": "The brain’s cycle time is 10<sup>−3</sup> s and a computer’s is 10<sup>−9</sup> s. How many times faster per step is the computer?",
+    "question_ar": "زمن الدورة في الدماغ البشري هو 10<sup>−3</sup> ثانية، وزمن الدورة في المعالج الحاسوبي هو 10<sup>−9</sup> ثانية. كم مرة يُعد الحاسوب أسرع في الخطوة الواحدة مقارنة بالدماغ؟",
     "options": [
       {
         "key": "a",
-        "text": "106",
-        "text_ar": "10^6 مرة (مليون مرة أسرع)"
+        "text": "10<sup>6</sup>",
+        "text_ar": "10<sup>6</sup> (مليون مرة أسرع)"
       },
       {
         "key": "b",
-        "text": "103",
-        "text_ar": "10^3 مرة (ألف مرة أسرع)"
+        "text": "10<sup>3</sup>",
+        "text_ar": "10<sup>3</sup> (ألف مرة أسرع)"
       },
       {
         "key": "c",
-        "text": "107",
-        "text_ar": "10^7 مرة"
+        "text": "10<sup>7</sup>",
+        "text_ar": "10<sup>7</sup>"
       },
       {
         "key": "d",
-        "text": "1012",
-        "text_ar": "10^12 مرة"
+        "text": "10<sup>12</sup>",
+        "text_ar": "10<sup>12</sup>"
       }
     ],
     "answer": "a",
-    "answer_text": "106",
-    "answer_text_ar": "10^6 مرة (مليون مرة أسرع)",
-    "explanation": "The speed ratio is the brain cycle time divided by the com- puter cycle time: 10−3 10−9 = 10−3−(−9) = 106.",
-    "explanation_ar": "نسبة السرعة هي حاصل قسمة زمن دورة الدماغ على زمن دورة المعالج: 10^-3 / 10^-9 = 10^(-3 - (-9)) = 10^6 (أي أن الحاسوب أسرع في تنفيذ خطوة العمليات الأساسية بمليون مرة).",
+    "answer_text": "10<sup>6</sup>",
+    "answer_text_ar": "10<sup>6</sup> (مليون مرة أسرع)",
+    "explanation": "The speed ratio is the brain cycle time divided by the computer cycle time: 10<sup>−3</sup> / 10<sup>−9</sup> = 10<sup>−3−(−9)</sup> = 10<sup>6</sup>.",
+    "explanation_ar": "نسبة السرعة هي حاصل قسمة زمن دورة الدماغ على زمن دورة المعالج: 10<sup>−3</sup> / 10<sup>−9</sup> = 10<sup>−3−(−9)</sup> = 10<sup>6</sup> (أي أن الحاسوب أسرع في تنفيذ خطوة العمليات الأساسية بمليون مرة).",
     "reference": "cussion, pp. 7–10."
   },
   {
@@ -5205,8 +5205,8 @@
     "answer": "b",
     "answer_text": "Four times as much",
     "answer_text_ar": "أربعة أضعاف (Four times as much - تربيعي O(n²))",
-    "explanation": "Self-attention compares positions with one another, giving quadratic complexity O(n²) in sequence length. Doubling n therefore requires roughly four times the work.",
-    "explanation_ar": "تقارن آلية الانتباه الذاتي كل كلمة بجميع الكلمات الأخرى، مما يعطي تعقيداً حسابياً تربيعياً O(n²). لذلك، إذا تضاعف طول السلسلة (2n)، يزداد الشغل بمقدار (2)² = 4 أضعاف.",
+    "explanation": "Self-attention compares positions with one another, giving quadratic complexity O(n<sup>2</sup>) in sequence length. Doubling n therefore requires roughly four times the work.",
+    "explanation_ar": "يقارن الانتباه الذاتي كل موضع بجميع المواضع الأخرى، مما يعطي تعقيداً تربيعياً O(n<sup>2</sup>) بالنسبة لطول التسلسل، ومضاعفة n تتطلب 4 أضعاف الجهد الحسابي.",
     "reference": "Lecture 5, Section 5.5 — Transformer computation"
   },
   {
