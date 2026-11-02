@@ -74,7 +74,7 @@
     bookmarks: new Set(),
     mode: 'study', // 'study' | 'exam'
     langMode: 'both', // 'both' | 'en' | 'ar'
-    theme: 'dark', // 'dark' | 'sepia' | 'light'
+    theme: 'light', // 'light' | 'dark' | 'sepia'
     fontSize: 'md', // 'sm' | 'md' | 'lg' | 'xl'
     activeBank: 'all', // 'all' | 1 | 2 | 3 | 4
     activeType: 'all', // 'all' | 'mcq' | 'tf'
@@ -93,7 +93,8 @@
   };
 
   // --- LocalStorage Persistence ---
-  const STORAGE_KEY = 'cs433_quiz_store_v1';
+  const STORAGE_KEY = 'cs433_quiz_store_v2';
+  const OLD_STORAGE_KEY = 'cs433_quiz_store_v1';
 
   function saveToStorage() {
     try {
@@ -114,7 +115,19 @@
 
   function loadFromStorage() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        const oldRaw = localStorage.getItem(OLD_STORAGE_KEY);
+        if (oldRaw) {
+          const oldData = JSON.parse(oldRaw);
+          if (oldData.userAnswers) state.userAnswers = oldData.userAnswers;
+          if (oldData.bookmarks) state.bookmarks = new Set(oldData.bookmarks);
+          if (oldData.fontSize) state.fontSize = oldData.fontSize;
+          state.theme = 'light';
+          saveToStorage();
+          return;
+        }
+      }
       if (!raw) return;
       const data = JSON.parse(raw);
       if (data.userAnswers) state.userAnswers = data.userAnswers;
