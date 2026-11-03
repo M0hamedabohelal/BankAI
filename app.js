@@ -527,32 +527,66 @@
     renderCurrentQuestion();
   }
 
-  // --- Reset Current Bank Logic ---
+  // --- Reset Bank Logic (مسح الأخطاء والإجابات والعودة للبداية مع الاحتفاظ بالمحفوظات) ---
   function resetCurrentBank() {
-    const list = state.filteredQuestions;
-    if (!list || list.length === 0) return;
+    const answeredCount = Object.keys(state.userAnswers).length;
+    const bookmarksCount = state.bookmarks.size;
 
-    let bankTitle = DOM.badgeBank ? DOM.badgeBank.textContent : 'هذا البنك';
-    if (state.activeBank === 'all') {
-      bankTitle = 'جميع الأسئلة';
-    }
-
-    const answeredCount = list.filter(q => q.id in state.userAnswers).length;
-    let confirmMsg = `هل تريد إعادة حل (${bankTitle}) من البداية؟`;
+    let confirmMsg = 'هل أنت متأكد من رغبتك في إعادة حل البنك والبدء من جديد كأنه أول مرة يُفتح؟\n(سيتم مسح جميع الإجابات والأخطاء مع الاحتفاظ بأسئلتك المحفوظة ⭐)';
     if (answeredCount > 0) {
-      confirmMsg = `هل تريد إعادة حل (${bankTitle})؟ سيتم مسح ${answeredCount} إجابة مسجلة والبدء من السؤال الأول.`;
+      confirmMsg = `هل أنت متأكد من رغبتك في إعادة حل البنك والبدء من جديد؟\nسيتم مسح ${answeredCount} إجابة مسجلة وجميع الأخطاء، مع الاحتفاظ بأسئلتك المحفوظة (${bookmarksCount} سؤال ⭐).`;
     }
 
     if (confirm(confirmMsg)) {
       playSound('click');
-      list.forEach(q => {
-        delete state.userAnswers[q.id];
-      });
+
+      // 1. مسح جميع الإجابات والأخطاء تماماً
+      state.userAnswers = {};
+
+      // 2. إعادة الموقع لحالته الابتدائية كأنه أول مرة يُفتح (ما عدا المحفوظات)
+      state.activeBank = 'all';
+      state.activeType = 'all';
+      state.specialFilter = null;
+      state.searchQuery = '';
       state.currentIndex = 0;
+
+      // 3. إعادة ضبط عناصر واجهة المستخدم (UI Controls)
+      if (DOM.searchInput) {
+        DOM.searchInput.value = '';
+      }
+      if (DOM.searchClear) {
+        DOM.searchClear.style.display = 'none';
+      }
+
+      if (DOM.bankChips) {
+        DOM.bankChips.forEach(chip => {
+          chip.classList.toggle('active', chip.dataset.bank === 'all');
+        });
+      }
+
+      if (DOM.typePills) {
+        DOM.typePills.forEach(pill => {
+          pill.classList.toggle('active', pill.dataset.type === 'all');
+        });
+      }
+
+      if (DOM.filterBookmarks) {
+        DOM.filterBookmarks.classList.remove('active');
+      }
+      if (DOM.filterMistakes) {
+        DOM.filterMistakes.classList.remove('active');
+      }
+
+      if (DOM.sidebar) {
+        DOM.sidebar.classList.remove('open');
+      }
+
+      // 4. حفظ الحالة وتحديث الشاشة بالكامل
       saveToStorage();
-      updateStats();
-      renderGrid();
-      renderCurrentQuestion();
+      applyFilters();
+
+      // 5. التمرير لأعلى الصفحة
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 
@@ -742,14 +776,7 @@
 
     // Reset Progress (All Questions)
     DOM.btnResetAll.addEventListener('click', () => {
-      if (confirm('هل أنت متأكد من رغبتك في مسح جميع الإجابات المسجلة لجميع الأسئلة والبدء من جديد؟')) {
-        state.userAnswers = {};
-        state.bookmarks.clear();
-        saveToStorage();
-        updateStats();
-        applyFilters();
-        playSound('click');
-      }
+      resetCurrentBank();
     });
 
     // Keyboard Shortcuts
